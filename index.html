@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VGM Quiz</title>
+
+    
+    <script src="eventListeners.js" defer></script>
+
+    <script src="Mademonium.js" defer></script>
+    <script src="songHandling.js" defer></script>
+    <script src="OtherFuncs.js" defer></script>
+    <script src="createPlayer.js" defer></script>
+    
+    
+    
+    <script src="songs.js" defer></script>
+    <script src="colors.js" defer></script>
+
+    
+    <script src="main.js" defer></script>
+    <script src="subtitle gen.js" defer></script>
+</head> 
+<body>
+
+    <header>
+        <h1> VGMB </h1>
+        <p id="p_subtitle"></p>
+        <p id="p_points">0</p>
+    </header>
+
+    <div id="gameArea">
+        <div id="majorSection">
+            <div id="textArea" class = "gameSection"></div>
+            <div id="gameModeArea" class = "gameSection">
+                <h3>GAME MODES</h3>
+                <br>
+                <div id="btn_startButton" class="button">STANDARD</div>
+                <br>
+                <!-- <div id="btn_pokemonButton" class="button">POKEMON</div>
+                <div id="btn_zeldaButton" class="button">ZELDA</div> -->
+            </div>
+        </div>
+
+        <div id="answerArea">
+            <p id="p_combo">x0</p>
+            <input type="text" id="inp_textInput" autofocus>
+            <div id="btn_enterButton" class="button">GO</div>
+            <div id="btn_shieldButton" class="button">SHIELD</div>
+            <div id="btn_muteButton" class="button">MUTE</div>
+            <div id="btn_skipButton" class="button">SKIP</div>
+        </div>
+    </div>
+
+    <div id="player"></div>
+    
+</body>
+</html>

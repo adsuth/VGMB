@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: montserrat;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: #222 0 1rem 2rem;
+          box-shadow: #222 0 1rem 2rem;
+}
+
+header #p_points {
+  color: gold;
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  right: 11rem;
+  top: 1rem;
+}
+
+header h1 {
+  color: white;
+  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-family: grandstander;
+  font-size: 4rem;
+}
+
+header #p_subtitle {
+  text-align: center;
+  display: block;
+  margin-top: -0.25rem;
+  font-size: 1.25rem;
+  color: white;
+  width: 100%;
+  font-family: grandstander;
+  font-style: italic;
+}
+
+iframe {
+  display: none;
+}
+
+#gameArea {
+  width: 100%;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#gameArea .gameSection {
+  height: inherit;
+  padding: 2rem 5rem;
+}
+
+#gameArea .gameSection .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+#gameArea #majorSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+
+#gameArea #gameModeArea {
+  width: 20vw;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#gameArea #gameModeArea h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: -1rem;
+}
+
+#gameArea #gameModeArea div {
+  width: 100%;
+  margin-top: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#gameArea #textArea {
+  width: 80%;
+  overflow-y: scroll;
+}
+
+#gameArea #textArea p {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #444;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#gameArea #textArea .correctText {
+  color: #8cf08c;
+}
+
+#gameArea #textArea .wrongText {
+  color: #ed6b6b;
+}
+
+#gameArea #textArea .warningText {
+  color: #f8af5c;
+}
+
+#gameArea #textArea .shieldColor {
+  color: #46bbff;
+}
+
+#gameArea #textArea .boldText {
+  font-weight: bold;
+}
+
+#gameArea #textArea .gameModeStart {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#gameArea #textArea .supersonic {
+  color: #35ff35;
+  text-shadow: 0 0 1rem #35ff35;
+  font-weight: bold;
+}
+
+#gameArea #textArea .ultrasonic {
+  color: #dd35ff;
+  text-shadow: 0 0 1rem #dd35ff;
+  font-weight: bold;
+}
+
+#gameArea #textArea .comboColor {
+  color: #dd35ff;
+}
+
+#gameArea #answerArea {
+  background-color: #333;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: absolute;
+  bottom: 1rem;
+  gap: 1rem;
+  -webkit-box-shadow: #222 0 -1rem 2rem;
+          box-shadow: #222 0 -1rem 2rem;
+}
+
+#gameArea #answerArea #p_combo {
+  color: white;
+  text-shadow: 0 0 1rem red;
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  left: 11rem;
+  top: 1rem;
+}
+
+#gameArea #inp_textInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+#gameArea #inp_textInput:focus {
+  background-color: #222;
+}
+
+#gameArea #btn_enterButton {
+  width: 5rem;
+}
+
+#gameArea .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10rem;
+  height: 5rem;
+  cursor: pointer;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+#gameArea .button:hover {
+  background-color: #666;
+}
+
+::-webkit-scrollbar {
+  background: #444;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #666;
+  border-radius: 5rem;
+}
+
+.button.red:hover {
+  background-color: #ed6b6b !important;
+}
+
+.button.yellow:hover {
+  background-color: #ffd700 !important;
+  color: #333 !important;
+}
+
+.button.orange:hover {
+  background-color: #f8af5c !important;
+}
+
+.button.blue:hover {
+  background-color: #46bbff !important;
+}
+
+.button.green:hover {
+  background-color: #8cf08c !important;
+  color: #333 !important;
+}
+
+.button.purple:hover {
+  background-color: #da5ee6 !important;
+}
+/*# sourceMappingURL=style.css.map */
