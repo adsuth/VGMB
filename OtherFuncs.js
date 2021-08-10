@@ -9,8 +9,15 @@ class MiscFuncs {
         this.messages = {
             correct: `
                 <p>
-                <span class="correctText"> That was correct! </span> <br>
+                <span class="colorCorrect"> That was correct! </span> <br>
             `,
+            timeTaken: `
+                <span class="warningText">Time taken: ${quiz.state.timeToAnswer}!</span> <br>
+            `,
+            timeMessage: `
+                <span class="${quiz.state.timeMessage}"> ${quiz.state.timeMessage.toUpperCase()}! </span> <br>
+            `,
+
             wrong: `
                 <p>
                 <span class="wrongText"> "${textInput.value}" is incorrect! </span>
@@ -20,12 +27,11 @@ class MiscFuncs {
                 Track: <span class="boldText answerList" title="answers: ${quiz.song.answers}" > \t${quiz.song.currentSong.title} </span> <br>
                 Game: <span class="boldText"> \t${quiz.song.game} </span> <br>
                 Series: <span class="boldText"> \t${quiz.song.series} </span> <br>
-                
                 </p>
             `,
             skip: `
                 <p>
-                <span class="boldText warningText"> You skipped that round! </span>
+                <span class="boldText warningText bigText"> You skipped that round! </span>
                 </p>
             `,
             commandError: `
@@ -38,26 +44,19 @@ class MiscFuncs {
                 <span class="warningText">"${textInput.value}" is close!</span>
                 </p>
             `,
-            timeTaken: `
-                <span class="warningText">Time taken: ${quiz.state.timeToAnswer}!</span> <br>
-            `,
-            timeMessage: `
-                <span class="${quiz.state.timeMessage}"> ${quiz.state.timeMessage.toUpperCase()}! </span> <br>
-            `,
-
+            
             comboMessages: [
-                `</p><span class="ultrasonic"> An insane combo!! </span> <br> `,
-                `</p><span class="ultrasonic"> Keep it going!! </span> <br> `,
-                `</p><span class="ultrasonic"> MADNESS!! </span> <br> `,
-                `</p><span class="ultrasonic"> Well done!! </span> <br> `,
-                `</p><span class="ultrasonic"> Alright settle down!! </span> <br> `,
+                `<p><span class="ultrasonic"> An insane combo!! </span> <br> `,
+                `<p><span class="ultrasonic"> Keep it going!! </span> <br> `,
+                `<p><span class="ultrasonic"> MADNESS!! </span> <br> `,
+                `<p><span class="ultrasonic"> Well done!! </span> <br> `,
+                `<p><span class="ultrasonic"> Alright settle down!! </span> <br> `,
             ],
 
             timeOut: `
                 <p>
                 <span class="wrongText boldText"> Time's Up! </span> <br>
-                <span class="wrongText">Unlucky!</span>
-                </p>
+                <span class="wrongText">Unlucky!</span> <br>
             `,
             shieldUsed: `
                 <p>
@@ -69,7 +68,7 @@ class MiscFuncs {
         }
         if ( message === "comboMessages" ) {
             return `${this.messages.comboMessages[this.randomInt(this.messages.comboMessages.length)]}
-                <span class="comboColor">That's ${quiz.state.currentCombo} in a row!</span>`
+                <span class="comboColor">That's ${quiz.state.currentCombo} in a row!</span></p>`
         }
         let text = this.messages[message];
 
@@ -77,9 +76,15 @@ class MiscFuncs {
     }
 
     generateText( text ) {
+        // prevents too many messages
+        if ( text === "undefined" ) { return }
+        if ( textArea.childNodes.length > 50 ) {
+            textArea.removeChild( textArea.childNodes[0] );
+        }
         let pEl = document.createElement("p");
         pEl.innerHTML += text;
         textArea.appendChild( pEl );
+        quiz.OTHERFUNC.scrollToBottom();
     }
     /**
      * ie: "ultrasonic" or "supersonic"
@@ -106,10 +111,7 @@ class MiscFuncs {
                 "/mute": quiz.SH.muteSong,
                 "/unmute": quiz.SH.muteSong
             }
-        }
-        console.log(this.commands)
-
-        
+        }        
         
         for (let command in this.commands) {
             if ( input.trim().toLowerCase() === command ) {

@@ -4,234 +4,234 @@
     padding: 0;
     box-sizing: border-box;
  
+    // outline:rgb(53, 255, 53) 2px solid;
 
-    // outline: 1px magenta solid;
+    
+
 }
+
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontJetBrains: 'JetBrains Mono', monospace;
+$fontGrandstander: 'Grandstander';
 
 
 
 body {
-    background: #333;
-    font-family: montserrat;
+    background: var(--colorDark);
+    font-family: $fontMontserrat;
     
 }
 
+.counter {
+    font-size: 5vh;
+    text-align: center;
+    position: absolute;
+}
 
 header {
+    height: fit-content;
     height: 10vh;
     width: 100%;
     
     justify-content: center;
-    box-shadow: #222 0 1rem 2rem;
+    box-shadow: var(--colorDarker) 0 1vh 2vh;
+    position: relative;
+    z-index: 3;
     
     #p_points {
         color: gold;
-        font-size: 3rem;
-        text-align: center;
-        position: absolute;
-        right: 11rem;
-        top: 1rem;
+        right: 18vh;
+        top: 1vh;
     }
 
-    h1 {
-        color: white;
-        display: block;
-        height: fit-content;
+    h1, #p_subtitle {
+        color: var(--colorLight);
         width: 100%;
+        font-family: $fontGrandstander;
         text-align: center;
-        font-family: grandstander;
-        font-size: 4rem;
     }
+    
+    h1 {
+        font-size: 3.5vw;
+        margin-top: 0.5vh;
+    }
+    
     #p_subtitle {
-        text-align: center;
-        display: block;
-        margin-top: -0.25rem;
-        font-size: 1.25rem;
-        color: white;
-        width: 100%;
-        font-family: grandstander;
+        margin-top: -0.5vh;
+        font-size: 1vw;
         font-style: italic;
     }
 }
 
+// invisible youtube player that plays the music
 iframe {
     display: none;
 }
 
+// game area, contains textArea, gameModeArea and answerArea
 #gameArea {
     width: 100%;
-    height: 80vh;
+    height: 79vh;
 
     justify-content: center;
     align-items: center;
 
     .gameSection {
         height: inherit;
-
-        .button {
-            width: fit-content;
-            padding: 1rem;
-            display: block;
-            text-align: center;
-
-        }
-        
-        padding: 2rem 5rem;
     }
 
+    // contains textArea and gameModeArea
     #majorSection {
         display: flex;
         width: 100%;
-        height: 80vh;
+        height: inherit;
     }
     
+    #textArea {
+        width: 80%;
+        overflow-y: scroll;
+        
+        p {
+            font-size: 1.5vw;
+            color: var(--colorLight);
+            background-color: var(--colorMid);
+            padding: 1vh;
+            padding-bottom: 1vh;
+            border-radius: 2vw;
+
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+            margin-left: 2vw;
+            
+            width: 80%;
+        }
+        
+    }
+
+    // contains title and an indefinite number of buttons (generated dynamically with js)
     #gameModeArea {
         width: 20vw;
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
+        overflow-y: scroll;
 
+        // GAME MODES title
         h3 {
-            color: #fff;
-            font-size: 2rem;
-            font-weight: 800;
-            margin-top: -1rem;
+            color: var(--colorLight);
+            font-size: 2vw;
+            margin-top: 3vh;
         }
 
-        div {
-            width: 100%;
-            margin-top:1rem;
+        // these are the buttons
+        .button {
+            display: flex;
+            width: fit-content;
+            height: 7.5vh;
+            cursor: pointer;
+
             justify-content: center;
             align-items: center;
+            border-radius: 5vw;
+            padding: 2vh 1.5vw;
+            color: var(--colorLight);
+            font-size: 3.5vh;
+            margin: 2vh auto;
+            transition: background-color 500ms;
         }
     }
-
-    #textArea {
-        width: 80%;
-        overflow-y: scroll;
-        p {
-            font-size: 1.5rem;
-            color: #fff;
-            background-color: #444;
-            padding: 1rem;
-            padding-bottom: 0.5rem;
-            border-radius: 2.5rem;
-            margin-bottom: 1rem;;
-
-        }
-
-        .correctText {
-            color: rgb(140, 240, 140);
-        }
-        .wrongText {
-            color: rgb(237, 107, 107);
-        }
-        .warningText {
-            color: rgb(248, 175, 92);
-        }
-        .shieldColor {
-            color: rgb(70, 187, 255);
-        }
-
-        .boldText {
-            font-weight: bold;
-        }
-        .gameModeStart {
-            font-weight: bold;
-            font-size: 2rem;
-        }
-        
-        .supersonic {
-            color:rgb(53, 255, 53);
-            text-shadow: 0 0 1rem rgb(53, 255, 53) ;
-            font-weight: bold ;
-        }
-        .ultrasonic {
-            color: rgb(221, 53, 255);
-            text-shadow: 0 0 1rem rgb(221, 53, 255) ;
-            font-weight: bold ;
-        }
-        .comboColor {
-            color: rgb(221, 53, 255);
-        }
-    }
-
+    
+    // the bar at the button with the buttons, combo and input
     #answerArea {
-        background-color: #333;
+        background-color: var(--colorDark);
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: baseline;
-        position: absolute;
-        bottom: 1rem;
-        gap: 1rem;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+        
+        height: 10vh;
+        gap: 1vw;
 
-        box-shadow: #222 0 -1rem 2rem;
-
+        box-shadow: var(--colorDarker) 0 -1vh 2vh;
 
         #p_combo {
-            color: rgb(255, 255, 255);
-            text-shadow: 0 0 1rem red ;
-            font-size: 3rem;
-            text-align: center;
-            position: absolute;
-            left: 11rem;
-            top: 1rem;
+            color: var(--colorLight);
+            left: 11vw;
+            bottom: 1.5vh;
+            text-shadow: 0 0 1vh red ;
+            transition: text-shadow 1000ms;
         }
 
     }
         
     #inp_textInput {
+        all: unset;
         display: flex;
-        background-color: #333;
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 5rem;
-        font-size: 2rem;
-        font-weight: bold;
-        font-family: 'Courier New', Courier, monospace;
-        outline: none;
-        transition: 500ms;
-    }
-    #inp_textInput:focus {
-        background-color: #222;
-        
+        background-color: var(--colorDark);
+        color: var(--colorLight);
+        padding: 0.5vh 1vw;
+        border-radius: 5vh;
+        font-size: 1.5vw;
+        font-family: $fontJetBrains;
+        box-shadow: var(--colorMidLight) 0 0 0 0.5vh;
+        transition: background-color 500ms;
     }
 
+    #inp_textInput:hover {
+        background-color: var(--colorMid);
+    }
+
+    #inp_textInput:focus {
+        background-color: var(--colorDarker);
+    }
+
+    // vestigial (to submit answer)
     #btn_enterButton {
-        width: 5rem;
+        width: 5vw;
     }
 
     .button {
         display: flex;
-        width: 10rem;
-        height: 5rem;
+        width: fit-content;
+        height: 7.5vh;
         cursor: pointer;
-        transition: 200ms;
 
         justify-content: center;
         align-items: center;
-        border-radius: 5rem;
-        
-        color: white;
-        font-size: 2rem;
+        border-radius: 5vw;
+        padding: 2vh 1.5vw;
+        color: var(--colorLight);
+        font-size: 3.5vh;
+        transition: background-color 500ms;
     }
 
     .button:hover {
-        background-color: #666;
+        background-color: var(--colorMidLight);
     }
 }  
 
-::-webkit-scrollbar {
-    background: #444; 
-    
+div {
+    // to change the scroll bar
+    div::-webkit-scrollbar {
+        display: block;
+        background: var(--colorMid); 
+ 
+    }
+
+    div::-webkit-scrollbar-track {
+        background-color: var(--colorDark);
+        border-radius: 5vh;
+    }
+    div::-webkit-scrollbar-thumb {
+        background-color: var(--colorMidLight);
+        border-radius: 5vh;
+    }
 }
 
-::-webkit-scrollbar-track {
-    background-color: #666;
-    border-radius: 5rem;
-}
+
 
 // colors for the game mode options
 
@@ -239,8 +239,8 @@ iframe {
     background-color: rgb(237, 107, 107) !important;
 }
 .button.yellow:hover {
-    background-color: #ffd700 !important;
-    color: #333 !important;
+    background-color: var(--colorDark) !important;
+    color: var(--colorDark) !important;
 }
 .button.orange:hover {
     background-color: rgb(248, 175, 92) !important;
@@ -250,9 +250,52 @@ iframe {
 }
 .button.green:hover {
     background-color: rgb(140, 240, 140) !important;
-    color: #333 !important;
+    color: var(--colorDark) !important;
 }
 .button.purple:hover {
     background-color: rgb(218, 94, 230) !important;
 }
 
+
+.colorCorrect {
+    color: rgb(140, 240, 140);
+}
+.wrongText {
+    color: rgb(237, 107, 107);
+}
+.warningText {
+    color: rgb(248, 175, 92);
+}
+.shieldColor {
+    color: rgb(70, 187, 255);
+}
+
+.supersonic {
+    color:rgb(53, 255, 53);
+    text-shadow: 0 0 1vh rgb(53, 255, 53) ;
+    font-weight: bold ;
+}
+.ultrasonic {
+    color: rgb(221, 53, 255);
+    text-shadow: 0 0 1vh rgb(221, 53, 255) ;
+    font-weight: bold ;
+}
+
+.comboColor {
+    color: rgb(221, 53, 255);
+}
+
+
+// these can stay TODO: add glow effect as separate class
+.boldText {
+    font-weight: bold;
+}
+
+.biggerText {
+    font-size: 2.5vw;
+    margin-bottom: 2vh;
+}
+.bigText {
+    font-size: 2vw;
+    margin-bottom: 2vh;
+}

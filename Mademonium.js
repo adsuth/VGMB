@@ -89,7 +89,7 @@ class VGMQuiz {
     
         else {
             if ( this.isCloseAnswer( input ) ) {
-                this.OTHERFUNC.generateText( dthis.OTHERFUNC.getText("closeAnswer") );
+                this.OTHERFUNC.generateText( this.OTHERFUNC.getText("closeAnswer") );
             }
             else { 
                 this.OTHERFUNC.generateText( this.OTHERFUNC.getText("wrong") );
@@ -151,11 +151,11 @@ class VGMQuiz {
 
     rechargeShield() {
         if ( !this.state.isShieldOnCooldown ) { return }
-        shieldButton.style.backgroundColor = "#222";
+        shieldButton.style.backgroundColor = "var(--colorDarker)";
         this.state.shieldCooldown -= 1;
 
         if ( this.state.shieldCooldown === 0 ) {
-            shieldButton.style.backgroundColor = "#333";
+            shieldButton.style.backgroundColor = "var(--colorDark)";
             this.OTHERFUNC.generateText(this.OTHERFUNC.getText( "shieldRecharge" ));
         }
     }
@@ -164,7 +164,6 @@ class VGMQuiz {
         if ( quiz.state.isShieldOnCooldown || !quiz.song) { return }
         quiz.state.isShielded = true;
         
-
         shieldButton.style.backgroundColor = "rgb(70, 187, 255)";
         quiz.OTHERFUNC.generateText(quiz.OTHERFUNC.getText( "shieldUsed" ));
 

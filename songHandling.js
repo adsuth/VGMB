@@ -57,8 +57,7 @@ class SongHandler {
         
         
         quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("skip") );
-        quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("songInfo") );
-        quiz.OTHERFUNC.scrollToBottom();
+        quiz.OTHERFUNC.generateText( "<p>" + quiz.OTHERFUNC.getText("songInfo") );
     
         quiz.SH.fadeOutSong();
         
@@ -82,7 +81,7 @@ class SongHandler {
     muteSong() {
         if ( player.isMuted() ) {
             player.unMute();
-            muteButton.style.backgroundColor = "#333";
+            muteButton.style.backgroundColor = "var(--colorDark)";
         }
         else { 
             player.mute();

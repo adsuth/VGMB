@@ -5,7 +5,7 @@ var player;
 const gameModeMessages = {
     standard: `
         <p>
-        <span class="gameModeStart"> Welcome to Standard Mode! </span> <br><br>
+        <span class="boldText biggerText"> Welcome to Standard Mode! </span> <br>
         Random series, games and songs! <br>
         Guess the name of the <span class="boldText">game</span> to win! <br>
         </p>
@@ -14,11 +14,11 @@ const gameModeMessages = {
 
 // start button will begin standard game (for now)
 startButton.addEventListener("click", () => {
-    if (quiz.state.isStarted) { return };
-    quiz.state.isStarted = true;
+    if (quiz.gameModeName === "standard" ) { return };
+    // changeColorPalette( "default" )
 
     quiz.OTHERFUNC.generateText( gameModeMessages[ "standard" ] );
-
+    quiz.gameModeName = "standard";
 
     quiz.gameMode = quiz.standardGame;
     quiz.gameMode();
@@ -90,17 +90,17 @@ textInput.addEventListener('keypress', (ev) => {
 });
 
 
-enterButton.addEventListener("click", () => {
-    if (textInput.value.length === 0) { return }
-    if (quiz.song.length === 0) { return }
+// enterButton.addEventListener("click", () => {
+//     if (textInput.value.length === 0) { return }
+//     if (quiz.song.length === 0) { return }
 
-    quiz.checkAnswer( textInput.value );
-    textInput.value = "";
-    quiz.OTHERFUNC.scrollToBottom();
+//     quiz.checkAnswer( textInput.value );
+//     textInput.value = "";
+//     quiz.OTHERFUNC.scrollToBottom();
 
-    quiz.state.historyPos = -1;
+//     quiz.state.historyPos = -1;
     
-})
+// })
 
 skipButton.addEventListener("click", quiz.SH.skipSong )
 
@@ -158,11 +158,13 @@ function createButton( text ) {
     btn.addEventListener("click", (ev) => {
         if (quiz.gameModeName === text ) { return };
 
+        // changeColorPalette( quiz.SH.ALLSONGS.series[text].color );
+
         quiz.gameModeName = text;
         
         gameModeMessages.singleSeries = `
         <p>
-        <span class="gameModeStart"> Welcome to ${capital(quiz.gameModeName)} Mode! </span> <br><br>
+        <span class="biggerText boldText"> Welcome to ${capital(quiz.gameModeName)} Mode! </span> <br>
         Songs from the ${capital(quiz.gameModeName)} series! <br>
         Guess the name of the <span class="boldText">game</span> to win! <br>
         </p>
