@@ -97,6 +97,7 @@ muteButton.addEventListener("click", quiz.SH.muteSong);
 
 
 function capital( word ) {
+    
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
@@ -121,8 +122,8 @@ function createButton( text ) {
         
         gameModeMessages.singleSeries = `
         <p>
-        <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].color)}"> Welcome to ${capital(quiz.gameModeName)} Mode! </span> <br>
-        Songs from the ${capital(quiz.gameModeName)} series! <br>
+        <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].color)}); text-transform: capitalize;"> Welcome to ${quiz.gameModeName} Mode! </span> <br>
+        Songs from the <span style="text-transform: capitalize;">${quiz.gameModeName}</span> series! <br>
         Guess the name of the <span class="boldText">game</span> to win! <br>
         </p>
         `
