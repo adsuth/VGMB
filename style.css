@@ -3,6 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  --colorRed: rgb(237, 107, 107);
+  --colorYellow: rgb(243, 240, 72);
+  --colorOrange: rgb(248, 175, 92);
+  --colorBlue: rgb(70, 187, 255);
+  --colorGreen: rgb(140, 240, 140);
+  --colorPurple: rgb(218, 94, 230);
 }
 
 body {
@@ -59,6 +65,17 @@ iframe {
   display: none;
 }
 
+#canvas_loadingBar {
+  display: inline;
+  width: 12vw;
+  height: 8vh;
+  border-radius: 5vw;
+  background-color: var(--colorDarker);
+  position: relative;
+  top: -8vh;
+  left: 4vw;
+}
+
 #gameArea {
   width: 100%;
   height: 79vh;
@@ -87,12 +104,17 @@ iframe {
   overflow-y: scroll;
 }
 
+#gameArea #textArea a {
+  all: none;
+  color: #c2e8fd;
+  text-decoration: none;
+}
+
 #gameArea #textArea p {
   font-size: 1.5vw;
   color: var(--colorLight);
   background-color: var(--colorMid);
-  padding: 1vh;
-  padding-bottom: 1vh;
+  padding: 0.5vh 1vw 1vh 1vw;
   border-radius: 2vw;
   margin-top: 2vh;
   margin-bottom: 1vh;
@@ -244,61 +266,61 @@ div div::-webkit-scrollbar-thumb {
 }
 
 .button.red:hover {
-  background-color: #ed6b6b !important;
+  background-color: var(--colorRed) !important;
 }
 
 .button.yellow:hover {
-  background-color: var(--colorDark) !important;
+  background-color: var(--colorYellow) !important;
   color: var(--colorDark) !important;
 }
 
 .button.orange:hover {
-  background-color: #f8af5c !important;
+  background-color: var(--colorOrange) !important;
 }
 
 .button.blue:hover {
-  background-color: #46bbff !important;
+  background-color: var(--colorBlue) !important;
 }
 
 .button.green:hover {
-  background-color: #8cf08c !important;
+  background-color: var(--colorGreen) !important;
   color: var(--colorDark) !important;
 }
 
 .button.purple:hover {
-  background-color: #da5ee6 !important;
+  background-color: var(--colorPurple) !important;
 }
 
 .colorCorrect {
-  color: #8cf08c;
+  color: var(--colorCorrect);
 }
 
 .wrongText {
-  color: #ed6b6b;
+  color: var(--colorWrong);
 }
 
 .warningText {
-  color: #f8af5c;
+  color: var(--colorWarning);
 }
 
 .shieldColor {
-  color: #46bbff;
+  color: var(--colorBlue);
 }
 
 .supersonic {
-  color: #35ff35;
-  text-shadow: 0 0 1vh #35ff35;
+  color: var(--colorSuperSonic);
+  text-shadow: 0 0 1vh var(--colorSuperSonic);
   font-weight: bold;
 }
 
 .ultrasonic {
-  color: #dd35ff;
-  text-shadow: 0 0 1vh #dd35ff;
+  color: var(--colorUltraSonic);
+  text-shadow: 0 0 1vh var(--colorUltraSonic);
   font-weight: bold;
 }
 
 .comboColor {
-  color: #dd35ff;
+  color: var(--colorUltraSonic);
 }
 
 .boldText {

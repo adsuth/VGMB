@@ -12,7 +12,7 @@ class MiscFuncs {
                 <span class="colorCorrect"> That was correct! </span> <br>
             `,
             timeTaken: `
-                <span class="warningText">Time taken: ${quiz.state.timeToAnswer}!</span> <br>
+                <span class="warningText">Time taken: ${quiz.state.timeToAnswer} seconds!</span> <br>
             `,
             timeMessage: `
                 <span class="${quiz.state.timeMessage}"> ${quiz.state.timeMessage.toUpperCase()}! </span> <br>
@@ -24,14 +24,15 @@ class MiscFuncs {
                 </p>
             `,
             songInfo: `
-                Track: <span class="boldText answerList" title="answers: ${quiz.song.answers}" > \t${quiz.song.currentSong.title} </span> <br>
-                Game: <span class="boldText"> \t${quiz.song.game} </span> <br>
-                Series: <span class="boldText"> \t${quiz.song.series} </span> <br>
+                Track: <a href="https://youtu.be/${quiz.SG.track.link}/" target="_blank" ><span class="boldText answerList"> \t${quiz.SG.track.title}</a> </span> <br>
+                Game: <span class="boldText"> \t${quiz.SG.game.gameName} </span> <br>
+                Series: <span class="boldText"> \t${quiz.SG.series.seriesName} </span> <br><br>
+                Answers: <span class="boldText"> \t${quiz.OTHERFUNC.generateAnswers()}... </span>
                 </p>
             `,
             skip: `
                 <p>
-                <span class="boldText warningText bigText"> You skipped that round! </span>
+                <span class="boldText warningText"> You skipped that round! </span>
                 </p>
             `,
             commandError: `
@@ -56,7 +57,7 @@ class MiscFuncs {
             timeOut: `
                 <p>
                 <span class="wrongText boldText"> Time's Up! </span> <br>
-                <span class="wrongText">Unlucky!</span> <br>
+                <span class="wrongText">That's too bad, better luck next time!</span> <br>
             `,
             shieldUsed: `
                 <p>
@@ -64,6 +65,17 @@ class MiscFuncs {
                 <span class="shieldColor">You won't lose points or your combo this turn, even if you skip!</span>
                 </p>
             `,
+            shieldRecharge: `
+                <p>
+                <span class="shieldColor boldText"> Your shield is ready to go! </span>
+                </p>
+            `,
+            playerError: `
+                <p>
+                <span class="wrongText boldText"> Something went wrong! </span> <br>
+                <span class="wrongText"> Please refresh the page. </span>
+                </p>
+            `
 
         }
         if ( message === "comboMessages" ) {
@@ -73,6 +85,23 @@ class MiscFuncs {
         let text = this.messages[message];
 
         return text;
+    }
+
+    generateAnswers() {
+        let answers = new Set();
+        let answersString = "";
+        let sentinel = 5;
+        if ( quiz.SG.game.answers.length < sentinel ) {
+            sentinel = quiz.SG.game.answers.length;
+        }
+
+        while ( answers.length )
+
+        answersString += quiz.SG.game.answers[ quiz.OTHERFUNC.randomInt( quiz.SG.game.answers.length ) ] 
+
+        return answersString;
+        
+        
     }
 
     generateText( text ) {
@@ -95,8 +124,8 @@ class MiscFuncs {
     
         let time = quiz.state.timeToAnswer;
     
-        if ( time < 3 ) { this.updateRoundPoints( 2 ); return "ultrasonic"; }
-        else if ( time < 5 ) {  this.updateRoundPoints( 1 ); return "supersonic" }
+        if ( time < 2 ) { this.updateRoundPoints( 2 ); return "ultrasonic"; }
+        else if ( time < 4 ) {  this.updateRoundPoints( 1 ); return "supersonic" }
         else { return ""; }
     
     }
@@ -109,7 +138,14 @@ class MiscFuncs {
                 "/next": quiz.SH.skipSong,
             
                 "/mute": quiz.SH.muteSong,
-                "/unmute": quiz.SH.muteSong
+                "/unmute": quiz.SH.muteSong,
+
+                "/shield": quiz.useShield,
+                "/def": quiz.useShield,
+
+                "/afk" : quiz.goAFK,
+                "/away" : quiz.goAFK,
+                "/back" : quiz.goAFK
             }
         }        
         
@@ -121,11 +157,10 @@ class MiscFuncs {
         }
     
         quiz.state.failedCommand = input;
-        generateText( this.getText("commandError") );
+        this.generateText( this.getText("commandError") );
     }
 
     updateRoundPoints( amount ) {
-        console.log( "adding " + amount)
         quiz.state.roundPoints += amount;
     }
 

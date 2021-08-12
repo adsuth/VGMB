@@ -1,5 +1,4 @@
-
-const quiz = new VGMQuiz();
+const quiz = new VGMB();
 var player;
 
 const gameModeMessages = {
@@ -11,6 +10,8 @@ const gameModeMessages = {
         </p>
     `
 }
+
+afkButton.addEventListener("click", quiz.goAFK );
 
 // start button will begin standard game (for now)
 startButton.addEventListener("click", () => {
@@ -24,60 +25,27 @@ startButton.addEventListener("click", () => {
     quiz.gameMode();
 
 })
-// // start button will begin standard game (for now)
-// pokemonButton.addEventListener("click", () => {
-//     if (quiz.gameModeName === "pokemon" ) { return };
-
-//     quiz.gameModeName = "pokemon";
-
-//     gameModeMessages.singleSeries = `
-//     <p>
-//     <span class="gameModeStart"> Welcome to ${capital(quiz.gameModeName)} Mode! </span> <br><br>
-//     Songs from the ${capital(quiz.gameModeName)} series! <br>
-//     Guess the name of the <span class="boldText">game</span> to win! <br>
-//     </p>
-//     `
-//     quiz.OTHERFUNC.generateText( gameModeMessages[ "singleSeries" ] );
-
-//     quiz.gameMode = () => { quiz.singleSeriesGame("pokemon") };
-//     quiz.gameMode();
-
-// })
-// // start button will begin standard game (for now)
-// zeldaButton.addEventListener("click", () => {
-//     if (quiz.gameModeName === "zelda" ) { return };
-
-//     quiz.gameModeName = "zelda";
-    
-//     gameModeMessages.singleSeries = `
-//     <p>
-//     <span class="gameModeStart"> Welcome to ${capital(quiz.gameModeName)} Mode! </span> <br><br>
-//     Songs from the ${capital(quiz.gameModeName)} series! <br>
-//     Guess the name of the <span class="boldText">game</span> to win! <br>
-//     </p>
-//     `
-//     quiz.OTHERFUNC.generateText( gameModeMessages[ "singleSeries" ] );
-    
-
-
-//     quiz.gameMode = () => { quiz.singleSeriesGame("zelda") };
-//     quiz.gameMode();
-
-// })
 
 // getting answers
 textInput.addEventListener('keypress', (ev) => {
     if (textInput.value.length === 0) { return }
-    if (quiz.song.length === 0) { return }
+    
 
     if (ev.key === 'Enter') {
-        if ( textInput.value.charAt(0) === "/" ){ 
+
+    if (!quiz.SG || quiz.state.isEnding) {
+            textInput.value = ""; return;
+        }
+        
+        if ( textInput.value.charAt(0) === "/"){ 
             quiz.OTHERFUNC.checkForCommand( textInput.value );
 
             quiz.state.history.unshift( textInput.value )
             quiz.state.historyPos = 0;
 
         }
+
+        else if ( quiz.state.isAFK ) { textInput.value = ""; return; }
 
         else { quiz.checkAnswer( textInput.value ) }
 
@@ -90,17 +58,6 @@ textInput.addEventListener('keypress', (ev) => {
 });
 
 
-// enterButton.addEventListener("click", () => {
-//     if (textInput.value.length === 0) { return }
-//     if (quiz.song.length === 0) { return }
-
-//     quiz.checkAnswer( textInput.value );
-//     textInput.value = "";
-//     quiz.OTHERFUNC.scrollToBottom();
-
-//     quiz.state.historyPos = -1;
-    
-// })
 
 skipButton.addEventListener("click", quiz.SH.skipSong )
 
@@ -145,14 +102,14 @@ function capital( word ) {
 
 
 function initialiseSeriesList() {
-    for (let serie in quiz.SH.ALLSONGS.series ) {
+    for (let serie in ALLSONGS.series ) {
         gameModes.appendChild( createButton(serie) )
     }
 }
 
 function createButton( text ) {
     let btn = document.createElement("div");
-    btn.className = "button " + quiz.SH.ALLSONGS.series[text].color;
+    btn.className = "button " + ALLSONGS.series[text].color;
     btn.innerHTML = text.toUpperCase();
 
     btn.addEventListener("click", (ev) => {
@@ -164,13 +121,18 @@ function createButton( text ) {
         
         gameModeMessages.singleSeries = `
         <p>
-        <span class="biggerText boldText"> Welcome to ${capital(quiz.gameModeName)} Mode! </span> <br>
+        <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].color)}"> Welcome to ${capital(quiz.gameModeName)} Mode! </span> <br>
         Songs from the ${capital(quiz.gameModeName)} series! <br>
         Guess the name of the <span class="boldText">game</span> to win! <br>
         </p>
         `
         quiz.OTHERFUNC.generateText( gameModeMessages[ "singleSeries" ] );
         
+        quiz.resetCombo();
+        quiz.resetShield();
+        quiz.resetForNextRound();
+
+
         quiz.gameMode = () => { quiz.singleSeriesGame(text) };
         quiz.gameMode();
     })

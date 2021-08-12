@@ -1,4 +1,5 @@
 
+
 let potentialSubtitles = [
     "guess doo doos real fast",
     "the totally original concept",
@@ -22,8 +23,11 @@ let potentialSubtitles = [
 
 let subtitleEl = document.getElementById("p_subtitle"); 
 
+/**
+ * @description randomly generates a subtitle to display below the VGMB title
+ */
 function generateNewSubtitle() {
     subtitleEl.innerText = potentialSubtitles[Math.floor( Math.random() * potentialSubtitles.length )];
 }
 
-generateNewSubtitle()
+generateNewSubtitle();

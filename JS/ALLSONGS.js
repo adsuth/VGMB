@@ -1,8 +1,8 @@
 // should be the same format as the songs.json
 // I only have it like this to avoid promises
 
-const songsJSON = `
-{
+let ALLSONGS_JSON = 
+`{
     "series" : {
 
         "pokemon" : {
@@ -10,16 +10,16 @@ const songsJSON = `
             "seriesImage" : "pokemon.png",
             "color": "red",
             "game" : {
-                "red_blue" : {
+                "red and blue" : {
                     "gameName": "Red and Blue",
                     "image" : "redBlue.png",
                     "songs" : {
                         "wild battle" : {
-                            "linkID" : "NrS523dOHU4",
+                            "link" : "https://youtu.be/NrS523dOHU4",
                             "title" : "Battle! Wild Pokémon"                            
                         },
                         "champion battle" : {
-                            "linkID" : "nXgAj5KdAC0",
+                            "link" : "nXgAj5KdAC0",
                             "title" : "Battle! Champion"                            
                         }
                     },
@@ -56,16 +56,16 @@ const songsJSON = `
             "seriesImage" : "zelda.png",
             "color": "green",
             "game" : {
-                "windWaker" : {
+                "wind waker" : {
                     "gameName": "The Wind Waker",
                     "image" : "windWaker.png",
                     "songs" : {
                         "dragon_roost " : {
-                            "linkID" : "s7fqllhtdHI",
+                            "link" : "s7fqllhtdHI",
                             "title" : "Dragon Roost Island"                            
                         },
                         "mini_boss" : {
-                            "linkID" : "XF24XSYYiDw",
+                            "link" : "XF24XSYYiDw",
                             "title" : "Mini Boss Battle"                            
                         }
                     },
@@ -80,6 +80,8 @@ const songsJSON = `
                         "the legend of zelda windwaker",
                         "the legend of zelda the wind waker",
                         "the legend of zelda the windwaker",
+                        "the wind waker",
+                        "the windwaker",
                         "zelda ww",
                         "loz ww",
                         "lozww"
@@ -89,11 +91,7 @@ const songsJSON = `
                         "twilight princess",
                         "ocarina of time",
                         "phantom hourglass",
-                        "spirit tracks",
-                        "pokemon",
-                        "pokemon gold",
-                        "pokemon silver",
-                        "pokemon crystal"
+                        "spirit tracks"
                     ]
                 }
             }
@@ -101,5 +99,6 @@ const songsJSON = `
 
     }
 }
+`
 
-`;
+const ALLSONGS = JSON.parse( ALLSONGS_JSON );

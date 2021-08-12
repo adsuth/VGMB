@@ -1,9 +1,11 @@
 
-class VGMQuiz {
+class VGMB {
     constructor() {
         this.state = {
             isStarted: false,
             isMuted: false,
+            videoPlaying: false,
+            videoEnded: false,
             answered: false,
             history: [],
             historyPos: -1,
@@ -22,17 +24,31 @@ class VGMQuiz {
 
             isShielded: false,
             isShieldOnCooldown: false,
-            shieldCooldown: 0
+            shieldCooldown: 0,
+
+            isSkipping: false,
+            isEnding: false,
             
+            loadingInterval: "", 
+            isLoading: false,
+
+            isAFK: false,
 
         }
+
+        this.prevSong = "";
+
         this.input = "";
-        this.song = "";
         this.SH = new SongHandler();
         this.OTHERFUNC = new MiscFuncs(); 
+        this.LOADBAR = new LoadingBar( 18000 );
+        this.SG = new SongGetter();
 
-        this.gameMode = "";
+        this.song = "";
+
+        this.gameMode = null;
         this.gameModeName = "";
+
     }
 
     /**
@@ -40,23 +56,42 @@ class VGMQuiz {
      *  random series, games and songs
      */
     standardGame() {
-        
-        this.song = this.SH.getSong(  );
         this.resetForNextRound();
-        this.SH.playSong( this.song );
+        this.SG.getSong();
+        this.SH.changeSong();
     }
 
+    /**
+     * 
+     * @param series change for specific series
+     */
     singleSeriesGame(series) {
-        this.song = this.SH.getSong( series );
+        this.SG.getSong( series );
+
         this.resetForNextRound();
-        this.SH.playSong( this.song );
+        this.SH.changeSong();
+    }
+
+    startLoadingBar() {     
+        this.state.isLoading = true;
+        this.state.loadingInterval = setInterval( () => {
+            if ( this.state.isLoading ) {
+                quiz.LOADBAR.update();
+                quiz.LOADBAR.draw();
+            }
+        }, 14);
     }
     
     checkAnswer( input ) {
-        console.log( this.song.answers )
+
         // if correct
-        if ( !this.state.answered && this.song.answers.includes( input.trim().toLowerCase() ) ) {
+        if ( !this.state.answered && this.SG.game.answers.includes( input.trim().toLowerCase() ) ) {
+            // calc time (END)
+            this.state.timeEnd = new Date().getTime();
+
             this.state.answered = true;
+            this.state.isEnding = true;
+            quiz.state.isLoading = false;
 
             let text = "";
             text += this.OTHERFUNC.getText("correct");
@@ -64,8 +99,6 @@ class VGMQuiz {
             // increment combo
             this.updateCombo();
             
-            // calc time (END)
-            this.state.timeEnd = new Date().getTime();
             
             // get time message
             this.state.timeMessage = this.OTHERFUNC.getTimeMessage();
@@ -81,10 +114,11 @@ class VGMQuiz {
             // increment point counter 
             this.OTHERFUNC.updateRoundPoints( 1 );
             this.OTHERFUNC.updateCounter();
-            pointCounter.innerHTML = this.state.pointCounterValue;
             
             this.SH.fadeOutSong();
-            window.setTimeout( () => { this.gameMode() }, 2000 );
+            window.setTimeout( () => { 
+                this.gameMode();
+            }, 3000 );
         }
     
         else {
@@ -119,16 +153,28 @@ class VGMQuiz {
 
     resetForNextRound() {
 
+        // reset the video play state
+        this.state.videoEnded = false;
+
+        // clear loading bar
+        this.LOADBAR.clearCanvas();
+        this.LOADBAR.y = canvas.height;
+        clearInterval(this.state.loadingInterval);
+
         // reset history
         this.state.history = [];
         this.state.historyPos = -1;
         this.state.answered = false;
 
+        // reset intermediate states
+        this.state.isSkipping = false;
+        this.state.isEnding = false;
+
         // reset player input
         textInput.value = "";
 
         // reset shield
-        this.state.useShield = false; 
+        this.state.isShielded = false; 
         if ( this.state.isShieldOnCooldown ) {
             this.rechargeShield();
         }
@@ -138,13 +184,10 @@ class VGMQuiz {
 
         // reset answered state
         this.state.answered = false;
-
-        // calc time (START)   
-        this.state.timeStart = new Date().getTime();
     }
 
     isCloseAnswer( input ) {
-        if ( this.song.closeAnswers.includes( input.trim().toLowerCase() ) ) {
+        if ( this.SG.game.closeAnswers.includes( input.trim().toLowerCase() ) ) {
             return true;
         }
     }
@@ -155,13 +198,13 @@ class VGMQuiz {
         this.state.shieldCooldown -= 1;
 
         if ( this.state.shieldCooldown === 0 ) {
-            shieldButton.style.backgroundColor = "var(--colorDark)";
+            this.resetShield();
             this.OTHERFUNC.generateText(this.OTHERFUNC.getText( "shieldRecharge" ));
         }
     }
 
     useShield() {
-        if ( quiz.state.isShieldOnCooldown || !quiz.song) { return }
+        if ( quiz.state.isEnding || quiz.state.isShieldOnCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
         quiz.state.isShielded = true;
         
         shieldButton.style.backgroundColor = "rgb(70, 187, 255)";
@@ -169,6 +212,39 @@ class VGMQuiz {
 
         quiz.state.isShieldOnCooldown = true;
         quiz.state.shieldCooldown += 4;
+    }
+
+    resetShield() {
+        quiz.state.shieldCooldown = 0;
+        quiz.state.isShieldOnCooldown = false;
+        shieldButton.style.backgroundColor = "var(--colorDark)";
+    }
+
+    goAFK() {
+        // cant go AFK if track isnt playing
+        if (player.getPlayerState() === -1 || player.getPlayerState() === 5 || quiz.state.isSkipping || quiz.state.isEnding ) { return }
+        
+        quiz.isLoading = false;
+        window.clearInterval(quiz.state.loadingInterval);
+
+        if ( quiz.state.isAFK ) {
+            quiz.state.isAFK = false;
+            afkButton.style.backgroundColor = "var(--colorDark)";
+
+            quiz.gameMode();
+        }
+        else {
+            quiz.state.isAFK = true;
+            afkButton.style.backgroundColor = "var(--colorWrong)";
+            quiz.OTHERFUNC.updateRoundPoints(-1);
+            quiz.OTHERFUNC.updateCounter();
+            quiz.resetCombo();
+
+            // wont brick the player if button is spammed
+            if ( player.getPlayerState() === 1 ) {
+                player.pauseVideo();
+            }
+        }
     }
 
 }

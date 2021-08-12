@@ -6,7 +6,12 @@
  
     // outline:rgb(53, 255, 53) 2px solid;
 
-    
+    --colorRed: rgb(237, 107, 107);
+    --colorYellow: rgb(243, 240, 72);
+    --colorOrange: rgb(248, 175, 92);
+    --colorBlue: rgb(70, 187, 255);
+    --colorGreen: rgb(140, 240, 140);
+    --colorPurple: rgb(218, 94, 230);
 
 }
 
@@ -31,7 +36,7 @@ body {
 header {
     height: fit-content;
     height: 10vh;
-    width: 100%;
+    width: 100%;;
     
     justify-content: center;
     box-shadow: var(--colorDarker) 0 1vh 2vh;
@@ -68,6 +73,17 @@ iframe {
     display: none;
 }
 
+#canvas_loadingBar {
+    display: inline;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 5vw;
+    background-color: var(--colorDarker);
+    position: relative;
+    top: -8vh;
+    left: 4vw;
+}
+
 // game area, contains textArea, gameModeArea and answerArea
 #gameArea {
     width: 100%;
@@ -90,13 +106,18 @@ iframe {
     #textArea {
         width: 80%;
         overflow-y: scroll;
+
+        a {
+            all: none;
+            color:rgb(194, 232, 253);
+            text-decoration: none;
+        }
         
         p {
             font-size: 1.5vw;
             color: var(--colorLight);
             background-color: var(--colorMid);
-            padding: 1vh;
-            padding-bottom: 1vh;
+            padding: 0.5vh 1vw 1vh 1vw;
             border-radius: 2vw;
 
             margin-top: 2vh;
@@ -231,58 +252,56 @@ div {
     }
 }
 
-
-
 // colors for the game mode options
 
 .button.red:hover {
-    background-color: rgb(237, 107, 107) !important;
+    background-color: var(--colorRed) !important;
 }
 .button.yellow:hover {
-    background-color: var(--colorDark) !important;
+    background-color: var(--colorYellow) !important;
     color: var(--colorDark) !important;
 }
 .button.orange:hover {
-    background-color: rgb(248, 175, 92) !important;
+    background-color: var(--colorOrange)!important;
 }
 .button.blue:hover {
-    background-color: rgb(70, 187, 255) !important;
+    background-color: var(--colorBlue) !important;
 }
 .button.green:hover {
-    background-color: rgb(140, 240, 140) !important;
+    background-color: var(--colorGreen) !important;
     color: var(--colorDark) !important;
 }
 .button.purple:hover {
-    background-color: rgb(218, 94, 230) !important;
+    background-color: var(--colorPurple) !important;
 }
 
 
 .colorCorrect {
-    color: rgb(140, 240, 140);
+    color: var(--colorCorrect);
 }
 .wrongText {
-    color: rgb(237, 107, 107);
+    color: var(--colorWrong);
 }
 .warningText {
-    color: rgb(248, 175, 92);
+    color: var(--colorWarning);
 }
 .shieldColor {
-    color: rgb(70, 187, 255);
+    color: var(--colorBlue);
 }
 
 .supersonic {
-    color:rgb(53, 255, 53);
-    text-shadow: 0 0 1vh rgb(53, 255, 53) ;
+    color: var(--colorSuperSonic);
+    text-shadow: 0 0 1vh  var(--colorSuperSonic);
     font-weight: bold ;
 }
 .ultrasonic {
-    color: rgb(221, 53, 255);
-    text-shadow: 0 0 1vh rgb(221, 53, 255) ;
+    color:  var(--colorUltraSonic);
+    text-shadow: 0 0 1vh  var(--colorUltraSonic) ;
     font-weight: bold ;
 }
 
 .comboColor {
-    color: rgb(221, 53, 255);
+    color: var(--colorUltraSonic);
 }
 
 

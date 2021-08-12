@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <title>VGMB</title>
 
+    <script src="/JS/selectors.js" defer></script>
+
+    <!-- Classes -->
+    <script src="/JS/VGMB.js" defer></script>
+    <script src="/JS/YTPlayer.js" defer></script>
+    <script src="/JS/SongHandling.js" defer></script>
+    <script src="/JS/SongGetter.js" defer></script>
+    <script src="/JS/LoadingBar.js" defer></script>
+    <script src="/JS/OtherFuncs.js" defer></script>
     
-    <script src="onPageLoad.js" defer></script>
-    <script src="eventListeners.js" defer></script>
+    <!-- Song data -->
+    <script src="/JS/ALLSONGS.js" defer></script>
 
-    <script src="Mademonium.js" defer></script>
-    <script src="songHandling.js" defer></script>
-    <script src="OtherFuncs.js" defer></script>
-    <script src="createPlayer.js" defer></script>
+    <!-- Visual Flair Fluff -->
+    <script src="/JS/colors.js" defer></script>
+    <script src="/JS/generateSubtitle.js" defer></script>
     
-    <script src="songs.js" defer></script>
-    <script src="colors.js" defer></script>
-
-    <script src="main.js" defer></script>
-    <script src="subtitle gen.js" defer></script>
-
+    <!-- Main -->
+    <script src="/JS/main.js" defer></script>
+    
+    <!-- Embed Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,900;1,400&family=JetBrains+Mono:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -38,13 +44,11 @@
             --colorWrong: rgb(237, 107, 107);
             --colorWarning: rgb(248, 175, 92);
 
-            --colorShield: rgb(70, 187, 255);
             --colorCounter: gold ;
             --colorContrast: red;
 
             --colorSuper: rgb(53, 255, 53);
             --colorUltra: rgb(221, 53, 255);
-
 
         }
         
@@ -56,11 +60,12 @@
 
 </head> 
 <body>
-
+    
     <header>
         <h1> VGMB </h1>
         <p id="p_subtitle"></p>
         <p id="p_points" class="counter">0</p>
+        <canvas id="canvas_loadingBar"></canvas>
     </header>
 
     <div id="gameArea">
@@ -74,6 +79,7 @@
 
         <div id="answerArea">
             <p id="p_combo" class="counter">x0</p>
+            <div id="btn_afk" class="button">| |</div>
             <input type="text" id="inp_textInput" autofocus spellcheck="false">
             <div id="btn_shieldButton" class="button">SHIELD</div>
             <div id="btn_muteButton" class="button">MUTE</div>
