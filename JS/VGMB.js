@@ -34,6 +34,8 @@ class VGMB {
 
             isAFK: false,
 
+            currentSeries: ""
+
         }
 
         this.songHistory = [];

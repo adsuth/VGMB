@@ -2,7 +2,10 @@ const quiz = new VGMB();
 var player;
 
 document.getElementById("audio_sfx").addEventListener("focus", document.getElementById("audio_sfx").play())
-
+textArea.addEventListener("load", () => {
+    console.log("d")
+    quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("welcomeMessage") )
+})
 
 const gameModeMessages = {
     standard: `
@@ -114,43 +117,47 @@ function initialiseSeriesList() {
     }
 }
 
-function createButton( text ) {
-    let btn = document.createElement("div");
-    btn.className = "button " + ALLSONGS.series[text].seriesColor;
-    btn.innerHTML = text.toUpperCase();
+// temporarily blocked until new game modes are devised
 
-    btn.addEventListener("click", (ev) => {
-        if (quiz.gameModeName === text || quiz.state.isEnding || quiz.state.isAFK ) { return };
+// function createButton( text ) {
+//     let btn = document.createElement("div");
+//     btn.className = "button " + ALLSONGS.series[text].seriesColor;
+//     btn.innerHTML = text.toUpperCase();
 
-        document.getElementById("audio_sfx").src = "";
-        // changeColorPalette( quiz.SH.ALLSONGS.series[text].color );
+//     btn.addEventListener("click", (ev) => {
+//         if (quiz.gameModeName === text || quiz.state.isEnding || quiz.state.isAFK ) { return };
 
-        quiz.gameModeName = text;
+//         quiz.state.currentSeries = text;
+
+//         document.getElementById("audio_sfx").src = "";
+//         // changeColorPalette( quiz.SH.ALLSONGS.series[text].color );
+
+//         quiz.gameModeName = text;
         
-        gameModeMessages.singleSeries = `
-        <p>
-        <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].seriesColor)}); text-transform: capitalize;"> Welcome to ${quiz.gameModeName} Mode! </span> <br>
-        Songs from the <span style="text-transform: capitalize;">${quiz.gameModeName}</span> series! <br>
-        Guess the name of the <span class="boldText">game</span> to win! <br>
-        </p>
-        `
-        quiz.OTHERFUNC.generateText( gameModeMessages[ "singleSeries" ] );
+//         gameModeMessages.singleSeries = `
+//         <p>
+//         <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].seriesColor)}); text-transform: capitalize;"> Welcome to ${quiz.gameModeName} Mode! </span> <br>
+//         Songs from the <span style="text-transform: capitalize;">${quiz.gameModeName}</span> series! <br>
+//         Guess the name of the <span class="boldText">game</span> to win! <br>
+//         </p>
+//         `
+//         quiz.OTHERFUNC.generateText( gameModeMessages[ "singleSeries" ] );
         
-        quiz.resetCombo();
-        quiz.resetShield();
+//         quiz.resetCombo();
+//         quiz.resetShield();
 
-        quiz.gameMode = () => { quiz.singleSeriesGame(text) };
+//         quiz.gameMode = () => { quiz.singleSeriesGame(text) };
 
-        quiz.SH.fadeOutSong();
-            window.setTimeout( () => { 
-                quiz.gameMode();
-            }, 3000 );
+//         quiz.SH.fadeOutSong();
+//             window.setTimeout( () => { 
+//                 quiz.gameMode();
+//             }, 3000 );
 
-    })
+//     })
 
-    return btn;
-}
+//     return btn;
+// }
 
 
-initialiseSeriesList();
+// initialiseSeriesList();
 

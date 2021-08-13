@@ -5,7 +5,7 @@ class SoundEffectHandler {
             supersonic: "superSonic",
             ultrasonic: "ultraSonic"
         }
-        this.dir = "\\SFX\\";
+        this.dir = "SFX\\";
         this.format = ".mp3";
         this.audioEl = document.getElementById("audio_sfx");
     }

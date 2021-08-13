@@ -18,12 +18,16 @@ class SongGetter {
      * @param series the series from which the music will be chosen.
      * @param difficulty the difficulty from which the music will be chosen (0 = normal, 1 = hard )
      */
-     getSong( series = "" ) {      
+     getSong() {      
+        let series = quiz.state.currentSeries;
+
         // unless given, the series is randomly chosen
         if ( series === "" ) {
             series = this.getRandomProp( ALLSONGS.series );
         }
-
+        else {
+            
+        }
         
         let game = this.getRandomProp( ALLSONGS.series[ series ].game );
         let track = this.getRandomProp( ALLSONGS.series[ series ].game[ game ].songs );

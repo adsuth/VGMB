@@ -75,7 +75,15 @@ class MiscFuncs {
                 <span class="wrongText boldText"> Something went wrong! </span> <br>
                 <span class="wrongText"> Please refresh the page. </span>
                 </p>
-            `
+            `,
+            welcomeMessage: `
+            <p>
+            <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
+            for more info, click here! (just kidding I'm too lazy to add that rn)
+            Click one of the <span class="boldText"> Game Modes </span> to get started! <br>
+            </p>
+        `
+
 
         }
         if ( message === "comboMessages" ) {
@@ -106,11 +114,13 @@ class MiscFuncs {
     }
 
     generateText( text ) {
+        if ( typeof text === "undefined" ) { return }
+        
         // prevents too many messages
-        if ( text === "undefined" ) { return }
         if ( textArea.childNodes.length > 50 ) {
             textArea.removeChild( textArea.childNodes[0] );
         }
+
         let pEl = document.createElement("p");
         pEl.innerHTML += text;
         textArea.appendChild( pEl );
