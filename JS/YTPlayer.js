@@ -28,13 +28,14 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
+
 var timeUpTimeOut;
 
 // when the video starts playing
 function onStateChange( ev ) {
-
   if ( ev.data === YT.PlayerState.CUED ) { 
     if ( player.getVolume() < 100 ) { player.setVolume( 100 ) }
+
     player.playVideo();
     quiz.startLoadingBar();
     
@@ -53,7 +54,7 @@ function onStateChange( ev ) {
       this.prevSong = this.SG;
     }
 
-    timeUpTimeOut = setTimeout( timeUp, 15000 );
+    timeUpTimeOut = setTimeout( timeUp, 27000 );
   }
 }
 
@@ -102,6 +103,6 @@ function onPlayerReady(event) {
 }
 
 function displayError( ev ) {
-  if ( ev.data ===  101)
+  if ( ev.data ===  101 || ev.data === 5 || ev.data === 100)
   quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("playerError") );
 }

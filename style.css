@@ -159,7 +159,7 @@ iframe {
   border-radius: 5vw;
   padding: 2vh 1.5vw;
   color: var(--colorLight);
-  font-size: 3.5vh;
+  font-size: 1.5vw;
   margin: 2vh auto;
   -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
@@ -179,6 +179,7 @@ iframe {
           align-items: center;
   position: relative;
   z-index: 3;
+  font-size: 1.5vw;
   height: 10vh;
   gap: 1vw;
   -webkit-box-shadow: var(--colorDarker) 0 -1vh 2vh;

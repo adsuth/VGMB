@@ -1,7 +1,4 @@
-// should be the same format as the songs.json
-// I only have it like this to avoid promises
-
-let ALLSONGS_JSON =`{
+{
     "series": {
         "Ace Attorney": {
             "seriesName": "Ace Attorney",
@@ -5213,6 +5210,4 @@ let ALLSONGS_JSON =`{
             }
         }
     }
-}`
-
-const ALLSONGS = JSON.parse( ALLSONGS_JSON );
+}

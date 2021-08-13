@@ -1,6 +1,9 @@
 const quiz = new VGMB();
 var player;
 
+document.getElementById("audio_sfx").addEventListener("focus", document.getElementById("audio_sfx").play())
+
+
 const gameModeMessages = {
     standard: `
         <p>
@@ -17,6 +20,9 @@ afkButton.addEventListener("click", quiz.goAFK );
 startButton.addEventListener("click", () => {
     if (quiz.gameModeName === "standard" ) { return };
     // changeColorPalette( "default" )
+
+    document.getElementById("audio_sfx").src = "";
+
 
     quiz.OTHERFUNC.generateText( gameModeMessages[ "standard" ] );
     quiz.gameModeName = "standard";
@@ -110,19 +116,20 @@ function initialiseSeriesList() {
 
 function createButton( text ) {
     let btn = document.createElement("div");
-    btn.className = "button " + ALLSONGS.series[text].color;
+    btn.className = "button " + ALLSONGS.series[text].seriesColor;
     btn.innerHTML = text.toUpperCase();
 
     btn.addEventListener("click", (ev) => {
-        if (quiz.gameModeName === text ) { return };
+        if (quiz.gameModeName === text || quiz.state.isEnding || quiz.state.isAFK ) { return };
 
+        document.getElementById("audio_sfx").src = "";
         // changeColorPalette( quiz.SH.ALLSONGS.series[text].color );
 
         quiz.gameModeName = text;
         
         gameModeMessages.singleSeries = `
         <p>
-        <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].color)}); text-transform: capitalize;"> Welcome to ${quiz.gameModeName} Mode! </span> <br>
+        <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].seriesColor)}); text-transform: capitalize;"> Welcome to ${quiz.gameModeName} Mode! </span> <br>
         Songs from the <span style="text-transform: capitalize;">${quiz.gameModeName}</span> series! <br>
         Guess the name of the <span class="boldText">game</span> to win! <br>
         </p>
@@ -131,11 +138,14 @@ function createButton( text ) {
         
         quiz.resetCombo();
         quiz.resetShield();
-        quiz.resetForNextRound();
-
 
         quiz.gameMode = () => { quiz.singleSeriesGame(text) };
-        quiz.gameMode();
+
+        quiz.SH.fadeOutSong();
+            window.setTimeout( () => { 
+                quiz.gameMode();
+            }, 3000 );
+
     })
 
     return btn;
@@ -143,3 +153,4 @@ function createButton( text ) {
 
 
 initialiseSeriesList();
+

@@ -1,47 +1,127 @@
 
-# import csv
-
-# with open('demoCSV.csv') as csv_file:
-#     csv_reader = csv.reader(csv_file, delimiter=',')
-#     line_count = 0
-#     for row in csv_reader:
-#         if line_count == 0:
-#             print(f'Column names are {", ".join(row)}')
-#             line_count += 1
-#         else:
-#             print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
-#             line_count += 1
-#     print(f'Processed {line_count} lines.')
+class VGMBSongFormatter:
+    def __init__(this, file, ansFile):
+        this.VGMB_TSV_file = file
+        this.VGMB_TSV_Answers_file = ansFile
+        this.ALLSONGS_file = open( "ALLSONGS.json", "w" )
+        this.json = ""
+        this.allSongsArr = []
+        # [ ID, Title, Game, Series, Link ]
+        this.answers = []
+        # first value is always Game ( answers[gameIndex][gameName] )
 
 
-with open("VGMB - Sheet2.tsv") as tsvFILE:
+    def formatTSVAsArr(this):
+        for line in this.VGMB_TSV_file:
+            line = line.strip()
+            this.allSongsArr.append(line.split("\t"))
 
-    arr = []
+        for line in this.VGMB_TSV_Answers_file:
+            line = line.strip()
+            this.answers.append(line.split("\t"))
 
-    for line in tsvFILE:
-        line = line.strip()
-        arr.append(line.split("\t"))
+    # "songs": { "track": ___, "link":___ }
+    def formatSongs(this, index):
+        json = ""
+        
+        currentSeries = this.allSongsArr[index][3]
+        currentGame = this.allSongsArr[index][2]
 
+        isNewSeries = False
+        
+        for i in range( len(this.allSongsArr) ) :
 
+            if i > 0:
+                json += "},"
 
-def makeJSON( arr ):
-    json = ""
-    currentSeries = arr[0][2]
-    currentGame = arr[0][1]
+            # new series
+            # new game in the same series
+            if this.allSongsArr[i][2] != currentGame and this.allSongsArr[i][3] == currentSeries:
+                isNewSeries = False
+                json = json[:len(json) - 1]
+                currentGame = this.allSongsArr[i][2]
+                json += this.formatNewGame(i, isNewSeries)
+
+            if this.allSongsArr[i][3] != currentSeries:
+                isNewSeries = True
+                json = json[:len(json) - 1]
+                currentSeries = this.allSongsArr[i][3]
+                currentGame = this.allSongsArr[i][2]
+
+                json += this.formatNewSeries(i)
+                json += this.formatNewGame(i, isNewSeries)
+
+            json += "\"ID_" + this.allSongsArr[i][0] + "\" : { \"title\": \"" + this.allSongsArr[i][1] + "\", \"link\": \"" + this.allSongsArr[i][4]  +"\""
+        
+        return json
+
+    # "game": { "gameName": ___, "songs": formatSongs() }
+    def formatNewGame(this, index, isNewSeries):
+        json = ""
+        if index > 0 and not isNewSeries:
+            json += "} },"
+
+        json += "\"" + this.allSongsArr[index][2] + "\" : {" + "\"gameName\": \"" + this.allSongsArr[index][2] + "\", \"answers\": [" + this.getAnswers( this.allSongsArr[index][2] ) + "], \"closeAnswers\": [], \"songs\": {"
+
+        return json
     
-    for i in range(len(arr)) :
-        if arr[i][1] != currentGame and arr[i][2] == currentSeries:
-            currentGame = arr[i][1]
-            json += "\n"
+    # "series": { "seriesName": ___, "seriesColor": ____, "game": { } }
+    def formatNewSeries(this, index):
+        json = ""
+        if index > 0:
+            json = "} } } },"
 
-        if arr[i][2] != currentSeries:
-            currentSeries = arr[i][2]
-            json += "\n\n\n"
+        json += "\"" + this.allSongsArr[index][3] + "\" : { " + "\"seriesName\": \"" + this.allSongsArr[index][3] + "\", \"seriesColor\": \"red\", \"game\": {"
+        return json
 
-        json += "\"trackNo_" + arr[i][4] + "\": { \"title\": \"" + arr[i][0] + "\", \"link\": \"" + arr[i][3]  +"\" },"
+    def getAnswers(this, currentSong):
+    
+        indexOfGame = 0       
 
-    return json 
+        for i in range( len( this.answers ) ):
+            if currentSong == this.answers[i][0] :
+                    indexOfGame = i
+                
+           
+        # print( indexOfGame )
+
+        return this.filterAnswers(indexOfGame)
+            
+    def filterAnswers(this, index):
+        output = ""
+        for i in range( len(this.answers[index]) ):
+
+            if ( i == 1 ):
+                continue
+            output += "\"" + this.answers[index][i].lower() + "\""
+
+            if len( this.answers[index] ) == 2:
+                continue
+
+            if i != len(this.answers[index]) - 1:
+                output += ", "
+
+        return output
+
+    def formatEndOfArr(this):
+        return "} } } } } } }"
 
 
-newFile = open( "newSongs.txt", "w" )
-newFile.write( makeJSON( arr ) )
+    def beginFormatting(this):
+        json = "{ \"series\": { "
+        json += this.formatNewSeries(0)
+        json += this.formatNewGame(0, False)
+        json += this.formatSongs(0)
+        json += this.formatEndOfArr()
+
+        return json
+
+# # # # #
+# main
+# # # # #
+
+formatter = VGMBSongFormatter( open( "VGMB - Export Page.tsv", "r" ), open( "VGMB - Answers.tsv", "r" ) )
+formatter.formatTSVAsArr()
+
+formatter.ALLSONGS_file.write( formatter.beginFormatting() )
+

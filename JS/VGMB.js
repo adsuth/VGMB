@@ -36,13 +36,14 @@ class VGMB {
 
         }
 
-        this.prevSong = "";
+        this.songHistory = [];
 
         this.input = "";
         this.SH = new SongHandler();
         this.OTHERFUNC = new MiscFuncs(); 
-        this.LOADBAR = new LoadingBar( 18000 );
+        this.LOADBAR = new LoadingBar( 30, 100 );
         this.SG = new SongGetter();
+        this.SFX = new SoundEffectHandler();
 
         this.song = "";
 
@@ -79,7 +80,7 @@ class VGMB {
                 quiz.LOADBAR.update();
                 quiz.LOADBAR.draw();
             }
-        }, 14);
+        }, 10);
     }
     
     checkAnswer( input ) {
@@ -88,14 +89,16 @@ class VGMB {
         if ( !this.state.answered && this.SG.game.answers.includes( input.trim().toLowerCase() ) ) {
             // calc time (END)
             this.state.timeEnd = new Date().getTime();
-
+            
+            this.SFX.playSFX( this.OTHERFUNC.getTimeMessage() )
+            
             this.state.answered = true;
             this.state.isEnding = true;
             quiz.state.isLoading = false;
-
+            
             let text = "";
             text += this.OTHERFUNC.getText("correct");
-
+            
             // increment combo
             this.updateCombo();
             

@@ -27,8 +27,19 @@ class SongGetter {
         
         let game = this.getRandomProp( ALLSONGS.series[ series ].game );
         let track = this.getRandomProp( ALLSONGS.series[ series ].game[ game ].songs );
+
+        console.log( quiz.songHistory )
+
+        // prevents common dupes
+        if ( quiz.songHistory.includes( game ) ) {
+            this.getSong()
+        }
+        else {
+            if ( quiz.songHistory.length > 30 ) { quiz.songHistory.pop() }
+            quiz.songHistory.unshift( game )
+            this.setSongData(series, game, track);
+        }
         
-        this.setSongData(series, game, track);
     }
     
     setSongData( series, game, track ) {

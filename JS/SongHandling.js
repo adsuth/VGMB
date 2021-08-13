@@ -24,7 +24,7 @@ class SongHandler {
     }
 
     skipSong() {
-        if ( quiz.state.isEnding || quiz.state.isSkipping || quiz.state.isAFK ) { return }
+        if ( quiz.state.isEnding || quiz.state.isSkipping || quiz.state.isAFK || !quiz.gameMode) { return }
         if ( !quiz.state.isShielded ) {
             quiz.resetCombo();
             quiz.OTHERFUNC.updateRoundPoints( -1 );

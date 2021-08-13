@@ -24,7 +24,7 @@ class MiscFuncs {
                 </p>
             `,
             songInfo: `
-                Track: <a href="https://youtu.be/${quiz.SG.track.link}/" target="_blank" ><span class="boldText answerList"> \t${quiz.SG.track.title}</a> </span> <br>
+                Track: <a href="${quiz.SG.track.link}" target="_blank" ><span class="boldText answerList"> \t${quiz.SG.track.title}</a> </span> <br>
                 Game: <span class="boldText"> \t${quiz.SG.game.gameName} </span> <br>
                 Series: <span class="boldText"> \t${quiz.SG.series.seriesName} </span> <br><br>
                 Answers: <span class="boldText"> \t${quiz.OTHERFUNC.generateAnswers()}... </span>
@@ -88,18 +88,19 @@ class MiscFuncs {
     }
 
     generateAnswers() {
-        let answers = new Set();
-        let answersString = "";
+
+        let answers = "";
         let sentinel = 5;
         if ( quiz.SG.game.answers.length < sentinel ) {
             sentinel = quiz.SG.game.answers.length;
         }
 
-        while ( answers.length )
+        for ( let i = 0; i < sentinel; i++ ) {
+            answers += quiz.SG.game.answers[i];
+            if ( i < sentinel - 1 ) { answers += ", " }
+        }
 
-        answersString += quiz.SG.game.answers[ quiz.OTHERFUNC.randomInt( quiz.SG.game.answers.length ) ] 
-
-        return answersString;
+        return answers;
         
         
     }
@@ -124,8 +125,8 @@ class MiscFuncs {
     
         let time = quiz.state.timeToAnswer;
     
-        if ( time < 2 ) { this.updateRoundPoints( 2 ); return "ultrasonic"; }
-        else if ( time < 4 ) {  this.updateRoundPoints( 1 ); return "supersonic" }
+        if ( time < 3 ) { this.updateRoundPoints( 2 ); return "ultrasonic"; }
+        else if ( time < 5 ) {  this.updateRoundPoints( 1 ); return "supersonic" }
         else { return ""; }
     
     }
