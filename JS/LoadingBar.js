@@ -18,6 +18,7 @@ class LoadingBar {
         this.interval = interval;
         // how much the canvas is filled by each 10ms
         this.increment = canvas.height / this.songTime
+        this.palette = PALETTES[quiz.gameModeName];
     }
 
     /**
@@ -53,13 +54,13 @@ class LoadingBar {
         let second = 1 / this.songTime
 
         if ( this.y > canvas.height - (canvas.height * second * 3) ) {
-            ctx.fillStyle = "rgb(218, 116, 213)";
+            ctx.fillStyle = this.palette["softUltra"] || "rgb(218, 116, 213)";
         }
         else if (this.y > canvas.height - (canvas.height * second * 5)  ) {
-            ctx.fillStyle = "rgb(116, 218, 116)";
+            ctx.fillStyle = this.palette["softSuper"] || "rgb(116, 218, 116)";
         }
         else {
-            ctx.fillStyle = "#666";
+            ctx.fillStyle = this.palette["midLight"] || "#666";
         }
     }
 
@@ -67,7 +68,7 @@ class LoadingBar {
      * Clears the canvas for the next round
      */
     clearCanvas() {
-        ctx.fillStyle = "#222";
+        ctx.fillStyle = this.palette["darker"] || "#222";
         ctx.fillRect( 0, 0, canvas.width, canvas.height );
     }
 

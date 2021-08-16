@@ -13,8 +13,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#222));
-  background: linear-gradient(#333, #222);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--colorDark)), to(var(--colorDarker)));
+  background: linear-gradient(var(--colorDark), var(--colorDarker));
 }
 
 .counter {
@@ -36,7 +36,7 @@ header {
           box-shadow: var(--colorDarker) 0 1vh 2vh;
   position: relative;
   z-index: 3;
-  background: #333;
+  background: var(--colorDark);
 }
 
 header #p_points {
@@ -135,7 +135,7 @@ iframe {
           align-items: center;
   text-align: center;
   overflow-y: scroll;
-  background: #333;
+  background: var(--colorDark);
 }
 
 #gameArea #gameModeArea h3 {
@@ -345,7 +345,7 @@ div div::-webkit-scrollbar-thumb {
   height: 46px;
   -webkit-appearance: none;
   width: 8vw;
-  background-color: #333;
+  background-color: var(--colorDark);
 }
 
 #inp_volSlider::-webkit-slider-runnable-track {
@@ -360,7 +360,7 @@ div div::-webkit-scrollbar-thumb {
   height: 2vw;
   width: 2vw;
   border-radius: 1vw;
-  background: #666;
+  background: var(--colorMidLight);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -0.5vw;
@@ -372,7 +372,7 @@ div div::-webkit-scrollbar-thumb {
   height: 2vw;
   width: 2vw;
   border-radius: 1vw;
-  background: #FFFFFF;
+  background: var(--colorLight);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -0.5vw;

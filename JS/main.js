@@ -30,7 +30,7 @@ afkButton.addEventListener("click", quiz.goAFK );
 // start button will begin standard game (for now)
 startButton.addEventListener("click", () => {
     if (quiz.gameModeName === "standard" ) { return };
-    // changeColorPalette( "default" )
+    changeColorPalette( "default" )
     
     // remove title theme (if it exists);
     removeTitleThemeElement();
@@ -51,7 +51,7 @@ startButton.addEventListener("click", () => {
 
 relaxButton.addEventListener("click", () => {
     if (quiz.gameModeName === "relax" ) { return };
-    // changeColorPalette( "default" )
+    changeColorPalette( "relax" );
     
     // remove title theme (if it exists);
     removeTitleThemeElement();

@@ -24,7 +24,7 @@ $fontGrandstander: 'Grandstander';
 body {
     font-family: $fontMontserrat;
     // background: var(--colorDark);
-    background: linear-gradient( #333, #222 )
+    background: linear-gradient( var(--colorDark), var(--colorDarker) )
 }
 
 .counter {
@@ -42,7 +42,7 @@ header {
     box-shadow: var(--colorDarker) 0 1vh 2vh;
     position: relative;
     z-index: 3;
-    background: #333;
+    background: var(--colorDark);
     
     #p_points {
         color: gold;
@@ -140,7 +140,7 @@ iframe {
         text-align: center;
         overflow-y: scroll;
         // background: linear-gradient( 270deg, #222, #333 );
-        background: #333;
+        background: var(--colorDark);
 
 
         // GAME MODES title
@@ -336,7 +336,7 @@ div {
     height: 46px;
     -webkit-appearance: none;
     width: 8vw;
-    background-color: #333;
+    background-color: var(--colorDark);
 }
 #inp_volSlider::-webkit-slider-runnable-track {
     width: 8vw;
@@ -350,7 +350,7 @@ div {
     height: 2vw;
     width: 2vw;
     border-radius: 1vw;
-    background: #666;
+    background: var(--colorMidLight);
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -0.5vw;
@@ -360,7 +360,7 @@ div {
     height: 2vw;
     width: 2vw;
     border-radius: 1vw;
-    background: #FFFFFF;
+    background: var(--colorLight);
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -0.5vw;

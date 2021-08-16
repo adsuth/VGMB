@@ -8,22 +8,6 @@
 // }
 
 // const PALETTES = {
-//     default: {
-//         darker: "#222",
-//         dark: "#333",
-//         mid: "#444",
-//         midLight: "#666",
-
-//         correct: "rgb(140, 240, 140)",
-//         wrong: "rgb(237, 107, 107)",
-//         warning: "rgb(248, 175, 92)",
-//         shield: "",
-//         counter: "",
-//         contrast: "",
-        
-//         super: "",
-//         ultra: ""
-//     },
 //     red: {
 //         darker: "#622",
 //         dark: "#822",
@@ -60,37 +44,78 @@
 
 // }
 
+const PALETTES = {
+    default: {
+        darker: "#222",
+        dark: "#333",
+        mid: "#444",
+        midLight: "#666",
+
+        correct: "rgb(140, 240, 140)",
+        wrong: "rgb(237, 107, 107)",
+        warning: "rgb(248, 175, 92)",
+        shield: "",
+        counter: "",
+        contrast: "",
+        
+        super: "",
+        ultra: ""
+    },
+    relax: {
+        darker: "#422",
+        dark: "#633",
+        mid: "#944",
+        midLight: "#e66",
+
+        correct: "rgb(140, 240, 140)",
+        wrong: "rgb(237, 107, 107)",
+        warning: "rgb(248, 175, 92)",
+        shield: "",
+        counter: "",
+        contrast: "",
+        
+        super: "",
+        ultra: "",
+
+        softSuper: "",
+        softUltra: ""
+    },
+}
 
 
-// function changeColorPalette( color ) {
-//     const PALETTE_ROOT = document.getElementById("paletteRoot");
+function changeColorPalette( color ) {
+    const PALETTE_ROOT = document.getElementById("paletteRoot");
 
-//     let newPalette = `
-//         html {
-//             --colorDarker: ${PALETTES[color]["darker"] || "#222" };
-//             --colorDark: ${PALETTES[color]["dark"] || "#333"};
-//             --colorMid: ${PALETTES[color]["mid"] || "#444"};
-//             --colorMidLight: ${PALETTES["midLight"] || "#666"};
-//             --colorLight: #fff;
+    let newPalette = `
+        html {
+            --colorDarker: ${PALETTES[color]["darker"] || "#222" };
+            --colorDark: ${PALETTES[color]["dark"] || "#333"};
+            --colorMid: ${PALETTES[color]["mid"] || "#444"};
+            --colorMidLight: ${PALETTES[color]["midLight"] || "#666"};
+            --colorLight: #fff;
 
-//             --colorCorrect: ${PALETTES[color]["correct"] || "rgb(140, 240, 140)" };
-//             --colorWrong: ${PALETTES[color]["wrong"] || "rgb(237, 107, 107)" };
-//             --colorWarning: ${PALETTES[color]["warning"] || "rgb(248, 175, 92)"};
+            --colorCorrect: ${PALETTES[color]["correct"] || "rgb(140, 240, 140)" };
+            --colorWrong: ${PALETTES[color]["wrong"] || "rgb(237, 107, 107)" };
+            --colorWarning: ${PALETTES[color]["warning"] || "rgb(248, 175, 92)"};
 
-//             --colorShield: ${PALETTES[color]["shield"] || "rgb(70, 187, 255)" };
-//             --colorCounter: ${PALETTES[color]["counter"] || "gold" } ;
-//             --colorContrast: ${PALETTES[color]["contrast"] || "red"};
+            --colorShield: ${PALETTES[color]["shield"] || "rgb(70, 187, 255)" };
+            --colorCounter: ${PALETTES[color]["counter"] || "gold" } ;
+            --colorContrast: ${PALETTES[color]["contrast"] || "red"};
 
-//             --colorSuper: ${PALETTES[color]["super"] || "rgb(53, 255, 53)" };
-//         }
-//         ::selection {
-//             background-color: ${PALETTES[color][3]};
-//         }
-//     `;
+            --colorSuper: ${PALETTES[color]["super"] || "rgb(53, 255, 53)" };
+            --colorUltra: ${PALETTES[color]["ultra"] || "rgb(221, 53, 255)" };
+
+            --colorSuper: ${PALETTES[color]["softSuper"] || "rgb(140, 240, 140)" };
+            --colorUltra: ${PALETTES[color]["softUltra"] || "rgb(218, 94, 230)" };
+        }
+        ::selection {
+            background-color: ${PALETTES[color]["mid"]};
+        }
+    `;
     
-//     PALETTE_ROOT.innerHTML = newPalette;
+    PALETTE_ROOT.innerHTML = newPalette;
     
-// }
+}
 
 
 
