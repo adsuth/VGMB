@@ -12,8 +12,9 @@
 }
 
 body {
-  background: var(--colorDark);
   font-family: "Montserrat", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#222));
+  background: linear-gradient(#333, #222);
 }
 
 .counter {
@@ -35,6 +36,7 @@ header {
           box-shadow: var(--colorDarker) 0 1vh 2vh;
   position: relative;
   z-index: 3;
+  background: #333;
 }
 
 header #p_points {
@@ -133,6 +135,7 @@ iframe {
           align-items: center;
   text-align: center;
   overflow-y: scroll;
+  background: #333;
 }
 
 #gameArea #gameModeArea h3 {
@@ -188,7 +191,7 @@ iframe {
 
 #gameArea #answerArea #p_combo {
   color: var(--colorLight);
-  left: 11vw;
+  left: 8vw;
   bottom: 1.5vh;
   text-shadow: 0 0 1vh red;
   -webkit-transition: text-shadow 1000ms;
@@ -220,8 +223,8 @@ iframe {
   background-color: var(--colorDarker);
 }
 
-#gameArea #btn_enterButton {
-  width: 5vw;
+#gameArea .label {
+  color: var(--colorLight);
 }
 
 #gameArea .button {
@@ -336,5 +339,42 @@ div div::-webkit-scrollbar-thumb {
 .bigText {
   font-size: 2vw;
   margin-bottom: 2vh;
+}
+
+#inp_volSlider {
+  height: 46px;
+  -webkit-appearance: none;
+  width: 8vw;
+  background-color: #333;
+}
+
+#inp_volSlider::-webkit-slider-runnable-track {
+  width: 8vw;
+  height: 2vh;
+  cursor: pointer;
+  background: var(--colorDarker);
+  border-radius: 1vw;
+}
+
+#inp_volSlider::-webkit-slider-thumb {
+  height: 2vw;
+  width: 2vw;
+  border-radius: 1vw;
+  background: #666;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.5vw;
+  -webkit-transition: background 200ms;
+  transition: background 200ms;
+}
+
+#inp_volSlider::-webkit-slider-thumb:hover {
+  height: 2vw;
+  width: 2vw;
+  border-radius: 1vw;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.5vw;
 }
 /*# sourceMappingURL=style.css.map */

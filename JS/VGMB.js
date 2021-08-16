@@ -47,6 +47,8 @@ class VGMB {
         this.SG = new SongGetter();
         this.SFX = new SoundEffectHandler();
 
+        this.currentVolume = 40;
+
         this.song = "";
 
         this.gameMode = null;

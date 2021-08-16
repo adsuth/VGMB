@@ -33,8 +33,10 @@ var timeUpTimeOut;
 
 // when the video starts playing
 function onStateChange( ev ) {
+  
   if ( ev.data === YT.PlayerState.CUED ) { 
-    if ( player.getVolume() < 100 ) { player.setVolume( 100 ) }
+
+    if ( player.getVolume() < 100 ) { player.setVolume( quiz.currentVolume ) }
 
     player.playVideo();
     quiz.startLoadingBar();

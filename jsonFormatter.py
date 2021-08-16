@@ -8,7 +8,7 @@ class VGMBSongFormatter:
         this.allSongsArr = []
         # [ ID, Title, Game, Series, Link ]
         this.answers = []
-        # first value is always Game ( answers[gameIndex][gameName] )
+        # [ ID, Game, Series, Answer0, ... AnswerX ]
 
 
     def formatTSVAsArr(this):
@@ -19,6 +19,9 @@ class VGMBSongFormatter:
         for line in this.VGMB_TSV_Answers_file:
             line = line.strip()
             this.answers.append(line.split("\t"))
+        
+        print( "answers" )
+        print( this.answers )
 
     # "songs": { "track": ___, "link":___ }
     def formatSongs(this, index):
@@ -74,14 +77,15 @@ class VGMBSongFormatter:
         json += "\"" + this.allSongsArr[index][3] + "\" : { " + "\"seriesName\": \"" + this.allSongsArr[index][3] + "\", \"seriesColor\": \"red\", \"game\": {"
         return json
 
-    def getAnswers(this, currentSong):
-    
+    def getAnswers(this, currentSong):    
         indexOfGame = 0       
 
         for i in range( len( this.answers ) ):
-            if currentSong == this.answers[i][0] :
+            if currentSong == this.answers[i][1].strip() :
                     indexOfGame = i
-                
+        
+        print( indexOfGame ) 
+
            
         # print( indexOfGame )
 
@@ -91,11 +95,11 @@ class VGMBSongFormatter:
         output = ""
         for i in range( len(this.answers[index]) ):
 
-            if ( i == 1 ):
+            if ( i == 0 or i == 2  ):
                 continue
             output += "\"" + this.answers[index][i].lower() + "\""
 
-            if len( this.answers[index] ) == 2:
+            if len( this.answers[index] ) == 3:
                 continue
 
             if i != len(this.answers[index]) - 1:

@@ -1,20 +1,28 @@
-const quiz = new VGMB();
-var player;
+// instantiate variables
+const quiz = new VGMB();        // the main object; handles quiz
+var player;                     // the youtube player
 
-document.getElementById("audio_sfx").addEventListener("focus", document.getElementById("audio_sfx").play())
-textArea.addEventListener("load", () => {
-    console.log("d")
-    quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("welcomeMessage") )
-})
+const titleTheme = document.getElementById("audio_title");
 
-const gameModeMessages = {
-    standard: `
-        <p>
-        <span class="boldText biggerText"> Welcome to Standard Mode! </span> <br>
-        Random series, games and songs! <br>
-        Guess the name of the <span class="boldText">game</span> to win! <br>
-        </p>
-    `
+// plays the theme song composed by sutson (pretty based)
+window.addEventListener("focus", playTitleTheme );
+function playTitleTheme() {
+    // note: function is nonymous so the event can be deleted
+    titleTheme.volume = 0.3;
+    titleTheme.play();
+}
+
+
+// textArea.addEventListener("load", () => {
+//     console.log("d");
+//     quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("welcomeMessage") );
+// })
+
+function removeTitleThemeElement() {
+    window.removeEventListener("focus", playTitleTheme);
+    titleTheme.remove();
+    delete(titleTheme);
+    delete(playTitleTheme);
 }
 
 afkButton.addEventListener("click", quiz.goAFK );
@@ -23,11 +31,17 @@ afkButton.addEventListener("click", quiz.goAFK );
 startButton.addEventListener("click", () => {
     if (quiz.gameModeName === "standard" ) { return };
     // changeColorPalette( "default" )
+    
+    removeTitleThemeElement();
+    
 
-    document.getElementById("audio_sfx").src = "";
-
-
-    quiz.OTHERFUNC.generateText( gameModeMessages[ "standard" ] );
+    quiz.OTHERFUNC.generateText(  `
+    <p>
+    <span class="boldText biggerText"> Welcome to Standard Mode! </span> <br>
+    Random series, games and songs! <br>
+    Guess the name of the <span class="boldText">game</span> to win! <br>
+    </p>
+` );
     quiz.gameModeName = "standard";
 
     quiz.gameMode = quiz.standardGame;
@@ -37,11 +51,11 @@ startButton.addEventListener("click", () => {
 
 // getting answers
 textInput.addEventListener('keypress', (ev) => {
+    // dont bother processing for empty inputs
     if (textInput.value.length === 0) { return }
     
-
     if (ev.key === 'Enter') {
-
+    
     if (!quiz.SG || quiz.state.isEnding) {
             textInput.value = ""; return;
         }
@@ -66,10 +80,20 @@ textInput.addEventListener('keypress', (ev) => {
 
 });
 
+// volume slider
+volSlider.addEventListener("input", (ev) => {
+    if ( player.isMuted() ) {
+        quiz.SH.muteSong();
+    }
+    quiz.currentVolume = ev.target.value;
 
+    player.setVolume( quiz.currentVolume );
+})
 
+// skip button
 skipButton.addEventListener("click", quiz.SH.skipSong )
 
+// skip button
 shieldButton.addEventListener("click", quiz.useShield );
 
 document.addEventListener('keydown', (ev) => {
@@ -102,11 +126,15 @@ document.addEventListener('keydown', (ev) => {
 
 });
 
-muteButton.addEventListener("click", quiz.SH.muteSong);
+// mutes the song on click
+muteButton.addEventListener("click", (quiz.SH.muteSong));
 
 
+/**
+ * @param word the word to be capitalised
+ * @returns a capitalised string eg: "dog" => "Dog"
+ */
 function capital( word ) {
-    
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
 

@@ -22,9 +22,9 @@ $fontGrandstander: 'Grandstander';
 
 
 body {
-    background: var(--colorDark);
     font-family: $fontMontserrat;
-    
+    // background: var(--colorDark);
+    background: linear-gradient( #333, #222 )
 }
 
 .counter {
@@ -36,12 +36,13 @@ body {
 header {
     height: fit-content;
     height: 10vh;
-    width: 100%;;
+    width: 100%;
     
     justify-content: center;
     box-shadow: var(--colorDarker) 0 1vh 2vh;
     position: relative;
     z-index: 3;
+    background: #333;
     
     #p_points {
         color: gold;
@@ -117,6 +118,7 @@ iframe {
             font-size: 1.5vw;
             color: var(--colorLight);
             background-color: var(--colorMid);
+            // background-color: rgba( 51, 51, 51, 0.5 );
             padding: 0.5vh 1vw 1vh 1vw;
             border-radius: 2vw;
 
@@ -137,6 +139,9 @@ iframe {
         align-items: center;
         text-align: center;
         overflow-y: scroll;
+        // background: linear-gradient( 270deg, #222, #333 );
+        background: #333;
+
 
         // GAME MODES title
         h3 {
@@ -182,11 +187,16 @@ iframe {
 
         #p_combo {
             color: var(--colorLight);
-            left: 11vw;
+            left: 8vw;
             bottom: 1.5vh;
             text-shadow: 0 0 1vh red ;
             transition: text-shadow 1000ms;
         }
+
+    }
+
+    #inp_volSlider {
+        
 
     }
         
@@ -212,8 +222,8 @@ iframe {
     }
 
     // vestigial (to submit answer)
-    #btn_enterButton {
-        width: 5vw;
+    .label {
+        color: var(--colorLight);
     }
 
     .button {
@@ -319,4 +329,39 @@ div {
 .bigText {
     font-size: 2vw;
     margin-bottom: 2vh;
+}
+
+
+#inp_volSlider {
+    height: 46px;
+    -webkit-appearance: none;
+    width: 8vw;
+    background-color: #333;
+}
+#inp_volSlider::-webkit-slider-runnable-track {
+    width: 8vw;
+    height: 2vh;
+    cursor: pointer;
+    background: var(--colorDarker);
+    border-radius: 1vw;
+}
+
+#inp_volSlider::-webkit-slider-thumb {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 1vw;
+    background: #666;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.5vw;
+    transition: background 200ms;
+}
+#inp_volSlider::-webkit-slider-thumb:hover {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 1vw;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.5vw;
 }

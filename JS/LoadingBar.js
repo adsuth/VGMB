@@ -4,7 +4,8 @@ const ctx = canvas.getContext("2d");
 
     /**
      * LoadingBar - note its tied to the canvas above
-     * @param interval in ms, the length of the song
+     * @param songTime in SECONDS, the length of the song
+     * @param interval in MILLISECONDS, the rate at which the bar is updated
      */
 class LoadingBar {
     
@@ -18,21 +19,38 @@ class LoadingBar {
         // how much the canvas is filled by each 10ms
         this.increment = canvas.height / this.songTime * (1 / this.interval)
     }
+
+    /**
+     * Updates the y value of the rectangle that fills
+     * the loading bar canvas.
+     * 
+     */
     
     update() {
         this.y -= this.increment;
     }
 
+    /**
+     * draws a filled rectangle on the canvas.
+     * Height is determined by instance's y value.
+     */
     draw() {
         this.fillColorCheck();
         ctx.fillRect( this.x, this.y, canvas.width, canvas.height );
     }
 
-    // check to see if its in supersonic color range assuming US and SS are 2s and 4s
+    /**
+     * Checks to see what color to fill the canvas with.
+     * Be it SUPERSONIC, ULTRASONIC or neither
+     */
     fillColorCheck() {
+        /*
+            Ultrasonic === 3 seconds
+            Supersonic === 5 seconds
+        */
 
-        // -3 due to end of round interval. It should be 27 secs not 30 secs
-        let second = 1 / (this.songTime - 3)
+        // calculate a fraction of the song
+        let second = 1 / this.songTime
 
         if ( this.y > canvas.height - (canvas.height * second * 3) ) {
             ctx.fillStyle = "rgb(218, 116, 213)";
@@ -45,10 +63,12 @@ class LoadingBar {
         }
     }
 
-
+    /**
+     * Clears the canvas for the next round
+     */
     clearCanvas() {
         ctx.fillStyle = "#222";
-        ctx.fillRect( 0, 0, canvas.width, canvas.height )
+        ctx.fillRect( 0, 0, canvas.width, canvas.height );
     }
 
 }
