@@ -160,15 +160,7 @@ class VGMB {
         // clearTimeout(timeUpTimeOut);
 
         // reset the video play state
-        this.state.videoEnded = false;
-
-        if ( this.LOADBAR ) { 
-            clearInterval(this.state.loadingInterval);
-            this.LOADBAR.clearCanvas();
-        }
-
-        // clear loading bar
-        
+        this.state.videoEnded = false;        
         
         // reset history
         this.state.history = [];

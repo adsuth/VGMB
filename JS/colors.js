@@ -45,7 +45,7 @@
 // }
 
 const PALETTES = {
-    default: {
+    standard: {
         darker: "#222",
         dark: "#333",
         mid: "#444",

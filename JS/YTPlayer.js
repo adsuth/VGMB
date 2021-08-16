@@ -44,6 +44,7 @@ function onStateChange( ev ) {
   if ( ev.data === YT.PlayerState.PLAYING ) {
 
     quiz.LOADBAR = new LoadingBar( player.getDuration(), 10 );
+    quiz.LOADBAR.clearCanvas();
     quiz.startLoadingBar();
     
   }
