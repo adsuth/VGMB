@@ -7,7 +7,6 @@ const gameModes = document.getElementById("gameModeArea");
 const startButton = document.getElementById("btn_startButton");
 
 const afkButton = document.getElementById("btn_afk");
-const muteButton = document.getElementById("btn_muteButton");
 const shieldButton = document.getElementById("btn_shieldButton");
 const skipButton = document.getElementById("btn_skipButton");
 

@@ -78,9 +78,9 @@ class MiscFuncs {
             `,
             welcomeMessage: `
             <p>
-            <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
-            for more info, click here! (just kidding I'm too lazy to add that rn)
-            Click one of the <span class="boldText"> Game Modes </span> to get started! <br>
+                <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
+                for more info, click here! (just kidding I'm too lazy to add that rn)
+                Click one of the <span class="boldText"> Game Modes </span> to get started! <br>
             </p>
         `
 
@@ -104,6 +104,7 @@ class MiscFuncs {
         }
 
         for ( let i = 0; i < sentinel; i++ ) {
+            if ( quiz.SG.game.answers[i].length === 0 ) { i--; continue; }
             answers += quiz.SG.game.answers[i];
             if ( i < sentinel - 1 ) { answers += ", " }
         }
@@ -118,7 +119,7 @@ class MiscFuncs {
     }
 
     generateText( text ) {
-        if ( typeof text === "undefined" ) { return }
+        if ( text === "undefined" ) { return }
         
         // prevents too many messages
         if ( textArea.childNodes.length > 50 ) {

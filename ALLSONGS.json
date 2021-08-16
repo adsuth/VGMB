@@ -2110,15 +2110,22 @@
             "seriesName": "Doom",
             "seriesColor": "red",
             "game": {
-                "DOOM": {
-                    "gameName": "DOOM",
-                    "answers": ["phoenix wright: dual destinies", "dual destinies", "phoenix wright dual destinies", "ace attorney dual destinies"],
+                "DOOM (2016)": {
+                    "gameName": "DOOM (2016)",
+                    "answers": ["doom (2016)", "doom 2016"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1084": {
                             "title": "Rip & Tear",
                             "link": "https://youtu.be/vyA1z2A-lhU"
-                        },
+                        }
+                    }
+                },
+                "DOOM": {
+                    "gameName": "DOOM",
+                    "answers": ["doom"],
+                    "closeAnswers": [],
+                    "songs": {
                         "ID_1382": {
                             "title": "At Doom's Gate",
                             "link": "https://youtu.be/BSsfjHCFosw"

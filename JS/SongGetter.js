@@ -3,10 +3,10 @@
  * SongGetter class randomly selects a song from ALLSONGS js object
  */
 class SongGetter {
-    constructor( series = "", difficulty = 0 ) {
+    constructor( difficulty = 0 ) {
         // contains: seriesName
         this.series = "";
-        // contains: answers, closeAnswers, gameName
+        // contains: answers, gameName
         this.game = "";
         // contains: linkID, title
         this.track = "";
@@ -15,32 +15,22 @@ class SongGetter {
 
     /**
      * Gets and returns song
-     * @param series the series from which the music will be chosen.
      * @param difficulty the difficulty from which the music will be chosen (0 = normal, 1 = hard )
      */
-     getSong() {      
-        let series = quiz.state.currentSeries;
-
-        // unless given, the series is randomly chosen
-        if ( series === "" ) {
-            series = this.getRandomProp( ALLSONGS.series );
-        }
-        else {
-            
-        }
-        
+     getSong() {              
+        let series = this.getRandomProp( ALLSONGS.series );    
         let game = this.getRandomProp( ALLSONGS.series[ series ].game );
         let track = this.getRandomProp( ALLSONGS.series[ series ].game[ game ].songs );
 
-        console.log( quiz.songHistory )
+        this.setSongData(series, game, track);
 
         // prevents common dupes
-        if ( quiz.songHistory.includes( game ) ) {
+        if ( quiz.songHistory.includes( track ) ) {
             this.getSong()
         }
         else {
             if ( quiz.songHistory.length > 30 ) { quiz.songHistory.pop() }
-            quiz.songHistory.unshift( game )
+            quiz.songHistory.unshift( track )
             this.setSongData(series, game, track);
         }
         
@@ -62,7 +52,7 @@ class SongGetter {
             items.push( item );
         }
     
-        return items[ Math.floor( Math.random() * items.length ) ];
+        return items[ quiz.OTHERFUNC.randomInt( items.length ) ];
     
     }    
 }

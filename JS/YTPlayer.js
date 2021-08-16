@@ -23,7 +23,6 @@ function onYouTubeIframeAPIReady() {
     events: {
       'onReady' : onPlayerReady,
       'onStateChange' : onStateChange,
-      'onError' : displayError
     }
   });
 }
@@ -33,28 +32,35 @@ var timeUpTimeOut;
 
 // when the video starts playing
 function onStateChange( ev ) {
-  
-  if ( ev.data === YT.PlayerState.CUED ) { 
+  // temp fix for songs that are too short (shorter than 30 seconds)
+  if ( ev.data === YT.PlayerState.PLAYING && player.getDuration() < 40 ) { quiz.gameMode() }
 
+  if ( ev.data === YT.PlayerState.CUED ) { 
+    console.log( quiz );
+    
+    quiz.state.timeStart = new Date().getTime();
+    
+    
+    player.playVideo();
     player.setVolume( quiz.currentVolume );
 
-    player.playVideo();
+
     quiz.startLoadingBar();
     
-
+    
     // window.setTimeout( () => {
     // }, 3000)
   }
 
   if ( ev.data === YT.PlayerState.PLAYING ) {
-    quiz.state.timeStart = new Date().getTime();
-        
+   
     if ( this.SG ) {
       this.prevSong = this.SG;
     }
 
     timeUpTimeOut = setTimeout( timeUp, 27000 );
   }
+
 }
 
 
@@ -64,33 +70,31 @@ function timeUp() {
   
   // recur gamemode
   if ( !quiz.state.isEnding ) {
-    quiz.SH.fadeOutSong();
     quiz.state.isEnding = true;
 
-    window.setTimeout( () => {
-      
-      // to prevent being penalised for last second answers
-      if ( !quiz.state.answered && !quiz.state.isAFK ) {
-        // reset combo and decrease points if shield isnt active
-        if ( !quiz.state.isShielded ) {
-          quiz.OTHERFUNC.updateRoundPoints( -1 );
-          quiz.resetCombo();
-        }
-        quiz.OTHERFUNC.updateCounter();
-
-        quiz.OTHERFUNC.generateText( 
-          quiz.OTHERFUNC.getText("timeOut") +
-          quiz.OTHERFUNC.getText("songInfo")
-        );
-
+    // to prevent being penalised for last second answers
+    if ( !quiz.state.answered && !quiz.state.isAFK ) {
+      // reset combo and decrease points if shield isnt active
+      if ( !quiz.abilityState.shield.isShielded ) {
+        quiz.OTHERFUNC.updateRoundPoints( -1 );
+        quiz.resetCombo();
       }
+      quiz.OTHERFUNC.updateCounter();
+
+      quiz.OTHERFUNC.generateText( 
+        quiz.OTHERFUNC.getText("timeOut") +
+        quiz.OTHERFUNC.getText("songInfo")
+      );
+
       
-      quiz.gameMode();
-    }, 3000 ); 
+    }
+    
+    clearTimeout(timeUpTimeOut);
+    quiz.gameMode();
     
   }
 
-  clearTimeout(timeUpTimeOut);
+  
 
 }
 
@@ -99,9 +103,4 @@ function onPlayerReady(event) {
     event.target.playVideo();
     // calc time (START)   
     quiz.state.timeStart = new Date().getTime();
-}
-
-function displayError( ev ) {
-  if ( ev.data ===  101 || ev.data === 5 || ev.data === 100)
-  quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("playerError") );
 }

@@ -23,6 +23,7 @@ class SoundEffectHandler {
     }
 
     playSFX( sound ) {
+        if ( sound.length === 0 ) { return }
         let effect = this.getSound( sound );
         this.setSound( effect );
         this.playSound();

@@ -4,6 +4,8 @@ var player;                     // the youtube player
 
 const titleTheme = document.getElementById("audio_title");
 
+// quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("welcomeMessage") );
+
 // plays the theme song composed by sutson (pretty based)
 window.addEventListener("focus", playTitleTheme );
 function playTitleTheme() {
@@ -12,12 +14,6 @@ function playTitleTheme() {
     titleTheme.play();
 }
 
-
-// textArea.addEventListener("load", () => {
-//     console.log("d");
-//     quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("welcomeMessage") );
-// })
-
 function removeTitleThemeElement() {
     window.removeEventListener("focus", playTitleTheme);
     titleTheme.remove();
@@ -25,15 +21,19 @@ function removeTitleThemeElement() {
     delete(playTitleTheme);
 }
 
+
+// the afk button starts afk state (replaces mute button)
 afkButton.addEventListener("click", quiz.goAFK );
+
+
 
 // start button will begin standard game (for now)
 startButton.addEventListener("click", () => {
     if (quiz.gameModeName === "standard" ) { return };
     // changeColorPalette( "default" )
     
+    // remove title theme (if it exists);
     removeTitleThemeElement();
-    
 
     quiz.OTHERFUNC.generateText(  `
     <p>
@@ -56,7 +56,7 @@ textInput.addEventListener('keypress', (ev) => {
     
     if (ev.key === 'Enter') {
     
-    if (!quiz.SG || quiz.state.isEnding) {
+    if (quiz.state.isEnding) {
             textInput.value = ""; return;
         }
         
@@ -68,6 +68,7 @@ textInput.addEventListener('keypress', (ev) => {
 
         }
 
+        // afk check here so players can use commands
         else if ( quiz.state.isAFK ) { textInput.value = ""; return; }
 
         else { quiz.checkAnswer( textInput.value ) }
@@ -125,10 +126,6 @@ document.addEventListener('keydown', (ev) => {
     }
 
 });
-
-// mutes the song on click
-muteButton.addEventListener("click", (quiz.SH.muteSong));
-
 
 /**
  * @param word the word to be capitalised

@@ -22,10 +22,6 @@ class VGMB {
             comboMultiplier: 1,
             currentCombo: 0,
 
-            isShielded: false,
-            isShieldOnCooldown: false,
-            shieldCooldown: 0,
-
             isSkipping: false,
             isEnding: false,
             
@@ -38,12 +34,20 @@ class VGMB {
 
         }
 
+        this.abilityState = {
+            shield: {
+                isShielded: false,
+                isShieldOnCooldown: false,
+                shieldCooldown: 0,
+            }
+        }
+
         this.songHistory = [];
 
         this.input = "";
         this.SH = new SongHandler();
         this.OTHERFUNC = new MiscFuncs(); 
-        this.LOADBAR = new LoadingBar( 30, 100 );
+        this.LOADBAR = new LoadingBar( 27, 100 );
         this.SG = new SongGetter();
         this.SFX = new SoundEffectHandler();
 
@@ -91,6 +95,7 @@ class VGMB {
 
         // if correct
         if ( !this.state.answered && this.SG.game.answers.includes( input.trim().toLowerCase() ) ) {
+
             // calc time (END)
             this.state.timeEnd = new Date().getTime();
             
@@ -100,12 +105,15 @@ class VGMB {
             this.state.isEnding = true;
             quiz.state.isLoading = false;
             
-            let text = "";
-            text += this.OTHERFUNC.getText("correct");
+            let text = this.OTHERFUNC.getText("correct");
             
             // increment combo
             this.updateCombo();
             
+            // reset shield only if being used
+            if ( this.abilityState.shield.isShielded ) {
+                this.resetShield();
+            }
             
             // get time message
             this.state.timeMessage = this.OTHERFUNC.getTimeMessage();
@@ -121,21 +129,15 @@ class VGMB {
             // increment point counter 
             this.OTHERFUNC.updateRoundPoints( 1 );
             this.OTHERFUNC.updateCounter();
+
+            this.gameMode();
             
-            this.SH.fadeOutSong();
-            window.setTimeout( () => { 
-                this.gameMode();
-            }, 3000 );
         }
     
         else {
-            if ( this.isCloseAnswer( input ) ) {
-                this.OTHERFUNC.generateText( this.OTHERFUNC.getText("closeAnswer") );
-            }
-            else { 
-                this.OTHERFUNC.generateText( this.OTHERFUNC.getText("wrong") );
-            }
-    
+            
+            this.OTHERFUNC.generateText( this.OTHERFUNC.getText("wrong") );
+            
             this.state.history.unshift( textInput.value )
             this.state.historyPos = 0;
         }
@@ -159,19 +161,19 @@ class VGMB {
     }
 
     resetForNextRound() {
+        clearTimeout(timeUpTimeOut);
 
         // reset the video play state
         this.state.videoEnded = false;
 
         // clear loading bar
-        this.LOADBAR.clearCanvas();
-        this.LOADBAR.y = canvas.height;
         clearInterval(this.state.loadingInterval);
-
+        this.LOADBAR.y = canvas.height;
+        this.LOADBAR.clearCanvas();
+        
         // reset history
         this.state.history = [];
         this.state.historyPos = -1;
-        this.state.answered = false;
 
         // reset intermediate states
         this.state.isSkipping = false;
@@ -181,8 +183,8 @@ class VGMB {
         textInput.value = "";
 
         // reset shield
-        this.state.isShielded = false; 
-        if ( this.state.isShieldOnCooldown ) {
+        this.abilityState.shield.isShielded = false; 
+        if ( this.abilityState.shield.isShieldOnCooldown && !this.state.isAFK ) {
             this.rechargeShield();
         }
 
@@ -193,38 +195,38 @@ class VGMB {
         this.state.answered = false;
     }
 
-    isCloseAnswer( input ) {
-        if ( this.SG.game.closeAnswers.includes( input.trim().toLowerCase() ) ) {
-            return true;
-        }
-    }
-
     rechargeShield() {
-        if ( !this.state.isShieldOnCooldown ) { return }
+        if ( !this.abilityState.shield.isShieldOnCooldown || this.state.answered ) { return }
         shieldButton.style.backgroundColor = "var(--colorDarker)";
-        this.state.shieldCooldown -= 1;
+        this.abilityState.shield.shieldCooldown -= 1;
 
-        if ( this.state.shieldCooldown === 0 ) {
+        if ( this.abilityState.shield.shieldCooldown === 0 ) {
             this.resetShield();
             this.OTHERFUNC.generateText(this.OTHERFUNC.getText( "shieldRecharge" ));
         }
     }
 
+    /**
+     * A method that will enter "shielded" state.
+     * Shield allows player to bypass a song without losing points/combo.
+     * shield has a cool down of  
+     */
     useShield() {
-        if ( quiz.state.isEnding || quiz.state.isShieldOnCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
-        quiz.state.isShielded = true;
+        // if the round is ending, shields on CD, song isnt playing or we're afk, prevent using shield
+        if ( quiz.state.isEnding || quiz.abilityState.shield.isShieldOnCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
+        quiz.abilityState.shield.isShielded = true;
         
-        shieldButton.style.backgroundColor = "rgb(70, 187, 255)";
+        shieldButton.style.backgroundColor = "var(--colorBlue)";
         quiz.OTHERFUNC.generateText(quiz.OTHERFUNC.getText( "shieldUsed" ));
 
-        quiz.state.isShieldOnCooldown = true;
-        quiz.state.shieldCooldown += 4;
+        quiz.abilityState.shield.isShieldOnCooldown = true;
+        quiz.abilityState.shield.shieldCooldown += 4;
     }
 
     resetShield() {
-        quiz.state.shieldCooldown = 0;
-        quiz.state.isShieldOnCooldown = false;
-        shieldButton.style.backgroundColor = "unset";
+        quiz.abilityState.shield.shieldCooldown = 0;
+        quiz.abilityState.shield.isShieldOnCooldown = false;
+        shieldButton.style.backgroundColor = null;
     }
 
     /**
@@ -233,17 +235,11 @@ class VGMB {
      *
      */
     goAFK() {
+        // cant go afk if game hasnt started
         if ( !quiz.gameModeName ) { return }
-        if ( quiz.state.isAFK ) {
-            afkButton.style.backgroundColor = "unset";
-            muteButton.addEventListener("click", quiz.SH.muteSong);
-            
-        }
-        else {
-            afkButton.style.backgroundColor = "var(--colorWrong)";
-            muteButton.removeEventListener("click", quiz.SH.muteSong);
 
-        }
+        if ( quiz.state.isAFK ) { afkButton.style.backgroundColor = null }
+        else { afkButton.style.backgroundColor = "rgb(237, 107, 107)" }
         
         quiz.SH.muteSong();
         volSlider.disabled = !volSlider.disabled;

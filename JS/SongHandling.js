@@ -25,22 +25,19 @@ class SongHandler {
 
     skipSong() {
         if ( quiz.state.isEnding || quiz.state.isSkipping || quiz.state.isAFK || !quiz.gameMode) { return }
-        if ( !quiz.state.isShielded ) {
+        
+        quiz.state.isSkipping = true;
+        if ( !quiz.abilityState.shield.isShielded ) {
             quiz.resetCombo();
             quiz.OTHERFUNC.updateRoundPoints( -1 );
         }
-        quiz.state.isSkipping = true;
-
-        textInput.value = "";
         
         quiz.OTHERFUNC.updateCounter();
 
         quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("skip") );
         quiz.OTHERFUNC.generateText( "<p>" + quiz.OTHERFUNC.getText("songInfo") );
-    
-        quiz.SH.fadeOutSong();
-        
-        window.setTimeout( () => { quiz.gameMode() }, 2000 );
+
+        quiz.gameMode()
     }
 
     fadeOutSong() {
@@ -51,21 +48,15 @@ class SongHandler {
                 window.clearInterval(fadeInterval);
             }
         
-        }, 10)
+        }, 100)
     }
 
     /**
      * mutes/ unmutes the current song
      */
     muteSong() {
-        if ( player.isMuted() ) {
-            player.unMute();
-            muteButton.style.backgroundColor = "var(--colorDark)";
-        }
-        else { 
-            player.mute();
-            muteButton.style.backgroundColor = "#ed6b6b";
-        }
+        if ( player.isMuted() ) { player.unMute() }
+        else { player.mute() }
     }
     
 
