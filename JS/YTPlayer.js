@@ -32,41 +32,29 @@ var timeUpTimeOut;
 
 // when the video starts playing
 function onStateChange( ev ) {
-  // temp fix for songs that are too short (shorter than 30 seconds)
-  if ( ev.data === YT.PlayerState.PLAYING && player.getDuration() < 40 ) { quiz.gameMode() }
 
   if ( ev.data === YT.PlayerState.CUED ) { 
     
     quiz.state.timeStart = new Date().getTime();
     
-    
     player.playVideo();
-    player.setVolume( quiz.currentVolume );
 
-    
-    // window.setTimeout( () => {
-    // }, 3000)
   }
 
   if ( ev.data === YT.PlayerState.PLAYING ) {
-    console.log( player.getDuration() )
 
     quiz.LOADBAR = new LoadingBar( player.getDuration(), 10 );
     quiz.startLoadingBar();
     
-   
-    if ( this.SG ) {
-      this.prevSong = this.SG;
-    }
-
-    // timeUpTimeOut = setTimeout( timeUp, 27000 );
   }
 
   if ( ev.data === YT.PlayerState.ENDED ) { 
     // dont process anything for relax mode
-    if ( quiz.gameModeName === "relax" ){ quiz.gameMode() }
+    if ( quiz.gameModeName === "relax" ){ quiz.gameMode(); return }
     
-    timeUp() 
+    // for other game modes
+    timeUp(); 
+    return
   }
 
 }
