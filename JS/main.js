@@ -49,10 +49,33 @@ startButton.addEventListener("click", () => {
 
 })
 
+relaxButton.addEventListener("click", () => {
+    if (quiz.gameModeName === "relax" ) { return };
+    // changeColorPalette( "default" )
+    
+    // remove title theme (if it exists);
+    removeTitleThemeElement();
+
+    quiz.OTHERFUNC.generateText(  `
+    <p>
+    <span class="boldText biggerText"> Welcome to Relaxed Mode! </span> <br>
+    Sit back and relax to some neat beats from a variety of game series <br>
+    </p>
+` );
+    quiz.gameModeName = "relax";
+
+    quiz.gameMode = quiz.relaxMode;
+    quiz.gameMode();
+
+})
+
 // getting answers
 textInput.addEventListener('keypress', (ev) => {
     // dont bother processing for empty inputs
     if (textInput.value.length === 0) { return }
+
+    // dont process inputs for relax mode
+    if ( quiz.gameModeName === "relax" ){ return }
     
     if (ev.key === 'Enter') {
     

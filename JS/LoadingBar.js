@@ -17,7 +17,7 @@ class LoadingBar {
         this.songTime = songTime;
         this.interval = interval;
         // how much the canvas is filled by each 10ms
-        this.increment = canvas.height / this.songTime * (1 / this.interval)
+        this.increment = canvas.height / this.songTime
     }
 
     /**

@@ -1,10 +1,11 @@
 
 // selectors
 const textInput = document.getElementById("inp_textInput");
-const enterButton = document.getElementById("btn_enterButton");
 
+// game mode buttons
 const gameModes = document.getElementById("gameModeArea");
 const startButton = document.getElementById("btn_startButton");
+const relaxButton = document.getElementById("btn_relaxButton");
 
 const afkButton = document.getElementById("btn_afk");
 const shieldButton = document.getElementById("btn_shieldButton");

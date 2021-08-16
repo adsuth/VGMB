@@ -47,7 +47,7 @@ class VGMB {
         this.input = "";
         this.SH = new SongHandler();
         this.OTHERFUNC = new MiscFuncs(); 
-        this.LOADBAR = new LoadingBar( 27, 100 );
+        this.LOADBAR = "";
         this.SG = new SongGetter();
         this.SFX = new SoundEffectHandler();
 
@@ -70,15 +70,11 @@ class VGMB {
         this.SH.changeSong();
     }
 
-    /**
-     * 
-     * @param series change for specific series
-     */
-    singleSeriesGame(series) {
-        this.SG.getSong( series );
-
+    relaxMode() {
         this.resetForNextRound();
+        this.SG.getSong();
         this.SH.changeSong();
+        this.OTHERFUNC.generateText( this.OTHERFUNC.getText("relaxSongInfo") );
     }
 
     startLoadingBar() {     
@@ -88,7 +84,7 @@ class VGMB {
                 quiz.LOADBAR.update();
                 quiz.LOADBAR.draw();
             }
-        }, 10);
+        }, 1000);
     }
     
     checkAnswer( input ) {
@@ -161,15 +157,18 @@ class VGMB {
     }
 
     resetForNextRound() {
-        clearTimeout(timeUpTimeOut);
+        // clearTimeout(timeUpTimeOut);
 
         // reset the video play state
         this.state.videoEnded = false;
 
+        if ( this.LOADBAR ) { 
+            clearInterval(this.state.loadingInterval);
+            this.LOADBAR.clearCanvas();
+        }
+
         // clear loading bar
-        clearInterval(this.state.loadingInterval);
-        this.LOADBAR.y = canvas.height;
-        this.LOADBAR.clearCanvas();
+        
         
         // reset history
         this.state.history = [];
@@ -212,6 +211,8 @@ class VGMB {
      * shield has a cool down of  
      */
     useShield() {
+        // cant shield in relax mode
+        if ( quiz.gameModeName === "relax" ){ return }
         // if the round is ending, shields on CD, song isnt playing or we're afk, prevent using shield
         if ( quiz.state.isEnding || quiz.abilityState.shield.isShieldOnCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
         quiz.abilityState.shield.isShielded = true;

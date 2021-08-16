@@ -26,6 +26,9 @@ class SongHandler {
     skipSong() {
         if ( quiz.state.isEnding || quiz.state.isSkipping || quiz.state.isAFK || !quiz.gameMode) { return }
         
+        // just skip the song, dont process for relax mode
+        if ( quiz.gameModeName === "relax" ){ quiz.gameMode(); return }
+
         quiz.state.isSkipping = true;
         if ( !quiz.abilityState.shield.isShielded ) {
             quiz.resetCombo();
