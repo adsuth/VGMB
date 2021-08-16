@@ -224,34 +224,30 @@ class VGMB {
     resetShield() {
         quiz.state.shieldCooldown = 0;
         quiz.state.isShieldOnCooldown = false;
-        shieldButton.style.backgroundColor = "var(--colorDark)";
+        shieldButton.style.backgroundColor = "unset";
     }
 
+    /**
+     * A method that will enter the AFK state
+     * While AFK, game is muted and points wont be deducted for time outs
+     *
+     */
     goAFK() {
-        // cant go AFK if track isnt playing
-        if (player.getPlayerState() === -1 || player.getPlayerState() === 5 || quiz.state.isSkipping || quiz.state.isEnding ) { return }
-        
-        quiz.isLoading = false;
-        window.clearInterval(quiz.state.loadingInterval);
-
+        if ( !quiz.gameModeName ) { return }
         if ( quiz.state.isAFK ) {
-            quiz.state.isAFK = false;
-            afkButton.style.backgroundColor = "var(--colorDark)";
-
-            quiz.gameMode();
+            afkButton.style.backgroundColor = "unset";
+            muteButton.addEventListener("click", quiz.SH.muteSong);
+            
         }
         else {
-            quiz.state.isAFK = true;
             afkButton.style.backgroundColor = "var(--colorWrong)";
-            quiz.OTHERFUNC.updateRoundPoints(-1);
-            quiz.OTHERFUNC.updateCounter();
-            quiz.resetCombo();
+            muteButton.removeEventListener("click", quiz.SH.muteSong);
 
-            // wont brick the player if button is spammed
-            if ( player.getPlayerState() === 1 ) {
-                player.pauseVideo();
-            }
         }
+        
+        quiz.SH.muteSong();
+        volSlider.disabled = !volSlider.disabled;
+        quiz.state.isAFK = !quiz.state.isAFK;
     }
 
 }

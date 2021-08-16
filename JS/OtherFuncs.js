@@ -113,6 +113,10 @@ class MiscFuncs {
         
     }
 
+    clearTextArea() {
+        textArea.innerHTML = "";
+    }
+
     generateText( text ) {
         if ( typeof text === "undefined" ) { return }
         
@@ -156,7 +160,9 @@ class MiscFuncs {
 
                 "/afk" : quiz.goAFK,
                 "/away" : quiz.goAFK,
-                "/back" : quiz.goAFK
+                "/back" : quiz.goAFK,
+
+                "/clear" : this.clearTextArea
             }
         }        
         

@@ -36,7 +36,7 @@ function onStateChange( ev ) {
   
   if ( ev.data === YT.PlayerState.CUED ) { 
 
-    if ( player.getVolume() < 100 ) { player.setVolume( quiz.currentVolume ) }
+    player.setVolume( quiz.currentVolume );
 
     player.playVideo();
     quiz.startLoadingBar();
@@ -45,9 +45,6 @@ function onStateChange( ev ) {
     // window.setTimeout( () => {
     // }, 3000)
   }
-
-  // for a future afk feature 
-  if (ev.data === YT.PlayerState.PAUSED) { clearTimeout(timeUpTimeOut); return }
 
   if ( ev.data === YT.PlayerState.PLAYING ) {
     quiz.state.timeStart = new Date().getTime();
@@ -73,7 +70,7 @@ function timeUp() {
     window.setTimeout( () => {
       
       // to prevent being penalised for last second answers
-      if ( !quiz.state.answered ) {
+      if ( !quiz.state.answered && !quiz.state.isAFK ) {
         // reset combo and decrease points if shield isnt active
         if ( !quiz.state.isShielded ) {
           quiz.OTHERFUNC.updateRoundPoints( -1 );

@@ -318,7 +318,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Phoenix Wright: Trials and Tribulations": {
                     "gameName": "Phoenix Wright: Trials and Tribulations",
-                    "answers": ["phoenix wright: trials and tribulations", "ace attorney 3", "trials and tribulations", "pwaatt", "pw aa tt", "pwaa tt", "phoenix wright trials and tribulations", "ace attorney trials and tribulations", "phoenix wright ace attorney trials and tribulations"],
+                    "answers": ["phoenix wright: trials and tribulations", "ace attorney 3", "trials and tribulations", "phoenix wright trials and tribulations", "ace attorney trials and tribulations"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_285": {
@@ -433,7 +433,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Apollo Justice: Ace Attorney": {
                     "gameName": "Apollo Justice: Ace Attorney",
-                    "answers": ["apollo justice: ace attorney", "apollo justice", "apollo justice ace attorney", "apollo justice: ace attorney"],
+                    "answers": ["apollo justice: ace attorney", "apollo justice", "apollo justice ace attorney"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_312": {
@@ -651,7 +651,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Spirit of Justice": {
                     "gameName": "Spirit of Justice",
-                    "answers": ["spirit of justice", "spirit of justice", "ace attorney spirit of justice", "ace attorney: spirit of justice", "phoenix wright: ace attorney: spirit of justice", "phoenix wright ace attorney spirit of justice", "pw aa soj", "pwsoj", "aasoj", "pwaasoj", "aa soj", "pw soj"],
+                    "answers": ["spirit of justice", "spirit of justice", "ace attorney spirit of justice", "ace attorney: spirit of justice"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_363": {
@@ -1315,7 +1315,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Celeste: Farewell": {
                     "gameName": "Celeste: Farewell",
-                    "answers": ["celeste: farewell", "celeste", "celeste farewell", "celeste: farewell", "farewell"],
+                    "answers": ["celeste: farewell", "celeste", "celeste farewell", "farewell"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_647": {
@@ -1472,7 +1472,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Conker's Bad Fur Day": {
                     "gameName": "Conker's Bad Fur Day",
-                    "answers": ["conker's bad fur day", "conkers bad fur day"],
+                    "answers": ["conker's bad fur day", "conkers bad fur day", "conker"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1374": {
@@ -1493,7 +1493,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Trigger Happy Havoc": {
                     "gameName": "Trigger Happy Havoc",
-                    "answers": ["trigger happy havoc", "danganronpa", "dr1", "trigger happy havoc", "dr", "drttt", "dr ttt", "dangan ronpa"],
+                    "answers": ["trigger happy havoc", "danganronpa", "dr1", "trigger happy havoc", "dr", "dangan ronpa"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1083": {
@@ -2115,7 +2115,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "DOOM": {
                     "gameName": "DOOM",
-                    "answers": ["doom"],
+                    "answers": ["phoenix wright: dual destinies", "dual destinies", "phoenix wright dual destinies", "ace attorney dual destinies"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1084": {
@@ -2216,7 +2216,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "FINAL FANTASY VII REMAKE": {
                     "gameName": "FINAL FANTASY VII REMAKE",
-                    "answers": ["final fantasy vii remake", "ffviir", "ffvii"],
+                    "answers": ["final fantasy vii remake", "ffviir", "ffvii", "ff7r", "ff7", "final fantasy 7 remake", "final fantasy 7", "final fantasy vii"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1085": {
@@ -2231,7 +2231,7 @@ let ALLSONGS_JSON =`{
                 },
                 "FINAL FANTASY VII": {
                     "gameName": "FINAL FANTASY VII",
-                    "answers": ["final fantasy vii", "ffvii", "ff7", "ff7r", "ff7", "final fantasy 7 remake", "final fantasy 7", "final fantasy vii"],
+                    "answers": ["final fantasy vii", "ffvii", "ff7", "final fantasy 7"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1060": {
@@ -2246,7 +2246,7 @@ let ALLSONGS_JSON =`{
                 },
                 "FINAL FANTASY VI": {
                     "gameName": "FINAL FANTASY VI",
-                    "answers": ["final fantasy vi", "ffvi", "ff6", "final fantasy 7"],
+                    "answers": ["final fantasy vi", "ffvi", "ff6", "final fantasy 6"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1062": {
@@ -2265,7 +2265,7 @@ let ALLSONGS_JSON =`{
                 },
                 "FINAL FANTASY X": {
                     "gameName": "FINAL FANTASY X",
-                    "answers": ["final fantasy x", "ffx"],
+                    "answers": ["final fantasy x", "ffx", "ff x", "ff10", "ff 10", "final fantasy 10"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1316": {
@@ -2298,7 +2298,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Friday Night Funkin'": {
                     "gameName": "Friday Night Funkin'",
-                    "answers": ["friday night funkin'", "fnf", "friday night", "final fantasy 6"],
+                    "answers": ["friday night funkin'", "fnf", "friday night", "friday night funkin"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1321": {
@@ -2321,7 +2321,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Friday Night Funkin' VS Kapi": {
                     "gameName": "Friday Night Funkin' VS Kapi",
-                    "answers": ["friday night funkin' vs kapi", "fnf", "friday night", "friday night funking"],
+                    "answers": ["friday night funkin' vs kapi", "fnf", "friday night", "friday night funking", "fnf kapi", "kapi mod", "fnf kapi mod", "friday night funkin vs kapi"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_961": {
@@ -2332,7 +2332,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Friday Night Funkin': Mid-Fight Masses": {
                     "gameName": "Friday Night Funkin': Mid-Fight Masses",
-                    "answers": ["friday night funkin': mid-fight masses", "fnf", "friday night", "friday night funking", "fnf kapi", "kapi mod", "fnf kapi mod", "friday night funkin vs kapi"],
+                    "answers": ["friday night funkin': mid-fight masses", "fnf", "friday night", "friday night funking", "fnf mfm", "fnf ruv", "fnf sarv", "fnf zavodila", "friday night funkin midfight masses", "friday night funkin mid fight masses", "friday night funkin mid-fight masses"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_962": {
@@ -2343,7 +2343,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Friday Night Funkin': Tricky Mod": {
                     "gameName": "Friday Night Funkin': Tricky Mod",
-                    "answers": ["friday night funkin': tricky mod", "fnf", "friday night", "friday night funking", "fnf mfm", "fnf ruv", "fnf sarv", "fnf zavodila", "friday night funkin midfight masses", "friday night funkin mid fight masses", "friday night funkin mid-fight masses"],
+                    "answers": ["friday night funkin': tricky mod", "friday night funking", "fnf tricky", "fnf madness", "fnf", "friday night funkin tricky mod"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_963": {
@@ -2364,7 +2364,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Furi": {
                     "gameName": "Furi",
-                    "answers": ["furi", "", "", "friday night funking", "fnf tricky", "fnf madness", "fnf", "friday night funkin tricky mod"],
+                    "answers": ["furi"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_965": {
@@ -2632,7 +2632,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Bros.": {
                     "gameName": "Super Mario Bros.",
-                    "answers": ["super mario bros.", "smb", "mk8"],
+                    "answers": ["super mario bros.", "smb", "mario bros", "super mario bros", "mario"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_896": {
@@ -2663,7 +2663,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Bros. 2": {
                     "gameName": "Super Mario Bros. 2",
-                    "answers": ["super mario bros. 2", "smb2", "mario bros"],
+                    "answers": ["super mario bros. 2", "smb2", "mario bros 2", "super mario bros 2", "mario 2", "smb 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1227": {
@@ -2694,7 +2694,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Bros. 3": {
                     "gameName": "Super Mario Bros. 3",
-                    "answers": ["super mario bros. 3", "smb 3", "mario bros 2", "super mario bros", "mario"],
+                    "answers": ["super mario bros. 3", "smb 3", "smb3"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1233": {
@@ -2745,7 +2745,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario 64": {
                     "gameName": "Super Mario 64",
-                    "answers": ["super mario 64", "sm64", "smb3", "super mario bros 2", "mario 2", "smb 2"],
+                    "answers": ["super mario 64", "sm64", "sm 64", "mario 64", "m64"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1244": {
@@ -2796,7 +2796,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Odyssey": {
                     "gameName": "Super Mario Odyssey",
-                    "answers": ["super mario odyssey", "odyssey", "sm 64", "smb"],
+                    "answers": ["super mario odyssey", "odyssey", "mario odyssey"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1255": {
@@ -2831,7 +2831,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Land": {
                     "gameName": "Super Mario Land",
-                    "answers": ["super mario land", "mario land", "mario odyssey", "mario 64"],
+                    "answers": ["super mario land", "mario land"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1262": {
@@ -2920,7 +2920,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario World 2: Yoshi's Island": {
                     "gameName": "Super Mario World 2: Yoshi's Island",
-                    "answers": ["super mario world 2: yoshi's island", "mario world 2"],
+                    "answers": ["super mario world 2: yoshi's island", "mario world 2", "yoshis island", "yoshi's island"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1279": {
@@ -2951,7 +2951,7 @@ let ALLSONGS_JSON =`{
                 },
                 "New Super Mario Bros.": {
                     "gameName": "New Super Mario Bros.",
-                    "answers": ["new super mario bros.", "nsmb", "yoshis island"],
+                    "answers": ["new super mario bros.", "nsmb", "new super mario bros", "new mario bros"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1285": {
@@ -2966,7 +2966,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Galaxy": {
                     "gameName": "Super Mario Galaxy",
-                    "answers": ["super mario galaxy", "mario galaxy", "new super mario bros", "yoshi's island"],
+                    "answers": ["super mario galaxy", "mario galaxy", "galaxy", "smg"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1287": {
@@ -3013,7 +3013,7 @@ let ALLSONGS_JSON =`{
                 },
                 "New Super Mario Bros. Wii": {
                     "gameName": "New Super Mario Bros. Wii",
-                    "answers": ["new super mario bros. wii", "nsmb wii", "galaxy", "new mario bros"],
+                    "answers": ["new super mario bros. wii", "nsmb wii", "new super mario wii"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1297": {
@@ -3024,7 +3024,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Galaxy 2": {
                     "gameName": "Super Mario Galaxy 2",
-                    "answers": ["super mario galaxy 2", "smg2", "new super mario wii", "smg"],
+                    "answers": ["super mario galaxy 2", "smg2", "mario galaxy 2", "smg 2", "galaxy 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1298": {
@@ -3063,7 +3063,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario 3D Land": {
                     "gameName": "Super Mario 3D Land",
-                    "answers": ["super mario 3d land", "mario 3d land", "mario galaxy 2"],
+                    "answers": ["super mario 3d land", "mario 3d land", "3d land"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1306": {
@@ -3074,7 +3074,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario 3D World": {
                     "gameName": "Super Mario 3D World",
-                    "answers": ["super mario 3d world", "mario 3d world", "3d land", "smg 2", "galaxy 2"],
+                    "answers": ["super mario 3d world", "mario 3d world", "3d world"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1307": {
@@ -3195,7 +3195,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Mario Kart 64": {
                     "gameName": "Mario Kart 64",
-                    "answers": ["mario kart 64", "mk 64", "breath of the wild", "loz ww", "the wind waker", "zelda wind waker", "zelda ww"],
+                    "answers": ["mario kart 64", "mk 64", "mk64"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_833": {
@@ -3250,7 +3250,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Kart": {
                     "gameName": "Super Mario Kart",
-                    "answers": ["super mario kart", "smk", "mk64", "leg of zeg", "zelda botw", "loz botw"],
+                    "answers": ["super mario kart", "smk", "mario kart snes"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1188": {
@@ -3273,7 +3273,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Mario Kart DS": {
                     "gameName": "Mario Kart DS",
-                    "answers": ["mario kart ds", "mk ds", "mario kart snes"],
+                    "answers": ["mario kart ds", "mk ds", "mkds"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1193": {
@@ -3312,7 +3312,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Mario Kart: Double Dash!!": {
                     "gameName": "Mario Kart: Double Dash!!",
-                    "answers": ["mario kart: double dash!!", "mk dd"],
+                    "answers": ["mario kart: double dash!!", "mk dd", "double dash", "mkdd"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1201": {
@@ -3339,7 +3339,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Mario Kart 7": {
                     "gameName": "Mario Kart 7",
-                    "answers": ["mario kart 7", "mk 7", "double dash", "mkds"],
+                    "answers": ["mario kart 7", "mk 7", "mk7"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1206": {
@@ -3358,7 +3358,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Mario Kart 8": {
                     "gameName": "Mario Kart 8",
-                    "answers": ["mario kart 8", "mk 8", "mk7", "mkdd"],
+                    "answers": ["mario kart 8", "mk 8", "mk8"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1209": {
@@ -3572,7 +3572,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Mega Man": {
                     "gameName": "Mega Man",
-                    "answers": ["mega man", "mega man 1", "", "ff10", "ff 10", "final fantasy 10"],
+                    "answers": ["mega man", "mega man 1", "megaman"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_820": {
@@ -3607,7 +3607,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Mega Man 2": {
                     "gameName": "Mega Man 2",
-                    "answers": ["mega man 2", "megaman 2", "megaman"],
+                    "answers": ["mega man 2", "megaman 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1329": {
@@ -3960,7 +3960,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Papers, Please": {
                     "gameName": "Papers, Please",
-                    "answers": ["papers, please", "papers please", "va11 halla"],
+                    "answers": ["papers, please", "papers please"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1080": {
@@ -4195,7 +4195,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Persona 3 Portable": {
                     "gameName": "Persona 3 Portable",
-                    "answers": ["persona 3 portable", "p3 p", "persona 3 portable", "p3 portable", "persona 3 p", "p3 psp", "persona 3 psp"],
+                    "answers": ["persona 3 portable", "p3p", "persona 3 portable", "p3 portable", "persona 3 p", "p3 psp", "persona 3 psp"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_743": {
@@ -4280,7 +4280,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Persona 4": {
                     "gameName": "Persona 4",
-                    "answers": ["persona 4", "p4", "p4g"],
+                    "answers": ["persona 4", "p4", "p4g", "persona 4 golden"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_759": {
@@ -4339,7 +4339,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Persona 4 Golden": {
                     "gameName": "Persona 4 Golden",
-                    "answers": ["persona 4 golden", "p4g", "", "persona 4 golden"],
+                    "answers": ["persona 4 golden", "p4g"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1056": {
@@ -4350,7 +4350,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Persona 4 Golden The Animation": {
                     "gameName": "Persona 4 Golden The Animation",
-                    "answers": ["persona 4 golden the animation", "p4a", "p4 anime"],
+                    "answers": ["persona 4 golden the animation", "p4a", "p4 anime", "persona 4 golden", "persona 4", "p4", "p4g"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1057": {
@@ -4361,7 +4361,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Persona Q2: New Cinema Labyrinth": {
                     "gameName": "Persona Q2: New Cinema Labyrinth",
-                    "answers": ["persona q2: new cinema labyrinth", "pq2", "new cinema labyrinth", "p4", "p4g"],
+                    "answers": ["persona q2: new cinema labyrinth", "pq2", "new cinema labyrinth", "persona q2", "persona q2 new cinema labyrinth"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1058": {
@@ -4376,7 +4376,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Persona 4 Arena": {
                     "gameName": "Persona 4 Arena",
-                    "answers": ["persona 4 arena", "p4a", "p4 arena", "persona q2", "persona q2 new cinema labyrinth"],
+                    "answers": ["persona 4 arena", "p4a", "p4 arena", "p4au", "p4au", "persona 4 arena ultimax"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1065": {
@@ -4387,7 +4387,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Persona 4 Arena Ultimax": {
                     "gameName": "Persona 4 Arena Ultimax",
-                    "answers": ["persona 4 arena ultimax", "p4au", "", "p4au", "p4au", "persona 4 arena ultimax"],
+                    "answers": ["persona 4 arena ultimax", "p4au"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1066": {
@@ -4516,7 +4516,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Diamond and Pearl": {
                     "gameName": "Pokemon Diamond and Pearl",
-                    "answers": ["pokemon diamond and pearl", "dppt", "pokemon diamond"],
+                    "answers": ["pokemon diamond and pearl", "dppt", "pokemon diamond", "pokemon pearl", "diamond", "pearl", "platinum", "pokemon platinum"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_778": {
@@ -4587,7 +4587,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Platinum": {
                     "gameName": "Pokemon Platinum",
-                    "answers": ["pokemon platinum", "dppt", "pokemon platinum", "pokemon pearl", "diamond", "pearl", "platinum", "pokemon platinum"],
+                    "answers": ["pokemon platinum", "dppt", "pokemon platinum"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_989": {
@@ -4602,7 +4602,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon HeartGold and SoulSilver": {
                     "gameName": "Pokemon HeartGold and SoulSilver",
-                    "answers": ["pokemon heartgold and soulsilver", "hgss", "pokemon heartgold"],
+                    "answers": ["pokemon heartgold and soulsilver", "hgss", "pokemon heartgold", "pokemon soulsilver", "pokemon heart gold", "pokemon soul silver", "heartgold", "soulsilver", "heart gold", "soul silver"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_991": {
@@ -4653,7 +4653,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Black and White": {
                     "gameName": "Pokemon Black and White",
-                    "answers": ["pokemon black and white", "bw", "pokemon black", "pokemon soulsilver", "pokemon heart gold", "pokemon soul silver", "heartgold", "soulsilver", "heart gold", "soul silver"],
+                    "answers": ["pokemon black and white", "bw", "pokemon black", "pokemon white", "pokemon black 2", "pokemon white 2", "black", "white", "black 2", "white 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1002": {
@@ -4724,7 +4724,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Black 2 and White 2": {
                     "gameName": "Pokemon Black 2 and White 2",
-                    "answers": ["pokemon black 2 and white 2", "bw2", "pokemon black 2", "pokemon white", "pokemon black 2", "pokemon white 2", "black", "white", "black 2", "white 2"],
+                    "answers": ["pokemon black 2 and white 2", "bw2", "pokemon black 2", "pokemon white 2", "white 2", "black2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1018": {
@@ -4767,7 +4767,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Sword and Shield": {
                     "gameName": "Pokemon Sword and Shield",
-                    "answers": ["pokemon sword and shield", "swsh", "pokemon sword", "pokemon white 2", "white 2", "black2"],
+                    "answers": ["pokemon sword and shield", "swsh", "pokemon sword", "pokemon shield", "sword", "shield"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1027": {
@@ -4798,7 +4798,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Ultra Sun and Ultra Moon": {
                     "gameName": "Pokemon Ultra Sun and Ultra Moon",
-                    "answers": ["pokemon ultra sun and ultra moon", "usum", "pokemon ultra sun", "pokemon shield", "sword", "shield"],
+                    "answers": ["pokemon ultra sun and ultra moon", "usum", "pokemon ultra sun", "pokemon ultra moon", "ultra sun", "ultra moon"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1033": {
@@ -4817,7 +4817,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Sun and Moon": {
                     "gameName": "Pokemon Sun and Moon",
-                    "answers": ["pokemon sun and moon", "sm", "pokemon sun", "pokemon ultra moon", "ultra sun", "ultra moon"],
+                    "answers": ["pokemon sun and moon", "sm", "pokemon sun", "pokemon moon", "pokemon ultra sun", "pokemon ultra moon", "moon", "sun", "ultra sun", "ultra moon"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1036": {
@@ -4836,7 +4836,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Pokemon Omega Ruby and Alpha Sapphire": {
                     "gameName": "Pokemon Omega Ruby and Alpha Sapphire",
-                    "answers": ["pokemon omega ruby and alpha sapphire", "oras", "pokemon omega ruby", "pokemon moon", "pokemon ultra sun", "pokemon ultra moon", "moon", "sun", "ultra sun", "ultra moon"],
+                    "answers": ["pokemon omega ruby and alpha sapphire", "oras", "pokemon omega ruby", "pokemon alpha sapphire", "omega ruby", "alpha sapphire"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1039": {
@@ -4916,7 +4916,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Portal": {
                     "gameName": "Portal",
-                    "answers": ["portal", "portal", "", "pokemon alpha sapphire", "omega ruby", "alpha sapphire"],
+                    "answers": ["portal", "portal"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_864": {
@@ -5376,7 +5376,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Ribbit King": {
                     "gameName": "Ribbit King",
-                    "answers": ["ribbit king", "", "ff x"],
+                    "answers": ["ribbit king"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_160": {
@@ -5488,7 +5488,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Terraria Calamity Mod": {
                     "gameName": "Terraria Calamity Mod",
-                    "answers": ["terraria calamity mod", "terraria calamity", "calamity"],
+                    "answers": ["terraria calamity mod", "terraria calamity", "calamity", "calamity mod"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_841": {
@@ -5511,7 +5511,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Terraria": {
                     "gameName": "Terraria",
-                    "answers": ["terraria", "", "", "calamity mod"],
+                    "answers": ["terraria"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_969": {
@@ -5540,7 +5540,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "The Last of Us": {
                     "gameName": "The Last of Us",
-                    "answers": ["the last of us", "tlou", "last of us"],
+                    "answers": ["the last of us", "tlou", "last of us", "lou"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_973": {
@@ -5622,7 +5622,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Timesplitters 2": {
                     "gameName": "Timesplitters 2",
-                    "answers": ["timesplitters 2", "ts2", "time splitters 2", "lou"],
+                    "answers": ["timesplitters 2", "ts2", "time splitters 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_666": {
@@ -6190,7 +6190,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "VA-11 HALL-A": {
                     "gameName": "VA-11 HALL-A",
-                    "answers": ["va-11 hall-a", "vallhalla", "3d world"],
+                    "answers": ["va-11 hall-a", "vallhalla", "va11 halla"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_497": {
@@ -6398,7 +6398,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "The Legend of Zelda": {
                     "gameName": "The Legend of Zelda",
-                    "answers": ["the legend of zelda", "loz"],
+                    "answers": ["the legend of zelda", "loz", "zelda", "zelda 1"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_699": {
@@ -6417,7 +6417,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Zelda II: The Adventure of Link": {
                     "gameName": "Zelda II: The Adventure of Link",
-                    "answers": ["zelda ii: the adventure of link", "loz2", "zelda"],
+                    "answers": ["zelda ii: the adventure of link", "loz2", "zelda", "zelda 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1105": {
@@ -6436,7 +6436,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: A Link to the Past": {
                     "gameName": "The Legend of Zelda: A Link to the Past",
-                    "answers": ["the legend of zelda: a link to the past", "lttp", "zelda", "zelda 1"],
+                    "answers": ["the legend of zelda: a link to the past", "lttp", "alttp", "zelda 3", "link to the past", "a link to the past", "loz3"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1108": {
@@ -6471,7 +6471,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: Link's Awakening": {
                     "gameName": "The Legend of Zelda: Link's Awakening",
-                    "answers": ["the legend of zelda: link's awakening", "link's awakening", "alttp", "zelda 2"],
+                    "answers": ["the legend of zelda: link's awakening", "link's awakening", "links awakening", "zelda awakening", "zelda links awakening", "zelda link's awakening"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1115": {
@@ -6486,7 +6486,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: Phantom Hourglass": {
                     "gameName": "The Legend of Zelda: Phantom Hourglass",
-                    "answers": ["the legend of zelda: phantom hourglass", "phantom hourglass", "links awakening", "zelda 3", "link to the past", "a link to the past", "loz3"],
+                    "answers": ["the legend of zelda: phantom hourglass", "phantom hourglass", "loz ph", "zelda phantom hourglass", "loz phantom hourglass", "the legend of zelda phantom hourglass"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1117": {
@@ -6513,7 +6513,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: Spirit Tracks": {
                     "gameName": "The Legend of Zelda: Spirit Tracks",
-                    "answers": ["the legend of zelda: spirit tracks", "spirit tracks", "loz ph", "zelda awakening", "zelda links awakening", "zelda link's awakening", "the legend of zelda spirit tracks"],
+                    "answers": ["the legend of zelda: spirit tracks", "spirit tracks", "loz st", "zelda spirit tracks", "loz spirit tracks", "the legend of zelda spirit tracks"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1122": {
@@ -6544,7 +6544,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: Ocarina of Time": {
                     "gameName": "The Legend of Zelda: Ocarina of Time",
-                    "answers": ["the legend of zelda: ocarina of time", "oot", "loz st", "zelda phantom hourglass", "loz phantom hourglass", "the legend of zelda phantom hourglass"],
+                    "answers": ["the legend of zelda: ocarina of time", "oot", "zelda ocarina", "zelda ocarina", "zelda ocarina of time", "ocarina of time", "the legend of zelda ocarina of time"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1128": {
@@ -6619,7 +6619,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: Majora's Mask": {
                     "gameName": "The Legend of Zelda: Majora's Mask",
-                    "answers": ["the legend of zelda: majora's mask", "majora", "zelda ocarina", "zelda spirit tracks", "loz spirit tracks"],
+                    "answers": ["the legend of zelda: majora's mask", "majora", "majoras mask", "majora's mask", "zelda mm", "zelda majoras mask"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1145": {
@@ -6682,7 +6682,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: The Wind Waker": {
                     "gameName": "The Legend of Zelda: The Wind Waker",
-                    "answers": ["the legend of zelda: the wind waker", "wind waker", "majoras mask", "zelda ocarina", "zelda ocarina of time", "ocarina of time", "the legend of zelda ocarina of time"],
+                    "answers": ["the legend of zelda: the wind waker", "wind waker", "loz wind waker", "loz ww", "the wind waker", "zelda wind waker", "zelda ww"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1159": {
@@ -6749,7 +6749,7 @@ let ALLSONGS_JSON =`{
                 },
                 "The Legend of Zelda: Breath of the Wild": {
                     "gameName": "The Legend of Zelda: Breath of the Wild",
-                    "answers": ["the legend of zelda: breath of the wild", "botw", "loz wind waker", "majora's mask", "zelda mm", "zelda majoras mask"],
+                    "answers": ["the legend of zelda: breath of the wild", "botw", "breath of the wild", "leg of zeg", "zelda botw", "loz botw"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1174": {
