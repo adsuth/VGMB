@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--colorDark);
+  outline: 1px solid yellow;
+  font-family: "Montserrat", sans-serif;
+  color: var(--colorLight);
+}
+
+header {
+  padding-top: 1vh;
+  height: 11vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: var(--colorDarker) 0 1vh 2vh;
+          box-shadow: var(--colorDarker) 0 1vh 2vh;
+  position: relative;
+  z-index: 3;
+  background: var(--colorDark);
+}
+
+header #p_points {
+  color: gold;
+  position: absolute;
+  right: 10vw;
+  top: 2vh;
+}
+
+header h1, header #p_subtitle {
+  color: var(--colorLight);
+  width: 100%;
+  font-family: "Grandstander";
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5vw;
+}
+
+header #p_subtitle {
+  margin-top: -0.5vh;
+  font-size: 1vw;
+  font-style: italic;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 7.5vh;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5vw;
+  padding: 2vh 1.5vw;
+  color: var(--colorLight);
+  font-size: 3.5vh;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+.button:hover {
+  background-color: var(--colorMidLight);
+}
+
+.headerButton {
+  position: absolute;
+  left: 1vw;
+}
+/*# sourceMappingURL=helpStyle.css.map */

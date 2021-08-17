@@ -83,9 +83,6 @@ class VGMBSongFormatter:
         for i in range( len( this.answers ) ):
             if currentSong == this.answers[i][1].strip() :
                     indexOfGame = i
-        
-        print( indexOfGame ) 
-
            
         # print( indexOfGame )
 

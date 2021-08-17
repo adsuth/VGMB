@@ -14,6 +14,7 @@ function playTitleTheme() {
     titleTheme.play();
 }
 
+// removes the title theme element after selecting a gamemode
 function removeTitleThemeElement() {
     window.removeEventListener("focus", playTitleTheme);
     titleTheme.remove();
@@ -21,61 +22,14 @@ function removeTitleThemeElement() {
     delete(playTitleTheme);
 }
 
-
 // the afk button starts afk state (replaces mute button)
 afkButton.addEventListener("click", quiz.goAFK );
 
-
-
-// start button will begin standard game (for now)
-startButton.addEventListener("click", () => {
-    if (quiz.gameModeName === "standard" ) { return };
-    changeColorPalette( "standard" )
-    
-    // remove title theme (if it exists);
-    removeTitleThemeElement();
-
-    quiz.OTHERFUNC.generateText(  `
-    <p>
-    <span class="boldText biggerText"> Welcome to Standard Mode! </span> <br>
-    Random series, games and songs! <br>
-    Guess the name of the <span class="boldText">game</span> to win! <br>
-    </p>
-` );
-    quiz.gameModeName = "standard";
-
-    quiz.gameMode = quiz.standardGame;
-    quiz.gameMode();
-
-})
-
-relaxButton.addEventListener("click", () => {
-    if (quiz.gameModeName === "relax" ) { return };
-    changeColorPalette( "relax" );
-    
-    // remove title theme (if it exists);
-    removeTitleThemeElement();
-
-    quiz.OTHERFUNC.generateText(  `
-    <p>
-    <span class="boldText biggerText"> Welcome to Relaxed Mode! </span> <br>
-    Sit back and relax to some neat beats from a variety of game series <br>
-    </p>
-` );
-    quiz.gameModeName = "relax";
-
-    quiz.gameMode = quiz.relaxMode;
-    quiz.gameMode();
-
-})
 
 // getting answers
 textInput.addEventListener('keypress', (ev) => {
     // dont bother processing for empty inputs
     if (textInput.value.length === 0) { return }
-
-    // dont process inputs for relax mode
-    if ( quiz.gameModeName === "relax" ){ return }
     
     if (ev.key === 'Enter') {
     
@@ -92,7 +46,7 @@ textInput.addEventListener('keypress', (ev) => {
         }
 
         // afk check here so players can use commands
-        else if ( quiz.state.isAFK ) { textInput.value = ""; return; }
+        else if ( quiz.state.isAFK || quiz.gameModeName === "relax" ) { textInput.value = ""; return; }
 
         else { quiz.checkAnswer( textInput.value ) }
 
@@ -157,55 +111,4 @@ document.addEventListener('keydown', (ev) => {
 function capital( word ) {
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
-
-
-function initialiseSeriesList() {
-    for (let serie in ALLSONGS.series ) {
-        gameModes.appendChild( createButton(serie) )
-    }
-}
-
-// temporarily blocked until new game modes are devised
-
-// function createButton( text ) {
-//     let btn = document.createElement("div");
-//     btn.className = "button " + ALLSONGS.series[text].seriesColor;
-//     btn.innerHTML = text.toUpperCase();
-
-//     btn.addEventListener("click", (ev) => {
-//         if (quiz.gameModeName === text || quiz.state.isEnding || quiz.state.isAFK ) { return };
-
-//         quiz.state.currentSeries = text;
-
-//         document.getElementById("audio_sfx").src = "";
-//         // changeColorPalette( quiz.SH.ALLSONGS.series[text].color );
-
-//         quiz.gameModeName = text;
-        
-//         gameModeMessages.singleSeries = `
-//         <p>
-//         <span class="biggerText boldText" style="color: var(--color${capital(ALLSONGS.series[text].seriesColor)}); text-transform: capitalize;"> Welcome to ${quiz.gameModeName} Mode! </span> <br>
-//         Songs from the <span style="text-transform: capitalize;">${quiz.gameModeName}</span> series! <br>
-//         Guess the name of the <span class="boldText">game</span> to win! <br>
-//         </p>
-//         `
-//         quiz.OTHERFUNC.generateText( gameModeMessages[ "singleSeries" ] );
-        
-//         quiz.resetCombo();
-//         quiz.resetShield();
-
-//         quiz.gameMode = () => { quiz.singleSeriesGame(text) };
-
-//         quiz.SH.fadeOutSong();
-//             window.setTimeout( () => { 
-//                 quiz.gameMode();
-//             }, 3000 );
-
-//     })
-
-//     return btn;
-// }
-
-
-// initialiseSeriesList();
 

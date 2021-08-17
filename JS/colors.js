@@ -61,6 +61,44 @@ const PALETTES = {
         super: "",
         ultra: ""
     },
+    hard: {
+        darker: "#222441",
+        dark: "#41598B",
+        mid: "#414D7A",
+        midLight: "#64BAD2",
+
+        correct: "rgb(140, 240, 140)",
+        wrong: "rgb(237, 107, 107)",
+        warning: "rgb(248, 175, 92)",
+        shield: "",
+        counter: "",
+        contrast: "",
+        
+        super: "rgb(53, 255, 53)",
+        ultra: "rgb(221, 53, 255)",
+
+        softSuper: "",
+        softUltra: ""
+    },
+    fall: {
+        darker: "#432",
+        dark: "#653",
+        mid: "#974",
+        midLight: "#eb6",
+
+        correct: "rgb(140, 240, 140)",
+        wrong: "rgb(237, 107, 107)",
+        warning: "rgb(248, 175, 92)",
+        shield: "",
+        counter: "",
+        contrast: "",
+        
+        super: "rgb(53, 255, 53)",
+        ultra: "rgb(221, 53, 255)",
+
+        softSuper: "",
+        softUltra: ""
+    },
     relax: {
         darker: "#422",
         dark: "#633",
@@ -79,7 +117,8 @@ const PALETTES = {
 
         softSuper: "",
         softUltra: ""
-    },
+    }
+
 }
 
 
@@ -102,11 +141,11 @@ function changeColorPalette( color ) {
             --colorCounter: ${PALETTES[color]["counter"] || "gold" } ;
             --colorContrast: ${PALETTES[color]["contrast"] || "red"};
 
-            --colorSuper: ${PALETTES[color]["super"] || "rgb(53, 255, 53)" };
-            --colorUltra: ${PALETTES[color]["ultra"] || "rgb(221, 53, 255)" };
+            --colorSuperSonic: ${PALETTES[color]["super"] || "rgb(53, 255, 53)" };
+            --colorUltraSonic: ${PALETTES[color]["ultra"] || "rgb(221, 53, 255)" };
 
-            --colorSuper: ${PALETTES[color]["softSuper"] || "rgb(140, 240, 140)" };
-            --colorUltra: ${PALETTES[color]["softUltra"] || "rgb(218, 94, 230)" };
+            --colorSuperSoft: ${PALETTES[color]["softSuper"] || "rgb(140, 240, 140)" };
+            --colorUltraSoft: ${PALETTES[color]["softUltra"] || "rgb(218, 94, 230)" };
         }
         ::selection {
             background-color: ${PALETTES[color]["mid"]};
@@ -117,6 +156,30 @@ function changeColorPalette( color ) {
     
 }
 
+
+const fileChooser = document.getElementById("inp_fileChooser");
+fileChooser.addEventListener("change", ev => { changeBackgroundImage(ev) } );
+
+// method to change the background to an image provided by the user
+function changeBackgroundImage( ev ) {
+    console.log("changing background")
+    document.getElementById("backgroundImage").innerHTML = `
+    html {
+        --backgroundImageSRC: url(${window.URL.createObjectURL(ev.target.files[0])});
+    }
+    `
+}
+
+const bgRemover = document.getElementById("btn_bgRemover");
+bgRemover.addEventListener("click", removeBackgroundImage );
+
+function removeBackgroundImage() {
+    document.getElementById("backgroundImage").innerHTML = `
+        html {
+            --backgroundImageSRC: url();
+        }
+    `;
+}
 
 
 

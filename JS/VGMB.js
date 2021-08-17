@@ -158,6 +158,7 @@ class VGMB {
 
     resetForNextRound() {
         // clearTimeout(timeUpTimeOut);
+        if ( this.LOADBAR ) { window.clearInterval( this.state.loadingInterval ) }
 
         // reset the video play state
         this.state.videoEnded = false;        
@@ -172,22 +173,23 @@ class VGMB {
 
         // reset player input
         textInput.value = "";
-
+        
+        
         // reset shield
         this.abilityState.shield.isShielded = false; 
         if ( this.abilityState.shield.isShieldOnCooldown && !this.state.isAFK ) {
             this.rechargeShield();
         }
-
+        
         // reset round points
         this.state.roundPoints = 0;
-
+        
         // reset answered state
         this.state.answered = false;
     }
 
     rechargeShield() {
-        if ( !this.abilityState.shield.isShieldOnCooldown || this.state.answered ) { return }
+        if ( !this.abilityState.shield.isShieldOnCooldown && !this.state.answered ) { return }
         shieldButton.style.backgroundColor = "var(--colorDarker)";
         this.abilityState.shield.shieldCooldown -= 1;
 

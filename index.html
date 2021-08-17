@@ -8,7 +8,7 @@
     <title>VGMB</title>
 
     <script src="JS\selectors.js" defer></script>
-
+    
     <!-- Classes -->
     <script src="JS\VGMB.js" defer></script>
     <script src="JS\YTPlayer.js" defer></script>
@@ -20,19 +20,21 @@
     
     <!-- Song data -->
     <script src="JS\ALLSONGS.js" defer></script>
-
+    
     <!-- Visual Flair Fluff -->
     <script src="JS\colors.js" defer></script>
     <script src="JS\generateSubtitle.js" defer></script>
     
     <!-- Main -->
     <script src="JS\main.js" defer></script>
+    <script src="JS\onLoadFunctions.js" defer></script>
     
     <!-- Embed Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,900;1,400&family=JetBrains+Mono:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- this style tag is altered when CHANGING THE COLOR PALETTE -->
     <style id="paletteRoot">
         html {
             --colorDarker: #222;
@@ -58,10 +60,15 @@
         }
 
     </style>
+    <!-- this style tag is altered when CHANGING THE BACKGROUND -->
+    <style id="backgroundImage">
+        .backgroundImage {
+            --backgroundImageSRC: unset;
+        }
+        </style>
 
 </head> 
 <body>
-    
     <header>
         <h1> VGMB </h1>
         <p id="p_subtitle"></p>
@@ -71,24 +78,36 @@
 
     <div id="gameArea">
         <div id="majorSection">
-            <div id="textArea" class = "gameSection"></div>
+            <div id="textArea" class = "gameSection">
+                <p>
+                    <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
+                    for help to get started, <a class="boldText" href="help.html">click here! </a> <br>
+                    You can also type <span class="boldText">/help</span> if you need a hand!<br>
+                    Click one of the <span class="boldText"> Game Modes </span> to get started! 
+                    
+                </p>
+            </div>
             <div id="gameModeArea" class = "gameSection">
                 <h3>GAME MODES</h3>
-                <div id="btn_startButton" class="button">STANDARD</div>
-                <div id="btn_relaxButton" class="button">RELAX</div>
+                <!-- <div id="btn_startButton" class="button">STANDARD</div>
+                <div id="btn_relaxButton" class="button">RELAX</div> -->
             </div>
         </div>
-
+        
         <div id="answerArea">
             <p id="p_combo" class="counter">x0</p>
             <div id="btn_afk" class="button">AFK</div>
-
+            
+            
             <input type="text" id="inp_textInput" autofocus spellcheck="false">
             <div id="btn_shieldButton" class="button">SHIELD</div>
             <div id="btn_skipButton" class="button">SKIP</div>
 
             <label id="" class="label">VOLUME</label>
             <input type="range" min="0" max="100" value="40" class="slider" id="inp_volSlider">
+            <input type="file" id="inp_fileChooser">
+            <div id="btn_bgRemover" class="button">REMOVE</div>
+
 
         </div>
     </div>

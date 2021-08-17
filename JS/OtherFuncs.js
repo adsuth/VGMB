@@ -32,7 +32,7 @@ class MiscFuncs {
             `,
 
             relaxSongInfo: `
-                <p>
+                <p onclick="quiz.OTHERFUNC.showText(ev)">
                 Track: <a href="${quiz.SG.track.link}" target="_blank" ><span class="boldText answerList"> \t${quiz.SG.track.title}</a> </span> <br>
                 Game: <span class="boldText"> \t${quiz.SG.game.gameName} </span> <br>
                 Series: <span class="boldText"> \t${quiz.SG.series.seriesName} </span>
@@ -84,16 +84,7 @@ class MiscFuncs {
                 <span class="wrongText boldText"> Something went wrong! </span> <br>
                 <span class="wrongText"> Please refresh the page. </span>
                 </p>
-            `,
-            welcomeMessage: `
-            <p>
-                <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
-                for more info, click here! (just kidding I'm too lazy to add that rn)
-                Click one of the <span class="boldText"> Game Modes </span> to get started! <br>
-            </p>
-        `
-
-
+            `
         }
         if ( message === "comboMessages" ) {
             return `${this.messages.comboMessages[this.randomInt(this.messages.comboMessages.length)]}
@@ -102,6 +93,10 @@ class MiscFuncs {
         let text = this.messages[message];
 
         return text;
+    }
+
+    showText( ev ) {
+        ev.target.color = "var(--colorLight)";
     }
 
     generateAnswers() {
@@ -135,9 +130,10 @@ class MiscFuncs {
             textArea.removeChild( textArea.childNodes[0] );
         }
 
-        let pEl = document.createElement("p");
-        pEl.innerHTML += text;
-        textArea.appendChild( pEl );
+        // let pEl = document.createElement("div");
+        // pEl.innerHTML += text;
+        // textArea.appendChild( pEl );
+        textArea.innerHTML += text;
         quiz.OTHERFUNC.scrollToBottom();
     }
     /**
@@ -172,7 +168,9 @@ class MiscFuncs {
                 "/away" : quiz.goAFK,
                 "/back" : quiz.goAFK,
 
-                "/clear" : this.clearTextArea
+                "/clear" : this.clearTextArea,
+
+                "/help" : this.goToHelp
             }
         }        
         
@@ -202,6 +200,10 @@ class MiscFuncs {
 
     scrollToBottom() {
         textArea.scrollTop = textArea.scrollHeight;
+    }
+
+    goToHelp() {
+        window.location.href = "help.html";
     }
 
 }
