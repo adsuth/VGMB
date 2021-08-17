@@ -2445,7 +2445,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "FNF Smoke 'Em Out Struggle": {
                     "gameName": "FNF Smoke 'Em Out Struggle",
-                    "answers": ["fnf smoke 'em out struggle", "fnf", "friday night", "friday night funkin"],
+                    "answers": ["fnf smoke 'em out struggle", "fnf", "friday night", "friday night funkin", "garcello", "garcello mod"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1445": {
@@ -2630,7 +2630,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "FTL: Faster Than Light": {
                     "gameName": "FTL: Faster Than Light",
-                    "answers": ["ftl: faster than light"],
+                    "answers": ["ftl: faster than light", "ftl", "faster than light"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1460": {
@@ -2979,7 +2979,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Hotline Miami 2: Wrong Number": {
                     "gameName": "Hotline Miami 2: Wrong Number",
-                    "answers": ["hotline miami 2: wrong number", "hotline miami 2", "wrong number", "", "garcello", "garcello mod"],
+                    "answers": ["hotline miami 2: wrong number", "hotline miami 2", "wrong number"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1469": {
@@ -3064,7 +3064,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Kid Icarus Uprising": {
                     "gameName": "Kid Icarus Uprising",
-                    "answers": ["kid icarus uprising"],
+                    "answers": ["kid icarus uprising", "uprising"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1074": {
@@ -3275,7 +3275,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario Bros. 3": {
                     "gameName": "Super Mario Bros. 3",
-                    "answers": ["super mario bros. 3", "smb 3", "smb3"],
+                    "answers": ["super mario bros. 3", "smb 3", "smb3", "super mario bros 3", "mario 3", "smb 3"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1212": {
@@ -3595,7 +3595,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Mario World 2: Yoshi's Island": {
                     "gameName": "Super Mario World 2: Yoshi's Island",
-                    "answers": ["super mario world 2: yoshi's island", "mario world 2", "yoshis island", "yoshi's island"],
+                    "answers": ["super mario world 2: yoshi's island", "mario world 2", "yoshis island", "yoshi's island", "super mario world 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1258": {
@@ -6459,13 +6459,7 @@ let ALLSONGS_JSON =`{
                             "link": "https://youtu.be/e48OijK2LiI"
                         }
                     }
-                }
-            }
-        },
-        "Sonic The Hedgehog": {
-            "seriesName": "Sonic The Hedgehog",
-            "seriesColor": "red",
-            "game": {
+                },
                 "Sonic R": {
                     "gameName": "Sonic R",
                     "answers": ["sonic r"],
@@ -6484,13 +6478,7 @@ let ALLSONGS_JSON =`{
                             "link": "https://youtu.be/EvuAVr88XoM"
                         }
                     }
-                }
-            }
-        },
-        "Sonic the Hedgehog": {
-            "seriesName": "Sonic the Hedgehog",
-            "seriesColor": "red",
-            "game": {
+                },
                 "Sonic the Hedgehog": {
                     "gameName": "Sonic the Hedgehog",
                     "answers": ["sonic the hedgehog", "sonic", "sonic 1"],
