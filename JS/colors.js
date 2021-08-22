@@ -102,7 +102,6 @@ const PALETTES = {
         softUltra: ""
     },
     relax: {
-        favicon: "faviconRelaxed.png",
 
         darker: "#422",
         dark: "#633",
@@ -188,6 +187,6 @@ function removeBackgroundImage() {
 }
 
 function changeFavicon( color ) {
-    favicon.href = PALETTES[color]["favicon"];
-    imgLogo.src = PALETTES[color]["favicon"];
+    favicon.href = `favicon_${ color }.ico`;
+    imgLogo.src = `logo_${ color }.png`;
 }
