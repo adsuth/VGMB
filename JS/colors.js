@@ -46,7 +46,7 @@
 
 const PALETTES = {
     standard: {
-        favicon: "\\favicon.png",
+        favicon: "favicon.png",
 
         darker: "#222",
         dark: "#333",
@@ -102,7 +102,7 @@ const PALETTES = {
         softUltra: ""
     },
     relax: {
-        favicon: "\\faviconRelaxed.png",
+        favicon: "faviconRelaxed.png",
 
         darker: "#422",
         dark: "#633",
