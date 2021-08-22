@@ -46,8 +46,6 @@
 
 const PALETTES = {
     standard: {
-        favicon: "favicon.png",
-
         darker: "#222",
         dark: "#333",
         mid: "#444",
@@ -102,7 +100,6 @@ const PALETTES = {
         softUltra: ""
     },
     relax: {
-
         darker: "#422",
         dark: "#633",
         mid: "#944",
@@ -187,6 +184,7 @@ function removeBackgroundImage() {
 }
 
 function changeFavicon( color ) {
+    console.log("changed favicon to " + color + "! ")
     favicon.href = `favicon_${ color }.ico`;
     imgLogo.src = `logo_${ color }.png`;
 }
