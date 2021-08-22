@@ -27,7 +27,7 @@ class MiscFuncs {
                 Track: <a href="${quiz.SG.track.link}" target="_blank" ><span class="boldText answerList"> \t${quiz.SG.track.title}</a> </span> <br>
                 Game: <span class="boldText"> \t${quiz.SG.game.gameName} </span> <br>
                 Series: <span class="boldText"> \t${quiz.SG.series.seriesName} </span> <br><br>
-                Answers: <span class="boldText"> \t${quiz.OTHERFUNC.generateAnswers()}... </span>
+                Answers: <span class="boldText"> \t${quiz.OTHERFUNC.generateAnswers()} </span>
                 </p>
             `,
 
@@ -84,11 +84,40 @@ class MiscFuncs {
                 <span class="wrongText boldText"> Something went wrong! </span> <br>
                 <span class="wrongText"> Please refresh the page. </span>
                 </p>
-            `
+            `,
+            hintUsed: `
+                <p>
+                <span class="boldText" style="color: var(--colorPurple)"> Hint Used! </span>
+                </p>
+            `,
+            showHint: `
+                <p>
+                <span style="color: var(--colorPurple)"> your hint is... </span> <br>
+                <span class="monospaceText bigText" style="color: var(--colorPurple)"> ${quiz.abilityState.hint.currentHint} </span>
+                </p>
+            `,
+            hintRecharge: `
+                <p>
+                <span class="boldText" style="color: var(--colorPurple)"> We're ready to give you a hint! </span>
+                </p>
+            `,
+            pointMessages: [
+                `<p><span class="pointMessage" > Nice streak! </span> <br> `,
+                `<p><span class="pointMessage"> That's some dedication you got there! </span> <br> `,
+                `<p><span class="pointMessage"> Awesome job!! </span> <br> `,
+                `<p><span class="pointMessage"> Poggers Champion! </span> <br> `,
+                `<p><span class="pointMessage"> That's a lotta points, baby! </span> <br> `,
+            ],
         }
         if ( message === "comboMessages" ) {
             return `${this.messages.comboMessages[this.randomInt(this.messages.comboMessages.length)]}
                 <span class="comboColor">That's ${quiz.state.currentCombo} in a row!</span></p>`
+        }
+        if ( message === "pointMessage" ) {
+            return `${this.messages.pointMessages[this.randomInt(this.messages.pointMessages.length)]}
+            <span style="color:var(--colorYellow)" > You've now passed ${quiz.state.pointMilestone} points! </span>
+            </p>
+            `
         }
         let text = this.messages[message];
 
@@ -111,6 +140,10 @@ class MiscFuncs {
             if ( quiz.SG.game.answers[i].length === 0 ) { i--; continue; }
             answers += quiz.SG.game.answers[i];
             if ( i < sentinel - 1 ) { answers += ", " }
+        }
+
+        if (quiz.SG.game.answers.length > sentinel) {
+            answers += "...";
         }
 
         return answers;
@@ -161,8 +194,10 @@ class MiscFuncs {
                 "/mute": quiz.SH.muteSong,
                 "/unmute": quiz.SH.muteSong,
 
-                "/shield": quiz.useShield,
-                "/def": quiz.useShield,
+                "/shield": () => { quiz.useAbility("shield") },
+                "/def": () => { quiz.useAbility("shield") },
+
+                "/hint": () => { quiz.useAbility("hint") },
 
                 "/afk" : quiz.goAFK,
                 "/away" : quiz.goAFK,
@@ -192,6 +227,10 @@ class MiscFuncs {
     updateCounter() {
         quiz.state.pointCounterValue += quiz.state.roundPoints * quiz.state.comboMultiplier;
         pointCounter.innerText = quiz.state.pointCounterValue;
+        if ( quiz.state.pointCounterValue > quiz.state.pointMilestone ) {
+            this.generateText( this.getText("pointMessage") );
+            quiz.state.pointMilestone += 100;
+        }
     }
 
     randomInt( max ) {

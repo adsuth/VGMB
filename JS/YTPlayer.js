@@ -72,10 +72,15 @@ function timeUp() {
     // to prevent being penalised for last second answers
     if ( !quiz.state.answered && !quiz.state.isAFK ) {
       // reset combo and decrease points if shield isnt active
-      if ( !quiz.abilityState.shield.isShielded ) {
+      if ( !quiz.abilityState.shield.isActive ) {
         quiz.OTHERFUNC.updateRoundPoints( -1 );
         quiz.resetCombo();
       }
+      // reset hint only if being used (if the hint didnt help)
+      if ( quiz.abilityState.hint.isActive ) {
+        quiz.resetAbility("hint");
+      }
+
       quiz.OTHERFUNC.updateCounter();
 
       quiz.OTHERFUNC.generateText( 
@@ -101,3 +106,4 @@ function onPlayerReady(event) {
     // calc time (START)   
     quiz.state.timeStart = new Date().getTime();
 }
+

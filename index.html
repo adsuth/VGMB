@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" id="favicon">
     <title>VGMB</title>
 
     <script src="JS\selectors.js" defer></script>
@@ -71,6 +72,7 @@
 <body>
     <header>
         <h1> VGMB </h1>
+        <img src="favicon.png" alt="VGMB Logo" id="img_logo">
         <p id="p_subtitle"></p>
         <p id="p_points" class="counter">0</p>
         <canvas id="canvas_loadingBar"></canvas>
@@ -81,7 +83,7 @@
             <div id="textArea" class = "gameSection">
                 <p>
                     <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
-                    for help to get started, <a class="boldText" href="help.html">click here! </a> <br>
+                    for a rundown on the game, <a class="boldText" href="help.html">click here! </a> <br>
                     You can also type <span class="boldText">/help</span> if you need a hand!<br>
                     Click one of the <span class="boldText"> Game Modes </span> to get started! 
                     
@@ -101,6 +103,7 @@
             
             <input type="text" id="inp_textInput" autofocus spellcheck="false">
             <div id="btn_shieldButton" class="button">SHIELD</div>
+            <div id="btn_hintButton" class="button">HINT</div>
             <div id="btn_skipButton" class="button">SKIP</div>
 
             <label id="" class="label">VOLUME</label>

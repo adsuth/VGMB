@@ -84,7 +84,7 @@ header {
 }
 
 header #p_points {
-  color: gold;
+  color: var(--colorYellow);
   position: absolute;
   right: 10vw;
   top: 2vh;
@@ -105,6 +105,27 @@ header #p_subtitle {
   margin-top: -0.5vh;
   font-size: 1vw;
   font-style: italic;
+}
+
+header img {
+  width: 4vw;
+  height: 4vw;
+  display: inline;
+  position: absolute;
+  top: 0.5vw;
+  left: 20vw;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-filter: drop-shadow(0.5vw 0.5vw 0.25vw var(--colorDarker));
+          filter: drop-shadow(0.5vw 0.5vw 0.25vw var(--colorDarker));
+}
+
+header img:hover {
+  -webkit-transform: scale(1.2) rotate(375deg);
+          transform: scale(1.2) rotate(375deg);
 }
 
 iframe {
@@ -166,6 +187,12 @@ iframe {
   margin-bottom: 1vh;
   margin-left: 2vw;
   width: 80%;
+  -webkit-box-shadow: 0.5vw 1vw 1vw var(--colorDarker);
+          box-shadow: 0.5vw 1vw 1vw var(--colorDarker);
+}
+
+#gameArea #textArea .monospaceText {
+  font-family: "JetBrains Mono", monospace;
 }
 
 #gameArea #textArea::after {
@@ -396,6 +423,12 @@ div div::-webkit-scrollbar-thumb {
 .ultrasonic {
   color: var(--colorUltraSonic);
   text-shadow: 0 0 1vh var(--colorUltraSonic);
+  font-weight: bold;
+}
+
+.pointMessage {
+  color: var(--colorYellow);
+  text-shadow: 0 0 1vh var(--colorYellow);
   font-weight: bold;
 }
 

@@ -1,13 +1,13 @@
 // instantiate variables
 const quiz = new VGMB();        // the main object; handles quiz
-var player;                     // the youtube player
+
+var player;
 
 const titleTheme = document.getElementById("audio_title");
 
-// quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("welcomeMessage") );
-
 // plays the theme song composed by sutson (pretty based)
 window.addEventListener("focus", playTitleTheme );
+
 function playTitleTheme() {
     // note: function is nonymous so the event can be deleted
     titleTheme.volume = 0.3;
@@ -71,8 +71,17 @@ volSlider.addEventListener("input", (ev) => {
 // skip button
 skipButton.addEventListener("click", quiz.SH.skipSong )
 
-// skip button
-shieldButton.addEventListener("click", quiz.useShield );
+// shield button
+shieldButton.addEventListener("click", () => { quiz.useAbility("shield") } );
+
+// hint button
+hintButton.addEventListener("click", () => { quiz.useAbility("hint") } );
+
+// image logo (currently just mutes the title theme)
+imgLogo.addEventListener("click", () => { 
+    titleTheme.volume === 0 ? titleTheme.volume = 0.3 : titleTheme.volume = 0;
+    window.removeEventListener("focus", playTitleTheme);
+} );
 
 document.addEventListener('keydown', (ev) => {
     if (quiz.state.history.length === 0) { return }
@@ -83,25 +92,19 @@ document.addEventListener('keydown', (ev) => {
         textInput.value = quiz.state.history[ quiz.state.historyPos ]; 
     }
 
-});
-
-document.addEventListener('keydown', (ev) => {
-    if (quiz.state.history.length === 0) { return }
-
     if (ev.key  === "ArrowDown") {
         ev.preventDefault();
         quiz.state.historyPos--;
-
+    
         if ( quiz.state.historyPos >= 0  ) { 
             textInput.value = quiz.state.history[ quiz.state.historyPos ]; 
         }
-
+    
         else {
             textInput.value = ""; 
             quiz.state.historyPos = 0;
         }
     }
-
 });
 
 /**

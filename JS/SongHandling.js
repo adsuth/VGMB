@@ -30,9 +30,14 @@ class SongHandler {
         if ( quiz.gameModeName === "relax" ){ quiz.gameMode(); return }
 
         quiz.state.isSkipping = true;
-        if ( !quiz.abilityState.shield.isShielded ) {
+        if ( !quiz.abilityState.shield.isActive ) {
             quiz.resetCombo();
             quiz.OTHERFUNC.updateRoundPoints( -1 );
+        }
+        
+        // reset hint only if being used
+        if ( quiz.abilityState.hint.isActive ) {
+            quiz.resetAbility("hint");
         }
         
         quiz.OTHERFUNC.updateCounter();

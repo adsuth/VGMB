@@ -19,6 +19,8 @@ class VGMB {
             
             roundPoints: 0,
             pointCounterValue: 0,
+            pointMilestone: 100,
+
             comboMultiplier: 1,
             currentCombo: 0,
 
@@ -36,9 +38,39 @@ class VGMB {
 
         this.abilityState = {
             shield: {
-                isShielded: false,
-                isShieldOnCooldown: false,
-                shieldCooldown: 0,
+                isCooldown: false,
+                cooldown: 0,
+                cooldownLength: 4,
+                button: shieldButton,
+                activeColor: "Blue",
+
+                useMessage: "shieldUsed",
+                rechargeMessage: "shieldRecharge",
+
+                function: function () {
+                    quiz.abilityState.shield.isActive = true;
+                },
+                
+                isActive: false
+            },
+            hint: {
+                isCooldown: false,
+                cooldown: 0,
+                cooldownLength: 4,
+                button: hintButton,
+                activeColor: "Purple",
+
+                useMessage: "hintUsed",
+                rechargeMessage: "hintRecharge",
+
+                function: function () {
+                    quiz.abilityState.hint.currentHint = quiz.generateHint();
+                    quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("showHint") );
+                    quiz.abilityState.hint.isActive = true;
+                },
+
+                isActive: false,
+                currentHint: ""
             }
         }
 
@@ -65,12 +97,14 @@ class VGMB {
      *  random series, games and songs
      */
     standardGame() {
+        player.setVolume( this.currentVolume );
         this.resetForNextRound();
         this.SG.getSong();
         this.SH.changeSong();
     }
 
     relaxMode() {
+        player.setVolume( this.currentVolume );
         this.resetForNextRound();
         this.SG.getSong();
         this.SH.changeSong();
@@ -107,8 +141,8 @@ class VGMB {
             this.updateCombo();
             
             // reset shield only if being used
-            if ( this.abilityState.shield.isShielded ) {
-                this.resetShield();
+            if ( this.abilityState.shield.isActive ) {
+                this.resetAbility("shield");
             }
             
             // get time message
@@ -134,7 +168,7 @@ class VGMB {
             
             this.OTHERFUNC.generateText( this.OTHERFUNC.getText("wrong") );
             
-            this.state.history.unshift( textInput.value )
+            this.state.history.unshift( textInput.value );
             this.state.historyPos = 0;
         }
     
@@ -176,9 +210,14 @@ class VGMB {
         
         
         // reset shield
-        this.abilityState.shield.isShielded = false; 
-        if ( this.abilityState.shield.isShieldOnCooldown && !this.state.isAFK ) {
-            this.rechargeShield();
+        this.abilityState.shield.isActive = false; 
+        if ( this.abilityState.shield.onCooldown ) {
+            this.rechargeAbility( "shield" );
+        }
+
+        this.abilityState.hint.isActive = false; 
+        if ( this.abilityState.hint.onCooldown ) {
+            this.rechargeAbility( "hint" );
         }
         
         // reset round points
@@ -188,40 +227,67 @@ class VGMB {
         this.state.answered = false;
     }
 
-    rechargeShield() {
-        if ( !this.abilityState.shield.isShieldOnCooldown && !this.state.answered ) { return }
-        shieldButton.style.backgroundColor = "var(--colorDarker)";
-        this.abilityState.shield.shieldCooldown -= 1;
+    
+    rechargeAbility( ability ) {
+        if ( !this.abilityState[ability].onCooldown && !this.state.answered ) { return }
+        quiz.abilityState[ability].button.style.backgroundColor = "var(--colorDarker)";
+        quiz.abilityState[ability].cooldown -= 1;
 
-        if ( this.abilityState.shield.shieldCooldown === 0 ) {
-            this.resetShield();
-            this.OTHERFUNC.generateText(this.OTHERFUNC.getText( "shieldRecharge" ));
+        if ( quiz.abilityState[ability].cooldown === 0 ) {
+            this.resetAbility(ability);
+            this.OTHERFUNC.generateText(this.OTHERFUNC.getText( quiz.abilityState[ability].rechargeMessage ));
         }
     }
 
-    /**
-     * A method that will enter "shielded" state.
-     * Shield allows player to bypass a song without losing points/combo.
-     * shield has a cool down of  
-     */
-    useShield() {
-        // cant shield in relax mode
-        if ( quiz.gameModeName === "relax" ){ return }
-        // if the round is ending, shields on CD, song isnt playing or we're afk, prevent using shield
-        if ( quiz.state.isEnding || quiz.abilityState.shield.isShieldOnCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
-        quiz.abilityState.shield.isShielded = true;
-        
-        shieldButton.style.backgroundColor = "var(--colorBlue)";
-        quiz.OTHERFUNC.generateText(quiz.OTHERFUNC.getText( "shieldUsed" ));
-
-        quiz.abilityState.shield.isShieldOnCooldown = true;
-        quiz.abilityState.shield.shieldCooldown += 4;
+    resetAbility( ability ) {
+        quiz.abilityState[ability].cooldown = 0;
+        quiz.abilityState[ability].onCooldown = false;
+        quiz.abilityState[ability].button.style.backgroundColor = "unset";
     }
 
-    resetShield() {
-        quiz.abilityState.shield.shieldCooldown = 0;
-        quiz.abilityState.shield.isShieldOnCooldown = false;
-        shieldButton.style.backgroundColor = null;
+    useAbility( ability ) {
+        if ( quiz.gameModeName === "relax" ){ return }
+        // // if the round is ending, shields on CD, song isnt playing or we're afk, prevent using shield
+        if ( quiz.state.isEnding || quiz.abilityState[ability].onCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
+        
+        quiz.abilityState[ability].button.style.backgroundColor = `var(--color${quiz.abilityState[ability].activeColor})`;
+        quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText( quiz.abilityState[ability].useMessage ) );
+        
+        quiz.abilityState[ability].function();
+
+        quiz.abilityState[ability].onCooldown = true;
+        quiz.abilityState[ability].cooldown += quiz.abilityState[ability].cooldownLength;
+
+    }
+
+    /**
+     * generates a "hint" string
+     */
+    generateHint() {
+        let answer = quiz.SG.game.answers[0];
+        
+        // positions of all the letters
+        let hintLetters = new Set();
+
+        let numberOfLetters = Math.floor(answer.length / 3);
+        if ( numberOfLetters < 3 && answer.length > 3 ) { numberOfLetters = 3 }
+
+        while ( hintLetters.size < numberOfLetters ) {
+            hintLetters.add( this.OTHERFUNC.randomInt(answer.length) );
+        } 
+        
+        let hint = "";
+        for (let i = 0; i < answer.length; i++) {
+            if ( answer[i] === " " || answer[i] === ":" || hintLetters.has(i) ) {
+                hint += answer[i];
+            }
+            else {
+                hint += ".";
+            }
+        }
+
+        return hint;
+
     }
 
     /**

@@ -8,8 +8,13 @@ const startButton = document.getElementById("btn_startButton");
 const relaxButton = document.getElementById("btn_relaxButton");
 
 const afkButton = document.getElementById("btn_afk");
-const shieldButton = document.getElementById("btn_shieldButton");
+
 const skipButton = document.getElementById("btn_skipButton");
+const shieldButton = document.getElementById("btn_shieldButton");
+const hintButton = document.getElementById("btn_hintButton");
+
+const favicon = document.getElementById("favicon");
+const imgLogo = document.getElementById("img_logo");
 
 // volume control
 const volSlider = document.getElementById("inp_volSlider");

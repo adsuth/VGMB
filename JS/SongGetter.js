@@ -39,7 +39,7 @@ class SongGetter {
     setSongData( series, game, track ) {
         this.series = ALLSONGS.series[series];
         this.game = ALLSONGS.series[series].game[game];
-        this.track = ALLSONGS.series[series].game[game].songs[track];    
+        this.track = ALLSONGS.series[series].game[game].songs[track];  
     }
     
     /**

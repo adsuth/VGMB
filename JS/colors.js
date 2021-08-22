@@ -46,6 +46,8 @@
 
 const PALETTES = {
     standard: {
+        favicon: "/favicon.png",
+
         darker: "#222",
         dark: "#333",
         mid: "#444",
@@ -100,6 +102,8 @@ const PALETTES = {
         softUltra: ""
     },
     relax: {
+        favicon: "/faviconRelaxed.png",
+
         darker: "#422",
         dark: "#633",
         mid: "#944",
@@ -153,6 +157,8 @@ function changeColorPalette( color ) {
     `;
     
     PALETTE_ROOT.innerHTML = newPalette;
+
+    changeFavicon(color);
     
 }
 
@@ -181,5 +187,7 @@ function removeBackgroundImage() {
     `;
 }
 
-
-
+function changeFavicon( color ) {
+    favicon.href = PALETTES[color]["favicon"];
+    imgLogo.src = PALETTES[color]["favicon"];
+}
