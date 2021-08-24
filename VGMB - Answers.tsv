@@ -1,6 +1,3 @@
-167	A Hat in Time	A Hat in Time	ahit										
-168	A Hat in Time: Seal the Deal	A Hat in Time	ahit	A Hat in Time									
-169	A Hat in Time: Nyakuza Metro	A Hat in Time	ahit	A Hat in Time									
 0	Phoenix Wright: Dual Destinies	Ace Attorney	dual destinies	phoenix wright dual destinies	ace attorney dual destinies								
 1	Phoenix Wright: Ace Attorney	Ace Attorney	ace attorney	phoenix wright ace attorney	ace attorney 1	phoenix wright							
 2	Phoenix Wright: Justice for All	Ace Attorney	phoenix wright justice for all	ace attorney 2	justice for all	ace attorney justice for all							
@@ -8,150 +5,70 @@
 4	Apollo Justice: Ace Attorney	Ace Attorney	apollo justice	apollo justice ace attorney									
 5	Ace Attorney Investigations	Ace Attorney	aai	edgeworth investigations	ace attorney: investigations	ace attorney miles edgeworth	ace attorney: miles edgeworth	ace attorney miles edgeworth investigations	ace attorney investigations miles edgeworth	aai1	aai 1		
 6	Spirit of Justice	Ace Attorney	spirit of justice	ace attorney spirit of justice	ace attorney: spirit of justice								
-174	Ace Attorney Investigations 2	Ace Attorney	aai2	edgeworth investigations 2	ace attorney: investigations 2	ace attorney miles edgeworth 2	ace attorney miles edgeworth investigations 2	ace attorney investigations miles edgeworth 2	aai 2				
-175	Adventure Time: Hey Ice King! Why'd You Steal Our Garbage?	Adventure Time	Adventure Time	Hey Ice King	Adventure Time Hey Ice King Whyd You Steal Our Garbage	Hey Ice King Whyd You Steal Our Garbage							
 7	Ape Escape 2	Ape Escape	ae2										
-176	Balloon Fight	Balloon Fight											
-47	Bayonetta	Bayonetta	Bayonetta 1	Bayonetta 1									
-48	BioShock Infinite	BioShock											
-177	Bubble Bobble	Bubble Bobble											
-136	Modern Warfare 2	Call of Duty	mw2										
-137	Modern Warfare 3	Call of Duty	mw3										
-178	Castle Crashers	Castle Crashers											
-179	Castlevania	Castlevania	Castlevania 1										
-180	Castlevania II	Castlevania	Castlevania 2										
-181	Castlevania III	Castlevania	Castlevania 3										
-182	Super Castlevania IV	Castlevania	Castlevania 4	super Castlevania 4									
 8	Catherine	Catherine											
 9	Celeste	Celeste											
 10	Celeste: Farewell	Celeste	celeste	celeste farewell	farewell								
-134	Chrono Cross	Chrono											
-135	Chrono Trigger	Chrono											
-88	Conker's Bad Fur Day	Conker's Bad Fur Day	Conkers Bad Fur Day	conker									
-183	Contra	Contra											
-184	Crash Bandicoot	Crash Bandicoot											
-185	Crash Bandicoot 3: Warped	Crash Bandicoot	Crash Bandicoot 3	Crash Bandicoot 3 Warped									
-186	Cuphead	Cuphead											
 11	Trigger Happy Havoc	Danganronpa	danganronpa	dr1	trigger happy havoc	dr	dangan ronpa						
 12	Goodbye Despair	Danganronpa	danganronpa 2	super danganronpa	super dangan ronpa	super danganronpa 2	super dangan ronpa 2	sdr2	dr2				
 13	Killing Harmony	Danganronpa	danganronpa 3	dangan ronpa 3	danganronpa v3	dr v3	drv3	dangan ronpa v3	v3				
-223	Dark Souls	Dark Souls											
-224	Dark Souls II	Dark Souls	dark souls 2										
-49	Death Stranding	Death Stranding											
 14	DELTARUNE: Chapter 1	DELTARUNE	deltarune	deltarune chapter 1	delta rune	undertale 2							
-188	Dig Dug	Dig Dug											
-89	Donkey Kong 64	Donkey Kong	dk64	dk 64									
-187	Diddy Kong Racing	Donkey Kong	dk racing										
-189	Donkey Kong Country	Donkey Kong	super donkey kong	dkc	dk country								
-190	Donkey Kong Country 2: Diddy's Kong Quest	Donkey Kong	super donkey kong 2	dkc2	dk country 2	dkc 2							
-139	DOOM (2016)	DOOM	doom 2016	doom									
-140	DOOM	DOOM											
-95	DuckTales	DuckTales											
-192	DuckTales: Remastered	Ducktales	ducktales remake	ducktales remastered	ducktales								
+15	Ghost Trick	Ghost Trick	ghost trick	ghost trick phantom detective	ghost trick: phantom detective	phantom detective							
+16	Mario Golf 64	Mario Golf	mario golf	mario golf 64									
+17	Mario Kart Wii	Mario Kart	mario kart wii	mariokart wii	mk wii								
+18	Mario Party	Mario Party	mario party	mario party 1									
+19	Metal Gear Rising: Revengeance	Metal Gear	metal gear rising revengeance	metal gear rising: revengeance	mgr revengeance	mgr	revengeance						
+20	Metal Gear Solid	Metal Gear	mgs	metal gear solid									
+21	Mighty Switch Force	Mighty Switch Force	msf	mighty switch force	mighty switch force 1	msf1							
+22	Mighty Switch Force 2	Mighty Switch Force	msf2	mighty switch force 2									
+23	Persona 5	Shin Megami Tensei	persona 5 royal	persona 5 royal	p5	p5r	persona 5 the royal						
+24	Persona 5 Royal	Shin Megami Tensei	persona 5 r	p5r									
+25	Persona 4 Dancing All Night	Shin Megami Tensei	persona 4 dancing	p4d									
+26	Persona 3 Portable	Shin Megami Tensei	p3p	Persona 3 Portable	p3 portable	persona 3 p	p3 psp	persona 3 psp					
+27	Persona 3 FES	Shin Megami Tensei	Persona 3 fes	p3 fes	p3 fes	Persona 3 festival	p3 festival						
+28	Persona 3	Shin Megami Tensei	Persona 3	p3									
+29	PES 5	Shin Megami Tensei	pes5	pro evolution soccer 5									
+30	Pokemon Colosseum	Pokemon	colosseum										
+31	Portal 2	Portal											
+32	Curious Village	Professor Layton	professor layton	professor layton and the curious village	professor layton curious village								
+33	Pandora's / Diabolical Box	Professor Layton	professor layton pb	professor layton db	professor layton pandoras box	professor layton pandora's box	professor layton diabolical box	professor layton and the diabolical box	diabolical box	pandoras box	pandora's box		
+34	Lost / Unwound Future	Professor Layton	professor layton lf	professor layton uf	unwound future	lost future							
+35	Rhythm Heaven (DS)	Rhythm Heaven	Rhythm Heaven ds	Rhythm Heaven	Rhythm paradise	Rhythm paradise ds							
+36	Rhythm Heaven Fever	Rhythm Heaven	Rhythm Heaven fever	Beat The Beat rhythm paradise	Beat The Beat: rhythm paradise	Rhythm Heaven wii	Rhythm paradise wii						
+37	Super Meat Boy	Super Meat Boy	super meat boy	meat boy									
+38	AI: The Somnium Files	The Somnium Files	somnium files	ai the somnium files	ai somnium files								
+39	UNDERTALE	UNDERTALE	undertale										
+40	Wario Ware: Smooth Moves	Wario Ware	wario ware wii	wario ware smooth moves	wario ware: smooth moves	smooth moves							
+41	Wii Sports	Wii Sports											
+42	Wii Sports Resort	Wii Sports											
+43	You Have to Burn the Rope	You Have to Burn the Rope	burn the rope										
+44	9 Hours, 9 Persons, 9 Doors	Zero Escape	999	9 hours 9 persons 9 doors									
+45	Virtue's Last Reward	Zero Escape	Virtues Last Reward	vlr									
+46	Zero Time Dilemma	Zero Escape	Zero Time Dilemma	ztd									
+47	Bayonetta	Bayonetta	Bayonetta 1	Bayonetta 1									
+48	BioShock Infinite	BioShock											
+49	Death Stranding	Death Stranding											
 50	Eschatos	Eschatos											
-193	F-Zero	F-Zero	f zero	fzero									
-194	F-Zero GX	F-Zero	f zero gx	fzero gx									
-162	Fallout New Vegas	Fallout	new vegas	fonv	fallout nv								
-93	Far Cry 3	Far Cry	fc3										
-90	FEZ	FEZ											
 51	FINAL FANTASY VII REMAKE	FINAL FANTASY	FFVIIR	FFVII	FF7R	FF7	FINAL FANTASY 7 REMAKE	FINAL FANTASY 7	FINAL FANTASY VII				
 52	FINAL FANTASY VII	FINAL FANTASY	FFVII	FF7	FINAL FANTASY 7								
 53	FINAL FANTASY VI	FINAL FANTASY	FFVI	FF6	FINAL FANTASY 6								
-129	FINAL FANTASY X	FINAL FANTASY	ffx	ff x	ff10	ff 10	final fantasy 10						
-195	FINAL FANTASY	FINAL FANTASY	FF	FF1									
-196	FINAL FANTASY XIII-2	FINAL FANTASY	final fantasy 13	final fantasy 13 2	ff 13	ff13	ff 13 2	ff13 2					
-197	Fire Emblem Awakening	Fire Emblem	fe awakening	awakening									
-198	Fire Emblem Gaiden	Fire Emblem	fe gaiden	gaiden									
-199	Fire Emblem Three Houses	Fire Emblem	fe three houses	three houses									
-200	Fire Emblem Blazing Sword	Fire Emblem	fe blazing sword	blazing sword									
 54	Friday Night Funkin'	Friday Night Funkin'	FNF	Friday Night	Friday Night Funkin								
 55	Friday Night Funkin' VS Kapi	Friday Night Funkin'	FNF	Friday Night	Friday Night Funking	FNF Kapi	Kapi Mod	FNF Kapi Mod	Friday Night Funkin VS Kapi				
 56	Friday Night Funkin': Mid-Fight Masses	Friday Night Funkin'	FNF	Friday Night	Friday Night Funking	FNF MFM	FNF Ruv	FNF Sarv	FNF Zavodila	Friday Night Funkin midfight masses	Friday Night Funkin mid fight masses	Friday Night Funkin mid-fight masses	
 57	Friday Night Funkin': Tricky Mod	Friday Night Funkin'	Friday Night Funking	FNF Tricky	FNF Madness	FNF	Friday Night Funkin Tricky Mod						
-159	FNF Smoke 'Em Out Struggle	Friday Night Funkin'	FNF	Friday Night	Friday Night Funkin	garcello	garcello mod						
-141	FTL: Faster Than Light	FTL	FTL	faster than light									
 58	Furi	Furi											
-15	Ghost Trick	Ghost Trick	ghost trick	ghost trick phantom detective	ghost trick: phantom detective	phantom detective							
-201	Ghosts 'n Goblins	Ghosts 'n Goblins	ghosts n goblins										
 59	Globulous	Globulous											
-203	Gradius	Gradius											
-204	Helltaker	Helltaker											
-163	Hollow Knight	Hollow Knight											
-164	Hollow Knight: The Grimm Troupe	Hollow Knight	Hollow Knight	grimm troupe									
-165	Hollow Knight: Godmaster	Hollow Knight	Hollow Knight	godmaster									
-166	Hollow Knight: Silksong	Hollow Knight	Hollow Knight	silksong									
-160	Hotline Miami	Hotline Miami											
-161	Hotline Miami 2: Wrong Number	Hotline Miami	hotline miami 2	wrong number									
-205	Ice Climber	Ice Climber	Ice Climbers										
-202	GoldenEye 007	James Bond	golden eye	goldeneye									
-206	Jet Set Radio	Jet Set Radio	jsr										
 60	Katamari Damacy	Katamari											
-142	Touch My Katamari	Katamari											
-92	Kid Icarus Uprising	Kid Icarus	Uprising										
-207	Kid Icarus	Kid Icarus											
-208	Life Is Strange	Life Is Strange											
-209	Life Is Strange: Before The Storm	Life Is Strange	Life Is Strange Before The Storm										
-143	Mamorukun Curse!	Mamorukun Curse!	Mamorukun Curse	Mamo Curse									
 61	Super Mario Sunshine	Mario	mario sunshine	sms									
-112	Super Mario Bros.	Mario	smb	mario bros	super mario bros	mario							
-113	Super Mario Bros. 2	Mario	smb2	mario bros 2	super mario bros 2	mario 2	smb 2						
-114	Super Mario Bros. 3	Mario	smb 3	smb3	super mario bros 3	mario 3	smb 3						
-115	Super Mario 64	Mario	sm64	sm 64	mario 64	m64							
-116	Super Mario Odyssey	Mario	odyssey	mario odyssey									
-117	Super Mario Land	Mario	mario land										
-118	Super Mario Land 2	Mario	mario land 2										
-119	Super Mario World	Mario	mario world										
-120	Super Mario World 2: Yoshi's Island	Mario	mario world 2	yoshis island	yoshi's island	super mario world 2							
-121	New Super Mario Bros.	Mario	nsmb	new super mario bros	new mario bros								
-122	Super Mario Galaxy	Mario	mario galaxy	galaxy	smg								
-123	New Super Mario Bros. Wii	Mario	nsmb wii	new super mario wii	new super mario bros wii								
-124	Super Mario Galaxy 2	Mario	smg2	mario galaxy 2	smg 2	galaxy 2							
-125	Super Mario 3D Land	Mario	mario 3d land	3d land									
-126	Super Mario 3D World	Mario	mario 3d world	3d world									
-191	Dr. Mario	Mario	dr mario	doctor mario									
-16	Mario Golf 64	Mario Golf	mario golf	mario golf 64									
-17	Mario Kart Wii	Mario Kart	mario kart wii	mariokart wii	mk wii								
-106	Mario Kart 64	Mario Kart	mk 64	mk64									
-107	Super Mario Kart	Mario Kart	smk	mario kart snes									
-108	Mario Kart DS	Mario Kart	mk ds	mkds									
-109	Mario Kart: Double Dash!!	Mario Kart	mk dd	double dash	mkdd	mario kart double dash							
-110	Mario Kart 7	Mario Kart	mk 7	mk7									
-111	Mario Kart 8	Mario Kart	mk 8	mk8									
-18	Mario Party	Mario Party	mario party	mario party 1									
-131	Mega Man	Mega Man	mega man 1	megaman									
-132	Mega Man 2	Mega Man	megaman 2										
-133	Mega Man 3	Mega Man	megaman 3										
-170	Mega Man 4	Mega Man	mm 4	megaman 4	mm4								
-171	Mega Man 5	Mega Man	mm 5	megaman 5	mm5								
-19	Metal Gear Rising: Revengeance	Metal Gear	metal gear rising revengeance	metal gear rising: revengeance	mgr revengeance	mgr	revengeance						
-20	Metal Gear Solid	Metal Gear	mgs	metal gear solid									
-210	Metal Gear Solid 2: Sons of Liberty	Metal Gear	mgs 2	mgs2	sons of liberty	Metal Gear Solid 2 Sons of Liberty	Metal Gear Solid 2						
-211	Metal Gear Solid 3: Snake Eater	Metal Gear	mgs 3	mgs3	snake eater	Metal Gear Solid 3	Metal Gear Solid 3 snake eater						
-212	Metal Gear Solid 4: Guns of the Patriots	Metal Gear	mgs 4	mgs4	guns of the patriots	Metal Gear Solid 4 guns of the patriots							
-21	Mighty Switch Force	Mighty Switch Force	msf	mighty switch force	mighty switch force 1	msf1							
-22	Mighty Switch Force 2	Mighty Switch Force	msf2	mighty switch force 2									
-213	Minecraft	Minecraft											
 62	Mirror's Edge	Mirror's Edge	Mirrors Edge										
 63	Mother 2	MOTHER	Earthbound										
 64	Mother	MOTHER	Earthbound Beginnings										
-214	NieR	NieR											
-215	NieR:Automata	NieR	NieR automata										
-128	Papers, Please	Papers, Please	papers please										
-91	Perfect Dark	Perfect Dark											
-23	Persona 5	Persona	persona 5 royal	persona 5 royal	p5	p5r	persona 5 the royal						
-24	Persona 5 Royal	Persona	persona 5 r	p5r									
-25	Persona 4 Dancing All Night	Persona	persona 4 dancing	p4d									
-26	Persona 3 Portable	Persona	p3p	Persona 3 Portable	p3 portable	persona 3 p	p3 psp	persona 3 psp					
-27	Persona 3 FES	Persona	Persona 3 fes	p3 fes	p3 fes	Persona 3 festival	p3 festival						
-28	Persona 3	Persona	Persona 3	p3									
-29	PES 5	Persona	pes5	pro evolution soccer 5									
-65	Persona 4	Persona	P4	P4G	persona 4 Golden								
-66	Persona 4 Golden	Persona	P4G										
-67	Persona 4 Golden The Animation	Persona	P4A	P4 Anime	persona 4 Golden	persona 4	P4	P4G					
-68	Persona Q2: New Cinema Labyrinth	Persona	PQ2	New Cinema Labyrinth	Persona Q2	Persona Q2 New Cinema Labyrinth							
-69	Persona 4 Arena	Persona	P4A	P4 Arena	P4AU	P4AU	Persona 4 Arena Ultimax						
-70	Persona 4 Arena Ultimax	Persona	P4AU										
-30	Pokemon Colosseum	Pokemon	colosseum										
+65	Persona 4	Shin Megami Tensei	P4	P4G	persona 4 Golden								
+66	Persona 4 Golden	Shin Megami Tensei	P4G										
+67	Persona 4 Golden The Animation	Shin Megami Tensei	P4A	P4 Anime	persona 4 Golden	persona 4	P4	P4G					
+68	Persona Q2: New Cinema Labyrinth	Shin Megami Tensei	PQ2	New Cinema Labyrinth	Persona Q2	Persona Q2 New Cinema Labyrinth							
+69	Persona 4 Arena	Shin Megami Tensei	P4A	P4 Arena	P4AU	P4AU	Persona 4 Arena Ultimax						
+70	Persona 4 Arena Ultimax	Shin Megami Tensei	P4AU										
 71	Pokemon Diamond and Pearl	Pokemon	DPPt	Pokemon Diamond	Pokemon Pearl	diamond	pearl	platinum	Pokemon Platinum	pokemon DPPt			
 72	Pokemon Platinum	Pokemon	DPPt	Pokemon Platinum	platinum	pokemon DPPt							
 73	Pokemon HeartGold and SoulSilver	Pokemon	HGSS	Pokemon Heartgold	Pokemon Soulsilver	Pokemon Heart Gold	Pokemon Soul Silver	heartgold	soulsilver	heart gold	soul silver	pokemon HGSS	
@@ -161,71 +78,217 @@
 77	Pokemon Ultra Sun and Ultra Moon	Pokemon	USUM	Pokemon Ultra Sun	Pokemon Ultra Moon	ultra sun	ultra moon						
 78	Pokemon Sun and Moon	Pokemon	SM	Pokemon Sun	Pokemon Moon	Pokemon Ultra Sun	Pokemon Ultra Moon	moon	sun	ultra sun	ultra moon	pokemon SM	pokemon USUM
 79	Pokemon Omega Ruby and Alpha Sapphire	Pokemon	ORAS	Pokemon Omega Ruby	Pokemon Alpha Sapphire	omega ruby	alpha sapphire	pokemon oras					
-31	Portal 2	Portal											
 80	Portal	Portal	Portal										
-32	Curious Village	Professor Layton	professor layton	professor layton and the curious village	professor layton curious village								
-33	Pandora's / Diabolical Box	Professor Layton	professor layton pb	professor layton db	professor layton pandoras box	professor layton pandora's box	professor layton diabolical box	professor layton and the diabolical box	diabolical box	pandoras box	pandora's box		
-34	Lost / Unwound Future	Professor Layton	professor layton lf	professor layton uf	unwound future	lost future							
-35	Rhythm Heaven (DS)	Rhythm Heaven	Rhythm Heaven ds	Rhythm Heaven	Rhythm paradise	Rhythm paradise ds							
-36	Rhythm Heaven Fever	Rhythm Heaven	Rhythm Heaven fever	Beat The Beat rhythm paradise	Beat The Beat: rhythm paradise	Rhythm Heaven wii	Rhythm paradise wii						
-130	Ribbit King	Ribbit King											
-216	Old School Runescape	Runescape	osrs	runescape	runescape 07								
-217	SMT: Nocturne	Shin Megami Tensei	smt 3	smt3	nocturne	smt nocturne							
-144	Shovel Knight	Shovel Knight											
-172	Shovel Knight: Specter of Torment	Shovel Knight	Shovel Knight	specter of torment	Shovel Knight Specter of Torment								
-173	Shovel Knight: Plague of Shadows	Shovel Knight	Shovel Knight	Plague of Shadows	Shovel Knight Plague of Shadows								
-138	Sonic R	Sonic The Hedgehog											
-145	Sonic the Hedgehog	Sonic the Hedgehog	sonic	sonic 1									
-146	Sonic the Hedgehog 2	Sonic the Hedgehog	sonic 2										
-147	Sonic the Hedgehog 3	Sonic the Hedgehog	Sonic the Hedgehog 3 and knuckles	sonic 3	sonic 3 and knuckles								
-148	Sonic CD	Sonic the Hedgehog											
-149	Sonic Adventure	Sonic the Hedgehog	sa1	sa	sonic adventure dx	sonic adventure dx directors cut							
-150	Sonic Adventure 2	Sonic the Hedgehog	sa2	sa2b	sonic adventure 2 battle								
-151	Sonic Colors	Sonic the Hedgehog											
-152	Sonic Unleashed	Sonic the Hedgehog											
-153	Sonic and the Secret Rings	Sonic the Hedgehog											
-154	Shadow the Hedgehog	Sonic the Hedgehog											
-155	Sonic Generations	Sonic the Hedgehog											
-156	Sonic the Hedgehog (2006)	Sonic the Hedgehog	sonic 06	sonic the hedgehog									
-157	Sonic Forces	Sonic the Hedgehog											
-158	Sonic Mania	Sonic the Hedgehog											
-218	Sonic Rush	Sonic the Hedgehog											
-219	Soulcalibur	Soulcalibur											
-220	Soulcalibur II	Soulcalibur	Soulcalibur 2										
-221	Soulcalibur III	Soulcalibur	Soulcalibur 3										
-222	Soul Edge	Soulcalibur											
 81	Super Hexagon	Super Hexagon	Super Hexagon										
-37	Super Meat Boy	Super Meat Boy	super meat boy	meat boy									
-225	Super Smash Bros. Melee	Super Smash Bros.	melee	smash melee	super smash bros melee								
-226	Super Smash Bros. Brawl	Super Smash Bros.	brawl	smash brawl	super smash bros brawl								
 82	Terraria Calamity Mod	Terraria	Terraria Calamity	Calamity	Calamity Mod								
 83	Terraria	Terraria											
 84	The Last of Us	The Last of Us	TLOU	Last of Us	LOU								
-38	AI: The Somnium Files	The Somnium Files	somnium files	ai the somnium files	ai somnium files								
-227	The Walking Dead: Season One	The Walking Dead	walking dead	The Walking Dead Season One	The Walking Dead	twd							
-228	The Walking Dead: Season Two	The Walking Dead	walking dead	The Walking Dead Season Two	The Walking Dead	twd							
 85	Timesplitters 2	Timesplitters	TS2	Time Splitters 2									
 86	To The Moon	To The Moon											
-94	Uncharted 3: Drake's Deception	Uncharted	uncharted 3										
-39	UNDERTALE	UNDERTALE	undertale										
-127	VA-11 HALL-A	VA-11 HALL-A	vallhalla	va11 halla									
-229	VOEZ	VOEZ											
 87	VVVVVV	VVVVVV	V										
-40	Wario Ware: Smooth Moves	Wario Ware	wario ware wii	wario ware smooth moves	wario ware: smooth moves	smooth moves							
-41	Wii Sports	Wii Sports											
-42	Wii Sports Resort	Wii Sports											
-230	Xenoblade Chronicles 2	Xenoblade Chronicles	xb 2	xenoblade 2									
-43	You Have to Burn the Rope	You Have to Burn the Rope	burn the rope										
+88	Conker's Bad Fur Day	Conker's Bad Fur Day	Conkers Bad Fur Day	conker									
+89	Donkey Kong 64	Donkey Kong	dk64	dk 64									
+90	FEZ	FEZ											
+91	Perfect Dark	Perfect Dark											
+92	Kid Icarus Uprising	Kid Icarus	Uprising										
+93	Far Cry 3	Far Cry	fc3										
+94	Uncharted 3: Drake's Deception	Uncharted	uncharted 3										
+95	DuckTales	DuckTales											
 96	The Legend of Zelda	Zelda	loz	zelda	zelda 1								
 97	Zelda II: The Adventure of Link	Zelda	loz2	zelda 2									
-98	The Legend of Zelda: A Link to the Past	Zelda	lttp	alttp	zelda 3	link to the past	a link to the past	loz3					
-99	The Legend of Zelda: Link's Awakening	Zelda	link's awakening	links awakening	zelda awakening	zelda links awakening	zelda link's awakening						
-100	The Legend of Zelda: Phantom Hourglass	Zelda	phantom hourglass	loz ph	zelda phantom hourglass	loz phantom hourglass	The Legend of Zelda Phantom Hourglass						
-101	The Legend of Zelda: Spirit Tracks	Zelda	spirit tracks	loz st	zelda spirit tracks	loz spirit tracks	The Legend of Zelda Spirit Tracks						
-102	The Legend of Zelda: Ocarina of Time	Zelda	OoT	zelda ocarina	zelda ocarina	zelda ocarina of time	ocarina of time	The Legend of Zelda ocarina of time					
-103	The Legend of Zelda: Majora's Mask	Zelda	Majora	Majoras mask	Majora's mask	zelda mm	zelda majoras mask						
-104	The Legend of Zelda: The Wind Waker	Zelda	wind waker	loz wind waker	loz ww	the wind waker	zelda wind waker	zelda ww					
-105	The Legend of Zelda: Breath of the Wild	Zelda	botw	breath of the wild	leg of zeg	zelda botw	loz botw						
-44	9 Hours, 9 Persons, 9 Doors	Zero Escape	999	9 hours 9 persons 9 doors									
-45	Virtue's Last Reward	Zero Escape	Virtues Last Reward	vlr									
-46	Zero Time Dilemma	Zero Escape	Zero Time Dilemma	ztd									
+98	Link's Awakening	Zelda	link's awakening	links awakening	zelda awakening	zelda links awakening	zelda link's awakening						
+99	Phantom Hourglass	Zelda	phantom hourglass	loz ph	zelda phantom hourglass	loz phantom hourglass	The Legend of Zelda Phantom Hourglass						
+100	Spirit Tracks	Zelda	spirit tracks	loz st	zelda spirit tracks	loz spirit tracks	The Legend of Zelda Spirit Tracks						
+101	Ocarina of Time	Zelda	OoT	zelda ocarina	zelda ocarina	zelda ocarina of time	ocarina of time	The Legend of Zelda ocarina of time					
+102	Majora's Mask	Zelda	Majora	Majoras mask	Majora's mask	zelda mm	zelda majoras mask						
+103	The Wind Waker	Zelda	wind waker	loz wind waker	loz ww	the wind waker	zelda wind waker	zelda ww					
+104	Breath of the Wild	Zelda	botw	breath of the wild	leg of zeg	zelda botw	loz botw						
+105	Mario Kart 64	Mario Kart	mk 64	mk64									
+106	Super Mario Kart	Mario Kart	smk	mario kart snes									
+107	Mario Kart DS	Mario Kart	mk ds	mkds									
+108	Mario Kart: Double Dash!!	Mario Kart	mk dd	double dash	mkdd	mario kart double dash							
+109	Mario Kart 7	Mario Kart	mk 7	mk7									
+110	Mario Kart 8	Mario Kart	mk 8	mk8									
+111	Super Mario Bros.	Mario	smb	mario bros	super mario bros	mario							
+112	Super Mario Bros. 2	Mario	smb2	mario bros 2	super mario bros 2	mario 2	smb 2						
+113	Super Mario Bros. 3	Mario	smb 3	smb3	super mario bros 3	mario 3	smb 3						
+114	Super Mario 64	Mario	sm64	sm 64	mario 64	m64							
+115	Super Mario Odyssey	Mario	odyssey	mario odyssey									
+116	Super Mario Land	Mario	mario land										
+117	Super Mario Land 2	Mario	mario land 2										
+118	Super Mario World	Mario	mario world										
+119	Super Mario World 2: Yoshi's Island	Mario	mario world 2	yoshis island	yoshi's island	super mario world 2							
+120	New Super Mario Bros.	Mario	nsmb	new super mario bros	new mario bros								
+121	Super Mario Galaxy	Mario	mario galaxy	galaxy	smg								
+122	New Super Mario Bros. Wii	Mario	nsmb wii	new super mario wii	new super mario bros wii								
+123	Super Mario Galaxy 2	Mario	smg2	mario galaxy 2	smg 2	galaxy 2							
+124	Super Mario 3D Land	Mario	mario 3d land	3d land									
+125	Super Mario 3D World	Mario	mario 3d world	3d world									
+126	VA-11 HALL-A	VA-11 HALL-A	vallhalla	va11 halla									
+127	Papers, Please	Papers, Please	papers please										
+128	FINAL FANTASY X	FINAL FANTASY	ffx	ff x	ff10	ff 10	final fantasy 10						
+129	Ribbit King	Ribbit King											
+130	Mega Man	Mega Man	mega man 1	megaman									
+131	Mega Man 2	Mega Man	megaman 2										
+132	Mega Man 3	Mega Man	megaman 3										
+133	Chrono Cross	Chrono											
+134	Chrono Trigger	Chrono											
+135	Modern Warfare 2	Call of Duty	mw2										
+136	Modern Warfare 3	Call of Duty	mw3										
+137	Sonic R	Sonic The Hedgehog											
+138	DOOM (2016)	DOOM	doom 2016	doom									
+139	DOOM	DOOM											
+140	FTL: Faster Than Light	FTL	FTL	faster than light									
+141	Touch My Katamari	Katamari											
+142	Mamorukun Curse!	Mamorukun Curse!	Mamorukun Curse	Mamo Curse									
+143	Shovel Knight	Shovel Knight											
+144	Sonic the Hedgehog	Sonic the Hedgehog	sonic	sonic 1									
+145	Sonic the Hedgehog 2	Sonic the Hedgehog	sonic 2										
+146	Sonic the Hedgehog 3	Sonic the Hedgehog	Sonic the Hedgehog 3 and knuckles	sonic 3	sonic 3 and knuckles								
+147	Sonic CD	Sonic the Hedgehog											
+148	Sonic Adventure	Sonic the Hedgehog	sa1	sa	sonic adventure dx	sonic adventure dx directors cut							
+149	Sonic Adventure 2	Sonic the Hedgehog	sa2	sa2b	sonic adventure 2 battle								
+150	Sonic Colors	Sonic the Hedgehog											
+151	Sonic Unleashed	Sonic the Hedgehog											
+152	Sonic and the Secret Rings	Sonic the Hedgehog											
+153	Shadow the Hedgehog	Sonic the Hedgehog											
+154	Sonic Generations	Sonic the Hedgehog											
+155	Sonic the Hedgehog (2006)	Sonic the Hedgehog	sonic 06	sonic the hedgehog									
+156	Sonic Forces	Sonic the Hedgehog											
+157	Sonic Mania	Sonic the Hedgehog											
+158	FNF Smoke 'Em Out Struggle	Friday Night Funkin'	FNF	Friday Night	Friday Night Funkin	garcello	garcello mod						
+159	Hotline Miami	Hotline Miami											
+160	Hotline Miami 2: Wrong Number	Hotline Miami	hotline miami 2	wrong number									
+161	Fallout New Vegas	Fallout	new vegas	fonv	fallout nv								
+162	Hollow Knight	Hollow Knight											
+163	Hollow Knight: The Grimm Troupe	Hollow Knight	Hollow Knight	grimm troupe									
+164	Hollow Knight: Godmaster	Hollow Knight	Hollow Knight	godmaster									
+165	Hollow Knight: Silksong	Hollow Knight	Hollow Knight	silksong									
+166	A Hat in Time	A Hat in Time	ahit										
+167	A Hat in Time: Seal the Deal	A Hat in Time	ahit	A Hat in Time									
+168	A Hat in Time: Nyakuza Metro	A Hat in Time	ahit	A Hat in Time									
+169	Mega Man 4	Mega Man	mm 4	megaman 4	mm4								
+170	Mega Man 5	Mega Man	mm 5	megaman 5	mm5								
+171	Shovel Knight: Specter of Torment	Shovel Knight	Shovel Knight	specter of torment	Shovel Knight Specter of Torment								
+172	Shovel Knight: Plague of Shadows	Shovel Knight	Shovel Knight	Plague of Shadows	Shovel Knight Plague of Shadows								
+173	Ace Attorney Investigations 2	Ace Attorney	aai2	edgeworth investigations 2	ace attorney: investigations 2	ace attorney miles edgeworth 2	ace attorney miles edgeworth investigations 2	ace attorney investigations miles edgeworth 2	aai 2				
+174	Adventure Time: Hey Ice King! Why'd You Steal Our Garbage?	Adventure Time	Adventure Time	Hey Ice King	Adventure Time Hey Ice King Whyd You Steal Our Garbage	Hey Ice King Whyd You Steal Our Garbage							
+175	Balloon Fight	Balloon Fight											
+176	Bubble Bobble	Bubble Bobble											
+177	Castle Crashers	Castle Crashers											
+178	Castlevania	Castlevania	Castlevania 1										
+179	Castlevania II	Castlevania	Castlevania 2										
+180	Castlevania III	Castlevania	Castlevania 3										
+181	Super Castlevania IV	Castlevania	Castlevania 4	super Castlevania 4									
+182	Contra	Contra											
+183	Crash Bandicoot	Crash Bandicoot	crash 1	crash									
+184	Crash Bandicoot 3: Warped	Crash Bandicoot	Crash Bandicoot 3	Crash Bandicoot 3 Warped	crash 3								
+185	Cuphead	Cuphead											
+186	Diddy Kong Racing	Donkey Kong	dk racing										
+187	Dig Dug	Dig Dug											
+188	Donkey Kong Country	Donkey Kong	super donkey kong	dkc	dk country								
+189	Donkey Kong Country 2: Diddy's Kong Quest	Donkey Kong	super donkey kong 2	dkc2	dk country 2	dkc 2							
+190	Dr. Mario	Mario	dr mario	doctor mario									
+191	DuckTales: Remastered	Ducktales	ducktales remake	ducktales remastered	ducktales								
+192	F-Zero	F-Zero	f zero	fzero									
+193	F-Zero GX	F-Zero	f zero gx	fzero gx									
+194	FINAL FANTASY	FINAL FANTASY	FF	FF1									
+195	FINAL FANTASY XIII-2	FINAL FANTASY	final fantasy 13 2	ff 13 2	ff13 2	final fantasy 13-2	ff13-2	ff 13-2					
+196	Fire Emblem Awakening	Fire Emblem	fe awakening	awakening									
+197	Fire Emblem Gaiden	Fire Emblem	fe gaiden	gaiden									
+198	Fire Emblem Three Houses	Fire Emblem	fe three houses	three houses									
+199	Fire Emblem Blazing Sword	Fire Emblem	fe blazing sword	blazing sword									
+200	Ghosts 'n Goblins	Ghosts 'n Goblins	ghosts n goblins										
+201	GoldenEye 007	James Bond	golden eye	goldeneye									
+202	Gradius	Gradius											
+203	Helltaker	Helltaker											
+204	Ice Climber	Ice Climber	Ice Climbers										
+205	Jet Set Radio	Jet Set Radio	jsr										
+206	Kid Icarus	Kid Icarus											
+207	Life Is Strange	Life Is Strange	LiS										
+208	Life Is Strange: Before The Storm	Life Is Strange	Life Is Strange Before The Storm	LiS before the storm	before the storm								
+209	Metal Gear Solid 2: Sons of Liberty	Metal Gear	mgs 2	mgs2	sons of liberty	Metal Gear Solid 2 Sons of Liberty	Metal Gear Solid 2						
+210	Metal Gear Solid 3: Snake Eater	Metal Gear	mgs 3	mgs3	snake eater	Metal Gear Solid 3	Metal Gear Solid 3 snake eater						
+211	Metal Gear Solid 4: Guns of the Patriots	Metal Gear	mgs 4	mgs4	guns of the patriots	Metal Gear Solid 4 guns of the patriots							
+212	Minecraft	Minecraft											
+213	NieR	NieR											
+214	NieR:Automata	NieR	NieR automata										
+215	Old School Runescape	Runescape	osrs	runescape	runescape 07								
+216	SMT: Nocturne	Shin Megami Tensei	smt 3	smt3	nocturne	smt nocturne							
+217	Sonic Rush	Sonic the Hedgehog											
+218	Soulcalibur	Soulcalibur	soul calibur										
+219	Soulcalibur II	Soulcalibur	Soulcalibur 2	soul calibur 2									
+220	Soulcalibur III	Soulcalibur	Soulcalibur 3	soul calibur 3									
+221	Soul Edge	Soulcalibur	soul blade										
+222	Dark Souls	Dark Souls											
+223	Dark Souls II	Dark Souls	dark souls 2										
+224	Super Smash Bros. Melee	Super Smash Bros.	melee	smash melee	super smash bros melee	smash bros melee	ssbm	ssb melee					
+225	Super Smash Bros. Brawl	Super Smash Bros.	brawl	smash brawl	super smash bros brawl	smash bros brawl	ssbb	ssb brawl					
+226	The Walking Dead: Season One	The Walking Dead	walking dead	The Walking Dead Season One	The Walking Dead	twd							
+227	The Walking Dead: Season Two	The Walking Dead	walking dead season 2	The Walking Dead Season Two	The Walking Dead season 2	twd season 2	twd s2						
+228	VOEZ	VOEZ											
+229	Xenoblade Chronicles 2	Xenoblade Chronicles	xb 2	xenoblade 2									
+230	Castlestorm												
+231	Gravity Rush												
+232	Lufia II: Rise of the Sinistrals		lufia 2	lufia 2 rise of the sinistrals	rise of the sinistrals								
+233	Cave Story												
+234	Skyward Sword		zelda skyward sword	the legend of zelda skyward sword	legend of zelda skyward sword								
+235	I Love You, Colonel Sanders! A Finger Lickin’ Good Dating Simulator		KFC dating sim	I Love You, Colonel Sanders	KFC game	Colonel Sanders							
+236	Scott Pilgrim vs. The World: The Game		Scott Pilgrim the game	Scott Pilgrim	Scott Pilgrim vs the world	scott pilgrim versus the world							
+237	Battletoads												
+238	Overwatch		ow										
+239	Metroid												
+240	Yoshi's Woolly World		woolly world	yoshis woolly world									
+241	Golden Sun												
+242	Halo												
+243	Kirby's Adventure		kirbys adventure										
+244	Kirby's Dream Course		kirbys dream course	dream course									
+245	Kirby's Dream Land		kirbys dream land	dream land	kirbys dreamland	dreamland							
+246	Kirby Super Star		kirby superstar										
+247	L.A. Noire		la noire	l a noire									
+248	Lemmings (Gameboy)		lemmings										
+249	Lovely Planet												
+250	Mario Paint												
+251	Mario Party 2												
+252	Ultimate Marvel vs. Capcom 3		umvc3	umvc 3	Ultimate Marvel vs Capcom 3	Ultimate Marvel versus Capcom 3							
+253	Mega Man 7		megaman 7	mm 7	mm7								
+254	Mega Man 9		megaman 9	mm 9	mm9								
+255	Mega Man 10		megaman 10	mm 10	mm10								
+256	Super Metroid												
+257	Michael Jackson's Moonwalker		moonwalker	michael jacksons moonwalker									
+258	Octopath Traveler												
+259	Paper Mario: The Thousand-Year Door		paper mario the thousand-year door	paper mario thousand-year door	paper mario the thousand year door	paper mario thousand year door	paper mario ttyd	ttyd					
+260	Kirby Triple Deluxe		triple deluxe										
+261	Parappa the Rapper		parappa										
+262	Pictionary												
+263	Mike Tyson's Punch-Out!!		mike tysons punch out	mike tysons punch-out	mike tysons punchout	mike tyson's punch out	mike tyson's punch-out	mike tyson's punchout	punch-out	punch out	punchout		
+264	Punch-Out!!		punch out	punchout	punch-out								
+265	Shadow of the Colossus		sotc										
+266	Shenmue												
+267	Teenage Mutant Ninja Turtles IV: Turtles in Time		tmnt 4	tmnt4	turtles in time	Teenage Mutant Ninja Turtles 4 Turtles in Time	tmnt 4 turtles in time	tmnt4 turtles in time					
+268	Tetris (NES)		tetris										
+269	Tetris (GB)		tetris										
+270	Tetris 99												
+271	Worms 3D												
+272	Yoshi's Story		yoshis story										
+273	Ys VIII -Lacrimosa of DANA-		ys 8	ys8	ys viii	lacrimosa of dana	ys 8 lacrimosa of dana						
+274	Croc: Legend of the Gobbos		croc	croc legend of the gobbos	legend of the gobbos								
+275	Yakuza 0												
+276	Doki Doki Literature Club!		doki doki	Doki Doki Literature Club									
+277	Trauma Center: Under the Knife 2		trauma center 4	trauma center under the knife 2	trauma center utk 2								
+278	The Wolf Among Us		wolf among us										
+279	Tales from the Borderlands												
+280	Metal Gear												
+281	Metal Gear 2: Solid Snake		metal gear 2	solid snake									
+282	Rivals of Aether												
+283	Twilight Princess		zelda twilight princess	zelda tp	the legend of zelda twilight princess	legend of zelda twilight princess	legend of zelda tp	the legend of zelda tp					
+284	Street Fighter II		street fighter 2										
+285	Mega Man X		megaman x	mmx	mm x								
+286	Professor Layton vs. Phoenix Wright: Ace Attorney		professor layton vs ace attorney	Professor Layton vs phoenix Wright ace Attorney	Professor Layton vs phoenix Wright	layton vs wright	layton vs ace attorney	layton vs aa					
+287	The Great Ace Attorney		tgaa	great ace attorney									
+288	Kirby 64: The Crystal Shards		kirby 64 the crystal shards	kirby 64	the crystal shards	crystal shards							
+289	Kirby's Return to Dream Land		kirbys return to dream land	kirbys return to dream land	kirbys return to dreamland	kirbys return to dreamland	return to dream land	return to dreamland					
+290	Mario & Luigi: Dream Team		mario and luigi dream team	dream team	mario & luigi dream team								
+291	Mario & Luigi: Superstar Saga		mario and luigi superstar saga	superstar saga	mario & luigi superstar saga								
+292	Kingdom Hearts		kh1	kh 1									
+293	Banjo-Kazooie		banjo kazooie	banjo									

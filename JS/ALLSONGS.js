@@ -961,6 +961,69 @@ let ALLSONGS_JSON =`{
                             "link": "https://youtu.be/35ABpHTarEU"
                         }
                     }
+                },
+                "The Great Ace Attorney": {
+                    "gameName": "The Great Ace Attorney",
+                    "answers": ["the great ace attorney", "tgaa", "great ace attorney"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2338": {
+                            "title": "Naruhodou Ryuunosuke ~ Prelude of an Adventure",
+                            "link": "https://youtu.be/9SxIJ7hXVsw"
+                        },
+                        "ID_2339": {
+                            "title": "The Great Court Anteroom",
+                            "link": "https://youtu.be/lmDtVFAOCCQ"
+                        },
+                        "ID_2340": {
+                            "title": "Court Begins",
+                            "link": "https://youtu.be/VXnUBflGR_o"
+                        },
+                        "ID_2341": {
+                            "title": "The Great Cross Examination: Moderato",
+                            "link": "https://youtu.be/158e3Bh6o2Q"
+                        },
+                        "ID_2342": {
+                            "title": "Asougi Kazuma - Samurai With A Mission",
+                            "link": "https://youtu.be/eKIsiaCcoJU"
+                        },
+                        "ID_2343": {
+                            "title": "Logic and Trick",
+                            "link": "https://youtu.be/xsoNdPd4gBA"
+                        },
+                        "ID_2344": {
+                            "title": "Objection! 2015",
+                            "link": "https://youtu.be/e-QiKy-iEkQ"
+                        },
+                        "ID_2345": {
+                            "title": "Confess the Truth",
+                            "link": "https://youtu.be/5kjZgxYB_Zc"
+                        },
+                        "ID_2346": {
+                            "title": "Elegant: And Excellence",
+                            "link": "https://youtu.be/S0C1fPMiTno"
+                        },
+                        "ID_2347": {
+                            "title": "The Core 2015",
+                            "link": "https://youtu.be/0mWlxBFCL4Y"
+                        },
+                        "ID_2348": {
+                            "title": "Asougi Kazuma: Nocturne",
+                            "link": "https://youtu.be/cIHX6F_DuHg"
+                        },
+                        "ID_2349": {
+                            "title": "Sherlock Holmes: The Great Detective of the Foggy Town",
+                            "link": "https://youtu.be/smtc8Sucfm8"
+                        },
+                        "ID_2350": {
+                            "title": "Theme of Deduction - Beyond the Logic",
+                            "link": "https://youtu.be/jPWCMf3QRlA"
+                        },
+                        "ID_2351": {
+                            "title": "Barok van Zieks: Grim Reaper of the Great Court",
+                            "link": "https://youtu.be/CQCVHRxVThA"
+                        }
+                    }
                 }
             }
         },
@@ -976,6 +1039,10 @@ let ALLSONGS_JSON =`{
                         "ID_1859": {
                             "title": "A Hero is Made",
                             "link": "https://youtu.be/HSfIqjtZneo"
+                        },
+                        "ID_2023": {
+                            "title": "Party in the Clouds",
+                            "link": "https://youtu.be/itAYA2wS2C4"
                         }
                     }
                 }
@@ -1219,6 +1286,112 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Banjo": {
+            "seriesName": "Banjo",
+            "seriesColor": "red",
+            "game": {
+                "Banjo-Kazooie": {
+                    "gameName": "Banjo-Kazooie",
+                    "answers": ["banjo-kazooie", "banjo kazooie", "banjo"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2383": {
+                            "title": "Main Title",
+                            "link": "https://youtu.be/dQNAVqW1shA"
+                        },
+                        "ID_2384": {
+                            "title": "Spiral Mountain",
+                            "link": "https://youtu.be/pPUn5biib1c"
+                        },
+                        "ID_2385": {
+                            "title": "Pause Screen",
+                            "link": "https://youtu.be/BWzc_jgpIzg"
+                        },
+                        "ID_2386": {
+                            "title": "Gruntilda's Lair",
+                            "link": "https://youtu.be/FWhKyk-4j6I"
+                        },
+                        "ID_2387": {
+                            "title": "Bottles' Puzzle Challenge",
+                            "link": "https://youtu.be/I3MKWUlNH1Y"
+                        },
+                        "ID_2388": {
+                            "title": "Mumbo's Mountain",
+                            "link": "https://youtu.be/GgbXr4rN4D4"
+                        },
+                        "ID_2389": {
+                            "title": "Ticker's Tower",
+                            "link": "https://youtu.be/g4mtaQRXj3I"
+                        },
+                        "ID_2390": {
+                            "title": "Mumbo's Hut",
+                            "link": "https://youtu.be/i8qkC2HIfFE"
+                        },
+                        "ID_2391": {
+                            "title": "Treasure Trove Cove",
+                            "link": "https://youtu.be/3nxFYoGNJKc"
+                        },
+                        "ID_2392": {
+                            "title": "Secret Fanfare 1",
+                            "link": "https://youtu.be/1mkbd2Cgj-M"
+                        },
+                        "ID_2393": {
+                            "title": "Clanker's Cavern",
+                            "link": "https://youtu.be/qDlBHbf9C1U"
+                        },
+                        "ID_2394": {
+                            "title": "Freezeezy Peak",
+                            "link": "https://youtu.be/bKv9WeS8BOs"
+                        },
+                        "ID_2395": {
+                            "title": "Gobi's Valley",
+                            "link": "https://youtu.be/1o09uxkZwKo"
+                        },
+                        "ID_2396": {
+                            "title": "Rusty Bucket Bay",
+                            "link": "https://youtu.be/PByIP2MLWP0"
+                        },
+                        "ID_2397": {
+                            "title": "Gnawty's House",
+                            "link": "https://youtu.be/5JVSRucGzBk"
+                        },
+                        "ID_2398": {
+                            "title": "End Credits",
+                            "link": "https://youtu.be/kgl6a_9vjnQ"
+                        },
+                        "ID_2399": {
+                            "title": "Final Battle",
+                            "link": "https://youtu.be/VB-WvKoBZgA"
+                        }
+                    }
+                }
+            }
+        },
+        "Battletoads": {
+            "seriesName": "Battletoads",
+            "seriesColor": "red",
+            "game": {
+                "Battletoads": {
+                    "gameName": "Battletoads",
+                    "answers": ["battletoads"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2035": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/7kB6OXGVJ0c"
+                        },
+                        "ID_2036": {
+                            "title": "Boss Battle",
+                            "link": "https://youtu.be/P7pwn1Hklvc"
+                        },
+                        "ID_2037": {
+                            "title": "Pause Beat",
+                            "link": "https://youtu.be/JRPXRHS4XNQ"
+                        }
+                    }
+                }
+            }
+        },
         "Bayonetta": {
             "seriesName": "Bayonetta",
             "seriesColor": "red",
@@ -1264,6 +1437,39 @@ let ALLSONGS_JSON =`{
                         "ID_931": {
                             "title": "God Only Knows",
                             "link": "https://youtu.be/x7ogV49WGco"
+                        }
+                    }
+                }
+            }
+        },
+        "Borderlands": {
+            "seriesName": "Borderlands",
+            "seriesColor": "red",
+            "game": {
+                "Tales from the Borderlands": {
+                    "gameName": "Tales from the Borderlands",
+                    "answers": ["tales from the borderlands"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2258": {
+                            "title": "Busy Earnin'",
+                            "link": "https://youtu.be/BcsfftwLUf0"
+                        },
+                        "ID_2259": {
+                            "title": "Kiss the Sky",
+                            "link": "https://youtu.be/hGqW68-Mo2c"
+                        },
+                        "ID_2260": {
+                            "title": "Pieces of the People We Love",
+                            "link": "https://youtu.be/wWAOFp-8RxM"
+                        },
+                        "ID_2261": {
+                            "title": "To the Top",
+                            "link": "https://youtu.be/H8ofhjI6ODc"
+                        },
+                        "ID_2262": {
+                            "title": "My Silver Lining",
+                            "link": "https://youtu.be/GIV8ZcDB8ps"
                         }
                     }
                 }
@@ -1346,6 +1552,27 @@ let ALLSONGS_JSON =`{
                         "ID_1875": {
                             "title": "Chaoz Japan",
                             "link": "https://youtu.be/zxz3DP8v9ko"
+                        }
+                    }
+                }
+            }
+        },
+        "Castlestorm": {
+            "seriesName": "Castlestorm",
+            "seriesColor": "red",
+            "game": {
+                "Castlestorm": {
+                    "gameName": "Castlestorm",
+                    "answers": ["castlestorm"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1982": {
+                            "title": "Welcome to Vikingland",
+                            "link": "https://youtu.be/zcaTYy9YT5o"
+                        },
+                        "ID_1983": {
+                            "title": "Glorious Morning (CS Edition)",
+                            "link": "https://youtu.be/6E2-CIVPdXQ"
                         }
                     }
                 }
@@ -1505,6 +1732,75 @@ let ALLSONGS_JSON =`{
                         "ID_685": {
                             "title": "Chopin Piano Sonata No. 2 Funeral March 3rd Movement",
                             "link": "https://youtu.be/3MkHe--TcM0"
+                        }
+                    }
+                }
+            }
+        },
+        "Cave Story": {
+            "seriesName": "Cave Story",
+            "seriesColor": "red",
+            "game": {
+                "Cave Story": {
+                    "gameName": "Cave Story",
+                    "answers": ["cave story"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1990": {
+                            "title": "Mimiga Town",
+                            "link": "https://youtu.be/BdUZkTLE06A"
+                        },
+                        "ID_1991": {
+                            "title": "Gravity",
+                            "link": "https://youtu.be/594aUuWMiOE"
+                        },
+                        "ID_1992": {
+                            "title": "Theme of Balrog",
+                            "link": "https://youtu.be/QW7NI5tWq_A"
+                        },
+                        "ID_1993": {
+                            "title": "Mischievious Robot",
+                            "link": "https://youtu.be/cy9ejJiSH2Y"
+                        },
+                        "ID_1994": {
+                            "title": "On To Grasstown",
+                            "link": "https://youtu.be/A8smb_XuiSU"
+                        },
+                        "ID_1995": {
+                            "title": "Labyrinth Fight",
+                            "link": "https://youtu.be/XfeDy6SdiTs"
+                        },
+                        "ID_1996": {
+                            "title": "Oppression",
+                            "link": "https://youtu.be/9K_Z1_tfGGw"
+                        },
+                        "ID_1997": {
+                            "title": "Scorching Back",
+                            "link": "https://youtu.be/I5Zt8WJuhQY"
+                        },
+                        "ID_1998": {
+                            "title": "Moonsong",
+                            "link": "https://youtu.be/q09KoR7g018"
+                        },
+                        "ID_1999": {
+                            "title": "Plantation / Main Theme",
+                            "link": "https://youtu.be/aHtWKbR_P-c"
+                        },
+                        "ID_2000": {
+                            "title": "Last Cave",
+                            "link": "https://youtu.be/Dp9nGccaPNE"
+                        },
+                        "ID_2001": {
+                            "title": "Balcony",
+                            "link": "https://youtu.be/GoigiNs59s8"
+                        },
+                        "ID_2002": {
+                            "title": "Last Battle",
+                            "link": "https://youtu.be/4zW7Dmx9WYQ"
+                        },
+                        "ID_2003": {
+                            "title": "Running Hell / Theme of Curly Brace",
+                            "link": "https://youtu.be/VQPqmS5iGzY"
                         }
                     }
                 }
@@ -1834,7 +2130,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Crash Bandicoot": {
                     "gameName": "Crash Bandicoot",
-                    "answers": ["crash bandicoot"],
+                    "answers": ["crash bandicoot", "crash 1", "crash"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1877": {
@@ -1845,12 +2141,53 @@ let ALLSONGS_JSON =`{
                 },
                 "Crash Bandicoot 3: Warped": {
                     "gameName": "Crash Bandicoot 3: Warped",
-                    "answers": ["crash bandicoot 3: warped", "crash bandicoot 3", "crash bandicoot 3 warped"],
+                    "answers": ["crash bandicoot 3: warped", "crash bandicoot 3", "crash bandicoot 3 warped", "crash 3"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1878": {
                             "title": "Pirates, And Waverunners",
                             "link": "https://youtu.be/UjkdCHakuDI"
+                        }
+                    }
+                }
+            }
+        },
+        "Croc": {
+            "seriesName": "Croc",
+            "seriesColor": "red",
+            "game": {
+                "Croc: Legend of the Gobbos": {
+                    "gameName": "Croc: Legend of the Gobbos",
+                    "answers": ["croc: legend of the gobbos", "croc", "croc legend of the gobbos", "legend of the gobbos"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2236": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/bSQYzxj_qho"
+                        },
+                        "ID_2237": {
+                            "title": "Volcano Island Map",
+                            "link": "https://youtu.be/KKHQWzSSSHA"
+                        },
+                        "ID_2238": {
+                            "title": "Cave 1",
+                            "link": "https://youtu.be/w6wSoKVpIPY"
+                        },
+                        "ID_2239": {
+                            "title": "Bonus Theme 1",
+                            "link": "https://youtu.be/YI-6DIFdcc0"
+                        },
+                        "ID_2240": {
+                            "title": "Volcano Island 5",
+                            "link": "https://youtu.be/E68kqFQfgPw"
+                        },
+                        "ID_2241": {
+                            "title": "Bonus Theme 3",
+                            "link": "https://youtu.be/U-tOpxkOuWk"
+                        },
+                        "ID_2242": {
+                            "title": "Snow Island Map",
+                            "link": "https://youtu.be/OiIZ9WrgqJE"
                         }
                     }
                 }
@@ -2572,6 +2909,51 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Doki Doki Literature Club!": {
+            "seriesName": "Doki Doki Literature Club!",
+            "seriesColor": "red",
+            "game": {
+                "Doki Doki Literature Club!": {
+                    "gameName": "Doki Doki Literature Club!",
+                    "answers": ["doki doki literature club!", "doki doki", "doki doki literature club"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2245": {
+                            "title": "Doki Doki Literature Club! (Main Theme)",
+                            "link": "https://youtu.be/BFSWlDpA6C4"
+                        },
+                        "ID_2246": {
+                            "title": "Dreams Of Love and Literature",
+                            "link": "https://youtu.be/rsBeCQA93-Q"
+                        },
+                        "ID_2247": {
+                            "title": "Play With Me",
+                            "link": "https://youtu.be/BUKN_ySpqU4"
+                        },
+                        "ID_2248": {
+                            "title": "Poem Panic!",
+                            "link": "https://youtu.be/7JDlEpvE-cs"
+                        },
+                        "ID_2249": {
+                            "title": "My Feelings",
+                            "link": "https://youtu.be/IgRUaVHq1Hs"
+                        },
+                        "ID_2250": {
+                            "title": "My Confession",
+                            "link": "https://youtu.be/GAhiW1Z3GJY"
+                        },
+                        "ID_2251": {
+                            "title": "Just Monika.",
+                            "link": "https://youtu.be/JC0mFHN7r2c"
+                        },
+                        "ID_2252": {
+                            "title": "Your Reality (Credits)",
+                            "link": "https://youtu.be/CAL4WMpBNs0"
+                        }
+                    }
+                }
+            }
+        },
         "Donkey Kong": {
             "seriesName": "Donkey Kong",
             "seriesColor": "red",
@@ -2969,7 +3351,7 @@ let ALLSONGS_JSON =`{
                 },
                 "FINAL FANTASY XIII-2": {
                     "gameName": "FINAL FANTASY XIII-2",
-                    "answers": ["final fantasy xiii-2", "final fantasy 13", "final fantasy 13 2", "ff 13", "ff13", "ff 13 2", "ff13 2"],
+                    "answers": ["final fantasy xiii-2", "final fantasy 13 2", "ff 13 2", "ff13 2", "final fantasy 13-2", "ff13-2", "ff 13-2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1920": {
@@ -3500,6 +3882,35 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Golden Sun": {
+            "seriesName": "Golden Sun",
+            "seriesColor": "red",
+            "game": {
+                "Golden Sun": {
+                    "gameName": "Golden Sun",
+                    "answers": ["golden sun"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2062": {
+                            "title": "Isaac Battle Theme",
+                            "link": "https://youtu.be/19ZdAZO9FvU"
+                        },
+                        "ID_2063": {
+                            "title": "Winterly Imil",
+                            "link": "https://youtu.be/uRCgHvlOgXE"
+                        },
+                        "ID_2064": {
+                            "title": "Set Sail! Through the Karagol Sea",
+                            "link": "https://youtu.be/KyIOgjniohA"
+                        },
+                        "ID_2065": {
+                            "title": "Saturos Battle Theme",
+                            "link": "https://youtu.be/iEjqqUTz-us"
+                        }
+                    }
+                }
+            }
+        },
         "GoldenEye": {
             "seriesName": "GoldenEye",
             "seriesColor": "red",
@@ -3557,6 +3968,48 @@ let ALLSONGS_JSON =`{
                         "ID_1923": {
                             "title": "Air Beginning of the History",
                             "link": "https://youtu.be/9zfpuC01FPk"
+                        }
+                    }
+                }
+            }
+        },
+        "Gravity Rush": {
+            "seriesName": "Gravity Rush",
+            "seriesColor": "red",
+            "game": {
+                "Gravity Rush": {
+                    "gameName": "Gravity Rush",
+                    "answers": ["gravity rush"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1984": {
+                            "title": "Downtown",
+                            "link": "https://youtu.be/poxDJHoYxCc"
+                        },
+                        "ID_1985": {
+                            "title": "Douse Shinundakara",
+                            "link": "https://youtu.be/oWrKHWpLn0U"
+                        },
+                        "ID_1986": {
+                            "title": "Resistance and Extermination",
+                            "link": "https://youtu.be/Gfxf4x3L1bs"
+                        }
+                    }
+                }
+            }
+        },
+        "Halo": {
+            "seriesName": "Halo",
+            "seriesColor": "red",
+            "game": {
+                "Halo": {
+                    "gameName": "Halo",
+                    "answers": ["halo"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2066": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/JDI1KlXRogo"
                         }
                     }
                 }
@@ -3805,6 +4258,23 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "I Love You, Colonel Sanders!": {
+            "seriesName": "I Love You, Colonel Sanders!",
+            "seriesColor": "red",
+            "game": {
+                "I Love You, Colonel Sanders! A Finger Lickin’ Good Dating Simulator": {
+                    "gameName": "I Love You, Colonel Sanders! A Finger Lickin’ Good Dating Simulator",
+                    "answers": ["i love you, colonel sanders! a finger lickin’ good dating simulator", "kfc dating sim", "i love you, colonel sanders", "kfc game", "colonel sanders"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2024": {
+                            "title": "Trailer Theme",
+                            "link": "https://youtu.be/W4KLOBThpL4"
+                        }
+                    }
+                }
+            }
+        },
         "Ice Climber": {
             "seriesName": "Ice Climber",
             "seriesColor": "red",
@@ -3903,6 +4373,26 @@ let ALLSONGS_JSON =`{
                         "ID_1174": {
                             "title": "Dan Don Fuga",
                             "link": "https://youtu.be/i9tQrYuR42k"
+                        },
+                        "ID_2030": {
+                            "title": "Katamari Nah-Nah",
+                            "link": "https://youtu.be/L7FPfxscmBs"
+                        },
+                        "ID_2031": {
+                            "title": "The Moon and the Prince",
+                            "link": "https://youtu.be/r2C8XvxYqos"
+                        },
+                        "ID_2032": {
+                            "title": "Wanda Wanda",
+                            "link": "https://youtu.be/Yo1QCM54w44"
+                        },
+                        "ID_2033": {
+                            "title": "Que Sera Sera",
+                            "link": "https://youtu.be/OhlW2roqg7Y"
+                        },
+                        "ID_2034": {
+                            "title": "Katamari March Damacy",
+                            "link": "https://youtu.be/hIHR_8ol_OU"
                         }
                     }
                 },
@@ -3967,13 +4457,339 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Kingdom Hearts": {
+            "seriesName": "Kingdom Hearts",
+            "seriesColor": "red",
+            "game": {
+                "Kingdom Hearts": {
+                    "gameName": "Kingdom Hearts",
+                    "answers": ["kingdom hearts", "kh1", "kh 1"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2378": {
+                            "title": "Dearly Beloved",
+                            "link": "https://youtu.be/ExsP_nCOiJY"
+                        },
+                        "ID_2379": {
+                            "title": "Bustin' Up on the Beach",
+                            "link": "https://youtu.be/dyYDd0CeksY"
+                        },
+                        "ID_2380": {
+                            "title": "Blast Away! II",
+                            "link": "https://youtu.be/rvgqvTGf2dU"
+                        },
+                        "ID_2381": {
+                            "title": "Hollow Bastion",
+                            "link": "https://youtu.be/dUW0gIRVU1k"
+                        },
+                        "ID_2382": {
+                            "title": "Dearly Beloved -Reprise-",
+                            "link": "https://youtu.be/Ojl-TwFFGOk"
+                        }
+                    }
+                }
+            }
+        },
+        "Kirby": {
+            "seriesName": "Kirby",
+            "seriesColor": "red",
+            "game": {
+                "Kirby 64: The Crystal Shards": {
+                    "gameName": "Kirby 64: The Crystal Shards",
+                    "answers": ["kirby 64: the crystal shards", "kirby 64 the crystal shards", "kirby 64", "the crystal shards", "crystal shards"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2352": {
+                            "title": "Pop Star",
+                            "link": "https://youtu.be/KjFaq2rueKs"
+                        },
+                        "ID_2353": {
+                            "title": "Quiet Forest",
+                            "link": "https://youtu.be/LvD6AyM31B0"
+                        },
+                        "ID_2354": {
+                            "title": "Boss",
+                            "link": "https://youtu.be/LCYRvbSJOGE"
+                        },
+                        "ID_2355": {
+                            "title": "Aqua Star",
+                            "link": "https://youtu.be/Vu4QJZPeZsk"
+                        },
+                        "ID_2356": {
+                            "title": "Mountain Stream",
+                            "link": "https://youtu.be/BnqXASop-S4"
+                        },
+                        "ID_2357": {
+                            "title": "Above the Clouds",
+                            "link": "https://youtu.be/ZLYaYQn6Wqk"
+                        },
+                        "ID_2358": {
+                            "title": "Gourmet Race",
+                            "link": "https://youtu.be/Htr6L0_I0yc"
+                        },
+                        "ID_2359": {
+                            "title": "Taking Battle",
+                            "link": "https://youtu.be/3ZngtygkJGs"
+                        }
+                    }
+                },
+                "Kirby Super Star": {
+                    "gameName": "Kirby Super Star",
+                    "answers": ["kirby super star", "kirby superstar"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2086": {
+                            "title": "Green Greens",
+                            "link": "https://youtu.be/QCQa2tIXWok"
+                        },
+                        "ID_2087": {
+                            "title": "Float Islands",
+                            "link": "https://youtu.be/DqUr9Z4yHmw"
+                        },
+                        "ID_2088": {
+                            "title": "Bubbly Clouds",
+                            "link": "https://youtu.be/80wM_F4SdRU"
+                        },
+                        "ID_2089": {
+                            "title": "King Dedede's Theme",
+                            "link": "https://youtu.be/qEvxbJROGuQ"
+                        },
+                        "ID_2090": {
+                            "title": "White Wing Dynablade",
+                            "link": "https://youtu.be/QmGiv8Rw3po"
+                        },
+                        "ID_2091": {
+                            "title": "Peanut Plain",
+                            "link": "https://youtu.be/jZa8b-5oX1s"
+                        },
+                        "ID_2092": {
+                            "title": "Cocoa Cave",
+                            "link": "https://youtu.be/o0UlGDsH2R4"
+                        },
+                        "ID_2093": {
+                            "title": "Candy Mountain",
+                            "link": "https://youtu.be/1fz_xsHzSvQ"
+                        },
+                        "ID_2094": {
+                            "title": "Meta Knight's Revenge",
+                            "link": "https://youtu.be/qxhQghflIqg"
+                        },
+                        "ID_2095": {
+                            "title": "Gourmet Race",
+                            "link": "https://youtu.be/Se1uh3PS78Y"
+                        },
+                        "ID_2096": {
+                            "title": "Staff Roll",
+                            "link": "https://youtu.be/Iha6_y4XR0M"
+                        }
+                    }
+                },
+                "Kirby Triple Deluxe": {
+                    "gameName": "Kirby Triple Deluxe",
+                    "answers": ["kirby triple deluxe", "triple deluxe"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2183": {
+                            "title": "Main Menu",
+                            "link": "https://youtu.be/RROyc07lR-I"
+                        },
+                        "ID_2184": {
+                            "title": "Green Greens",
+                            "link": "https://youtu.be/cIpbJ0Osvpc"
+                        },
+                        "ID_2185": {
+                            "title": "Dedede's Royal Payback",
+                            "link": "https://youtu.be/5ddOT_TJnKg"
+                        },
+                        "ID_2186": {
+                            "title": "Moonstruck Blossom",
+                            "link": "https://youtu.be/EBfz1Edo9-Q"
+                        }
+                    }
+                },
+                "Kirby's Adventure": {
+                    "gameName": "Kirby's Adventure",
+                    "answers": ["kirby's adventure", "kirbys adventure"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2067": {
+                            "title": "Title Screen",
+                            "link": "https://youtu.be/DKSECyvqflE"
+                        },
+                        "ID_2068": {
+                            "title": "Vegetable Valley",
+                            "link": "https://youtu.be/-XoWiv4xf1U"
+                        },
+                        "ID_2069": {
+                            "title": "Butter Building",
+                            "link": "https://youtu.be/7loQmAngM94"
+                        },
+                        "ID_2070": {
+                            "title": "Crane Game",
+                            "link": "https://youtu.be/s2ck09LLCEw"
+                        },
+                        "ID_2071": {
+                            "title": "Green Greens",
+                            "link": "https://youtu.be/9yr9A_V4Fhs"
+                        },
+                        "ID_2072": {
+                            "title": "Ending Theme",
+                            "link": "https://youtu.be/FB8lYcnt-S0"
+                        }
+                    }
+                },
+                "Kirby's Dream Course": {
+                    "gameName": "Kirby's Dream Course",
+                    "answers": ["kirby's dream course", "kirbys dream course", "dream course"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2073": {
+                            "title": "The First Hole",
+                            "link": "https://youtu.be/GID4kDJDxaQ"
+                        },
+                        "ID_2074": {
+                            "title": "Cloudy Mountain Peaks",
+                            "link": "https://youtu.be/9gkpG9kpmPs"
+                        },
+                        "ID_2075": {
+                            "title": "Jigsaw Plains",
+                            "link": "https://youtu.be/SXN2KM-qMKo"
+                        },
+                        "ID_2076": {
+                            "title": "Castles of Cake",
+                            "link": "https://youtu.be/LAUBLKL_NQ4"
+                        },
+                        "ID_2077": {
+                            "title": "Dedede is Getting Closer!",
+                            "link": "https://youtu.be/Mc_z_ymdTyY"
+                        },
+                        "ID_2078": {
+                            "title": "Staff Roll",
+                            "link": "https://youtu.be/jfhRc5FHsro"
+                        }
+                    }
+                },
+                "Kirby's Dream Land": {
+                    "gameName": "Kirby's Dream Land",
+                    "answers": ["kirby's dream land", "kirbys dream land", "dream land", "kirbys dreamland", "dreamland"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2079": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/aZRhXBsFNDw"
+                        },
+                        "ID_2080": {
+                            "title": "Green Greens",
+                            "link": "https://youtu.be/OCH6nQYflwY"
+                        },
+                        "ID_2081": {
+                            "title": "Castle Lololo",
+                            "link": "https://youtu.be/cwgVjhTbtzg"
+                        },
+                        "ID_2082": {
+                            "title": "Float Islands",
+                            "link": "https://youtu.be/7Lj1aw4J8ZA"
+                        },
+                        "ID_2083": {
+                            "title": "Bubbly Clouds",
+                            "link": "https://youtu.be/K6lz3Akqr_U"
+                        },
+                        "ID_2084": {
+                            "title": "Mt. Dedede",
+                            "link": "https://youtu.be/qFesrZLSYsM"
+                        },
+                        "ID_2085": {
+                            "title": "Ending Theme",
+                            "link": "https://youtu.be/xtjvaCm0GHw"
+                        }
+                    }
+                },
+                "Kirby's Return to Dream Land": {
+                    "gameName": "Kirby's Return to Dream Land",
+                    "answers": ["kirby's return to dream land", "kirbys return to dream land", "kirbys return to dream land", "kirbys return to dreamland", "kirbys return to dreamland", "return to dream land", "return to dreamland"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2360": {
+                            "title": "Through the Forest",
+                            "link": "https://youtu.be/njejHICStGM"
+                        },
+                        "ID_2361": {
+                            "title": "Eerie Area",
+                            "link": "https://youtu.be/T2dP_jh5Ayk"
+                        },
+                        "ID_2362": {
+                            "title": "Sky Waltz",
+                            "link": "https://youtu.be/Dz5xqZUmW2Q"
+                        },
+                        "ID_2363": {
+                            "title": "Underworld",
+                            "link": "https://youtu.be/3OGxhQq3BAk"
+                        },
+                        "ID_2364": {
+                            "title": "Galacta Knight",
+                            "link": "https://youtu.be/69cqx_lDAWQ"
+                        }
+                    }
+                }
+            }
+        },
+        "L.A. Noire": {
+            "seriesName": "L.A. Noire",
+            "seriesColor": "red",
+            "game": {
+                "L.A. Noire": {
+                    "gameName": "L.A. Noire",
+                    "answers": ["l.a. noire", "la noire", "l a noire"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2097": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/xiGKxCAg_0o"
+                        },
+                        "ID_2098": {
+                            "title": "New Beginning (Part 1)",
+                            "link": "https://youtu.be/PoNenPST-Z4"
+                        },
+                        "ID_2099": {
+                            "title": "Homicide - Use And Abuse (Part 4)",
+                            "link": "https://youtu.be/3wHJFuYJDjM"
+                        }
+                    }
+                }
+            }
+        },
+        "Lemmings": {
+            "seriesName": "Lemmings",
+            "seriesColor": "red",
+            "game": {
+                "Lemmings (Gameboy)": {
+                    "gameName": "Lemmings (Gameboy)",
+                    "answers": ["lemmings (gameboy)", "lemmings"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2100": {
+                            "title": "Dance of the Reed Flutes",
+                            "link": "https://youtu.be/v1SCv01124k"
+                        },
+                        "ID_2101": {
+                            "title": "The Galop (Can-Can)",
+                            "link": "https://youtu.be/rsqMrLsH9mU"
+                        },
+                        "ID_2102": {
+                            "title": "Rondo Alla Turca",
+                            "link": "https://youtu.be/VYq_nAQ3DlM"
+                        }
+                    }
+                }
+            }
+        },
         "Life Is Strange": {
             "seriesName": "Life Is Strange",
             "seriesColor": "red",
             "game": {
                 "Life Is Strange": {
                     "gameName": "Life Is Strange",
-                    "answers": ["life is strange"],
+                    "answers": ["life is strange", "lis"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1694": {
@@ -3996,7 +4812,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Life Is Strange: Before The Storm": {
                     "gameName": "Life Is Strange: Before The Storm",
-                    "answers": ["life is strange: before the storm", "life is strange before the storm"],
+                    "answers": ["life is strange: before the storm", "life is strange before the storm", "lis before the storm", "before the storm"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1698": {
@@ -4014,6 +4830,56 @@ let ALLSONGS_JSON =`{
                         "ID_1701": {
                             "title": "Witches",
                             "link": "https://youtu.be/t4frxBDoT6c"
+                        }
+                    }
+                }
+            }
+        },
+        "Lovely Planet": {
+            "seriesName": "Lovely Planet",
+            "seriesColor": "red",
+            "game": {
+                "Lovely Planet": {
+                    "gameName": "Lovely Planet",
+                    "answers": ["lovely planet"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2103": {
+                            "title": "Lovely City",
+                            "link": "https://youtu.be/bzT73XKYAgA"
+                        },
+                        "ID_2104": {
+                            "title": "Lovely Village",
+                            "link": "https://youtu.be/rxhb7TrVxQ0"
+                        },
+                        "ID_2105": {
+                            "title": "Lovely Mountains",
+                            "link": "https://youtu.be/Lw8veE2ZxDQ"
+                        }
+                    }
+                }
+            }
+        },
+        "Lufia": {
+            "seriesName": "Lufia",
+            "seriesColor": "red",
+            "game": {
+                "Lufia II: Rise of the Sinistrals": {
+                    "gameName": "Lufia II: Rise of the Sinistrals",
+                    "answers": ["lufia ii: rise of the sinistrals", "lufia 2", "lufia 2 rise of the sinistrals", "rise of the sinistrals"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1987": {
+                            "title": "Battle Theme 1",
+                            "link": "https://youtu.be/NcsdauLE6VE"
+                        },
+                        "ID_1988": {
+                            "title": "Battle Theme 2",
+                            "link": "https://youtu.be/tbBg5Mb0avI"
+                        },
+                        "ID_1989": {
+                            "title": "Battle Theme 3",
+                            "link": "https://youtu.be/BLIrE5ivseQ"
                         }
                     }
                 }
@@ -4040,6 +4906,25 @@ let ALLSONGS_JSON =`{
             "seriesName": "Mario",
             "seriesColor": "red",
             "game": {
+                "Mario Paint": {
+                    "gameName": "Mario Paint",
+                    "answers": ["mario paint"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2106": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/0GdapZ1FZhI"
+                        },
+                        "ID_2107": {
+                            "title": "BGM 1",
+                            "link": "https://youtu.be/6j0HiMpV1HE"
+                        },
+                        "ID_2108": {
+                            "title": "Gnat Attack 1",
+                            "link": "https://youtu.be/HH8zHEjZZZ4"
+                        }
+                    }
+                },
                 "New Super Mario Bros.": {
                     "gameName": "New Super Mario Bros.",
                     "answers": ["new super mario bros.", "nsmb", "new super mario bros", "new mario bros"],
@@ -4558,6 +5443,78 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Mario & Luigi": {
+            "seriesName": "Mario & Luigi",
+            "seriesColor": "red",
+            "game": {
+                "Mario & Luigi: Dream Team": {
+                    "gameName": "Mario & Luigi: Dream Team",
+                    "answers": ["mario & luigi: dream team", "mario and luigi dream team", "dream team", "mario & luigi dream team"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2365": {
+                            "title": "Never Let Up!",
+                            "link": "https://youtu.be/bpn1x_OILHE"
+                        },
+                        "ID_2366": {
+                            "title": "Size Up Your Enemy",
+                            "link": "https://youtu.be/jCULfPd9ALw"
+                        },
+                        "ID_2367": {
+                            "title": "Lofty Mount Pajamaja",
+                            "link": "https://youtu.be/5sBl0iQ1i18"
+                        },
+                        "ID_2368": {
+                            "title": "Sacred Somnom Woods",
+                            "link": "https://youtu.be/NUmmCDyB0EI"
+                        },
+                        "ID_2369": {
+                            "title": "Victory in the Dream World",
+                            "link": "https://youtu.be/B43bXrRVPFE"
+                        },
+                        "ID_2370": {
+                            "title": "The Final Antasma Battle",
+                            "link": "https://youtu.be/PrAYVhPU-9g"
+                        }
+                    }
+                },
+                "Mario & Luigi: Superstar Saga": {
+                    "gameName": "Mario & Luigi: Superstar Saga",
+                    "answers": ["mario & luigi: superstar saga", "mario and luigi superstar saga", "superstar saga", "mario & luigi superstar saga"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2371": {
+                            "title": "Preparing for Travelling",
+                            "link": "https://youtu.be/5mxxIgVqaXc"
+                        },
+                        "ID_2372": {
+                            "title": "Menu Screen",
+                            "link": "https://youtu.be/byGqqe0f92Y"
+                        },
+                        "ID_2373": {
+                            "title": "Koopa Tutorials",
+                            "link": "https://youtu.be/k8HyUqi6Rng"
+                        },
+                        "ID_2374": {
+                            "title": "Come On!",
+                            "link": "https://youtu.be/NQEf2Cy_TlA"
+                        },
+                        "ID_2375": {
+                            "title": "Come On, Again!",
+                            "link": "https://youtu.be/eH79b2u12XM"
+                        },
+                        "ID_2376": {
+                            "title": "Professor E. Gadd",
+                            "link": "https://youtu.be/lXf3QKExm1E"
+                        },
+                        "ID_2377": {
+                            "title": "The End of Traveling",
+                            "link": "https://youtu.be/XB9mBmG7Etg"
+                        }
+                    }
+                }
+            }
+        },
         "Mario Golf": {
             "seriesName": "Mario Golf",
             "seriesColor": "red",
@@ -5032,6 +5989,74 @@ let ALLSONGS_JSON =`{
                             "link": "https://youtu.be/4Swlo3DQPWA"
                         }
                     }
+                },
+                "Mario Party 2": {
+                    "gameName": "Mario Party 2",
+                    "answers": ["mario party 2"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2109": {
+                            "title": "In The Pipe",
+                            "link": "https://youtu.be/dNeJ8yC-tMc"
+                        },
+                        "ID_2110": {
+                            "title": "Adventure Begins",
+                            "link": "https://youtu.be/wPRAt3pYfjM"
+                        },
+                        "ID_2111": {
+                            "title": "Pirate Island",
+                            "link": "https://youtu.be/w1jLG8rEwz0"
+                        },
+                        "ID_2112": {
+                            "title": "Western Land",
+                            "link": "https://youtu.be/l9cfpn81pyA"
+                        },
+                        "ID_2113": {
+                            "title": "Space Land",
+                            "link": "https://youtu.be/gyuzAHoRxFc"
+                        },
+                        "ID_2114": {
+                            "title": "Going Somewhere",
+                            "link": "https://youtu.be/UX8r-bkoYso"
+                        },
+                        "ID_2115": {
+                            "title": "The Adventure Ends",
+                            "link": "https://youtu.be/z6tbHbpVomM"
+                        },
+                        "ID_2116": {
+                            "title": "Let the Game Begin",
+                            "link": "https://youtu.be/T30OETu-jd4"
+                        },
+                        "ID_2117": {
+                            "title": "Credits",
+                            "link": "https://youtu.be/jZOiFOKAQJg"
+                        }
+                    }
+                }
+            }
+        },
+        "Marvel vs. Capcom": {
+            "seriesName": "Marvel vs. Capcom",
+            "seriesColor": "red",
+            "game": {
+                "Ultimate Marvel vs. Capcom 3": {
+                    "gameName": "Ultimate Marvel vs. Capcom 3",
+                    "answers": ["ultimate marvel vs. capcom 3", "umvc3", "umvc 3", "ultimate marvel vs capcom 3", "ultimate marvel versus capcom 3"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2118": {
+                            "title": "Theme of Phoenix Wright",
+                            "link": "https://youtu.be/Lbv5AJDh9o8"
+                        },
+                        "ID_2119": {
+                            "title": "Theme of Amaterasu",
+                            "link": "https://youtu.be/CoaTNWnqiok"
+                        },
+                        "ID_2120": {
+                            "title": "Theme of Phoenix Wright (Turnabout Mode)",
+                            "link": "https://youtu.be/IP9PoBlFDp4"
+                        }
+                    }
                 }
             }
         },
@@ -5087,6 +6112,69 @@ let ALLSONGS_JSON =`{
                         "ID_1614": {
                             "title": "Ending Theme",
                             "link": "https://youtu.be/9LmdO3TCzpM"
+                        }
+                    }
+                },
+                "Mega Man 10": {
+                    "gameName": "Mega Man 10",
+                    "answers": ["mega man 10", "megaman 10", "mm 10", "mm10"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2148": {
+                            "title": "Opening (Usual Day)",
+                            "link": "https://youtu.be/Tj8IeOzrn-Q"
+                        },
+                        "ID_2149": {
+                            "title": "Opening (Go Together)",
+                            "link": "https://youtu.be/5sXKNyhLMbE"
+                        },
+                        "ID_2150": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/_KvBofCOjy0"
+                        },
+                        "ID_2151": {
+                            "title": "Menu Theme",
+                            "link": "https://youtu.be/v0OZdSYiPfk"
+                        },
+                        "ID_2152": {
+                            "title": "Stage Select",
+                            "link": "https://youtu.be/ewGHHsiDtjs"
+                        },
+                        "ID_2153": {
+                            "title": "Blade Man (King of Blades)",
+                            "link": "https://youtu.be/rwE7KyFcZ_Y"
+                        },
+                        "ID_2154": {
+                            "title": "Chill Man (Absolute Chill)",
+                            "link": "https://youtu.be/aoleEdOSRFw"
+                        },
+                        "ID_2155": {
+                            "title": "Strike Man (Fireball Strike)",
+                            "link": "https://youtu.be/zJHsrxAv-7Q"
+                        },
+                        "ID_2156": {
+                            "title": "Nitro Man (Nitro Rider)",
+                            "link": "https://youtu.be/wsfjSBeKJRE"
+                        },
+                        "ID_2157": {
+                            "title": "Solar Man (Solar Inferno)",
+                            "link": "https://youtu.be/2JK3keY09dU"
+                        },
+                        "ID_2158": {
+                            "title": "Boss",
+                            "link": "https://youtu.be/bWpO9nyQ4iw"
+                        },
+                        "ID_2159": {
+                            "title": "Shop (Mega Man)",
+                            "link": "https://youtu.be/va0XG4mX1Tc"
+                        },
+                        "ID_2160": {
+                            "title": "Dr. Wily Stage Boss",
+                            "link": "https://youtu.be/IjzYS68bVXk"
+                        },
+                        "ID_2161": {
+                            "title": "Endless Stage (Endless Struggle)",
+                            "link": "https://youtu.be/zoyTqyEtLZg"
                         }
                     }
                 },
@@ -5277,6 +6365,203 @@ let ALLSONGS_JSON =`{
                             "link": "https://youtu.be/_ipPeVc0i7I"
                         }
                     }
+                },
+                "Mega Man 7": {
+                    "gameName": "Mega Man 7",
+                    "answers": ["mega man 7", "megaman 7", "mm 7", "mm7"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2121": {
+                            "title": "Opening Stage (Ruined Street)",
+                            "link": "https://youtu.be/OoK9mkQcczo"
+                        },
+                        "ID_2122": {
+                            "title": "Password Screen",
+                            "link": "https://youtu.be/MLw0Ipdw4TM"
+                        },
+                        "ID_2123": {
+                            "title": "Stage Select",
+                            "link": "https://youtu.be/84Z4z9wCDU8"
+                        },
+                        "ID_2124": {
+                            "title": "Junk Man Stage (Forgotten Factory)",
+                            "link": "https://youtu.be/ri8MuT4M84s"
+                        },
+                        "ID_2125": {
+                            "title": "Burst Man Stage (Medical Science Lab)",
+                            "link": "https://youtu.be/WeVVckMnI0E"
+                        },
+                        "ID_2126": {
+                            "title": "Spring Man Stage (Boyoyon Paradise)",
+                            "link": "https://youtu.be/3KksczzImr0"
+                        },
+                        "ID_2127": {
+                            "title": "Shade Man Stage (Horror Fortress)",
+                            "link": "https://youtu.be/lLhrSSw_4vU"
+                        },
+                        "ID_2128": {
+                            "title": "Turbo Man Stage (Giant Trailers)",
+                            "link": "https://youtu.be/fE9GuCypaew"
+                        },
+                        "ID_2129": {
+                            "title": "Boss Battle",
+                            "link": "https://youtu.be/gX5H39sPaio"
+                        },
+                        "ID_2130": {
+                            "title": "Wily Stage 1 (Entrance)",
+                            "link": "https://youtu.be/dI6Zq6QD-rU"
+                        },
+                        "ID_2131": {
+                            "title": "Ending ~ A Hero Returns",
+                            "link": "https://youtu.be/OKRcsis3pCA"
+                        }
+                    }
+                },
+                "Mega Man 9": {
+                    "gameName": "Mega Man 9",
+                    "answers": ["mega man 9", "megaman 9", "mm 9", "mm9"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2132": {
+                            "title": "Opening",
+                            "link": "https://youtu.be/tJcdVpOXjwM"
+                        },
+                        "ID_2133": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/EazDwW8rhXY"
+                        },
+                        "ID_2134": {
+                            "title": "Menu Theme",
+                            "link": "https://youtu.be/SL7T__zF8yI"
+                        },
+                        "ID_2135": {
+                            "title": "Stage Select",
+                            "link": "https://youtu.be/_czfdhgxbEA"
+                        },
+                        "ID_2136": {
+                            "title": "Concrete Man (Concrete Jungle)",
+                            "link": "https://youtu.be/G_VIEXDZM6Y"
+                        },
+                        "ID_2137": {
+                            "title": "Tornado Man (Thunder Tornado)",
+                            "link": "https://youtu.be/BaOWZ04PrAs"
+                        },
+                        "ID_2138": {
+                            "title": "Splash Woman (Splash Blue)",
+                            "link": "https://youtu.be/H38v6Px8euk"
+                        },
+                        "ID_2139": {
+                            "title": "Plug Man (Plug Electric)",
+                            "link": "https://youtu.be/QC_b_78cLfk"
+                        },
+                        "ID_2140": {
+                            "title": "Jewel Man (Jewel Temptation)",
+                            "link": "https://youtu.be/bIuFz3b9lPc"
+                        },
+                        "ID_2141": {
+                            "title": "Hornet Man (Hornet Dance)",
+                            "link": "https://youtu.be/bI-Omk4GD8c"
+                        },
+                        "ID_2142": {
+                            "title": "Magma Man (Magma Burning)",
+                            "link": "https://youtu.be/AFc64PjQwGo"
+                        },
+                        "ID_2143": {
+                            "title": "Galaxy Man (Galaxy Fantasy)",
+                            "link": "https://youtu.be/Hw8cChTxlLk"
+                        },
+                        "ID_2144": {
+                            "title": "Boss",
+                            "link": "https://youtu.be/_luMGvRZVGI"
+                        },
+                        "ID_2145": {
+                            "title": "Shop",
+                            "link": "https://youtu.be/mZ2b2hAPYJE"
+                        },
+                        "ID_2146": {
+                            "title": "Dr. Wily Stage 1 (Flash in the Dark)",
+                            "link": "https://youtu.be/0t_GUB_aB4s"
+                        },
+                        "ID_2147": {
+                            "title": "Endless Stage (Maze of Death)",
+                            "link": "https://youtu.be/nyTA36BfvtE"
+                        }
+                    }
+                },
+                "Mega Man X": {
+                    "gameName": "Mega Man X",
+                    "answers": ["mega man x", "megaman x", "mmx", "mm x"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2302": {
+                            "title": "Title",
+                            "link": "https://youtu.be/KVGv1Kejhy8"
+                        },
+                        "ID_2303": {
+                            "title": "Password",
+                            "link": "https://youtu.be/ZWov_XGruT8"
+                        },
+                        "ID_2304": {
+                            "title": "Opening Stage (Highway Stage)",
+                            "link": "https://youtu.be/MkhIGJsYb4I"
+                        },
+                        "ID_2305": {
+                            "title": "Vile 2 (Sigma Boss Theme)",
+                            "link": "https://youtu.be/NlEyuLz6pFY"
+                        },
+                        "ID_2306": {
+                            "title": "Zero (Enter Zero)",
+                            "link": "https://youtu.be/bYqQDjWAez8"
+                        },
+                        "ID_2307": {
+                            "title": "Stage Select",
+                            "link": "https://youtu.be/6ElpsYf8I0g"
+                        },
+                        "ID_2308": {
+                            "title": "Launch Octopus (Ocean Stage)",
+                            "link": "https://youtu.be/Ik8kWVBBn-w"
+                        },
+                        "ID_2309": {
+                            "title": "Chill Penguin (Snow Mountain Stage)",
+                            "link": "https://youtu.be/fcOjHuAD6SI"
+                        },
+                        "ID_2310": {
+                            "title": "Flame Mammoth (Factory Stage)",
+                            "link": "https://youtu.be/YmKu84IpMt8"
+                        },
+                        "ID_2311": {
+                            "title": "Boomer Kuwanger (Tower Stage)",
+                            "link": "https://youtu.be/qESMvA1Y7Hw"
+                        },
+                        "ID_2312": {
+                            "title": "Sting Chameleon (Forest Stage)",
+                            "link": "https://youtu.be/LsJ-wvyflA0"
+                        },
+                        "ID_2313": {
+                            "title": "Spark Mandrill (Power Plant Stage)",
+                            "link": "https://youtu.be/P9YU7E483SI"
+                        },
+                        "ID_2314": {
+                            "title": "Storm Eagle (Sky Stage)",
+                            "link": "https://youtu.be/HdpBgxeOw7w"
+                        },
+                        "ID_2315": {
+                            "title": "Armored Armadillo (Gallery Stage)",
+                            "link": "https://youtu.be/eAGRVDZdB3Q"
+                        },
+                        "ID_2316": {
+                            "title": "Boss 2 (Boss Theme)",
+                            "link": "https://youtu.be/n_doL_kvx18"
+                        },
+                        "ID_2317": {
+                            "title": "Sigma Stage 2",
+                            "link": "https://youtu.be/cTmeaZW9QvI"
+                        },
+                        "ID_2318": {
+                            "title": "Cast Roll",
+                            "link": "https://youtu.be/aNZ88wdq1rY"
+                        }
+                    }
                 }
             }
         },
@@ -5284,6 +6569,40 @@ let ALLSONGS_JSON =`{
             "seriesName": "Metal Gear",
             "seriesColor": "red",
             "game": {
+                "Metal Gear": {
+                    "gameName": "Metal Gear",
+                    "answers": ["metal gear"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2263": {
+                            "title": "Red Alert",
+                            "link": "https://youtu.be/6YQm2M-v4l0"
+                        },
+                        "ID_2264": {
+                            "title": "Theme Of Tara",
+                            "link": "https://youtu.be/t4SHQSSeib4"
+                        },
+                        "ID_2265": {
+                            "title": "Jungle Theme",
+                            "link": "https://youtu.be/Dmokw0GkEKU"
+                        }
+                    }
+                },
+                "Metal Gear 2: Solid Snake": {
+                    "gameName": "Metal Gear 2: Solid Snake",
+                    "answers": ["metal gear 2: solid snake", "metal gear 2", "solid snake"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2266": {
+                            "title": "Theme of Solid Snake",
+                            "link": "https://youtu.be/wqWG9RdXhxw"
+                        },
+                        "ID_2267": {
+                            "title": "Frequency 140.85",
+                            "link": "https://youtu.be/P5BglnoVOlI"
+                        }
+                    }
+                },
                 "Metal Gear Rising: Revengeance": {
                     "gameName": "Metal Gear Rising: Revengeance",
                     "answers": ["metal gear rising: revengeance", "metal gear rising revengeance", "metal gear rising: revengeance", "mgr revengeance", "mgr", "revengeance"],
@@ -5474,6 +6793,107 @@ let ALLSONGS_JSON =`{
                         "ID_1722": {
                             "title": "Encounter",
                             "link": "https://youtu.be/VKaGF5gbE5E"
+                        }
+                    }
+                }
+            }
+        },
+        "Metroid": {
+            "seriesName": "Metroid",
+            "seriesColor": "red",
+            "game": {
+                "Metroid": {
+                    "gameName": "Metroid",
+                    "answers": ["metroid"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2046": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/M-U3sVX2G3w"
+                        },
+                        "ID_2047": {
+                            "title": "Brinstar Theme",
+                            "link": "https://youtu.be/WVTzg2kvNaQ"
+                        },
+                        "ID_2048": {
+                            "title": "Kraids Hideout",
+                            "link": "https://youtu.be/v1sTdewueiY"
+                        },
+                        "ID_2049": {
+                            "title": "Ridleys Hideout",
+                            "link": "https://youtu.be/noETLCpz0pQ"
+                        },
+                        "ID_2050": {
+                            "title": "Mother Brain Battle",
+                            "link": "https://youtu.be/rGVATCsEPfQ"
+                        },
+                        "ID_2051": {
+                            "title": "Escape Theme",
+                            "link": "https://youtu.be/V2k01qmi99k"
+                        },
+                        "ID_2052": {
+                            "title": "Ending Theme",
+                            "link": "https://youtu.be/gFUGG6SFiQQ"
+                        }
+                    }
+                },
+                "Super Metroid": {
+                    "gameName": "Super Metroid",
+                    "answers": ["super metroid"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2162": {
+                            "title": "Theme of Super Metroid",
+                            "link": "https://youtu.be/5vYsVk23oxA"
+                        },
+                        "ID_2163": {
+                            "title": "Brinstar Overgrown with Vegetation Area",
+                            "link": "https://youtu.be/zLcyg4Tq5uY"
+                        },
+                        "ID_2164": {
+                            "title": "Norfair Ancient Ruins",
+                            "link": "https://youtu.be/OoHm2BZeWbQ"
+                        },
+                        "ID_2165": {
+                            "title": "Big Boss Confrontation 1",
+                            "link": "https://youtu.be/wqrF-X67BZo"
+                        },
+                        "ID_2166": {
+                            "title": "Escape",
+                            "link": "https://youtu.be/uCvn_ieo1Vc"
+                        }
+                    }
+                }
+            }
+        },
+        "Michael Jackson's Moonwalker": {
+            "seriesName": "Michael Jackson's Moonwalker",
+            "seriesColor": "red",
+            "game": {
+                "Michael Jackson's Moonwalker": {
+                    "gameName": "Michael Jackson's Moonwalker",
+                    "answers": ["michael jackson's moonwalker", "moonwalker", "michael jacksons moonwalker"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2167": {
+                            "title": "Smooth Criminal",
+                            "link": "https://youtu.be/NptBUN0j5MI"
+                        },
+                        "ID_2168": {
+                            "title": "Beat It",
+                            "link": "https://youtu.be/P3_eAHEdOyo"
+                        },
+                        "ID_2169": {
+                            "title": "Billie Jean",
+                            "link": "https://youtu.be/jTGFJBR4E1g"
+                        },
+                        "ID_2170": {
+                            "title": "Bad",
+                            "link": "https://youtu.be/zHz-dMfmyJ8"
+                        },
+                        "ID_2171": {
+                            "title": "Dances",
+                            "link": "https://youtu.be/YrYlCPTO8V4"
                         }
                     }
                 }
@@ -5737,6 +7157,121 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Octopath Traveler": {
+            "seriesName": "Octopath Traveler",
+            "seriesColor": "red",
+            "game": {
+                "Octopath Traveler": {
+                    "gameName": "Octopath Traveler",
+                    "answers": ["octopath traveler"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2172": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/kH1zuIpp-5U"
+                        },
+                        "ID_2173": {
+                            "title": "Battle I",
+                            "link": "https://youtu.be/-bl8K84E98c"
+                        },
+                        "ID_2174": {
+                            "title": "Victory Fanfare",
+                            "link": "https://youtu.be/0fK0Boz8efk"
+                        },
+                        "ID_2175": {
+                            "title": "Decisive Battle I",
+                            "link": "https://youtu.be/G5MwN509S-k"
+                        },
+                        "ID_2176": {
+                            "title": "Battle II",
+                            "link": "https://youtu.be/_TBDzx4PUGo"
+                        },
+                        "ID_2177": {
+                            "title": "Decisive Battle II",
+                            "link": "https://youtu.be/oZQVqIwA5Ss"
+                        },
+                        "ID_2178": {
+                            "title": "Battle III",
+                            "link": "https://youtu.be/RsAE0aLJbvU"
+                        },
+                        "ID_2179": {
+                            "title": "Ending Theme",
+                            "link": "https://youtu.be/82wDt1dBN5Y"
+                        }
+                    }
+                }
+            }
+        },
+        "Overwatch": {
+            "seriesName": "Overwatch",
+            "seriesColor": "red",
+            "game": {
+                "Overwatch": {
+                    "gameName": "Overwatch",
+                    "answers": ["overwatch", "ow"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2038": {
+                            "title": "Rally the Heroes",
+                            "link": "https://youtu.be/ThKQCnF2kXg"
+                        },
+                        "ID_2039": {
+                            "title": "Temple of Anubis",
+                            "link": "https://youtu.be/kuXf54tMHg4"
+                        },
+                        "ID_2040": {
+                            "title": "King's Row",
+                            "link": "https://youtu.be/nm6VFEo5wLY"
+                        },
+                        "ID_2041": {
+                            "title": "Hollywood",
+                            "link": "https://youtu.be/HElAirND0aE"
+                        },
+                        "ID_2042": {
+                            "title": "Dorado",
+                            "link": "https://youtu.be/BvWM6oGYWLw"
+                        },
+                        "ID_2043": {
+                            "title": "Eichenwalde",
+                            "link": "https://youtu.be/ibQ-1KijZE8"
+                        },
+                        "ID_2044": {
+                            "title": "Ilios",
+                            "link": "https://youtu.be/RQ6F8V8w2ZM"
+                        },
+                        "ID_2045": {
+                            "title": "Victory",
+                            "link": "https://youtu.be/keJPapmHDPg"
+                        }
+                    }
+                }
+            }
+        },
+        "Paper Mario": {
+            "seriesName": "Paper Mario",
+            "seriesColor": "red",
+            "game": {
+                "Paper Mario: The Thousand-Year Door": {
+                    "gameName": "Paper Mario: The Thousand-Year Door",
+                    "answers": ["paper mario: the thousand-year door", "paper mario the thousand-year door", "paper mario thousand-year door", "paper mario the thousand year door", "paper mario thousand year door", "paper mario ttyd", "ttyd"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2180": {
+                            "title": "Intro Story",
+                            "link": "https://youtu.be/GAwUaiWHgL8"
+                        },
+                        "ID_2181": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/q-ZiCJnUYPA"
+                        },
+                        "ID_2182": {
+                            "title": "Battle Theme",
+                            "link": "https://youtu.be/VRXKF3lMh8k"
+                        }
+                    }
+                }
+            }
+        },
         "Papers, Please": {
             "seriesName": "Papers, Please",
             "seriesColor": "red",
@@ -5749,6 +7284,39 @@ let ALLSONGS_JSON =`{
                         "ID_1299": {
                             "title": "Papers, Please",
                             "link": "https://youtu.be/OBQE_TNI7zw"
+                        }
+                    }
+                }
+            }
+        },
+        "Parappa the Rapper": {
+            "seriesName": "Parappa the Rapper",
+            "seriesColor": "red",
+            "game": {
+                "Parappa the Rapper": {
+                    "gameName": "Parappa the Rapper",
+                    "answers": ["parappa the rapper", "parappa"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2187": {
+                            "title": "Chop Chop Master Onion Rap",
+                            "link": "https://youtu.be/nJ3o3kQZWm8"
+                        },
+                        "ID_2188": {
+                            "title": "Instructor Mooselini's Car Rap",
+                            "link": "https://youtu.be/RoqllL8Vl6o"
+                        },
+                        "ID_2189": {
+                            "title": "Cheap Cheap the Cooking Chicken Rap",
+                            "link": "https://youtu.be/xh6BtPs-KNk"
+                        },
+                        "ID_2190": {
+                            "title": "All Master's Rap (Bathroom Song)",
+                            "link": "https://youtu.be/tEUiaO9KZQI"
+                        },
+                        "ID_2191": {
+                            "title": "Katty Kat and Sunny Funny Theme Song",
+                            "link": "https://youtu.be/kW9JmL9w0YM"
                         }
                     }
                 }
@@ -5815,6 +7383,31 @@ let ALLSONGS_JSON =`{
                         "ID_708": {
                             "title": "Master League",
                             "link": "https://youtu.be/q1wDlX7EL3o"
+                        }
+                    }
+                }
+            }
+        },
+        "Pictionary": {
+            "seriesName": "Pictionary",
+            "seriesColor": "red",
+            "game": {
+                "Pictionary": {
+                    "gameName": "Pictionary",
+                    "answers": ["pictionary"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2192": {
+                            "title": "Title Screen Theme",
+                            "link": "https://youtu.be/SJwh3erQlyE"
+                        },
+                        "ID_2193": {
+                            "title": "Move Piece",
+                            "link": "https://youtu.be/hU0wBHtgycc"
+                        },
+                        "ID_2194": {
+                            "title": "Drawing Game",
+                            "link": "https://youtu.be/x8bVrwQxDXc"
                         }
                     }
                 }
@@ -6643,6 +8236,147 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Professor Layton vs. Ace Attorney": {
+            "seriesName": "Professor Layton vs. Ace Attorney",
+            "seriesColor": "red",
+            "game": {
+                "Professor Layton vs. Phoenix Wright: Ace Attorney": {
+                    "gameName": "Professor Layton vs. Phoenix Wright: Ace Attorney",
+                    "answers": ["professor layton vs. phoenix wright: ace attorney", "professor layton vs ace attorney", "professor layton vs phoenix wright ace attorney", "professor layton vs phoenix wright", "layton vs wright", "layton vs ace attorney", "layton vs aa"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2319": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/yz0-xcOY_8c"
+                        },
+                        "ID_2320": {
+                            "title": "Professor Layton's Theme",
+                            "link": "https://youtu.be/uiCf_Urxggc"
+                        },
+                        "ID_2321": {
+                            "title": "About Town",
+                            "link": "https://youtu.be/yIzrWD9BArY"
+                        },
+                        "ID_2322": {
+                            "title": "Bewitching Puzzles",
+                            "link": "https://youtu.be/IZTAkpQFzy8"
+                        },
+                        "ID_2323": {
+                            "title": "Quiet Moments",
+                            "link": "https://youtu.be/jG-cO1zylOs"
+                        },
+                        "ID_2324": {
+                            "title": "The Professor's Deductions",
+                            "link": "https://youtu.be/HNZlKL1X70U"
+                        },
+                        "ID_2325": {
+                            "title": "Into the Forest",
+                            "link": "https://youtu.be/NwB0mcahSSA"
+                        },
+                        "ID_2326": {
+                            "title": "Courtroom Lounge ~ Opening Prelude",
+                            "link": "https://youtu.be/Kk-41BWJ-_4"
+                        },
+                        "ID_2327": {
+                            "title": "Court Begins",
+                            "link": "https://youtu.be/OXwj-FGljGM"
+                        },
+                        "ID_2328": {
+                            "title": "Logic and Tricks",
+                            "link": "https://youtu.be/qZvUXs9eyQw"
+                        },
+                        "ID_2329": {
+                            "title": "Cross-Examination ~ Moderato",
+                            "link": "https://youtu.be/M9dv9V7WwGg"
+                        },
+                        "ID_2330": {
+                            "title": "Phoenix Wright ~ Objection!",
+                            "link": "https://youtu.be/BEiaYPPB9MM"
+                        },
+                        "ID_2331": {
+                            "title": "Cornered",
+                            "link": "https://youtu.be/FfM70egWauo"
+                        },
+                        "ID_2332": {
+                            "title": "Won the Case! ~ First Victory",
+                            "link": "https://youtu.be/i6FXbxkxRAI"
+                        },
+                        "ID_2333": {
+                            "title": "Phoenix Wright ~ Objection! 2012",
+                            "link": "https://youtu.be/N_Mtx_4nJj0"
+                        },
+                        "ID_2334": {
+                            "title": "Mass Inquisition ~ Allegro",
+                            "link": "https://youtu.be/VPgXjUhyRm8"
+                        },
+                        "ID_2335": {
+                            "title": "Cornered ~ Spell-breaker",
+                            "link": "https://youtu.be/FYg0J2rE0Aw"
+                        },
+                        "ID_2336": {
+                            "title": "Turnabout Sisters ~ Music Box Melody",
+                            "link": "https://youtu.be/1hbiQzWGkXA"
+                        },
+                        "ID_2337": {
+                            "title": "Tale's End",
+                            "link": "https://youtu.be/l_2bCujQP1k"
+                        }
+                    }
+                }
+            }
+        },
+        "Punch-Out!!": {
+            "seriesName": "Punch-Out!!",
+            "seriesColor": "red",
+            "game": {
+                "Mike Tyson's Punch-Out!!": {
+                    "gameName": "Mike Tyson's Punch-Out!!",
+                    "answers": ["mike tyson's punch-out!!", "mike tysons punch out", "mike tysons punch-out", "mike tysons punchout", "mike tyson's punch out", "mike tyson's punch-out", "mike tyson's punchout", "punch-out", "punch out", "punchout"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2195": {
+                            "title": "Title Part 1",
+                            "link": "https://youtu.be/dh7SoGXWlnc"
+                        },
+                        "ID_2196": {
+                            "title": "Fight Theme",
+                            "link": "https://youtu.be/VE8vKLEK6A8"
+                        },
+                        "ID_2197": {
+                            "title": "Bicycle Training",
+                            "link": "https://youtu.be/HE8pyBoFdww"
+                        },
+                        "ID_2198": {
+                            "title": "Little Mac Down",
+                            "link": "https://youtu.be/w3IZjfvXvIE"
+                        }
+                    }
+                },
+                "Punch-Out!!": {
+                    "gameName": "Punch-Out!!",
+                    "answers": ["punch-out!!", "punch out", "punchout", "punch-out"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2199": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/MQurUl4Snio"
+                        },
+                        "ID_2200": {
+                            "title": "Title Screen",
+                            "link": "https://youtu.be/D-kIRD5zPQU"
+                        },
+                        "ID_2201": {
+                            "title": "Exhibition Mode",
+                            "link": "https://youtu.be/ZWRLrkJrxuw"
+                        },
+                        "ID_2202": {
+                            "title": "Staff Roll",
+                            "link": "https://youtu.be/8Ph13N5bDA4"
+                        }
+                    }
+                }
+            }
+        },
         "Rhythm Heaven": {
             "seriesName": "Rhythm Heaven",
             "seriesColor": "red",
@@ -6928,6 +8662,59 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Rivals of Aether": {
+            "seriesName": "Rivals of Aether",
+            "seriesColor": "red",
+            "game": {
+                "Rivals of Aether": {
+                    "gameName": "Rivals of Aether",
+                    "answers": ["rivals of aether"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2268": {
+                            "title": "Fighter Select",
+                            "link": "https://youtu.be/UtAAMGfpgRw"
+                        },
+                        "ID_2269": {
+                            "title": "Customization",
+                            "link": "https://youtu.be/qT1s6K16rJs"
+                        },
+                        "ID_2270": {
+                            "title": "Fighter Select Final",
+                            "link": "https://youtu.be/Lzz1nvDL9tA"
+                        },
+                        "ID_2271": {
+                            "title": "Fiery Ambitions",
+                            "link": "https://youtu.be/XY9h1NRLiI4"
+                        },
+                        "ID_2272": {
+                            "title": "Fight And Flight",
+                            "link": "https://youtu.be/XUR8xcucUnE"
+                        },
+                        "ID_2273": {
+                            "title": "Luna Ascension EX",
+                            "link": "https://youtu.be/jWzt8PJxndw"
+                        },
+                        "ID_2274": {
+                            "title": "Conflict",
+                            "link": "https://youtu.be/32DFRPmJ1IM"
+                        },
+                        "ID_2275": {
+                            "title": "Decisive Encounter",
+                            "link": "https://youtu.be/XLGuoZ37vYU"
+                        },
+                        "ID_2276": {
+                            "title": "In the Halls of the Usurper (Rivals ver.)",
+                            "link": "https://youtu.be/64wh6sQ4Dwg"
+                        },
+                        "ID_2277": {
+                            "title": "Fire's Last Hope (Neo Fire Captial)",
+                            "link": "https://youtu.be/BPrBgWW-CGY"
+                        }
+                    }
+                }
+            }
+        },
         "Runescape": {
             "seriesName": "Runescape",
             "seriesColor": "red",
@@ -6980,6 +8767,109 @@ let ALLSONGS_JSON =`{
                         "ID_1934": {
                             "title": "The Trade Parade",
                             "link": "https://youtu.be/LS6PfoPIgns"
+                        }
+                    }
+                }
+            }
+        },
+        "Scott Pilgrim vs. The World": {
+            "seriesName": "Scott Pilgrim vs. The World",
+            "seriesColor": "red",
+            "game": {
+                "Scott Pilgrim vs. The World: The Game": {
+                    "gameName": "Scott Pilgrim vs. The World: The Game",
+                    "answers": ["scott pilgrim vs. the world: the game", "scott pilgrim the game", "scott pilgrim", "scott pilgrim vs the world", "scott pilgrim versus the world"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2025": {
+                            "title": "Scott Pilgrim Anthem",
+                            "link": "https://youtu.be/eN1ZYVLczWw"
+                        },
+                        "ID_2026": {
+                            "title": "Another Winter",
+                            "link": "https://youtu.be/Jz41ys4_z_c"
+                        },
+                        "ID_2027": {
+                            "title": "Skate or Live",
+                            "link": "https://youtu.be/jMJTelAu3Ps"
+                        },
+                        "ID_2028": {
+                            "title": "Rock Club",
+                            "link": "https://youtu.be/ZbKySy1XXxw"
+                        },
+                        "ID_2029": {
+                            "title": "Twin Dragons",
+                            "link": "https://youtu.be/LiXfgfgSdhs"
+                        }
+                    }
+                }
+            }
+        },
+        "Shadow of the Colossus": {
+            "seriesName": "Shadow of the Colossus",
+            "seriesColor": "red",
+            "game": {
+                "Shadow of the Colossus": {
+                    "gameName": "Shadow of the Colossus",
+                    "answers": ["shadow of the colossus", "sotc"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2203": {
+                            "title": "Prologue ~ To the Ancient Land",
+                            "link": "https://youtu.be/NnH3kWz-w6Q"
+                        },
+                        "ID_2204": {
+                            "title": "Grotesque Figures ~ Battle With the Colossus",
+                            "link": "https://youtu.be/AEEn1DPzTWc"
+                        },
+                        "ID_2205": {
+                            "title": "The Opened Way ~ Battle With the Colossus",
+                            "link": "https://youtu.be/SHkObxuPZoU"
+                        },
+                        "ID_2206": {
+                            "title": "The End of the Battle",
+                            "link": "https://youtu.be/--bUKWIAHmo"
+                        },
+                        "ID_2207": {
+                            "title": "A Violent Encounter ~ Battle With the Colossus",
+                            "link": "https://youtu.be/8ZOztBRZZH8"
+                        },
+                        "ID_2208": {
+                            "title": "Revived Power ~ Battle With the Colossus",
+                            "link": "https://youtu.be/qbPiyQRFNFw"
+                        },
+                        "ID_2209": {
+                            "title": "In Awe of the Power ~ Battle With the Colossus",
+                            "link": "https://youtu.be/ue4QJqCVNVM"
+                        },
+                        "ID_2210": {
+                            "title": "Sky Burial",
+                            "link": "https://youtu.be/fwimESljaFE"
+                        },
+                        "ID_2211": {
+                            "title": "Final Battle",
+                            "link": "https://youtu.be/hlpLcZMv_K4"
+                        }
+                    }
+                }
+            }
+        },
+        "Shenmue": {
+            "seriesName": "Shenmue",
+            "seriesColor": "red",
+            "game": {
+                "Shenmue": {
+                    "gameName": "Shenmue",
+                    "answers": ["shenmue"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2212": {
+                            "title": "Shenhua",
+                            "link": "https://youtu.be/Lw6w0iF94ew"
+                        },
+                        "ID_2213": {
+                            "title": "Tomato Convenience Store",
+                            "link": "https://youtu.be/XruY72JamWc"
                         }
                     }
                 }
@@ -8017,7 +9907,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Soul Edge": {
                     "gameName": "Soul Edge",
-                    "answers": ["soul edge"],
+                    "answers": ["soul edge", "soul blade"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1858": {
@@ -8028,7 +9918,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Soulcalibur": {
                     "gameName": "Soulcalibur",
-                    "answers": ["soulcalibur"],
+                    "answers": ["soulcalibur", "soul calibur"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1842": {
@@ -8039,7 +9929,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Soulcalibur II": {
                     "gameName": "Soulcalibur II",
-                    "answers": ["soulcalibur ii", "soulcalibur 2"],
+                    "answers": ["soulcalibur ii", "soulcalibur 2", "soul calibur 2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1843": {
@@ -8070,7 +9960,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Soulcalibur III": {
                     "gameName": "Soulcalibur III",
-                    "answers": ["soulcalibur iii", "soulcalibur 3"],
+                    "answers": ["soulcalibur iii", "soulcalibur 3", "soul calibur 3"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1849": {
@@ -8140,6 +10030,55 @@ let ALLSONGS_JSON =`{
                         "ID_1896": {
                             "title": "Fire Keepers",
                             "link": "https://youtu.be/MulF7tHT5oo"
+                        }
+                    }
+                }
+            }
+        },
+        "Street Fighter": {
+            "seriesName": "Street Fighter",
+            "seriesColor": "red",
+            "game": {
+                "Street Fighter II": {
+                    "gameName": "Street Fighter II",
+                    "answers": ["street fighter ii", "street fighter 2"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2293": {
+                            "title": "Opening Title",
+                            "link": "https://youtu.be/vMqUEFIb-EI"
+                        },
+                        "ID_2294": {
+                            "title": "Player Select",
+                            "link": "https://youtu.be/41SjKq4096g"
+                        },
+                        "ID_2295": {
+                            "title": "Ryu Stage",
+                            "link": "https://youtu.be/IFbn4nuTMj8"
+                        },
+                        "ID_2296": {
+                            "title": "Guile Stage",
+                            "link": "https://youtu.be/B74wsIXY8pM"
+                        },
+                        "ID_2297": {
+                            "title": "Ken Stage",
+                            "link": "https://youtu.be/KLakZvVQmPw"
+                        },
+                        "ID_2298": {
+                            "title": "Balrog Stage",
+                            "link": "https://youtu.be/MGNE79fsE-A"
+                        },
+                        "ID_2299": {
+                            "title": "Vega Stage",
+                            "link": "https://youtu.be/SvHiyPuCe4Q"
+                        },
+                        "ID_2300": {
+                            "title": "M.Bison Stage",
+                            "link": "https://youtu.be/ahG2vkrkNww"
+                        },
+                        "ID_2301": {
+                            "title": "Staff Roll",
+                            "link": "https://youtu.be/TAgEVP-uNus"
                         }
                     }
                 }
@@ -8221,7 +10160,7 @@ let ALLSONGS_JSON =`{
             "game": {
                 "Super Smash Bros. Brawl": {
                     "gameName": "Super Smash Bros. Brawl",
-                    "answers": ["super smash bros. brawl", "brawl", "smash brawl", "super smash bros brawl"],
+                    "answers": ["super smash bros. brawl", "brawl", "smash brawl", "super smash bros brawl", "smash bros brawl", "ssbb", "ssb brawl"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1828": {
@@ -8248,7 +10187,7 @@ let ALLSONGS_JSON =`{
                 },
                 "Super Smash Bros. Melee": {
                     "gameName": "Super Smash Bros. Melee",
-                    "answers": ["super smash bros. melee", "melee", "smash melee", "super smash bros melee"],
+                    "answers": ["super smash bros. melee", "melee", "smash melee", "super smash bros melee", "smash bros melee", "ssbm", "ssb melee"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1792": {
@@ -8394,6 +10333,35 @@ let ALLSONGS_JSON =`{
                         "ID_1827": {
                             "title": "Trophy",
                             "link": "https://youtu.be/cU_QuldpVG0"
+                        }
+                    }
+                }
+            }
+        },
+        "Teenage Mutant Ninja Turtles": {
+            "seriesName": "Teenage Mutant Ninja Turtles",
+            "seriesColor": "red",
+            "game": {
+                "Teenage Mutant Ninja Turtles IV: Turtles in Time": {
+                    "gameName": "Teenage Mutant Ninja Turtles IV: Turtles in Time",
+                    "answers": ["teenage mutant ninja turtles iv: turtles in time", "tmnt 4", "tmnt4", "turtles in time", "teenage mutant ninja turtles 4 turtles in time", "tmnt 4 turtles in time", "tmnt4 turtles in time"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2214": {
+                            "title": "Technodrome ~ Let's Kick Shell!",
+                            "link": "https://youtu.be/VtOFsZk1CX8"
+                        },
+                        "ID_2215": {
+                            "title": "Sewer Surfin'",
+                            "link": "https://youtu.be/tLKnlzYwVz4"
+                        },
+                        "ID_2216": {
+                            "title": "Alleycat Blues",
+                            "link": "https://youtu.be/RM2oRKfMq2w"
+                        },
+                        "ID_2217": {
+                            "title": "Big Apple, 3 A.M.",
+                            "link": "https://youtu.be/o0e69e_B_SE"
                         }
                     }
                 }
@@ -8695,6 +10663,69 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Tetris": {
+            "seriesName": "Tetris",
+            "seriesColor": "red",
+            "game": {
+                "Tetris (GB)": {
+                    "gameName": "Tetris (GB)",
+                    "answers": ["tetris (gb)", "tetris"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2221": {
+                            "title": "Title",
+                            "link": "https://youtu.be/6MsXiUnHHqU"
+                        },
+                        "ID_2222": {
+                            "title": "A-Type",
+                            "link": "https://youtu.be/S098e4mSLDY"
+                        },
+                        "ID_2223": {
+                            "title": "B-Type",
+                            "link": "https://youtu.be/20RSkwVRGZ4"
+                        },
+                        "ID_2224": {
+                            "title": "C-Type",
+                            "link": "https://youtu.be/hfxO9RU4VGI"
+                        },
+                        "ID_2225": {
+                            "title": "High Score",
+                            "link": "https://youtu.be/VsK0Ezwa-p0"
+                        }
+                    }
+                },
+                "Tetris (NES)": {
+                    "gameName": "Tetris (NES)",
+                    "answers": ["tetris (nes)", "tetris"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2218": {
+                            "title": "Music 01",
+                            "link": "https://youtu.be/KdPevomELLc"
+                        },
+                        "ID_2219": {
+                            "title": "Music 02",
+                            "link": "https://youtu.be/IU7_39ORGCo"
+                        },
+                        "ID_2220": {
+                            "title": "Victory Theme",
+                            "link": "https://youtu.be/jGcCFADbW2w"
+                        }
+                    }
+                },
+                "Tetris 99": {
+                    "gameName": "Tetris 99",
+                    "answers": ["tetris 99"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2226": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/63hoSNvS6Z4"
+                        }
+                    }
+                }
+            }
+        },
         "The Last of Us": {
             "seriesName": "The Last of Us",
             "seriesColor": "red",
@@ -8731,6 +10762,517 @@ let ALLSONGS_JSON =`{
                         "ID_926": {
                             "title": "The Path (A New Beginning)",
                             "link": "https://youtu.be/STyGc4rMOeo"
+                        }
+                    }
+                }
+            }
+        },
+        "The Legend of Zelda": {
+            "seriesName": "The Legend of Zelda",
+            "seriesColor": "red",
+            "game": {
+                "Breath of the Wild": {
+                    "gameName": "Breath of the Wild",
+                    "answers": ["breath of the wild", "botw", "breath of the wild", "leg of zeg", "zelda botw", "loz botw"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1161": {
+                            "title": "Riding - Night",
+                            "link": "https://youtu.be/f2LgPr9xtAo"
+                        }
+                    }
+                },
+                "Link's Awakening": {
+                    "gameName": "Link's Awakening",
+                    "answers": ["link's awakening", "link's awakening", "links awakening", "zelda awakening", "zelda links awakening", "zelda link's awakening"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1095": {
+                            "title": "Beginning of the Journey",
+                            "link": "https://youtu.be/8rA_u3CCPa4"
+                        },
+                        "ID_1096": {
+                            "title": "Hyrule Castle",
+                            "link": "https://youtu.be/_uR7doemZD0"
+                        },
+                        "ID_1097": {
+                            "title": "Hyrule Field Main Theme",
+                            "link": "https://youtu.be/r4MhlyFwmrA"
+                        },
+                        "ID_1098": {
+                            "title": "Kakariko Village",
+                            "link": "https://youtu.be/fw1O6-LjfeA"
+                        },
+                        "ID_1099": {
+                            "title": "Lost Ancient Ruins",
+                            "link": "https://youtu.be/zi0APizJuRU"
+                        },
+                        "ID_1100": {
+                            "title": "Forest of Mystery",
+                            "link": "https://youtu.be/X1CKttAmNKA"
+                        },
+                        "ID_1101": {
+                            "title": "The Dark World",
+                            "link": "https://youtu.be/BStjuHfP238"
+                        },
+                        "ID_1102": {
+                            "title": "Title",
+                            "link": "https://youtu.be/EgtyT0NEP_g"
+                        },
+                        "ID_1103": {
+                            "title": "Overworld",
+                            "link": "https://youtu.be/9FYkL2D3d7M"
+                        }
+                    }
+                },
+                "Majora's Mask": {
+                    "gameName": "Majora's Mask",
+                    "answers": ["majora's mask", "majora", "majoras mask", "majora's mask", "zelda mm", "zelda majoras mask"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1132": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/AortGYe1sTI"
+                        },
+                        "ID_1133": {
+                            "title": "Majora's Theme",
+                            "link": "https://youtu.be/gJQu3iTi54M"
+                        },
+                        "ID_1134": {
+                            "title": "Clock Town, First Day",
+                            "link": "https://youtu.be/JaflMqvxIqA"
+                        },
+                        "ID_1135": {
+                            "title": "Milk Bar",
+                            "link": "https://youtu.be/tIhZrn8XxH4"
+                        },
+                        "ID_1136": {
+                            "title": "Clock Town, Second Day",
+                            "link": "https://youtu.be/eS_42yIISl8"
+                        },
+                        "ID_1137": {
+                            "title": "Shop",
+                            "link": "https://youtu.be/WUWlFnxFNF8"
+                        },
+                        "ID_1138": {
+                            "title": "Clock Town, Third Day",
+                            "link": "https://youtu.be/la40d6pm17w"
+                        },
+                        "ID_1139": {
+                            "title": "Astral Observatory",
+                            "link": "https://youtu.be/ErWVpxkdX_o"
+                        },
+                        "ID_1140": {
+                            "title": "Battle",
+                            "link": "https://youtu.be/9aWkaMI2fGc"
+                        },
+                        "ID_1141": {
+                            "title": "Deku Palace",
+                            "link": "https://youtu.be/2foI62hzyQ8"
+                        },
+                        "ID_1142": {
+                            "title": "Boss Battle",
+                            "link": "https://youtu.be/rbHz6IttTpg"
+                        },
+                        "ID_1143": {
+                            "title": "Romani Ranch",
+                            "link": "https://youtu.be/NHZygqc7-NU"
+                        },
+                        "ID_1144": {
+                            "title": "Music Box House",
+                            "link": "https://youtu.be/2uxk5lefp68"
+                        },
+                        "ID_1145": {
+                            "title": "The End Credits",
+                            "link": "https://youtu.be/joMEQmwV8Q8"
+                        }
+                    }
+                },
+                "Ocarina of Time": {
+                    "gameName": "Ocarina of Time",
+                    "answers": ["ocarina of time", "oot", "zelda ocarina", "zelda ocarina", "zelda ocarina of time", "ocarina of time", "the legend of zelda ocarina of time"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1115": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/CHsAFs7w3ro"
+                        },
+                        "ID_1116": {
+                            "title": "House",
+                            "link": "https://youtu.be/hFj8ijstduI"
+                        },
+                        "ID_1117": {
+                            "title": "Boss Battle",
+                            "link": "https://youtu.be/uEmWdiMndok"
+                        },
+                        "ID_1118": {
+                            "title": "Hyrule Field",
+                            "link": "https://youtu.be/KG3kHhSHF0U"
+                        },
+                        "ID_1119": {
+                            "title": "Market",
+                            "link": "https://youtu.be/I_pJpCgT7Qs"
+                        },
+                        "ID_1120": {
+                            "title": "Zora's Domain",
+                            "link": "https://youtu.be/_VK9xWhZEyg"
+                        },
+                        "ID_1121": {
+                            "title": "Forest Temple",
+                            "link": "https://youtu.be/y2pdg9yGtyQ"
+                        },
+                        "ID_1122": {
+                            "title": "Ganondorf Battle",
+                            "link": "https://youtu.be/mNT-FouWfnw"
+                        },
+                        "ID_1123": {
+                            "title": "Gerudo Valley",
+                            "link": "https://youtu.be/aebc7Panr5Q"
+                        },
+                        "ID_1124": {
+                            "title": "Hyrule Castle Courtyard",
+                            "link": "https://youtu.be/uHubgxagyeQ"
+                        },
+                        "ID_1125": {
+                            "title": "Kakariko Village",
+                            "link": "https://youtu.be/8gbpIbQ5vvk"
+                        },
+                        "ID_1126": {
+                            "title": "Kokiri Forest",
+                            "link": "https://youtu.be/gEhERNugLzY"
+                        },
+                        "ID_1127": {
+                            "title": "Lost Woods",
+                            "link": "https://youtu.be/MqcEYdzZc6U"
+                        },
+                        "ID_1128": {
+                            "title": "Shop",
+                            "link": "https://youtu.be/HwZg6veZTUk"
+                        },
+                        "ID_1129": {
+                            "title": "Windmill Hut",
+                            "link": "https://youtu.be/dMpk6tAbonM"
+                        },
+                        "ID_1130": {
+                            "title": "Zelda's Theme",
+                            "link": "https://youtu.be/2OtDwn34iWY"
+                        },
+                        "ID_1131": {
+                            "title": "Last Battle",
+                            "link": "https://youtu.be/1U4Vv65OjVE"
+                        }
+                    }
+                },
+                "Phantom Hourglass": {
+                    "gameName": "Phantom Hourglass",
+                    "answers": ["phantom hourglass", "phantom hourglass", "loz ph", "zelda phantom hourglass", "loz phantom hourglass", "the legend of zelda phantom hourglass"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1104": {
+                            "title": "Set Sail for Adventure (Title)",
+                            "link": "https://youtu.be/G3gfqPdF7eQ"
+                        },
+                        "ID_1105": {
+                            "title": "The Pirate Ship",
+                            "link": "https://youtu.be/j3Zp9M5XwOY"
+                        },
+                        "ID_1106": {
+                            "title": "Princess Zelda",
+                            "link": "https://youtu.be/MMu79gKkPbM"
+                        },
+                        "ID_1107": {
+                            "title": "Linebeck's Theme",
+                            "link": "https://youtu.be/_HvVSQPGRzA"
+                        },
+                        "ID_1108": {
+                            "title": "Boss Battle",
+                            "link": "https://youtu.be/UGSxZBe6Uic"
+                        }
+                    }
+                },
+                "Skyward Sword": {
+                    "gameName": "Skyward Sword",
+                    "answers": ["skyward sword", "zelda skyward sword", "the legend of zelda skyward sword", "legend of zelda skyward sword"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2004": {
+                            "title": "Ballad of the Goddess",
+                            "link": "https://youtu.be/23hJeaLotEw"
+                        },
+                        "ID_2005": {
+                            "title": "Skyloft",
+                            "link": "https://youtu.be/aH4T38gw6Wk"
+                        },
+                        "ID_2006": {
+                            "title": "Groose's Theme",
+                            "link": "https://youtu.be/5xD1FAOJI84"
+                        },
+                        "ID_2007": {
+                            "title": "Follow Fi",
+                            "link": "https://youtu.be/cCpAFkdy9Ls"
+                        },
+                        "ID_2008": {
+                            "title": "Fi's Theme",
+                            "link": "https://youtu.be/KRPheoucN_0"
+                        },
+                        "ID_2009": {
+                            "title": "Bazaar",
+                            "link": "https://youtu.be/JHCXwA18EHA"
+                        },
+                        "ID_2010": {
+                            "title": "The Sky",
+                            "link": "https://youtu.be/nRbROTdOgj0"
+                        },
+                        "ID_2011": {
+                            "title": "Faron Woods",
+                            "link": "https://youtu.be/H_2zBH30HJU"
+                        },
+                        "ID_2012": {
+                            "title": "Ghirahim Battle",
+                            "link": "https://youtu.be/PPTamRd4n1M"
+                        },
+                        "ID_2013": {
+                            "title": "Eldin Volcano",
+                            "link": "https://youtu.be/kKME0bbKFYE"
+                        },
+                        "ID_2014": {
+                            "title": "Lanayru Desert",
+                            "link": "https://youtu.be/0LfAcKnDYWQ"
+                        },
+                        "ID_2015": {
+                            "title": "Lanayru Desert (Past)",
+                            "link": "https://youtu.be/bJkSWdCYb8A"
+                        },
+                        "ID_2016": {
+                            "title": "Lanayru Mining Facility",
+                            "link": "https://youtu.be/UWKXwSZcQlo"
+                        },
+                        "ID_2017": {
+                            "title": "Guardian's Awaken",
+                            "link": "https://youtu.be/n8_LJN-dxtc"
+                        },
+                        "ID_2018": {
+                            "title": "Koloktoss / Moldarach",
+                            "link": "https://youtu.be/MzL4IA16k78"
+                        },
+                        "ID_2019": {
+                            "title": "LD-002G Scervo",
+                            "link": "https://youtu.be/Y8KqVQTpiyg"
+                        },
+                        "ID_2020": {
+                            "title": "Imprisoned (Final)",
+                            "link": "https://youtu.be/NsuTmevpCec"
+                        },
+                        "ID_2021": {
+                            "title": "Final Ghirahim",
+                            "link": "https://youtu.be/NWy_F29hJg0"
+                        },
+                        "ID_2022": {
+                            "title": "Final Demise",
+                            "link": "https://youtu.be/zR-rX20UCHE"
+                        }
+                    }
+                },
+                "Spirit Tracks": {
+                    "gameName": "Spirit Tracks",
+                    "answers": ["spirit tracks", "spirit tracks", "loz st", "zelda spirit tracks", "loz spirit tracks", "the legend of zelda spirit tracks"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1109": {
+                            "title": "Opening",
+                            "link": "https://youtu.be/Cov0YhIRbis"
+                        },
+                        "ID_1110": {
+                            "title": "File Select",
+                            "link": "https://youtu.be/W1xZp3LlVP0"
+                        },
+                        "ID_1111": {
+                            "title": "Princess Zelda",
+                            "link": "https://youtu.be/aePE5JVqU9w"
+                        },
+                        "ID_1112": {
+                            "title": "Realm Overworld",
+                            "link": "https://youtu.be/5W_bFLwB0WY"
+                        },
+                        "ID_1113": {
+                            "title": "Boss Battle: Fraaz",
+                            "link": "https://youtu.be/aSV4s-N1E24"
+                        },
+                        "ID_1114": {
+                            "title": "Boss Battle: Phytops",
+                            "link": "https://youtu.be/1b9lQwMf_-I"
+                        }
+                    }
+                },
+                "The Legend of Zelda": {
+                    "gameName": "The Legend of Zelda",
+                    "answers": ["the legend of zelda", "loz", "zelda", "zelda 1"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1089": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/LvytTVeTxCE"
+                        },
+                        "ID_1090": {
+                            "title": "Overworld Theme",
+                            "link": "https://youtu.be/ncg72VswyTs"
+                        },
+                        "ID_1091": {
+                            "title": "Dungeon Theme",
+                            "link": "https://youtu.be/cMssCMqMHuk"
+                        }
+                    }
+                },
+                "The Wind Waker": {
+                    "gameName": "The Wind Waker",
+                    "answers": ["the wind waker", "wind waker", "loz wind waker", "loz ww", "the wind waker", "zelda wind waker", "zelda ww"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1146": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/o78T9-I4OGA"
+                        },
+                        "ID_1147": {
+                            "title": "File Select",
+                            "link": "https://youtu.be/0Kcnmba7v9Q"
+                        },
+                        "ID_1148": {
+                            "title": "The Legendary Hero",
+                            "link": "https://youtu.be/2TOZwZIgPtI"
+                        },
+                        "ID_1149": {
+                            "title": "Outset Island",
+                            "link": "https://youtu.be/VJsviRJ4voc"
+                        },
+                        "ID_1150": {
+                            "title": "Battle",
+                            "link": "https://youtu.be/SRGii05yILI"
+                        },
+                        "ID_1151": {
+                            "title": "Pirates",
+                            "link": "https://youtu.be/lYCo08TfYlQ"
+                        },
+                        "ID_1152": {
+                            "title": "Windfall Island",
+                            "link": "https://youtu.be/go_XgaJNVgg"
+                        },
+                        "ID_1153": {
+                            "title": "The Great Sea",
+                            "link": "https://youtu.be/5J_bL2bjQ-k"
+                        },
+                        "ID_1154": {
+                            "title": "Dragon Roost Island",
+                            "link": "https://youtu.be/FkwhtdCW5rI"
+                        },
+                        "ID_1155": {
+                            "title": "Princess Zelda's Theme",
+                            "link": "https://youtu.be/kQRhQ9D6ZBQ"
+                        },
+                        "ID_1156": {
+                            "title": "Fairy Spring",
+                            "link": "https://youtu.be/9myFEqrzy9o"
+                        },
+                        "ID_1157": {
+                            "title": "Molgera",
+                            "link": "https://youtu.be/5CYQzPHpvU8"
+                        },
+                        "ID_1158": {
+                            "title": "Ganondorf Battle",
+                            "link": "https://youtu.be/MfbM3GTkTBo"
+                        },
+                        "ID_1159": {
+                            "title": "Aryll's Theme",
+                            "link": "https://youtu.be/1UZ1_UfZlUc"
+                        },
+                        "ID_1160": {
+                            "title": "The Great Sea is Cursed",
+                            "link": "https://youtu.be/uLTxak2HqAw"
+                        }
+                    }
+                },
+                "Twilight Princess": {
+                    "gameName": "Twilight Princess",
+                    "answers": ["twilight princess", "zelda twilight princess", "zelda tp", "the legend of zelda twilight princess", "legend of zelda twilight princess", "legend of zelda tp", "the legend of zelda tp"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2278": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/9iltlMCj3Lw"
+                        },
+                        "ID_2279": {
+                            "title": "Meet Ilia",
+                            "link": "https://youtu.be/74W5WYFGlmQ"
+                        },
+                        "ID_2280": {
+                            "title": "Ordon Ranch",
+                            "link": "https://youtu.be/T1x-WoLHK9k"
+                        },
+                        "ID_2281": {
+                            "title": "Spirit's Lament",
+                            "link": "https://youtu.be/jDgoPXyzwQ0"
+                        },
+                        "ID_2282": {
+                            "title": "Hero Chosen by the Gods",
+                            "link": "https://youtu.be/MKO2d_lRxoI"
+                        },
+                        "ID_2283": {
+                            "title": "Faron Woods",
+                            "link": "https://youtu.be/WsVT_-RsONg"
+                        },
+                        "ID_2284": {
+                            "title": "Link Will Save Us",
+                            "link": "https://youtu.be/wftCKF8Fufc"
+                        },
+                        "ID_2285": {
+                            "title": "Hyrule Field",
+                            "link": "https://youtu.be/t6JgG__XbRA"
+                        },
+                        "ID_2286": {
+                            "title": "Song of Healing",
+                            "link": "https://youtu.be/nCdlZGnmgHs"
+                        },
+                        "ID_2287": {
+                            "title": "Kakariko Village",
+                            "link": "https://youtu.be/DlMGdW87Wuo"
+                        },
+                        "ID_2288": {
+                            "title": "Save Ilia",
+                            "link": "https://youtu.be/8qxGErvMQnE"
+                        },
+                        "ID_2289": {
+                            "title": "Lake Hylia",
+                            "link": "https://youtu.be/DdgEIRBsTaU"
+                        },
+                        "ID_2290": {
+                            "title": "Hyrule Castle Town",
+                            "link": "https://youtu.be/CSoTsfU102o"
+                        },
+                        "ID_2291": {
+                            "title": "Midna's Lament",
+                            "link": "https://youtu.be/NoBRdekWKxI"
+                        },
+                        "ID_2292": {
+                            "title": "Meet Princess Zelda Again",
+                            "link": "https://youtu.be/D53BB879bjQ"
+                        }
+                    }
+                },
+                "Zelda II: The Adventure of Link": {
+                    "gameName": "Zelda II: The Adventure of Link",
+                    "answers": ["zelda ii: the adventure of link", "loz2", "zelda 2"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_1092": {
+                            "title": "Title Theme",
+                            "link": "https://youtu.be/B2zxGm4cUB4"
+                        },
+                        "ID_1093": {
+                            "title": "Overworld Theme",
+                            "link": "https://youtu.be/RHS5jM6xBHo"
+                        },
+                        "ID_1094": {
+                            "title": "Dungeon Theme",
+                            "link": "https://youtu.be/W-VUVvvlQK8"
                         }
                     }
                 }
@@ -8794,12 +11336,41 @@ let ALLSONGS_JSON =`{
                 },
                 "The Walking Dead: Season Two": {
                     "gameName": "The Walking Dead: Season Two",
-                    "answers": ["the walking dead: season two", "walking dead", "the walking dead season two", "the walking dead", "twd"],
+                    "answers": ["the walking dead: season two", "walking dead season 2", "the walking dead season two", "the walking dead season 2", "twd season 2", "twd s2"],
                     "closeAnswers": [],
                     "songs": {
                         "ID_1703": {
                             "title": "In The Water",
                             "link": "https://youtu.be/YxB9_eOEeRM"
+                        }
+                    }
+                }
+            }
+        },
+        "The Wolf Among Us": {
+            "seriesName": "The Wolf Among Us",
+            "seriesColor": "red",
+            "game": {
+                "The Wolf Among Us": {
+                    "gameName": "The Wolf Among Us",
+                    "answers": ["the wolf among us", "wolf among us"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2254": {
+                            "title": "Main Menu",
+                            "link": "https://youtu.be/EvRdMlc-XXQ"
+                        },
+                        "ID_2255": {
+                            "title": "Opening Credits",
+                            "link": "https://youtu.be/s5fUwjdeSHE"
+                        },
+                        "ID_2256": {
+                            "title": "Credits",
+                            "link": "https://youtu.be/Vz9sCGFDZ1U"
+                        },
+                        "ID_2257": {
+                            "title": "Bigby's Place",
+                            "link": "https://youtu.be/SQeiNCt_9XM"
                         }
                     }
                 }
@@ -8934,6 +11505,23 @@ let ALLSONGS_JSON =`{
                         "ID_936": {
                             "title": "Everything's Alright",
                             "link": "https://youtu.be/OkvVr6n1cGk"
+                        }
+                    }
+                }
+            }
+        },
+        "Trauma Center": {
+            "seriesName": "Trauma Center",
+            "seriesColor": "red",
+            "game": {
+                "Trauma Center: Under the Knife 2": {
+                    "gameName": "Trauma Center: Under the Knife 2",
+                    "answers": ["trauma center: under the knife 2", "trauma center 4", "trauma center under the knife 2", "trauma center utk 2"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2253": {
+                            "title": "Gentle Breeze",
+                            "link": "https://youtu.be/ttMdwUbSpBg"
                         }
                     }
                 }
@@ -9581,6 +12169,27 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Worms": {
+            "seriesName": "Worms",
+            "seriesColor": "red",
+            "game": {
+                "Worms 3D": {
+                    "gameName": "Worms 3D",
+                    "answers": ["worms 3d"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2227": {
+                            "title": "Menu 1",
+                            "link": "https://youtu.be/XGPgQjmZH2k"
+                        },
+                        "ID_2228": {
+                            "title": "Title",
+                            "link": "https://youtu.be/65LXOUMZcu0"
+                        }
+                    }
+                }
+            }
+        },
         "Xeno": {
             "seriesName": "Xeno",
             "seriesColor": "red",
@@ -9626,6 +12235,99 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
+        "Yakuza": {
+            "seriesName": "Yakuza",
+            "seriesColor": "red",
+            "game": {
+                "Yakuza 0": {
+                    "gameName": "Yakuza 0",
+                    "answers": ["yakuza 0"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2243": {
+                            "title": "24-hour Cinderella",
+                            "link": "https://youtu.be/VZk0SChlebs"
+                        },
+                        "ID_2244": {
+                            "title": "Baka Mitai",
+                            "link": "https://youtu.be/F_rJFbWrK3Y"
+                        }
+                    }
+                }
+            }
+        },
+        "Yoshi": {
+            "seriesName": "Yoshi",
+            "seriesColor": "red",
+            "game": {
+                "Yoshi's Story": {
+                    "gameName": "Yoshi's Story",
+                    "answers": ["yoshi's story", "yoshis story"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2229": {
+                            "title": "Love is in the Air",
+                            "link": "https://youtu.be/uS74ixjy7PA"
+                        },
+                        "ID_2230": {
+                            "title": "On the Beach",
+                            "link": "https://youtu.be/8Uhxeihe6AM"
+                        },
+                        "ID_2231": {
+                            "title": "Yoshi's Song",
+                            "link": "https://youtu.be/d2c1qLVb2JI"
+                        },
+                        "ID_2232": {
+                            "title": "Yoshi's Story",
+                            "link": "https://youtu.be/Q6eZl-EAQlI"
+                        }
+                    }
+                },
+                "Yoshi's Woolly World": {
+                    "gameName": "Yoshi's Woolly World",
+                    "answers": ["yoshi's woolly world", "woolly world", "yoshis woolly world"],
+                    "closeAnswers": [],
+                    "songs": {
+                        "ID_2053": {
+                            "title": "Bounceabout Woods",
+                            "link": "https://youtu.be/mdV0eFN15zU"
+                        },
+                        "ID_2054": {
+                            "title": "Shy But Deadly",
+                            "link": "https://youtu.be/qySn2yDBKUg"
+                        },
+                        "ID_2055": {
+                            "title": "Clawdaddy Beach",
+                            "link": "https://youtu.be/dYKv8ogoXTU"
+                        },
+                        "ID_2056": {
+                            "title": "Lava Scarves and Red Hot Blargss",
+                            "link": "https://youtu.be/YqlIM2FiMGw"
+                        },
+                        "ID_2057": {
+                            "title": "Yoshi and Cookies",
+                            "link": "https://youtu.be/TT4mu-XWIlo"
+                        },
+                        "ID_2058": {
+                            "title": "Monkeying Round and Round",
+                            "link": "https://youtu.be/41hrrrL7oPY"
+                        },
+                        "ID_2059": {
+                            "title": "Vs Naval Piranha",
+                            "link": "https://youtu.be/R7RBXllM3oA"
+                        },
+                        "ID_2060": {
+                            "title": "Title Screen",
+                            "link": "https://youtu.be/tHpvvl-9NZA"
+                        },
+                        "ID_2061": {
+                            "title": "Welcome to Yoshi's Woolly World!",
+                            "link": "https://youtu.be/p0cgCVsq5oA"
+                        }
+                    }
+                }
+            }
+        },
         "You Have to Burn the Rope": {
             "seriesName": "You Have to Burn the Rope",
             "seriesColor": "red",
@@ -9643,369 +12345,26 @@ let ALLSONGS_JSON =`{
                 }
             }
         },
-        "Zelda": {
-            "seriesName": "Zelda",
+        "Ys": {
+            "seriesName": "Ys",
             "seriesColor": "red",
             "game": {
-                "The Legend of Zelda": {
-                    "gameName": "The Legend of Zelda",
-                    "answers": ["the legend of zelda", "loz", "zelda", "zelda 1"],
+                "Ys VIII -Lacrimosa of DANA-": {
+                    "gameName": "Ys VIII -Lacrimosa of DANA-",
+                    "answers": ["ys viii -lacrimosa of dana-", "ys 8", "ys8", "ys viii", "lacrimosa of dana", "ys 8 lacrimosa of dana"],
                     "closeAnswers": [],
                     "songs": {
-                        "ID_1089": {
-                            "title": "Title Theme",
-                            "link": "https://youtu.be/LvytTVeTxCE"
+                        "ID_2233": {
+                            "title": "Ricordo",
+                            "link": "https://youtu.be/z-bXi4L6jZQ"
                         },
-                        "ID_1090": {
-                            "title": "Overworld Theme",
-                            "link": "https://youtu.be/ncg72VswyTs"
+                        "ID_2234": {
+                            "title": "Gens d'Armes",
+                            "link": "https://youtu.be/EDllGOPr-Vg"
                         },
-                        "ID_1091": {
-                            "title": "Dungeon Theme",
-                            "link": "https://youtu.be/cMssCMqMHuk"
-                        }
-                    }
-                },
-                "The Legend of Zelda: A Link to the Past": {
-                    "gameName": "The Legend of Zelda: A Link to the Past",
-                    "answers": ["the legend of zelda: a link to the past", "lttp", "alttp", "zelda 3", "link to the past", "a link to the past", "loz3"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1095": {
-                            "title": "Beginning of the Journey",
-                            "link": "https://youtu.be/8rA_u3CCPa4"
-                        },
-                        "ID_1096": {
-                            "title": "Hyrule Castle",
-                            "link": "https://youtu.be/_uR7doemZD0"
-                        },
-                        "ID_1097": {
-                            "title": "Hyrule Field Main Theme",
-                            "link": "https://youtu.be/r4MhlyFwmrA"
-                        },
-                        "ID_1098": {
-                            "title": "Kakariko Village",
-                            "link": "https://youtu.be/fw1O6-LjfeA"
-                        },
-                        "ID_1099": {
-                            "title": "Lost Ancient Ruins",
-                            "link": "https://youtu.be/zi0APizJuRU"
-                        },
-                        "ID_1100": {
-                            "title": "Forest of Mystery",
-                            "link": "https://youtu.be/X1CKttAmNKA"
-                        },
-                        "ID_1101": {
-                            "title": "The Dark World",
-                            "link": "https://youtu.be/BStjuHfP238"
-                        }
-                    }
-                },
-                "The Legend of Zelda: Breath of the Wild": {
-                    "gameName": "The Legend of Zelda: Breath of the Wild",
-                    "answers": ["the legend of zelda: breath of the wild", "botw", "breath of the wild", "leg of zeg", "zelda botw", "loz botw"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1161": {
-                            "title": "Riding - Night",
-                            "link": "https://youtu.be/f2LgPr9xtAo"
-                        }
-                    }
-                },
-                "The Legend of Zelda: Link's Awakening": {
-                    "gameName": "The Legend of Zelda: Link's Awakening",
-                    "answers": ["the legend of zelda: link's awakening", "link's awakening", "links awakening", "zelda awakening", "zelda links awakening", "zelda link's awakening"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1102": {
-                            "title": "Title",
-                            "link": "https://youtu.be/EgtyT0NEP_g"
-                        },
-                        "ID_1103": {
-                            "title": "Overworld",
-                            "link": "https://youtu.be/9FYkL2D3d7M"
-                        }
-                    }
-                },
-                "The Legend of Zelda: Majora's Mask": {
-                    "gameName": "The Legend of Zelda: Majora's Mask",
-                    "answers": ["the legend of zelda: majora's mask", "majora", "majoras mask", "majora's mask", "zelda mm", "zelda majoras mask"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1132": {
-                            "title": "Title Theme",
-                            "link": "https://youtu.be/AortGYe1sTI"
-                        },
-                        "ID_1133": {
-                            "title": "Majora's Theme",
-                            "link": "https://youtu.be/gJQu3iTi54M"
-                        },
-                        "ID_1134": {
-                            "title": "Clock Town, First Day",
-                            "link": "https://youtu.be/JaflMqvxIqA"
-                        },
-                        "ID_1135": {
-                            "title": "Milk Bar",
-                            "link": "https://youtu.be/tIhZrn8XxH4"
-                        },
-                        "ID_1136": {
-                            "title": "Clock Town, Second Day",
-                            "link": "https://youtu.be/eS_42yIISl8"
-                        },
-                        "ID_1137": {
-                            "title": "Shop",
-                            "link": "https://youtu.be/WUWlFnxFNF8"
-                        },
-                        "ID_1138": {
-                            "title": "Clock Town, Third Day",
-                            "link": "https://youtu.be/la40d6pm17w"
-                        },
-                        "ID_1139": {
-                            "title": "Astral Observatory",
-                            "link": "https://youtu.be/ErWVpxkdX_o"
-                        },
-                        "ID_1140": {
-                            "title": "Battle",
-                            "link": "https://youtu.be/9aWkaMI2fGc"
-                        },
-                        "ID_1141": {
-                            "title": "Deku Palace",
-                            "link": "https://youtu.be/2foI62hzyQ8"
-                        },
-                        "ID_1142": {
-                            "title": "Boss Battle",
-                            "link": "https://youtu.be/rbHz6IttTpg"
-                        },
-                        "ID_1143": {
-                            "title": "Romani Ranch",
-                            "link": "https://youtu.be/NHZygqc7-NU"
-                        },
-                        "ID_1144": {
-                            "title": "Music Box House",
-                            "link": "https://youtu.be/2uxk5lefp68"
-                        },
-                        "ID_1145": {
-                            "title": "The End Credits",
-                            "link": "https://youtu.be/joMEQmwV8Q8"
-                        }
-                    }
-                },
-                "The Legend of Zelda: Ocarina of Time": {
-                    "gameName": "The Legend of Zelda: Ocarina of Time",
-                    "answers": ["the legend of zelda: ocarina of time", "oot", "zelda ocarina", "zelda ocarina", "zelda ocarina of time", "ocarina of time", "the legend of zelda ocarina of time"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1115": {
-                            "title": "Title Theme",
-                            "link": "https://youtu.be/CHsAFs7w3ro"
-                        },
-                        "ID_1116": {
-                            "title": "House",
-                            "link": "https://youtu.be/hFj8ijstduI"
-                        },
-                        "ID_1117": {
-                            "title": "Boss Battle",
-                            "link": "https://youtu.be/uEmWdiMndok"
-                        },
-                        "ID_1118": {
-                            "title": "Hyrule Field",
-                            "link": "https://youtu.be/KG3kHhSHF0U"
-                        },
-                        "ID_1119": {
-                            "title": "Market",
-                            "link": "https://youtu.be/I_pJpCgT7Qs"
-                        },
-                        "ID_1120": {
-                            "title": "Zora's Domain",
-                            "link": "https://youtu.be/_VK9xWhZEyg"
-                        },
-                        "ID_1121": {
-                            "title": "Forest Temple",
-                            "link": "https://youtu.be/y2pdg9yGtyQ"
-                        },
-                        "ID_1122": {
-                            "title": "Ganondorf Battle",
-                            "link": "https://youtu.be/mNT-FouWfnw"
-                        },
-                        "ID_1123": {
-                            "title": "Gerudo Valley",
-                            "link": "https://youtu.be/aebc7Panr5Q"
-                        },
-                        "ID_1124": {
-                            "title": "Hyrule Castle Courtyard",
-                            "link": "https://youtu.be/uHubgxagyeQ"
-                        },
-                        "ID_1125": {
-                            "title": "Kakariko Village",
-                            "link": "https://youtu.be/8gbpIbQ5vvk"
-                        },
-                        "ID_1126": {
-                            "title": "Kokiri Forest",
-                            "link": "https://youtu.be/gEhERNugLzY"
-                        },
-                        "ID_1127": {
-                            "title": "Lost Woods",
-                            "link": "https://youtu.be/MqcEYdzZc6U"
-                        },
-                        "ID_1128": {
-                            "title": "Shop",
-                            "link": "https://youtu.be/HwZg6veZTUk"
-                        },
-                        "ID_1129": {
-                            "title": "Windmill Hut",
-                            "link": "https://youtu.be/dMpk6tAbonM"
-                        },
-                        "ID_1130": {
-                            "title": "Zelda's Theme",
-                            "link": "https://youtu.be/2OtDwn34iWY"
-                        },
-                        "ID_1131": {
-                            "title": "Last Battle",
-                            "link": "https://youtu.be/1U4Vv65OjVE"
-                        }
-                    }
-                },
-                "The Legend of Zelda: Phantom Hourglass": {
-                    "gameName": "The Legend of Zelda: Phantom Hourglass",
-                    "answers": ["the legend of zelda: phantom hourglass", "phantom hourglass", "loz ph", "zelda phantom hourglass", "loz phantom hourglass", "the legend of zelda phantom hourglass"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1104": {
-                            "title": "Set Sail for Adventure (Title)",
-                            "link": "https://youtu.be/G3gfqPdF7eQ"
-                        },
-                        "ID_1105": {
-                            "title": "The Pirate Ship",
-                            "link": "https://youtu.be/j3Zp9M5XwOY"
-                        },
-                        "ID_1106": {
-                            "title": "Princess Zelda",
-                            "link": "https://youtu.be/MMu79gKkPbM"
-                        },
-                        "ID_1107": {
-                            "title": "Linebeck's Theme",
-                            "link": "https://youtu.be/_HvVSQPGRzA"
-                        },
-                        "ID_1108": {
-                            "title": "Boss Battle",
-                            "link": "https://youtu.be/UGSxZBe6Uic"
-                        }
-                    }
-                },
-                "The Legend of Zelda: Spirit Tracks": {
-                    "gameName": "The Legend of Zelda: Spirit Tracks",
-                    "answers": ["the legend of zelda: spirit tracks", "spirit tracks", "loz st", "zelda spirit tracks", "loz spirit tracks", "the legend of zelda spirit tracks"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1109": {
-                            "title": "Opening",
-                            "link": "https://youtu.be/Cov0YhIRbis"
-                        },
-                        "ID_1110": {
-                            "title": "File Select",
-                            "link": "https://youtu.be/W1xZp3LlVP0"
-                        },
-                        "ID_1111": {
-                            "title": "Princess Zelda",
-                            "link": "https://youtu.be/aePE5JVqU9w"
-                        },
-                        "ID_1112": {
-                            "title": "Realm Overworld",
-                            "link": "https://youtu.be/5W_bFLwB0WY"
-                        },
-                        "ID_1113": {
-                            "title": "Boss Battle: Fraaz",
-                            "link": "https://youtu.be/aSV4s-N1E24"
-                        },
-                        "ID_1114": {
-                            "title": "Boss Battle: Phytops",
-                            "link": "https://youtu.be/1b9lQwMf_-I"
-                        }
-                    }
-                },
-                "The Legend of Zelda: The Wind Waker": {
-                    "gameName": "The Legend of Zelda: The Wind Waker",
-                    "answers": ["the legend of zelda: the wind waker", "wind waker", "loz wind waker", "loz ww", "the wind waker", "zelda wind waker", "zelda ww"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1146": {
-                            "title": "Title Theme",
-                            "link": "https://youtu.be/o78T9-I4OGA"
-                        },
-                        "ID_1147": {
-                            "title": "File Select",
-                            "link": "https://youtu.be/0Kcnmba7v9Q"
-                        },
-                        "ID_1148": {
-                            "title": "The Legendary Hero",
-                            "link": "https://youtu.be/2TOZwZIgPtI"
-                        },
-                        "ID_1149": {
-                            "title": "Outset Island",
-                            "link": "https://youtu.be/VJsviRJ4voc"
-                        },
-                        "ID_1150": {
-                            "title": "Battle",
-                            "link": "https://youtu.be/SRGii05yILI"
-                        },
-                        "ID_1151": {
-                            "title": "Pirates",
-                            "link": "https://youtu.be/lYCo08TfYlQ"
-                        },
-                        "ID_1152": {
-                            "title": "Windfall Island",
-                            "link": "https://youtu.be/go_XgaJNVgg"
-                        },
-                        "ID_1153": {
-                            "title": "The Great Sea",
-                            "link": "https://youtu.be/5J_bL2bjQ-k"
-                        },
-                        "ID_1154": {
-                            "title": "Dragon Roost Island",
-                            "link": "https://youtu.be/FkwhtdCW5rI"
-                        },
-                        "ID_1155": {
-                            "title": "Princess Zelda's Theme",
-                            "link": "https://youtu.be/kQRhQ9D6ZBQ"
-                        },
-                        "ID_1156": {
-                            "title": "Fairy Spring",
-                            "link": "https://youtu.be/9myFEqrzy9o"
-                        },
-                        "ID_1157": {
-                            "title": "Molgera",
-                            "link": "https://youtu.be/5CYQzPHpvU8"
-                        },
-                        "ID_1158": {
-                            "title": "Ganondorf Battle",
-                            "link": "https://youtu.be/MfbM3GTkTBo"
-                        },
-                        "ID_1159": {
-                            "title": "Aryll's Theme",
-                            "link": "https://youtu.be/1UZ1_UfZlUc"
-                        },
-                        "ID_1160": {
-                            "title": "The Great Sea is Cursed",
-                            "link": "https://youtu.be/uLTxak2HqAw"
-                        }
-                    }
-                },
-                "Zelda II: The Adventure of Link": {
-                    "gameName": "Zelda II: The Adventure of Link",
-                    "answers": ["zelda ii: the adventure of link", "loz2", "zelda 2"],
-                    "closeAnswers": [],
-                    "songs": {
-                        "ID_1092": {
-                            "title": "Title Theme",
-                            "link": "https://youtu.be/B2zxGm4cUB4"
-                        },
-                        "ID_1093": {
-                            "title": "Overworld Theme",
-                            "link": "https://youtu.be/RHS5jM6xBHo"
-                        },
-                        "ID_1094": {
-                            "title": "Dungeon Theme",
-                            "link": "https://youtu.be/W-VUVvvlQK8"
+                        "ID_2235": {
+                            "title": "Sunshine Coastline",
+                            "link": "https://youtu.be/HvBla5NUlvk"
                         }
                     }
                 }
