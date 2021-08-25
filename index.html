@@ -38,6 +38,7 @@
     <!-- this style tag is altered when CHANGING THE COLOR PALETTE -->
     <style id="paletteRoot">
         html {
+            --colorDarkest: #111;
             --colorDarker: #222;
             --colorDark: #333;
             --colorMid: #444;
@@ -70,6 +71,13 @@
 
 </head> 
 <body>
+
+    <p class="lastUpdatedText"> <span class="boldText"> Last Updated: </span>
+        <!-- change this when you update -->
+        24/08/21
+    
+    </p>
+
     <header>
         <h1> VGMB </h1>
         <img src="logo_standard.png" alt="VGMB Logo" id="img_logo">
@@ -89,11 +97,22 @@
                     
                 </p>
             </div>
-            <div id="gameModeArea" class = "gameSection">
-                <h3>GAME MODES</h3>
-                <!-- <div id="btn_startButton" class="button">STANDARD</div>
-                <div id="btn_relaxButton" class="button">RELAX</div> -->
+
+            <div id="gameButtonSection">
+                <div id="gameModeArea" class = "gameSection">
+                    <h3>GAME MODES</h3>
+                    <!-- Game modes to be added dynamically -->
+                </div>
+                
+                <div id="abilityArea">
+                    <div id="btn_shieldButton" class="button">SHIELD</div>
+                    <div id="btn_riskButton" class="disabled">RISK</div>
+                    <div id="btn_hintButton" class="button">HINT</div>
+                    <div class="button skipButton">SKIP</div>
+                </div>
             </div>
+
+
         </div>
         
         <div id="answerArea">
@@ -102,9 +121,7 @@
             
             
             <input type="text" id="inp_textInput" autofocus spellcheck="false">
-            <div id="btn_shieldButton" class="button">SHIELD</div>
-            <div id="btn_hintButton" class="button">HINT</div>
-            <div id="btn_skipButton" class="button">SKIP</div>
+            <div class="button skipButton">SKIP</div>
 
             <label id="" class="label">VOLUME</label>
             <input type="range" min="0" max="100" value="40" class="slider" id="inp_volSlider">

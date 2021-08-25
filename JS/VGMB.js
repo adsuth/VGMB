@@ -11,6 +11,7 @@ class VGMB {
             historyPos: -1,
             
             failedCommand: "",
+            showWrongAnswers: true,
             
             timeStart: 0,
             timeEnd: 0,
@@ -23,6 +24,9 @@ class VGMB {
 
             comboMultiplier: 1,
             currentCombo: 0,
+
+            isRiskUnlocked: false,
+            riskMessageShown: false,
 
             isSkipping: false,
             isEnding: false,
@@ -39,6 +43,7 @@ class VGMB {
         this.abilityState = {
             shield: {
                 isCooldown: false,
+                name: "shield",
                 cooldown: 0,
                 cooldownLength: 4,
                 button: shieldButton,
@@ -55,6 +60,7 @@ class VGMB {
             },
             hint: {
                 isCooldown: false,
+                name: "hint",
                 cooldown: 0,
                 cooldownLength: 4,
                 button: hintButton,
@@ -71,6 +77,24 @@ class VGMB {
 
                 isActive: false,
                 currentHint: ""
+            },
+            risk: {
+                isCooldown: false,
+                name: "risk",
+                cooldown: 0,
+                cooldownLength: 4,
+                button: riskButton,
+                activeColor: "Red",
+
+                useMessage: "riskUsed",
+                rechargeMessage: "riskRecharge",
+
+                function: function () {
+                    quiz.abilityState.risk.isActive = true;
+                },
+
+                isActive: false,
+                isRisking: false
             }
         }
 
@@ -158,6 +182,7 @@ class VGMB {
             
             // increment point counter 
             this.OTHERFUNC.updateRoundPoints( 1 );
+
             this.OTHERFUNC.updateCounter();
 
             this.gameMode();
@@ -165,9 +190,8 @@ class VGMB {
         }
     
         else {
-            
-            this.OTHERFUNC.generateText( this.OTHERFUNC.getText("wrong") );
-            
+            if (quiz.state.showWrongAnswers) { this.OTHERFUNC.generateText( this.OTHERFUNC.getText("wrong") ) }
+                        
             this.state.history.unshift( textInput.value );
             this.state.historyPos = 0;
         }
@@ -179,6 +203,8 @@ class VGMB {
         this.state.currentCombo = 0;
         
         comboText.innerText = "x" + this.state.currentCombo;
+
+        this.state.isRiskUnlocked = false;
     }
 
     updateCombo() {
@@ -188,6 +214,8 @@ class VGMB {
             this.state.comboMultiplier++;
         }
         comboText.innerText = "x" + this.state.currentCombo;
+
+        if ( this.state.currentCombo >= 2 ) { this.state.isRiskUnlocked = true }
     }
 
     resetForNextRound() {
@@ -208,18 +236,40 @@ class VGMB {
         // reset player input
         textInput.value = "";
         
+        if ( this.state.isRiskUnlocked ) { 
+            riskButton.className = "button";
+            if ( !this.state.riskMessageShown ) { this.state.riskMessageShown = true; this.OTHERFUNC.generateText( this.OTHERFUNC.getText("riskUnlocked") ); }
+        }
+        else { 
+            this.state.riskMessageShown = false;
+            this.resetAbility("risk");
+            riskButton.className = "disabled"; 
+        }
         
-        // reset shield
-        this.abilityState.shield.isActive = false; 
-        if ( this.abilityState.shield.onCooldown ) {
-            this.rechargeAbility( "shield" );
+        // turn isRisking on for next round
+        if ( this.abilityState.risk.isActive ) { this.abilityState.risk.isRisking = true }
+
+        // enable/ disable buttons when needed
+        if (this.abilityState.risk.isRisking) {
+            this.OTHERFUNC.generateText( this.OTHERFUNC.getText("riskStart") )
+            shieldButton.className = "disabled";
+            hintButton.className = "disabled";
+        }
+        else {            
+            shieldButton.className = "button";
+            hintButton.className = "button";
         }
 
-        this.abilityState.hint.isActive = false; 
-        if ( this.abilityState.hint.onCooldown ) {
-            this.rechargeAbility( "hint" );
-        }
+        // recharge abilities (risk, )
+        Object.values( this.abilityState ).forEach( ability => {
+            ability.isActive = false;
+            if ( ability.onCooldown ) {
+                this.rechargeAbility( ability.name );
+            }
+        } )
+
         
+
         // reset round points
         this.state.roundPoints = 0;
         
@@ -242,19 +292,20 @@ class VGMB {
     resetAbility( ability ) {
         quiz.abilityState[ability].cooldown = 0;
         quiz.abilityState[ability].onCooldown = false;
-        quiz.abilityState[ability].button.style.backgroundColor = "unset";
+        quiz.abilityState[ability].button.style.backgroundColor = null;
     }
 
     useAbility( ability ) {
         if ( quiz.gameModeName === "relax" ){ return }
         // // if the round is ending, shields on CD, song isnt playing or we're afk, prevent using shield
-        if ( quiz.state.isEnding || quiz.abilityState[ability].onCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
+        if ( quiz.abilityState.risk.isRisking || quiz.state.isEnding || quiz.abilityState[ability].onCooldown || player.getPlayerState() !== 1 || quiz.state.isAFK ) { return }
         
         quiz.abilityState[ability].button.style.backgroundColor = `var(--color${quiz.abilityState[ability].activeColor})`;
         quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText( quiz.abilityState[ability].useMessage ) );
         
         quiz.abilityState[ability].function();
 
+        if ( ability === "risk" && quiz.abilityState[ability].isActive ) { return }
         quiz.abilityState[ability].onCooldown = true;
         quiz.abilityState[ability].cooldown += quiz.abilityState[ability].cooldownLength;
 
@@ -277,8 +328,10 @@ class VGMB {
         } 
         
         let hint = "";
+
         for (let i = 0; i < answer.length; i++) {
-            if ( answer[i] === " " || answer[i] === ":" || hintLetters.has(i) ) {
+            let isPunctuation = punctuationMarks.includes( answer[i] );
+            if ( isPunctuation || hintLetters.has(i) ) {
                 hint += answer[i];
             }
             else {
@@ -296,8 +349,8 @@ class VGMB {
      *
      */
     goAFK() {
-        // cant go afk if game hasnt started
-        if ( !quiz.gameModeName ) { return }
+        // cant go afk if game hasnt started or youre risking
+        if ( !quiz.gameModeName || quiz.abilityState.risk.isRisking ) { return }
 
         if ( quiz.state.isAFK ) { afkButton.style.backgroundColor = null }
         else { afkButton.style.backgroundColor = "rgb(237, 107, 107)" }

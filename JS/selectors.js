@@ -9,9 +9,9 @@ const relaxButton = document.getElementById("btn_relaxButton");
 
 const afkButton = document.getElementById("btn_afk");
 
-const skipButton = document.getElementById("btn_skipButton");
 const shieldButton = document.getElementById("btn_shieldButton");
 const hintButton = document.getElementById("btn_hintButton");
+const riskButton = document.getElementById("btn_riskButton");
 
 const favicon = document.getElementById("favicon");
 const imgLogo = document.getElementById("img_logo");

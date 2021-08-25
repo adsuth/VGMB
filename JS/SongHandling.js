@@ -32,6 +32,8 @@ class SongHandler {
         quiz.state.isSkipping = true;
         if ( !quiz.abilityState.shield.isActive ) {
             quiz.resetCombo();
+            // make round points negative
+
             quiz.OTHERFUNC.updateRoundPoints( -1 );
         }
         
@@ -45,7 +47,7 @@ class SongHandler {
         quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("skip") );
         quiz.OTHERFUNC.generateText( "<p>" + quiz.OTHERFUNC.getText("songInfo") );
 
-        quiz.gameMode()
+        quiz.gameMode();
     }
 
     fadeOutSong() {

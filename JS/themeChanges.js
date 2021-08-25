@@ -46,6 +46,7 @@
 
 const PALETTES = {
     standard: {
+        darkest: "#111",
         darker: "#222",
         dark: "#333",
         mid: "#444",
@@ -62,6 +63,7 @@ const PALETTES = {
         ultra: ""
     },
     hard: {
+        darker: "#112",
         darker: "#222441",
         dark: "#41598B",
         mid: "#414D7A",
@@ -81,6 +83,7 @@ const PALETTES = {
         softUltra: ""
     },
     fall: {
+        darkest: "#321",
         darker: "#432",
         dark: "#653",
         mid: "#974",
@@ -100,6 +103,7 @@ const PALETTES = {
         softUltra: ""
     },
     relax: {
+        darkest: "#311",
         darker: "#422",
         dark: "#633",
         mid: "#944",
@@ -127,6 +131,7 @@ function changeColorPalette( color ) {
 
     let newPalette = `
         html {
+            --colorDarkest: ${PALETTES[color]["darkest"] || "#111" };
             --colorDarker: ${PALETTES[color]["darker"] || "#222" };
             --colorDark: ${PALETTES[color]["dark"] || "#333"};
             --colorMid: ${PALETTES[color]["mid"] || "#444"};

@@ -35,7 +35,7 @@ function createButton( mode ) {
     btn.className = "button";
 
     btn.addEventListener("click", ev => {
-        if (quiz.gameModeName === mode.name || quiz.state.isEnding || quiz.state.isAFK ) { return };
+        if (quiz.gameModeName === mode.name || quiz.state.isEnding || quiz.state.isAFK || quiz.abilityState.risk.isRisking || quiz.abilityState.risk.isActive ) { return };
 
         changeColorPalette(mode.name);
 

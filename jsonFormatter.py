@@ -6,7 +6,7 @@ class VGMBSongFormatter:
         this.ALLSONGS_file = open( "ALLSONGS.json", "w" )
         this.json = ""
         this.allSongsArr = []
-        # [ ID, Title, Game, Series, Link ]
+        # [ ID, Title, Game, Series, Link, Difficulty ]
         this.answers = []
         # [ ID, Game, Series, Answer0, ... AnswerX ]
 
@@ -54,7 +54,7 @@ class VGMBSongFormatter:
                 json += this.formatNewSeries(i)
                 json += this.formatNewGame(i, isNewSeries)
 
-            json += "\"ID_" + this.allSongsArr[i][0] + "\" : { \"title\": \"" + this.allSongsArr[i][1] + "\", \"link\": \"" + this.allSongsArr[i][4]  +"\""
+            json += "\"ID_" + this.allSongsArr[i][0] + "\" : { \"title\": \"" + this.allSongsArr[i][1] + "\", \"link\": \"" + this.allSongsArr[i][4]  +"\", \"difficulty\": \"" + this.allSongsArr[i][5]  + "\""
         
         return json
 
@@ -64,7 +64,7 @@ class VGMBSongFormatter:
         if index > 0 and not isNewSeries:
             json += "} },"
 
-        json += "\"" + this.allSongsArr[index][2] + "\" : {" + "\"gameName\": \"" + this.allSongsArr[index][2] + "\", \"answers\": [" + this.getAnswers( this.allSongsArr[index][2] ) + "], \"closeAnswers\": [], \"songs\": {"
+        json += "\"" + this.allSongsArr[index][2] + "\" : {" + "\"gameName\": \"" + this.allSongsArr[index][2] + "\", \"answers\": [" + this.getAnswers( this.allSongsArr[index][2] ) + "], \"songs\": {"
 
         return json
     

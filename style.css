@@ -9,6 +9,14 @@
   --colorBlue: rgb(70, 187, 255);
   --colorGreen: rgb(140, 240, 140);
   --colorPurple: rgb(218, 94, 230);
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  -moz-user-select: none;
+       user-select: none;
+  /* Non-prefixed version, currently
+                        supported by Chrome, Edge, Opera and Firefox */
 }
 
 body {
@@ -67,6 +75,15 @@ body {
 
 #inp_fileChooser:hover::before {
   background-color: var(--colorMidLight);
+}
+
+.lastUpdatedText {
+  color: #ccc;
+  z-index: 6;
+  position: absolute;
+  bottom: 11vh;
+  right: 1vw;
+  font-size: 1vw;
 }
 
 header {
@@ -171,6 +188,17 @@ iframe {
   overflow-y: scroll;
 }
 
+#gameArea #textArea * {
+  -webkit-user-select: initial;
+  /* Safari */
+  -ms-user-select: initial;
+  /* Internet Explorer/Edge */
+  -moz-user-select: initial;
+       user-select: initial;
+  /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
 #gameArea #textArea a {
   all: none;
   color: #c2e8fd;
@@ -211,18 +239,17 @@ iframe {
   background-repeat: no-repeat;
 }
 
+#gameArea #gameButtonSection {
+  background: var(--colorDark);
+}
+
 #gameArea #gameModeArea {
-  width: 20vw;
+  width: 80%;
+  height: 65%;
   display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: 2.5vw;
   text-align: center;
   overflow-y: scroll;
-  background: var(--colorDark);
 }
 
 #gameArea #gameModeArea h3 {
@@ -238,8 +265,8 @@ iframe {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 7.5vh;
   cursor: pointer;
+  height: 7.5vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -253,6 +280,26 @@ iframe {
   margin: 2vh auto;
   -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
+}
+
+#gameArea #abilityArea {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0.5vw;
+  text-align: center;
+  background-color: var(--colorMid);
+  width: 90%;
+  margin: 0 auto;
+  padding: 1vw;
+  border-radius: 2.5vw;
+  -webkit-box-shadow: inset 0.5vw 0.5vh 1vw var(--colorDarker);
+          box-shadow: inset 0.5vw 0.5vh 1vw var(--colorDarker);
+}
+
+#gameArea #abilityArea .button {
+  width: 100%;
 }
 
 #gameArea #answerArea {
@@ -269,6 +316,14 @@ iframe {
           align-items: center;
   position: relative;
   z-index: 3;
+  -webkit-user-select: initial;
+  /* Safari */
+  -ms-user-select: initial;
+  /* Internet Explorer/Edge */
+  -moz-user-select: initial;
+       user-select: initial;
+  /* Non-prefixed version, currently
+                            supported by Chrome, Edge, Opera and Firefox */
   font-size: 1.5vw;
   height: 10vh;
   gap: 1vw;
@@ -306,14 +361,13 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--colorDark);
   color: var(--colorLight);
   padding: 0.5vh 1vw;
   border-radius: 5vh;
   font-size: 1.5vw;
   font-family: "JetBrains Mono", monospace;
-  -webkit-box-shadow: var(--colorMidLight) 0 0 0 0.5vh;
-          box-shadow: var(--colorMidLight) 0 0 0 0.5vh;
+  -webkit-box-shadow: inset 0 0 1vw var(--colorDarkest);
+          box-shadow: inset 0 0 1vw var(--colorDarkest);
   -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
 }
@@ -330,7 +384,7 @@ iframe {
   color: var(--colorLight);
 }
 
-#gameArea .button {
+#gameArea .button, #gameArea .disabled {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,9 +411,14 @@ iframe {
   background-color: var(--colorMidLight);
 }
 
+#gameArea .disabled {
+  color: var(--colorMidLight);
+  cursor: unset;
+}
+
 div div::-webkit-scrollbar {
   display: block;
-  background: var(--colorMid);
+  background: var(--colorDark);
 }
 
 div div::-webkit-scrollbar-track {

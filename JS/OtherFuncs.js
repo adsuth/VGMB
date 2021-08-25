@@ -96,6 +96,34 @@ class MiscFuncs {
                 <span class="monospaceText bigText" style="color: var(--colorPurple)"> ${quiz.abilityState.hint.currentHint} </span>
                 </p>
             `,
+            riskUnlocked: `
+            <p>
+            <span class="boldText bigText" style="color: var(--colorRed)"> "What a horrible round for a curse..." </span>
+            </p>
+            `,
+            riskRecharge: `
+                <p>
+                <span class="boldText" style="color: var(--colorRed)"> "Ready for another gamble?" </span>
+                </p>
+            `,
+            riskUsed: `
+                <p>
+                <span class="boldText bigText" style="color: var(--colorRed)"> "This'll be fun..." </span> <br>
+                <span style="color: var(--colorRed)"> Risking will begin in the next round </span>
+                </p>
+            `,
+            riskStart: `
+                <p>
+                <span class = "bigText boldText" style="color: var(--colorRed)"> "LET US BEGIN!!" </span> <br>
+                <span style="color: var(--colorRed)"> You are risking! Better be right or you'll lose a LOT of points! </span>
+                </p>
+            `,
+            riskWon: `
+                <p>
+                <span class = "bigText boldText" style="color: var(--colorRed)"> "Wow, I'm sooooooo proud of you..." </span> <br>
+                <span style="color: var(--colorRed)"> Well done, you won the risk! Your abilities have been reset! </span>
+                </p>
+            `,
             hintRecharge: `
                 <p>
                 <span class="boldText" style="color: var(--colorPurple)"> We're ready to give you a hint! </span>
@@ -199,11 +227,17 @@ class MiscFuncs {
 
                 "/hint": () => { quiz.useAbility("hint") },
 
+                "/risk": () => { if ( quiz.state.isRiskUnlocked ) { quiz.useAbility("risk") } },
+
                 "/afk" : quiz.goAFK,
                 "/away" : quiz.goAFK,
                 "/back" : quiz.goAFK,
 
                 "/clear" : this.clearTextArea,
+
+                "/wrong": this.toggleWrongAnswers,
+                "/ans": this.toggleWrongAnswers,
+                "/twa": this.toggleWrongAnswers,
 
                 "/help" : this.goToHelp
             }
@@ -220,17 +254,49 @@ class MiscFuncs {
         this.generateText( this.getText("commandError") );
     }
 
+    toggleWrongAnswers() {
+        quiz.OTHERFUNC.generateText( `<p><span style="color: var(--colorOrange)" > Toggled wrong answers! </span></p>` )
+        quiz.state.showWrongAnswers = !quiz.state.showWrongAnswers;
+    }
+
     updateRoundPoints( amount ) {
         quiz.state.roundPoints += amount;
     }
 
     updateCounter() {
-        quiz.state.pointCounterValue += quiz.state.roundPoints * quiz.state.comboMultiplier;
+        if ( quiz.abilityState.risk.isRisking && !quiz.state.answered ) {
+            
+            console.log("counter before: " + quiz.state.pointCounterValue);
+            quiz.state.pointCounterValue -= Math.abs(quiz.state.roundPoints) * quiz.state.comboMultiplier * 10;
+            console.log("counter after: " + quiz.state.pointCounterValue);
+            quiz.abilityState.risk.isRisking = false;
+        }
+        else if ( quiz.abilityState.risk.isRisking && quiz.state.answered ) {
+            quiz.state.pointCounterValue += quiz.state.roundPoints * quiz.state.comboMultiplier * 5;
+            
+            this.wonRisk();
+
+            quiz.abilityState.risk.isRisking = false;
+        }
+        else {
+            quiz.state.pointCounterValue += quiz.state.roundPoints * quiz.state.comboMultiplier;
+        }
+
         pointCounter.innerText = quiz.state.pointCounterValue;
+
         if ( quiz.state.pointCounterValue > quiz.state.pointMilestone ) {
             this.generateText( this.getText("pointMessage") );
             quiz.state.pointMilestone += 100;
         }
+    }
+
+    wonRisk() {
+        quiz.abilityState.risk.onCooldown = true;
+        quiz.abilityState.risk.cooldown += quiz.abilityState.risk.cooldownLength;
+        quiz.resetAbility("shield");
+        quiz.resetAbility("hint");
+
+        this.generateText( this.getText("riskWon") );
     }
 
     randomInt( max ) {

@@ -3,6 +3,10 @@ const quiz = new VGMB();        // the main object; handles quiz
 
 var player;
 
+// for hint generation
+const punctuationMarks = [",", " ", ".", ":", ";", "?", "!", "-", "_"];
+ 
+
 const titleTheme = document.getElementById("audio_title");
 
 // plays the theme song composed by sutson (pretty based)
@@ -69,10 +73,21 @@ volSlider.addEventListener("input", (ev) => {
 })
 
 // skip button
-skipButton.addEventListener("click", quiz.SH.skipSong )
+var skipButtons = [];
+for(i = 0; i < document.getElementsByClassName("skipButton").length; i++) {
+    skipButtons.push( document.getElementsByClassName("skipButton")[i] );
+    console.log("added button " + i);
+}
+
+skipButtons.forEach( btn => { btn.addEventListener("click", quiz.SH.skipSong ) })
+
 
 // shield button
 shieldButton.addEventListener("click", () => { quiz.useAbility("shield") } );
+
+riskButton.addEventListener("click", () => {  
+    if ( quiz.state.isRiskUnlocked ) { quiz.useAbility("risk") }
+} );
 
 // hint button
 hintButton.addEventListener("click", () => { quiz.useAbility("hint") } );

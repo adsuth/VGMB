@@ -73,6 +73,9 @@ function timeUp() {
     if ( !quiz.state.answered && !quiz.state.isAFK ) {
       // reset combo and decrease points if shield isnt active
       if ( !quiz.abilityState.shield.isActive ) {
+        // if risking, remove 2 * combo
+        if (quiz.abilityState.risk.isRisking) { quiz.state.roundPoints = -quiz.state.roundPoints }
+
         quiz.OTHERFUNC.updateRoundPoints( -1 );
         quiz.resetCombo();
       }
