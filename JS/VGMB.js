@@ -215,7 +215,7 @@ class VGMB {
         }
         comboText.innerText = "x" + this.state.currentCombo;
 
-        if ( this.state.currentCombo >= 2 ) { this.state.isRiskUnlocked = true }
+        if ( this.state.currentCombo >= 10 ) { this.state.isRiskUnlocked = true }
     }
 
     resetForNextRound() {
