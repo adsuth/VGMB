@@ -4,7 +4,7 @@ const quiz = new VGMB();        // the main object; handles quiz
 var player;
 
 // for hint generation
-const punctuationMarks = [",", " ", ".", ":", ";", "?", "!", "-", "_"];
+const punctuationMarks = [",", " ", ".", ":", ";", "?", "!", "-", "_", "(", ")", "[", "]"];
  
 
 const titleTheme = document.getElementById("audio_title");

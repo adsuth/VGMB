@@ -320,8 +320,10 @@ class VGMB {
         // positions of all the letters
         let hintLetters = new Set();
 
-        let numberOfLetters = Math.floor(answer.length / 3);
-        if ( numberOfLetters < 3 && answer.length > 3 ) { numberOfLetters = 3 }
+        let numberOfLetters = 0;
+        if ( answer.length > 15 ) { numberOfLetters = Math.floor(answer.length / 3) }
+        else { numberOfLetters = Math.floor(answer.length / 2 ) }
+
 
         while ( hintLetters.size < numberOfLetters ) {
             hintLetters.add( this.OTHERFUNC.randomInt(answer.length) );
@@ -331,6 +333,7 @@ class VGMB {
 
         for (let i = 0; i < answer.length; i++) {
             let isPunctuation = punctuationMarks.includes( answer[i] );
+
             if ( isPunctuation || hintLetters.has(i) ) {
                 hint += answer[i];
             }

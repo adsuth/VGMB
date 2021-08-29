@@ -169,7 +169,6 @@ fileChooser.addEventListener("change", ev => { changeBackgroundImage(ev) } );
 
 // method to change the background to an image provided by the user
 function changeBackgroundImage( ev ) {
-    console.log("changing background")
     document.getElementById("backgroundImage").innerHTML = `
     html {
         --backgroundImageSRC: url(${window.URL.createObjectURL(ev.target.files[0])});
