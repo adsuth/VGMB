@@ -19,10 +19,10 @@
 
     <style id="paletteRoot">
         html {
-            --colorDarker: #222;
-            --colorDark: #333;
-            --colorMid: #444;
-            --colorMidLight: #666;
+            --colorDarker: rgb(49, 19, 63);
+            --colorDark: rgb(71, 38, 77);
+            --colorMid: rgb(95, 55, 107);
+            --colorMidLight: rgb(198, 89, 202);
             --colorLight: #fff;
 
             --colorCorrect: rgb(140, 240, 140);
@@ -31,7 +31,7 @@
         }
         
         ::selection {
-            background-color: #666;
+            background-color: var(--colorMid);
         }
     </style>
 </head>
@@ -42,8 +42,29 @@
         <p id="p_subtitle">Always Happy to Help</p>
         <canvas id="canvas_loadingBar"></canvas>
     </header>
+    <section class="odd">
+        <div class="subsection">
+            <h1> Welcome! </h1>
+            <p>
+                Welcome to VGMB, the Video Game Music Blitz. This is a <span class="textItalic">totally original concept</span> 
+                that I came up with. It's essentially a "guess the video game music" web game - that just so happens to be
+                heavily inspired by <a href="https://www.vgm-quiz.com/" class="textLink" target="_blank">VGMQ</a>.
+                <br><br>
+                Seeing as you're on the "help" page, you probably need some help. Never fear, as I will guide you through the
+                spaghetti coded mess of a web app that I have created! 
+            </p>
+        </div>
+    </section>
+
+    <section class="even">
+        <div class="subsection halfSection">
+            <ul>
+                <li>How to Play</li>
+                
+            </ul>
+        </div>
+    </section>
     
-    <h1> help isnt coming... yet </h1>
 
 </body>
 </html>

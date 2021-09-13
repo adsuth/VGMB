@@ -77,3 +77,55 @@ header {
     position: absolute;
     left: 1vw;
 }
+
+// actually unique content
+
+section {
+    width: 100%;
+    height: fit-content;
+    padding: 4vh 0;
+    text-align: center;
+    display: flex;
+
+    .subsection {
+        h1 {
+            font-family: $fontGrandstander;
+            font-size: 3rem;
+        }
+        p {
+            font-size: 2rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+    }
+
+    .halfSection { 
+        width: 50%;
+    }
+
+}
+
+.odd {
+    background-color: var(--colorDark);
+}
+.even {
+    background-color: var(--colorMid);
+}
+
+.sectionSplitter {
+    width: 100%;
+    clip-path: unset;
+}
+
+
+// some spans
+
+.textItalic { font-style: italic; }
+.textBold { font-weight: 600; }
+.textLink { 
+    all: none;
+    color:rgb(194, 232, 253);
+    text-decoration: none; // might be obsolete
+}
+

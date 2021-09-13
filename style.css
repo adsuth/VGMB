@@ -132,10 +132,10 @@ header img {
   top: 0.5vw;
   left: 20vw;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
   -webkit-filter: drop-shadow(0.5vw 0.5vw 0.25vw var(--colorDarker));
           filter: drop-shadow(0.5vw 0.5vw 0.25vw var(--colorDarker));
 }

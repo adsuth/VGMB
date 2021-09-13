@@ -1272,7 +1272,7 @@
             "game": {
                 "Animal Crossing": {
                     "gameName": "Animal Crossing",
-                    "answers": ["animal crossing"],
+                    "answers": ["animal crossing", "ac"],
                     "songs": {
                         "ID_2421": {
                             "title": "Title Screen",
@@ -1298,7 +1298,7 @@
                 },
                 "Animal Crossing: New Horizons": {
                     "gameName": "Animal Crossing: New Horizons",
-                    "answers": ["animal crossing: new horizons", "acnh", "ac nh ", "animal crossing new horizons"],
+                    "answers": ["animal crossing: new horizons", "acnh", "ac nh ", "animal crossing new horizons", "new horzions"],
                     "songs": {
                         "ID_2436": {
                             "title": "Main Theme",
@@ -1319,7 +1319,7 @@
                 },
                 "Animal Crossing: New Leaf": {
                     "gameName": "Animal Crossing: New Leaf",
-                    "answers": ["animal crossing: new leaf", "animal crossing new leaf", "ac nl", "acnl"],
+                    "answers": ["animal crossing: new leaf", "animal crossing new leaf", "ac nl", "acnl", "new leaf"],
                     "songs": {
                         "ID_2429": {
                             "title": "Main Theme",
@@ -1360,7 +1360,7 @@
                 },
                 "Animal Crossing: Wild World": {
                     "gameName": "Animal Crossing: Wild World",
-                    "answers": ["animal crossing: wild world", "acww", "ac ww", "animal crossing ww", "animal crossing wild world"],
+                    "answers": ["animal crossing: wild world", "acww", "ac ww", "animal crossing ww", "animal crossing wild world", "wild world"],
                     "songs": {
                         "ID_2425": {
                             "title": "Title Screen",
@@ -1772,6 +1772,38 @@
                 }
             }
         },
+        "Bastion": {
+            "seriesName": "Bastion",
+            "seriesColor": "red",
+            "game": {
+                "Bastion": {
+                    "gameName": "Bastion",
+                    "answers": ["bastion"],
+                    "songs": {
+                        "ID_2706": {
+                            "title": "Bynn The Breaker",
+                            "link": "https://youtu.be/o_CQR9bnggw",
+                            "difficulty": "1"
+                        },
+                        "ID_2707": {
+                            "title": "Spike In A Rail",
+                            "link": "https://youtu.be/LB5GJWgRepY",
+                            "difficulty": "1"
+                        },
+                        "ID_2708": {
+                            "title": "Brusher Patrol",
+                            "link": "https://youtu.be/arlbmxxUFk4",
+                            "difficulty": "1"
+                        },
+                        "ID_2709": {
+                            "title": "Setting Sail, Coming Home (End Theme)",
+                            "link": "https://youtu.be/g60bPpXEq9Q",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
         "Battletoads": {
             "seriesName": "Battletoads",
             "seriesColor": "red",
@@ -1816,6 +1848,58 @@
                 }
             }
         },
+        "Billy Hatcher": {
+            "seriesName": "Billy Hatcher",
+            "seriesColor": "red",
+            "game": {
+                "Billy Hatcher and the Giant Egg": {
+                    "gameName": "Billy Hatcher and the Giant Egg",
+                    "answers": ["billy hatcher and the giant egg", "billy hatcher", "billy the egg hatcher", "billy hatcher giant egg"],
+                    "songs": {
+                        "ID_2717": {
+                            "title": "Chant This Charm (Theme of Giant Egg)",
+                            "link": "https://youtu.be/QSgFJKtVCi0",
+                            "difficulty": "1"
+                        },
+                        "ID_2718": {
+                            "title": "G.I.A.N.T.E.G.G! (Opening Theme)",
+                            "link": "https://youtu.be/Kn9cXeaKLuw",
+                            "difficulty": "1"
+                        },
+                        "ID_2719": {
+                            "title": "The Beginning of Adventure",
+                            "link": "https://youtu.be/ytX7PbFRPH0",
+                            "difficulty": "1"
+                        },
+                        "ID_2720": {
+                            "title": "Bossa Nova of Briny Air",
+                            "link": "https://youtu.be/MeVRMo1n8b8",
+                            "difficulty": "1"
+                        },
+                        "ID_2721": {
+                            "title": "Pop A Parade",
+                            "link": "https://youtu.be/Tl5Ysf_1-Bo",
+                            "difficulty": "1"
+                        },
+                        "ID_2722": {
+                            "title": "Thanks for the Peaceful Today",
+                            "link": "https://youtu.be/o5f2ETyvR2c",
+                            "difficulty": "1"
+                        },
+                        "ID_2723": {
+                            "title": "A Charm",
+                            "link": "https://youtu.be/BknaaMNSw5Y",
+                            "difficulty": "1"
+                        },
+                        "ID_2724": {
+                            "title": "Chant This Charm (Instrumental)",
+                            "link": "https://youtu.be/PuaCqcsW_wc",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
         "BioShock": {
             "seriesName": "BioShock",
             "seriesColor": "red",
@@ -1847,6 +1931,23 @@
                         "ID_931": {
                             "title": "God Only Knows",
                             "link": "https://youtu.be/x7ogV49WGco",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
+        "Bit.Trip Runner": {
+            "seriesName": "Bit.Trip Runner",
+            "seriesColor": "red",
+            "game": {
+                "Bit.Trip Runner": {
+                    "gameName": "Bit.Trip Runner",
+                    "answers": ["bit.trip runner", "bit trip", "bit trip runner", "bittrip runner", "bittrip"],
+                    "songs": {
+                        "ID_2710": {
+                            "title": "Blackout City (feat. Anamanaguchi)",
+                            "link": "https://youtu.be/_BQ9Z5jxTVI",
                             "difficulty": "1"
                         }
                     }
@@ -2631,7 +2732,7 @@
                     "songs": {
                         "ID_1876": {
                             "title": "Jungle Theme",
-                            "link": "https://youtu.be/O04bPRzqEEk",
+                            "link": "https://youtu.be/5UqXbEwqwF8",
                             "difficulty": "1"
                         }
                     }
@@ -2659,7 +2760,7 @@
                     "songs": {
                         "ID_1878": {
                             "title": "Pirates, And Waverunners",
-                            "link": "https://youtu.be/UjkdCHakuDI",
+                            "link": "https://youtu.be/uZeyXo8fLpM",
                             "difficulty": "1"
                         }
                     }
@@ -3753,6 +3854,23 @@
                 }
             }
         },
+        "Dream Daddy": {
+            "seriesName": "Dream Daddy",
+            "seriesColor": "red",
+            "game": {
+                "Dream Daddy": {
+                    "gameName": "Dream Daddy",
+                    "answers": ["dream daddy"],
+                    "songs": {
+                        "ID_2639": {
+                            "title": "Dream Daddy Main Theme",
+                            "link": "https://youtu.be/8zXOz0_XpQo",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
         "DuckTales": {
             "seriesName": "DuckTales",
             "seriesColor": "red",
@@ -3936,6 +4054,36 @@
                         "ID_1072": {
                             "title": "Home",
                             "link": "https://youtu.be/TA-SGTmKnP0",
+                            "difficulty": "1"
+                        },
+                        "ID_2711": {
+                            "title": "Beacon",
+                            "link": "https://youtu.be/KeWFzsqLsH0",
+                            "difficulty": "1"
+                        },
+                        "ID_2712": {
+                            "title": "Sync",
+                            "link": "https://youtu.be/ylJ_IIvCQD4",
+                            "difficulty": "1"
+                        },
+                        "ID_2713": {
+                            "title": "Memory",
+                            "link": "https://youtu.be/_ZlE3PydZ1E",
+                            "difficulty": "1"
+                        },
+                        "ID_2714": {
+                            "title": "Majesty",
+                            "link": "https://youtu.be/4_DFp-XbKQo",
+                            "difficulty": "1"
+                        },
+                        "ID_2715": {
+                            "title": "Reflection",
+                            "link": "https://youtu.be/QoLCL6yvIvY",
+                            "difficulty": "1"
+                        },
+                        "ID_2716": {
+                            "title": "Love",
+                            "link": "https://youtu.be/laSJ1zgMDC0",
                             "difficulty": "1"
                         }
                     }
@@ -5228,6 +5376,23 @@
                 }
             }
         },
+        "Joe Danger": {
+            "seriesName": "Joe Danger",
+            "seriesColor": "red",
+            "game": {
+                "Joe Danger": {
+                    "gameName": "Joe Danger",
+                    "answers": ["joe danger"],
+                    "songs": {
+                        "ID_2733": {
+                            "title": "Pause Theme",
+                            "link": "https://youtu.be/DwneWcwErf4",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
         "Katamari": {
             "seriesName": "Katamari",
             "seriesColor": "red",
@@ -5348,13 +5513,13 @@
             "seriesName": "King's Quest",
             "seriesColor": "red",
             "game": {
-                "King's Quest IV: Heir Today, Gone Tomorrow": {
-                    "gameName": "King's Quest IV: Heir Today, Gone Tomorrow",
-                    "answers": ["king's quest iv: heir today, gone tomorrow", "kings quest 4", "kq 4"],
+                "King's Quest VI: Heir Today, Gone Tomorrow": {
+                    "gameName": "King's Quest VI: Heir Today, Gone Tomorrow",
+                    "answers": ["king's quest vi: heir today, gone tomorrow", "kings quest 6", "kq 6"],
                     "songs": {
                         "ID_2420": {
                             "title": "Girl in the Tower",
-                            "link": "https://youtu.be/69M2iiI__XQ",
+                            "link": "https://youtu.be/FVXM0GIGehI",
                             "difficulty": "1"
                         }
                     }
@@ -5839,6 +6004,28 @@
                 }
             }
         },
+        "LittleBigPlanet": {
+            "seriesName": "LittleBigPlanet",
+            "seriesColor": "red",
+            "game": {
+                "LittleBigPlanet": {
+                    "gameName": "LittleBigPlanet",
+                    "answers": ["littlebigplanet", "little big planet", "lbp"],
+                    "songs": {
+                        "ID_2645": {
+                            "title": "Left Bank Two",
+                            "link": "https://youtu.be/-9w7A39Ggz0",
+                            "difficulty": "1"
+                        },
+                        "ID_2646": {
+                            "title": "Get It Together",
+                            "link": "https://youtu.be/4Sa1_Qo5bhY",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
         "Lovely Planet": {
             "seriesName": "Lovely Planet",
             "seriesColor": "red",
@@ -5887,6 +6074,28 @@
                         "ID_1989": {
                             "title": "Battle Theme 3",
                             "link": "https://youtu.be/BLIrE5ivseQ",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
+        "Mafia": {
+            "seriesName": "Mafia",
+            "seriesColor": "red",
+            "game": {
+                "Mafia 2": {
+                    "gameName": "Mafia 2",
+                    "answers": ["mafia 2", "mafia2"],
+                    "songs": {
+                        "ID_2725": {
+                            "title": "Main Theme",
+                            "link": "https://youtu.be/SqaAxICZHFg",
+                            "difficulty": "1"
+                        },
+                        "ID_2726": {
+                            "title": "Main Theme (Piano Version)",
+                            "link": "https://youtu.be/MDiv4G5s6_4",
                             "difficulty": "1"
                         }
                     }
@@ -10642,6 +10851,102 @@
             "seriesName": "Professor Layton",
             "seriesColor": "red",
             "game": {
+                "Azran Legacy": {
+                    "gameName": "Azran Legacy",
+                    "answers": ["azran legacy", "professor layton azran legacy"],
+                    "songs": {
+                        "ID_2688": {
+                            "title": "Surely Someday",
+                            "link": "https://youtu.be/pJbtazObqRU",
+                            "difficulty": "1"
+                        },
+                        "ID_2689": {
+                            "title": "The Azran Legacy",
+                            "link": "https://youtu.be/eH3ApuSoJAQ",
+                            "difficulty": "1"
+                        },
+                        "ID_2690": {
+                            "title": "Froenborg",
+                            "link": "https://youtu.be/jvUsiLbXCj4",
+                            "difficulty": "1"
+                        },
+                        "ID_2691": {
+                            "title": "Puzzles Abroad",
+                            "link": "https://youtu.be/QuAFmm-yf-U",
+                            "difficulty": "1"
+                        },
+                        "ID_2692": {
+                            "title": "Bostonius",
+                            "link": "https://youtu.be/8wQhhqp57nI",
+                            "difficulty": "1"
+                        },
+                        "ID_2693": {
+                            "title": "Airship Chase",
+                            "link": "https://youtu.be/xAIV9H-uNPA",
+                            "difficulty": "1"
+                        },
+                        "ID_2694": {
+                            "title": "Kodh",
+                            "link": "https://youtu.be/k1qOhXdJoIA",
+                            "difficulty": "1"
+                        },
+                        "ID_2695": {
+                            "title": "Echoes of the Past",
+                            "link": "https://youtu.be/y9UyPIvJtsU",
+                            "difficulty": "1"
+                        },
+                        "ID_2696": {
+                            "title": "Move",
+                            "link": "https://youtu.be/9I4JOJWL-X4",
+                            "difficulty": "1"
+                        },
+                        "ID_2697": {
+                            "title": "London Streets 3 (Live)",
+                            "link": "https://youtu.be/2MzrE1Vhdu4",
+                            "difficulty": "1"
+                        },
+                        "ID_2698": {
+                            "title": "Hoogland",
+                            "link": "https://youtu.be/cZLVEbkL4J0",
+                            "difficulty": "1"
+                        },
+                        "ID_2699": {
+                            "title": "Phong Gi",
+                            "link": "https://youtu.be/lAbYrtABAC4",
+                            "difficulty": "1"
+                        },
+                        "ID_2700": {
+                            "title": "Isla Paloma",
+                            "link": "https://youtu.be/Hjew00LTPWQ",
+                            "difficulty": "1"
+                        },
+                        "ID_2701": {
+                            "title": "Targentis",
+                            "link": "https://youtu.be/ClRAZvgKGAo",
+                            "difficulty": "1"
+                        },
+                        "ID_2702": {
+                            "title": "Targent",
+                            "link": "https://youtu.be/WQ1Zc9a_xRU",
+                            "difficulty": "1"
+                        },
+                        "ID_2703": {
+                            "title": "A Tragic Fate",
+                            "link": "https://youtu.be/3B9iHssG3Ng",
+                            "difficulty": "1"
+                        },
+                        "ID_2704": {
+                            "title": "Warmth and Kindness",
+                            "link": "https://youtu.be/n6AaQzFfw0k",
+                            "difficulty": "1"
+                        },
+                        "ID_2705": {
+                            "title": "Pret-a-porter",
+                            "link": "https://youtu.be/GwaMIGHjgTI",
+                            "difficulty": "1"
+                        }
+                    }
+                },
                 "Curious Village": {
                     "gameName": "Curious Village",
                     "answers": ["curious village", "professor layton", "professor layton and the curious village", "professor layton curious village"],
@@ -10794,6 +11099,107 @@
                         }
                     }
                 },
+                "Miracle Mask": {
+                    "gameName": "Miracle Mask",
+                    "answers": ["miracle mask", "professor layton miracle mask"],
+                    "songs": {
+                        "ID_2669": {
+                            "title": "Theme of the Mask of Miracles",
+                            "link": "https://youtu.be/C5gpVR8QsNY",
+                            "difficulty": "1"
+                        },
+                        "ID_2670": {
+                            "title": "Puzzles Abound",
+                            "link": "https://youtu.be/_nGvkfj8aWs",
+                            "difficulty": "1"
+                        },
+                        "ID_2671": {
+                            "title": "Carnival Night",
+                            "link": "https://youtu.be/m6oastIGXU4",
+                            "difficulty": "1"
+                        },
+                        "ID_2672": {
+                            "title": "Pursuit",
+                            "link": "https://youtu.be/KW27WQC-1Lc",
+                            "difficulty": "1"
+                        },
+                        "ID_2673": {
+                            "title": "Illusion",
+                            "link": "https://youtu.be/4iq9MTOpJOU",
+                            "difficulty": "1"
+                        },
+                        "ID_2674": {
+                            "title": "Monte d'Or",
+                            "link": "https://youtu.be/fB1gQW6lQDc",
+                            "difficulty": "1"
+                        },
+                        "ID_2675": {
+                            "title": "Puzzles",
+                            "link": "https://youtu.be/ZTjDKrTEOGQ",
+                            "difficulty": "1"
+                        },
+                        "ID_2676": {
+                            "title": "Searching For Clues",
+                            "link": "https://youtu.be/AnKlZA7Jd8g",
+                            "difficulty": "1"
+                        },
+                        "ID_2677": {
+                            "title": "The Scorpion",
+                            "link": "https://youtu.be/yVdcqe_V-Go",
+                            "difficulty": "1"
+                        },
+                        "ID_2678": {
+                            "title": "Stansbury",
+                            "link": "https://youtu.be/hEMpXHb8E-4",
+                            "difficulty": "1"
+                        },
+                        "ID_2679": {
+                            "title": "Night in Stansbury",
+                            "link": "https://youtu.be/Moxq1yQXlxQ",
+                            "difficulty": "1"
+                        },
+                        "ID_2680": {
+                            "title": "Norwell",
+                            "link": "https://youtu.be/Bktp5p2IW9w",
+                            "difficulty": "1"
+                        },
+                        "ID_2681": {
+                            "title": "Akbadain Breakthrough",
+                            "link": "https://youtu.be/iy9PHxbsAfE",
+                            "difficulty": "1"
+                        },
+                        "ID_2682": {
+                            "title": "A Time for Battle",
+                            "link": "https://youtu.be/aZyefjXMyDw",
+                            "difficulty": "1"
+                        },
+                        "ID_2683": {
+                            "title": "Unforgettable Memories",
+                            "link": "https://youtu.be/p7thOnuI1lw",
+                            "difficulty": "1"
+                        },
+                        "ID_2684": {
+                            "title": "Pumpkin Park",
+                            "link": "https://youtu.be/2o-_GTx98_k",
+                            "difficulty": "1"
+                        },
+                        "ID_2685": {
+                            "title": "Jean Descole",
+                            "link": "https://youtu.be/zS8dDj-LgiA",
+                            "difficulty": "1"
+                        },
+                        "ID_2686": {
+                            "title": "A Treasure That Lasts",
+                            "link": "https://youtu.be/jGmCwU4q_Lk",
+                            "difficulty": "1"
+                        },
+                        "ID_2687": {
+                            "title": "Targent",
+                            "link": "https://youtu.be/8JGcwiaeu70",
+                            "difficulty": "1"
+                        }
+                    }
+                },
                 "Pandora's / Diabolical Box": {
                     "gameName": "Pandora's / Diabolical Box",
                     "answers": ["pandora's / diabolical box", "professor layton pb", "professor layton db", "professor layton pandoras box", "professor layton pandora's box", "professor layton diabolical box", "professor layton and the diabolical box", "diabolical box", "pandoras box", "pandora's box"],
@@ -10841,6 +11247,122 @@
                         "ID_552": {
                             "title": "Iris",
                             "link": "https://youtu.be/ngKf9Uummqk",
+                            "difficulty": "1"
+                        }
+                    }
+                },
+                "Spectre's Call / Last Specter": {
+                    "gameName": "Spectre's Call / Last Specter",
+                    "answers": ["spectre's call / last specter", "specters call", "spectres call", "last specter", "last spectre", "professor layton specters call", "professor layton spectres call", "professor layton last specter", "professor layton last spectre"],
+                    "songs": {
+                        "ID_2647": {
+                            "title": "Theme of the Devil's Flute",
+                            "link": "https://youtu.be/b_mHx-ZdC9w",
+                            "difficulty": "1"
+                        },
+                        "ID_2648": {
+                            "title": "The Devil Appears",
+                            "link": "https://youtu.be/4Py9ITK8p3o",
+                            "difficulty": "1"
+                        },
+                        "ID_2649": {
+                            "title": "Town of Water ~ Misthallery Day",
+                            "link": "https://youtu.be/RwMM_CBUDDA",
+                            "difficulty": "1"
+                        },
+                        "ID_2650": {
+                            "title": "Puzzle",
+                            "link": "https://youtu.be/Rvf1toZz13E",
+                            "difficulty": "1"
+                        },
+                        "ID_2651": {
+                            "title": "Mysterious Tale",
+                            "link": "https://youtu.be/KYUvF1epDRw",
+                            "difficulty": "1"
+                        },
+                        "ID_2652": {
+                            "title": "Town of Wind ~ Highyard Hill",
+                            "link": "https://youtu.be/WaVNIzzzYyE",
+                            "difficulty": "1"
+                        },
+                        "ID_2653": {
+                            "title": "Mansion of Shadows",
+                            "link": "https://youtu.be/q265lO4dEi4",
+                            "difficulty": "1"
+                        },
+                        "ID_2654": {
+                            "title": "Calm Afternoon",
+                            "link": "https://youtu.be/aR9XYny5D6o",
+                            "difficulty": "1"
+                        },
+                        "ID_2655": {
+                            "title": "Rumble!",
+                            "link": "https://youtu.be/sFM8-iTzCKY",
+                            "difficulty": "1"
+                        },
+                        "ID_2656": {
+                            "title": "Puzzles ~ Reasoning",
+                            "link": "https://youtu.be/ExtkVn1Aqtk",
+                            "difficulty": "1"
+                        },
+                        "ID_2657": {
+                            "title": "Black Market",
+                            "link": "https://youtu.be/czYEipntnkI",
+                            "difficulty": "1"
+                        },
+                        "ID_2658": {
+                            "title": "Peaceful Hour",
+                            "link": "https://youtu.be/SopqfDygZGI",
+                            "difficulty": "1"
+                        },
+                        "ID_2659": {
+                            "title": "Town of Mist ~ Misthallery Night",
+                            "link": "https://youtu.be/eJTNJvPDsyM",
+                            "difficulty": "1"
+                        },
+                        "ID_2660": {
+                            "title": "The Professor's Trunk ~ Puppet Show",
+                            "link": "https://youtu.be/VTKY2ImIJYY",
+                            "difficulty": "1"
+                        },
+                        "ID_2661": {
+                            "title": "The Professor's Trunk ~ Miniature Train",
+                            "link": "https://youtu.be/9VxnbtZmj54",
+                            "difficulty": "1"
+                        },
+                        "ID_2662": {
+                            "title": "Ghost Factory",
+                            "link": "https://youtu.be/loeIkuCeVas",
+                            "difficulty": "1"
+                        },
+                        "ID_2663": {
+                            "title": "Descole's Theme",
+                            "link": "https://youtu.be/l1siQrp-4-k",
+                            "difficulty": "1"
+                        },
+                        "ID_2664": {
+                            "title": "Theme of the Last Battle",
+                            "link": "https://youtu.be/0wKd7Afv4Vo",
+                            "difficulty": "1"
+                        },
+                        "ID_2665": {
+                            "title": "The Legendary Paradise",
+                            "link": "https://youtu.be/E72EL85_LRQ",
+                            "difficulty": "1"
+                        },
+                        "ID_2666": {
+                            "title": "The Guardian Deity of Paradise ~ Lusha's Theme",
+                            "link": "https://youtu.be/EL6vpkR_JEQ",
+                            "difficulty": "1"
+                        },
+                        "ID_2667": {
+                            "title": "Theme of the Last Battle (Live Version)",
+                            "link": "https://youtu.be/IJ_xkONg5ek",
+                            "difficulty": "1"
+                        },
+                        "ID_2668": {
+                            "title": "Descole's Theme (Live Version)",
+                            "link": "https://youtu.be/PX7ovPskZIQ",
                             "difficulty": "1"
                         }
                     }
@@ -11006,6 +11528,43 @@
                         "ID_2202": {
                             "title": "Staff Roll",
                             "link": "https://youtu.be/8Ph13N5bDA4",
+                            "difficulty": "1"
+                        }
+                    }
+                }
+            }
+        },
+        "Rabi-Ribi": {
+            "seriesName": "Rabi-Ribi",
+            "seriesColor": "red",
+            "game": {
+                "Rabi-Ribi": {
+                    "gameName": "Rabi-Ribi",
+                    "answers": ["rabi-ribi", "rabi ribi"],
+                    "songs": {
+                        "ID_2640": {
+                            "title": "Starting Forest",
+                            "link": "https://youtu.be/J013idaqPd8",
+                            "difficulty": "1"
+                        },
+                        "ID_2641": {
+                            "title": "Get On With It",
+                            "link": "https://youtu.be/iHeAY-JYS80",
+                            "difficulty": "1"
+                        },
+                        "ID_2642": {
+                            "title": "Kitty Attack!",
+                            "link": "https://youtu.be/0v6-gy9IP4k",
+                            "difficulty": "1"
+                        },
+                        "ID_2643": {
+                            "title": "Sudden Death",
+                            "link": "https://youtu.be/asdE6drHTb0",
+                            "difficulty": "1"
+                        },
+                        "ID_2644": {
+                            "title": "Fake Bunny Battle",
+                            "link": "https://youtu.be/KB0s4V5IMCc",
                             "difficulty": "1"
                         }
                     }
@@ -15744,6 +16303,36 @@
                         "ID_2235": {
                             "title": "Sunshine Coastline",
                             "link": "https://youtu.be/HvBla5NUlvk",
+                            "difficulty": "1"
+                        },
+                        "ID_2727": {
+                            "title": "Overcome the Rocky Path",
+                            "link": "https://youtu.be/mDd6pSTDGC4",
+                            "difficulty": "1"
+                        },
+                        "ID_2728": {
+                            "title": "Deadly Temptation",
+                            "link": "https://youtu.be/v8rtGEQCYCI",
+                            "difficulty": "1"
+                        },
+                        "ID_2729": {
+                            "title": "A Footprint in the Wet Sand",
+                            "link": "https://youtu.be/_XhkaxG6Zyw",
+                            "difficulty": "1"
+                        },
+                        "ID_2730": {
+                            "title": "Next Step Toward the Unknown",
+                            "link": "https://youtu.be/6K4Ad5XCxlI",
+                            "difficulty": "1"
+                        },
+                        "ID_2731": {
+                            "title": "Great Plains: Pan-Gaia",
+                            "link": "https://youtu.be/W08OX7rrXDI",
+                            "difficulty": "1"
+                        },
+                        "ID_2732": {
+                            "title": "Endless Crisis",
+                            "link": "https://youtu.be/vAFY3qSwW6w",
                             "difficulty": "1"
                         }
                     }

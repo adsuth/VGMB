@@ -12,16 +12,19 @@
 6	Spirit of Justice	Ace Attorney	spirit of justice	ace attorney spirit of justice	ace attorney: spirit of justice								
 287	The Great Ace Attorney	Ace Attorney	tgaa	great ace attorney									
 174	Adventure Time: Hey Ice King! Why'd You Steal Our Garbage?	Adventure Time	Adventure Time	Hey Ice King	Adventure Time Hey Ice King Whyd You Steal Our Garbage	Hey Ice King Whyd You Steal Our Garbage							
-298	Animal Crossing	Animal Crossing											
-301	Animal Crossing: New Horizons	Animal Crossing	ACNH	AC NH 	Animal Crossing New Horizons								
-300	Animal Crossing: New Leaf	Animal Crossing	Animal Crossing New Leaf	AC NL	ACNL								
-299	Animal Crossing: Wild World	Animal Crossing	ACWW	AC WW	Animal Crossing WW	Animal Crossing Wild World							
+298	Animal Crossing	Animal Crossing	ac										
+301	Animal Crossing: New Horizons	Animal Crossing	ACNH	AC NH 	Animal Crossing New Horizons	new horzions							
+300	Animal Crossing: New Leaf	Animal Crossing	Animal Crossing New Leaf	AC NL	ACNL	new leaf							
+299	Animal Crossing: Wild World	Animal Crossing	ACWW	AC WW	Animal Crossing WW	Animal Crossing Wild World	wild world						
 7	Ape Escape 2	Ape Escape	ae2										
 175	Balloon Fight	Balloon Fight											
 293	Banjo-Kazooie	Banjo Kazooie	banjo kazooie	banjo									
+308	Bastion	Bastion											
 237	Battletoads	Battletoads											
 47	Bayonetta	Bayonetta	Bayonetta 1	Bayonetta 1									
+309	Billy Hatcher and the Giant Egg	Billy Hatcher	Billy Hatcher	Billy The Egg Hatcher	Billy Hatcher Giant Egg								
 48	BioShock Infinite	BioShock											
+310	Bit.Trip Runner	Bit.Trip 	bit trip	bit trip runner	bittrip runner	bittrip							
 279	Tales from the Borderlands	Borderlands											
 176	Bubble Bobble	Bubble Bobble											
 135	Modern Warfare 2	Call of Duty	mw2										
@@ -59,6 +62,7 @@
 189	Donkey Kong Country 2: Diddy's Kong Quest	Donkey Kong	super donkey kong 2	dkc2	dk country 2	dkc 2							
 139	DOOM	DOOM											
 138	DOOM (2016)	DOOM	doom 2016	doom									
+311	Dream Daddy	Dream Daddy											
 95	DuckTales	DuckTales											
 191	DuckTales: Remastered	Ducktales	ducktales remake	ducktales remastered	ducktales								
 50	Eschatos	Eschatos											
@@ -102,12 +106,13 @@
 294	Ico	Ico											
 201	GoldenEye 007	James Bond	golden eye	goldeneye									
 205	Jet Set Radio	Jet Set Radio	jsr										
+312	Joe Danger	Joe Danger											
 60	Katamari Damacy	Katamari											
 141	Touch My Katamari	Katamari											
 235	I Love You, Colonel Sanders! A Finger Lickin’ Good Dating Simulator	KFC	KFC dating sim	I Love You Colonel Sanders	KFC game	Colonel Sanders							
 206	Kid Icarus	Kid Icarus											
 92	Kid Icarus Uprising	Kid Icarus	Uprising										
-297	King's Quest IV: Heir Today, Gone Tomorrow	King's Quest	Kings quest 4	kq 4									
+297	King's Quest VI: Heir Today, Gone Tomorrow	King's Quest	Kings quest 6	kq 6									
 292	Kingdom Hearts	Kingdom Hearts	kh1	kh 1									
 295	Kingdom Hearts II	Kingdom Hearts	KH2	KH 2	kingdom hearts 2								
 288	Kirby 64: The Crystal Shards	Kirby	kirby 64 the crystal shards	kirby 64	the crystal shards	crystal shards							
@@ -121,8 +126,10 @@
 248	Lemmings (Gameboy)	Lemmings	lemmings										
 207	Life Is Strange	Life Is Strange	LiS										
 208	Life Is Strange: Before The Storm	Life Is Strange	Life Is Strange Before The Storm	LiS before the storm	before the storm								
+313	LittleBigPlanet	LittleBigPlanet	little big planet	lbp									
 249	Lovely Planet	Lovely Planet											
 232	Lufia II: Rise of the Sinistrals	Lufia	lufia 2	lufia 2 rise of the sinistrals	rise of the sinistrals								
+314	Mafia 2	Mafia	mafia2										
 142	Mamorukun Curse!	Mamorukun Curse!	Mamorukun Curse	Mamo Curse									
 190	Dr. Mario	Mario	dr mario	doctor mario									
 250	Mario Paint	Mario											
@@ -206,11 +213,15 @@
 306	Pokemon X and Y	Pokemon	x and y	pokemon x and y	pokemon x	pokemon y	xy	gen 6					
 80	Portal	Portal	Portal										
 31	Portal 2	Portal											
+315	Azran Legacy	Professor Layton	professor layton azran legacy										
 32	Curious Village	Professor Layton	professor layton	professor layton and the curious village	professor layton curious village								
 34	Lost / Unwound Future	Professor Layton	professor layton lf	professor layton uf	unwound future	lost future							
+316	Miracle Mask	Professor Layton	professor layton miracle mask										
 33	Pandora's / Diabolical Box	Professor Layton	professor layton pb	professor layton db	professor layton pandoras box	professor layton pandora's box	professor layton diabolical box	professor layton and the diabolical box	diabolical box	pandoras box	pandora's box		
+317	Spectre's Call / Last Specter	Professor Layton	specters call	spectres call	last specter	last spectre	professor layton specters call	professor layton spectres call	professor layton last specter	professor layton last spectre			
 263	Mike Tyson's Punch-Out!!	Punch Out!!	mike tysons punch out	mike tysons punch-out	mike tysons punchout	mike tyson's punch out	mike tyson's punch-out	mike tyson's punchout	punch-out	punch out	punchout		
 264	Punch-Out!!	Punch Out!!	punch out	punchout	punch-out								
+318	Rabi-Ribi	Rabi-Ribi	rabi ribi										
 35	Rhythm Heaven (DS)	Rhythm Heaven	Rhythm Heaven ds	Rhythm Heaven	Rhythm paradise	Rhythm paradise ds							
 36	Rhythm Heaven Fever	Rhythm Heaven	Rhythm Heaven fever	Beat The Beat rhythm paradise	Beat The Beat: rhythm paradise	Rhythm Heaven wii	Rhythm paradise wii						
 129	Ribbit King	Ribbit King											
@@ -268,6 +279,7 @@
 268	Tetris (NES)	Tetris	tetris										
 270	Tetris 99	Tetris											
 84	The Last of Us	The Last of Us	TLOU	Last of Us	LOU								
+307	A Link to The Past	The Legend of Zelda	lttp	alttp	link to the past	zelda 3							
 234	Skyward Sword	The Legend of Zelda	zelda skyward sword	the legend of zelda skyward sword	legend of zelda skyward sword								
 283	Twilight Princess	The Legend of Zelda	zelda twilight princess	zelda tp	the legend of zelda twilight princess	legend of zelda twilight princess	legend of zelda tp	the legend of zelda tp					
 38	AI: The Somnium Files	The Somnium Files	somnium files	ai the somnium files	ai somnium files								

@@ -142,7 +142,7 @@ header {
         top: 0.5vw;
         left: 20vw;
         cursor: pointer;
-        transition: transform 500ms;
+        transition: transform 500ms ease-in-out;
         filter: drop-shadow(0.5vw 0.5vw 0.25vw var(--colorDarker));
     }
 
@@ -203,8 +203,6 @@ iframe {
             all: none;
             color:rgb(194, 232, 253);
             text-decoration: none;
-
-            
         }
         
         p {

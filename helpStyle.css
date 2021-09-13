@@ -81,4 +81,59 @@ header #p_subtitle {
   position: absolute;
   left: 1vw;
 }
+
+section {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4vh 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .subsection h1 {
+  font-family: "Grandstander";
+  font-size: 3rem;
+}
+
+section .subsection p {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section .halfSection {
+  width: 50%;
+}
+
+.odd {
+  background-color: var(--colorDark);
+}
+
+.even {
+  background-color: var(--colorMid);
+}
+
+.sectionSplitter {
+  width: 100%;
+  -webkit-clip-path: unset;
+          clip-path: unset;
+}
+
+.textItalic {
+  font-style: italic;
+}
+
+.textBold {
+  font-weight: 600;
+}
+
+.textLink {
+  all: none;
+  color: #c2e8fd;
+  text-decoration: none;
+}
 /*# sourceMappingURL=helpStyle.css.map */
