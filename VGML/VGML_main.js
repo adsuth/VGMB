@@ -1,3 +1,5 @@
+
+
 const buttonContainer = document.getElementById("buttonContainer");
 const randomSeries = document.getElementById("btn_randomSeries");
 const searchBar = document.getElementById("inp_seriesSearch");
