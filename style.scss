@@ -276,6 +276,8 @@ iframe {
             cursor: pointer;
             height: 7.5vh;
 
+            overflow-wrap: break-word;
+
             justify-content: center;
             align-items: center;
             border-radius: 5vw;

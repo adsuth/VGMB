@@ -7,11 +7,11 @@
     <title>VGML</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Embed Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,300;0,500;0,700;1,200;1,400;1,600&family=Montserrat:wght@200;400;600;700;800&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,900;1,400&family=JetBrains+Mono:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
 
     <script src="initButtons.js" defer></script>
     <script src="initSongHandling.js" defer></script>
@@ -22,9 +22,10 @@
 </head>
 <body>
     <header>
+        <h1> VGML </h1>
         <a href="..\index.html"><img src="..\logo_standard.png" alt="VGMB Logo" id="img_logo"></a>
-        <h1>VGML</h1>
-        <h3>The Video Game Music Lounge!</h3>
+        <p id="p_subtitle">The Video Game Music Lounge</p>
+        <canvas id="canvas_loadingBar"></canvas>
     </header>
 
     <section id="contentArea">

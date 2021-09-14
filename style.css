@@ -267,6 +267,7 @@ iframe {
   width: fit-content;
   cursor: pointer;
   height: 7.5vh;
+  overflow-wrap: break-word;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

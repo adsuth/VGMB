@@ -37,31 +37,44 @@ html {
 
 body {
     background: linear-gradient(var(--colorDark), var(--colorDarker)) no-repeat;
+    overflow-y: hidden;
 }
 
 header {
-    h1, h3 {
-        display: inline-block;
+    padding-top: 1vh;
+
+    height: 11vh;
+    width: 100%;
+    justify-content: center;
+    box-shadow: var(--colorDarker) 0 1vh 2vh;
+    position: relative;
+    z-index: 3;
+    background: var(--colorDark);
+    
+    #p_points {
+        color: var(--colorYellow);
+        position: absolute;
+        right: 10vw;
+        top: 2vh;
+    }
+
+    h1, #p_subtitle {
+        color: var(--colorLight);
         width: 100%;
         font-family: $fontGrandstander;
-        font-size: 3vw;
         text-align: center;
-        line-height: 6vh;
-
     }
+
 
     
-
     h1 {
-        padding-top: 1vh;
-
+        font-size: 3.5vw;
     }
-    h3 {
-        font-size: 1.5vw;
+    
+    #p_subtitle {
+        margin-top: -0.5vh;
+        font-size: 1vw;
         font-style: italic;
-        font-weight: 400;
-        line-height: 3vh;
-
     }
 
     img {
@@ -79,14 +92,6 @@ header {
     img:hover {
         transform: scale(1.2) rotate(375deg);
     }
-    
-    position: relative;
-    z-index: 6;
-    margin: 0 auto;
-    width: 100%;
-    height: 6vw;
-    box-shadow: 0 1vh 3vw var(--colorDarkest);
-
 }
 
 #contentArea {
@@ -165,7 +170,7 @@ header {
         #titleContainer {
             background: var(--colorDark);
             position: fixed;
-            top: 12vh;
+            top: 10vh;
             box-shadow: 0 1vw 1vw var(--colorDarker);
 
 
@@ -183,7 +188,7 @@ header {
 }
 
 #controlArea {
-    height: 12vh;
+    height: 13.4vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -217,6 +222,7 @@ header {
     border-radius: 100vw;
     cursor: pointer;
 
+    overflow-wrap: break-word;
     text-transform: uppercase;
 
     transition-duration: 500ms;
@@ -284,3 +290,20 @@ iframe {
 }
 
 .boldText { font-weight: bold; }
+
+
+// invisible youtube player that plays the music
+iframe {
+    display: none;
+}
+
+#canvas_loadingBar {
+    display: inline;
+    width: 12vw;
+    height: 8vh;
+    border-radius: 5vw;
+    background-color: var(--colorDarker);
+    position: absolute;
+    top: 0.5vw;
+    left: 4vw;
+}

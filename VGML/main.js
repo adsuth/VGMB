@@ -8,7 +8,10 @@ const lastButton = document.getElementById("btn_last");
 
 // searchBar.addEventListener("input", updateButtons );
 searchBar.addEventListener("input", updateButtons );
-randomSeries.addEventListener("click", () => { updateSeries("random") } );
+randomSeries.addEventListener("click", () => { 
+    currentSeries = "random";
+    updateSeries("random") 
+} );
 
 nextButton.addEventListener("click", nextSong);
 lastButton.addEventListener("click", lastSong);
@@ -62,7 +65,7 @@ async function updateSeries( serie = "random" ) {
 
     initSeries(songs, serie);
     initSong(songs);
-    playSong();
+    playSong(); 
 
 }
 
@@ -73,6 +76,7 @@ async function nextSong() {
     songHistory.push( songData );
     console.log(songHistory)
 
+    alert( currentSeries );
     if ( currentSeries === "random" ) { updateSeries() }
     else {
         initSong(songs);
