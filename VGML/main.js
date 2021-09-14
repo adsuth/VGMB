@@ -76,7 +76,6 @@ async function nextSong() {
     songHistory.push( songData );
     console.log(songHistory)
 
-    alert( currentSeries );
     if ( currentSeries === "random" ) { updateSeries() }
     else {
         initSong(songs);
