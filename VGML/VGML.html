@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGML</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,300;0,500;0,700;1,200;1,400;1,600&family=Montserrat:wght@200;400;600;700;800&display=swap"
+    rel="stylesheet">
+
+    <script src="initButtons.js" defer></script>
+    <script src="initSongHandling.js" defer></script>
+    <script src="initPlayer.js" defer></script>
+    <script src="textHandler.js" defer></script>
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <a href="..\index.html"><img src="..\logo_standard.png" alt="VGMB Logo" id="img_logo"></a>
+        <h1>VGML</h1>
+        <h3>The Video Game Music Lounge!</h3>
+    </header>
+
+    <section id="contentArea">
+
+        <section id="textArea"></section>
+        <section id="seriesArea">
+            <div id="titleContainer">
+                <p> Select a Series </p>
+                <input type="text" id="inp_seriesSearch">
+                <div class="button randomise" id="btn_randomSeries">Randomise</div>
+            </div>
+            <!-- other buttons added via JS -->
+
+            <div id="buttonContainer">
+            </div>
+        </section>
+
+    </section>
+
+    <div id="controlArea">
+        <div class="button" id="btn_last">LAST</div>
+        <input type="range" min="0" max="100" value="40" class="slider" id="inp_volSlider">
+        <div class="button" id="btn_next">NEXT</div>
+        
+    </div>
+
+    <div id="player"></div>
+
+    
+
+</body>
+</html>
