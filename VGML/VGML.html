@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VGML</title>
+    <link rel="stylesheet" href="..\style.css">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Embed Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +19,7 @@
 
     <script src="initButtons.js" defer></script>
     <script src="initSongHandling.js" defer></script>
+    <script src="initSongData.js" defer></script>
     <script src="initPlayer.js" defer></script>
     <script src="textHandler.js" defer></script>
     <script src="VGML_main.js" defer></script>
@@ -24,14 +28,21 @@
 <body>
     <header>
         <h1> VGML </h1>
-        <a href="..\index.html"><img src="..\logo_standard.png" alt="VGMB Logo" id="img_logo"></a>
+        <a href="..\index.html"><img src="VGML.png" alt="VGMB Logo" id="img_logo"></a>
         <p id="p_subtitle">The Video Game Music Lounge</p>
-        <canvas id="canvas_loadingBar"></canvas>
     </header>
 
     <section id="contentArea">
 
-        <section id="textArea"></section>
+        <section id="textArea">
+            <p>
+                <span class="boldText biggerText"> Welcome to VGML! </span> <br>
+                this is a chill alternative to VGMB. Here you can simply listen to tracks
+                from video games without worrying about scores. <br>
+                To start, <span class="boldText">select a series</span> or click <span class="boldText">randomise</span> for completely random tracks!
+                
+            </p>
+        </section>
         <section id="seriesArea">
             <div id="titleContainer">
                 <p> Select a Series </p>

@@ -8,11 +8,11 @@
 }
 
 html {
-  --colorDarkest: #111;
-  --colorDarker: #222;
-  --colorDark: #333;
-  --colorMid: #444;
-  --colorMidLight: #666;
+  --colorDarkest: #151a3d;
+  --colorDarker: #121541;
+  --colorDark: #313a6d;
+  --colorMid: #495aa8;
+  --colorMidLight: #87a3df;
   --colorLight: #fff;
   --shadowDark: 
     .25vh .25vw 0.5vw var(--colorDarker) inset,
@@ -23,11 +23,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #666;
+  background-color: var(--colorMid);
 }
 
 ::selection {
-  background-color: #666;
+  background-color: var(--colorMid);
 }
 
 body {

@@ -22,14 +22,7 @@ volSlider.addEventListener("input", (ev) => {
 })
 
 // state
-var songData = {
-    title: "",
-    link: "",
-
-    series: "",
-    game: "",
-    song: ""
-}
+var songData = new SongData;
 var songHistory = [];
 
 var currentSeries = "";
@@ -66,16 +59,18 @@ async function updateSeries( serie = "random" ) {
 
     initSeries(songs, serie);
     initSong(songs);
+
+
+
     playSong(); 
 
 }
 
 async function nextSong() {
+    if ( !currentSeries ) { return }
+
     let response = await fetch( "songs.json" );
     let songs = await response.json();
-
-    songHistory.push( songData );
-    console.log(songHistory)
 
     if ( currentSeries === "random" ) { updateSeries() }
     else {
@@ -85,8 +80,22 @@ async function nextSong() {
 }
 
 function lastSong() {
+    if ( songHistory.length < 2 ) { return }
+    console.log( songHistory )
     songHistory.pop();
-    songData = songHistory[-1]; 
+
+    songData = new SongData(
+        songHistory[ songHistory.length - 1 ].title, 
+        songHistory[ songHistory.length - 1 ].link, 
+        songHistory[ songHistory.length - 1 ].series, 
+        songHistory[ songHistory.length - 1 ].game, 
+        songHistory[ songHistory.length - 1 ].song
+    ); 
+
+    playSong();
+    songHistory.pop();
+
+
 }
 
 function containsSearchTerm(serie) {
@@ -112,7 +121,7 @@ function initSong(songs) {
     songData.song = getRandomProp( songs.series[songData.series].game[songData.game].songs );
     
     songData.title = songs.series[songData.series].game[songData.game].songs[songData.song].title;
-    songData.link = formateVideoId( songs.series[songData.series].game[songData.game].songs[songData.song].link);
+    songData.link = formatVideoId( songs.series[songData.series].game[songData.game].songs[songData.song].link);
     
 }
 
@@ -131,12 +140,22 @@ function getRandomInt( max ) {
 }
 
 function playSong() {
+    updateSongHistory();
     generateText();
     player.cueVideoById(songData.link);
 }
 
-function formateVideoId( id ) {
+function formatVideoId( id ) {
     return id.slice( id.lastIndexOf("/") + 1 );
+}
+
+function updateSongHistory() {
+    if ( songHistory.length > 100 ) { songHistory.shift() }
+
+    songHistory.push( 
+        new SongData( songData.title, songData.link, songData.series, songData.game, songData.song )
+    )
+
 }
 
 // entry
