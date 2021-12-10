@@ -29,7 +29,7 @@ class VGMBSongFormatter:
         for line in this.VGMB_TSV_Answers_file:
             line = line.strip()
             this.answers.append(line.split("\t"))
-        
+            
         print( "answers" )
         print( this.answers )
 
