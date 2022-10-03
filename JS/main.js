@@ -10,7 +10,7 @@ const punctuationMarks = [",", " ", ".", ":", ";", "?", "!", "-", "_", "(", ")",
 const titleTheme = document.getElementById("audio_title");
 
 // plays the theme song composed by sutson (pretty based)
-window.addEventListener( "load", playTitleTheme );
+document.addEventListener( "click", playTitleTheme );
 
 function playTitleTheme() {
     // note: function is nonymous so the event can be deleted
@@ -20,7 +20,7 @@ function playTitleTheme() {
 
 // removes the title theme element after selecting a gamemode
 function removeTitleThemeElement() {
-    window.removeEventListener("focus", playTitleTheme);
+    document.removeEventListener( "click", playTitleTheme ) 
     titleTheme.remove();
     delete(titleTheme);
     delete(playTitleTheme);
