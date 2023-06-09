@@ -1,139 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon_standard.ico" type="image/x-icon" id="favicon">
-    <title>VGMB</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link id="site_favicon" rel="shortcut icon" href="./public/ico/favicon_standard.ico" type="image/x-icon" id="favicon">
+  <title>VGMB</title>
 
-    <script src="JS\selectors.js" defer></script>
-    
-    <!-- Classes -->
-    <script src="JS\VGMB.js" defer></script>
-    <script src="JS\YTPlayer.js" defer></script>
-    <script src="JS\SongHandling.js" defer></script>
-    <script src="JS\SongGetter.js" defer></script>
-    <script src="JS\SoundEffectHandler.js" defer></script>
-    <script src="JS\LoadingBar.js" defer></script>
-    <script src="JS\OtherFuncs.js" defer></script>
-    
-    <!-- Song data -->
-    <script src="JS\ALLSONGS.js" defer></script>
-    
-    <!-- Visual Flair Fluff -->
-    <script src="JS\themeChanges.js" defer></script>
-    <script src="JS\generateSubtitle.js" defer></script>
-    
-    <!-- Main -->
-    <script src="JS\main.js" defer></script>
-    <script src="JS\onLoadFunctions.js" defer></script>
-    
-    <!-- Embed Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,900;1,400&family=JetBrains+Mono:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./js/selectors.js" defer></script>
 
-    <!-- this style tag is altered when CHANGING THE COLOR PALETTE -->
-    <style id="paletteRoot">
-        html {
-            --colorDarkest: #111;
-            --colorDarker: #222;
-            --colorDark: #333;
-            --colorMid: #444;
-            --colorMidLight: #666;
-            --colorLight: #fff;
+  <!-- Classes -->
+  <script src="./js/vgmb.js" defer></script>
+  <script src="./js/yt_player.js" defer></script>
+  <script src="./js/song_handling.js" defer></script>
+  <script src="./js/song_getter.js" defer></script>
+  <script src="./js/sound_effect_handler.js" defer></script>
+  <script src="./js/loading_bar.js" defer></script>
+  <script src="./js/other_funcs.js" defer></script>
 
-            --colorCorrect: rgb(140, 240, 140);
-            --colorWrong: rgb(237, 107, 107);
-            --colorWarning: rgb(248, 175, 92);
+  <!-- Song data -->
+  <script src="./js/all_songs.js" defer></script>
 
-            --colorCounter: gold ;
-            --colorContrast: red;
+  <!-- Visual Flair Fluff -->
+  <script src="./js/theme_changes.js" defer></script>
+  <script src="./js/generate_subtitle.js" defer></script>
 
-            --colorSuperSonic: rgb(53, 255, 53);
-            --colorUltraSonic: rgb(221, 53, 255);
+  <!-- Main -->
+  <script src="./js/random_facts.js" defer></script>
+  <script src="./js/index.js" defer></script>
+  <script src="./js/on_load.js" defer></script>
 
-        }
-        
-        ::selection {
-            background-color: #666;
-        }
+</head>
 
-    </style>
-    <!-- this style tag is altered when CHANGING THE BACKGROUND -->
-    <style id="backgroundImage">
-        .backgroundImage {
-            --backgroundImageSRC: unset;
-        }
-        </style>
-
-</head> 
 <body>
+  <p class="lastUpdatedText"> <span class="boldText"> Last Updated: </span>
+  <!-- change this when you update -->
+  09/06/23
+  </p>
 
-    <p class="lastUpdatedText"> <span class="boldText"> Last Updated: </span>
-        <!-- change this when you update -->
-        14/09/21
-    </p>
-
-    <header>
-        <h1> VGMB </h1>
-        <a href="VGML\VGML.html"><img src="logo_standard.png" alt="VGMB Logo" id="img_logo"></a>
-        <p id="p_subtitle"></p>
-        <p id="p_points" class="counter">0</p>
-        <canvas id="canvas_loadingBar"></canvas>
-    </header>
-
-    <div id="gameArea">
-        <div id="majorSection">
-            <div id="textArea" class = "gameSection">
-                <p>
-                    <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
-                    for a rundown on the game, <a class="boldText" href="help.html">click here! </a> <br>
-                    You can also type <span class="boldText">/help</span> if you need a hand!<br>
-                    Click one of the <span class="boldText"> Game Modes </span> to get started! 
-                    
-                </p>
-            </div>
-
-            <div id="gameButtonSection">
-                <div id="gameModeArea" class = "gameSection">
-                    <h3>GAME MODES</h3>
-                    <!-- Game modes to be added dynamically -->
-                </div>
-                
-                <div id="abilityArea">
-                    <div id="btn_shieldButton" class="button">SHIELD</div>
-                    <div id="btn_riskButton" class="disabled">RISK</div>
-                    <div id="btn_hintButton" class="button">HINT</div>
-                    <div class="button skipButton">SKIP</div>
-                </div>
-            </div>
-
-
-        </div>
-        
-        <div id="answerArea">
-            <p id="p_combo" class="counter">x0</p>
-            <div id="btn_afk" class="button">AFK</div>
-            
-            <input type="text" id="inp_textInput" autofocus spellcheck="false">
-            <div class="button skipButton">SKIP</div>
-
-            <label id="" class="label">VOLUME</label>
-            <input type="range" min="0" max="100" value="40" class="slider" id="inp_volSlider">
-            <input type="file" id="inp_fileChooser">
-            <div id="btn_bgRemover" class="button">REMOVE</div>
-
-        </div>
+  <header>
+    <div class="header_box_left">
+      <canvas id="canvas_loadingBar"></canvas>
+      <a href="https://github.com/adsuth/VGMB" target="_blank">
+        <img src="./public/img/logo_standard.png" alt="VGMB Logo" id="img_logo">
+      </a>
     </div>
 
-    <div id="player"></div>
+    <div>
+      <div class="titles">
+        <h1> VGMB </h1>
+        <p id="p_subtitle"></p>
+      </div>
+    </div>
 
-    <audio src="" id="audio_sfx"></audio>
-    <audio src="SFX\titleTheme.mp3" id="audio_title"></audio>
+    <span></span>
+
+    <div class="header_box">
+      <p id="p_points" class="counter">0</p>
+    </div>
+  </header>
+
+  <div id="gameArea">
+  <div id="majorSection">
+    <div id="textArea" class="gameSection">
+    <p>
+      <span class="boldText biggerText"> Welcome to VGMB! </span> <br>
+      For a rundown on the game, <a class="boldText" href="https://github.com/adsuth/VGMB#How-to-Play">click here! </a> <br>
+      Click one of the <span class="boldText"> Game Modes </span> to get started!
+    </p>
+    </div>
+
+    <div id="gameButtonSection">
+    <div id="gameModeArea" class="gameSection">
+      <h3>GAME MODES</h3>
+      <!-- Game modes to be added dynamically -->
+    </div>
+
+    <div id="abilityArea">
+      <button id="btn_shieldButton" class="button">SHIELD</button>
+      <button id="btn_riskButton" class="disabled">RISK</button>
+      <button id="btn_hintButton" class="button">HINT</button>
+      <button class="button skipButton">SKIP</button>
+    </div>
+    </div>
+
+
+  </div>
+
+  <footer id="answerArea">
+    <div class="header_box">
+      <p id="p_combo" class="counter">x0</p>
+    </div>
+
+    <div class="answer_input_box">
+      <button id="btn_afk" class="button">AFK</button>
+      <input type="text" id="inp_textInput" autofocus spellcheck="false">
+      <button class="button skipButton">SKIP</button>
+    </div>
     
+    <div class="header_box">
+      <label id="" class="label">VOLUME</label>
+      <input type="range" min="0" max="100" value="40" class="slider" id="inp_volSlider">
+    </div>
+  </footer>
+  </div>
+
+  <div id="player"></div>
+  <audio src="./public/sfx/ultraSonic.mp3" id="ultra_sfx"></audio>
+  <audio src="./public/sfx/superSonic.mp3" id="super_sfx"></audio>
+  <audio src="./public/sfx/relax.mp3"      id="relax_sfx" volume="0.5"></audio>
+
 </body>
+
 </html>
