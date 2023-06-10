@@ -44,25 +44,29 @@ class SongHandler {
       }
       
       quiz.state.isSkipping = true
-        if ( !quiz.abilityState.shield.isActive ) {
-            quiz.resetCombo()
-            // make round points negative
+      if ( !quiz.abilityState.shield.isActive ) {
+        quiz.resetCombo()
+        // make round points negative
 
-            quiz.SFX.playSFX( "loss" )
-            quiz.OTHERFUNC.updateRoundPoints( -1 )
-        }
+        quiz.SFX.playSFX( "loss" )
+        quiz.OTHERFUNC.updateRoundPoints( -1 )
+      }
+      else
+      {
+        quiz.SFX.playAbilitySound( "shield_used" )
+      }
         
-        // reset hint only if being used
-        if ( quiz.abilityState.hint.isActive ) {
-            quiz.resetAbility("hint")
-        }
-        
-        quiz.OTHERFUNC.updateCounter()
+      // reset hint only if being used
+      if ( quiz.abilityState.hint.isActive ) {
+          quiz.resetAbility("hint")
+      }
+      
+      quiz.OTHERFUNC.updateCounter()
 
-        quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("skip") )
-        quiz.OTHERFUNC.generateText( "<p>" + quiz.OTHERFUNC.getText("songInfo") )
+      quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText("skip") )
+      quiz.OTHERFUNC.generateText( "<p>" + quiz.OTHERFUNC.getText("songInfo") )
 
-        quiz.gameMode()
+      quiz.gameMode()
     }
 
     fadeOutSong() {

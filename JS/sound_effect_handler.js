@@ -10,6 +10,7 @@ class SoundEffectHandler {
 
         "hint":        document.getElementById( "hint_sfx" ),
         "shield":      document.getElementById( "shield_sfx" ),
+        "shield_used": document.getElementById( "shieldUsed_sfx" ),
 
         "risk_accept": document.getElementById( "riskAccepted_sfx" ),
         "risk_won":    document.getElementById( "riskWon_sfx" ),
@@ -76,6 +77,9 @@ class SoundEffectHandler {
         case "risk":
           name = "risk_accept"
           break
+        
+        case "shield_used":
+          name = "shield_used"
 
         default:
           name = ability
