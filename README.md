@@ -71,6 +71,8 @@ and hitting enter will use the cheat command
 | wrong   | Prevents wrong answer popups              |                        |
 | ans   | Prevents wrong answer popups              |                        |
 | twa   | Prevents wrong answer popups              |                        |
+|         |                                           |                        |
+| sfx   | Toggles sound effects               | This only affects VGMB's sounds (ultrasonic, skip, etc)                        |
 
 ---
 ## VGMB - Relaxed Mode
