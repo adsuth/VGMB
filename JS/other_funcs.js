@@ -41,6 +41,16 @@ class MiscFuncs {
         <span class="boldText warningText bigText"> You skipped that round! </span>
         </p>
       `,
+      sounds_on: `
+        <p>
+        <span class="boldText warningText bigText"> Sound Effects have been turned on! </span>
+        </p>
+      `,
+      sounds_off: `
+        <p>
+        <span class="boldText warningText bigText"> Sound Effects have been turned off! </span>
+        </p>
+      `,
       commandError: `
         <p>
         <span class="warningText bigText">"${quiz.state.failedCommand}" is not a command.</span>
@@ -215,7 +225,7 @@ class MiscFuncs {
   
     if ( time < 3 ) { this.updateRoundPoints( 2 ); return "ultra" }
     else if ( time < 5 ) {  this.updateRoundPoints( 1 ); return "super" }
-    else { return "" }
+    else { return "correct" }
   
   }
 
@@ -243,6 +253,9 @@ class MiscFuncs {
         "/back" : quiz.goAFK,
 
         "/fact" : showRandomFact,
+        "/lose" : timeUp,
+
+        "/sfx" : quiz.SFX.toggleSFX,
 
         "/clear" : this.clearTextArea,
 
@@ -302,10 +315,10 @@ class MiscFuncs {
   wonRisk() {
     quiz.abilityState.risk.onCooldown = true
     quiz.abilityState.risk.cooldown += quiz.abilityState.risk.cooldownLength
-    quiz.resetAbility("shield")
-    quiz.resetAbility("hint")
+    quiz.resetAbility( "shield" )
+    quiz.resetAbility( "hint" )
 
-    this.generateText( this.getText("riskWon") )
+    this.generateText( this.getText( "riskWon" ) )
   }
 
   randomInt( max ) {

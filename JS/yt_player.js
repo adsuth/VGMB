@@ -98,6 +98,7 @@ function timeUp() {
     }
 
     clearTimeout(timeUpTimeOut)
+    quiz.SFX.playSFX( "loss" )
     quiz.gameMode()
 
   }

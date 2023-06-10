@@ -15,7 +15,7 @@ I'm considering remaking VGMB in the future, using an automated system of adding
 ## What is VGMB?
 VGMB is a single-player "guess the song" featuring 2000+ tracks from all of your favorite games; from The Last of Us to Mario and everything inbetween. The project was heavily inspired by [VGM Quiz (Video Game Music Quiz)](https://www.vgm-quiz.com/). While VGMQ is great, there is a lot of necessary downtime between tracks owing to the fact that the game takes place in a global lobby. VGMB mitigates this by being singleplayer.
 
-### How to Play
+## How to Play
 To begin, first click **Standard Mode**.
 Standard Mode is broken down into "rounds". Each round, a new song will play. Your job is to guess the **game the song is from**. If your guess is in the list of accepted guesses, you'll gain points!
 
@@ -23,17 +23,17 @@ How many points you gain is determined on your score. Guess it quick and you'll 
 
 You'll also rack up a combo for guessing consecutive song correctly.
 
-#### Abilities
-##### Shield
+### Abilities
+#### Shield
 Protects you from losing a combo. Use this if you're unsure of the answer. If you do end up guessing correctly in the same round, you'll get your shield back! Otherwise, it'll regenerate after 2 rounds.
 
-##### Hint
+#### Hint
 Gives you a few of the letters in the game's name. This should nudge you in the right direction. If you still can't get it, we'll refund the hint so you can use it again. Otherwise, this power regenerates after 2 rounds.
 
-#### Risk
+### Risk
 After hitting a combo of 10x or higher, you'll be offered a bit of a gamble in the next round. Guess correctly to gain even more points... Guess wrong, and you'll lose points
 
-### Commands
+## Commands
 I've added in QoL commands for debugging and general use. Below is a list:
 
 To use them, enter a / in the text box followed by the Command.
@@ -69,17 +69,9 @@ and hitting enter will use the cheat command
 | clear   | Clears the text area                      |                        |
 |         |                                           |                        |
 | wrong   | Prevents wrong answer popups              |                        |
-| wrong   | Prevents wrong answer popups              |                        |
-| wrong   | Prevents wrong answer popups              |                        |
+| ans   | Prevents wrong answer popups              |                        |
+| twa   | Prevents wrong answer popups              |                        |
 
 ---
 ## VGMB - Relaxed Mode
-Relaxed Mode is a more chill experience than Standard Mode. No points, no timers, just music.
-
----
-
-## VGML - Video Game Music Lounge
-VGML is a bodged extension to VGMB which provides a way to sit back and relax to VGM tracks. Unlike Relaxed Mode, VGML allows you to choose a series to listen to.
-
-To enter VGML, click the logo on the header bar.
-
+Relaxed Mode is a more chill experience than Standard Mode. No points, no timers, just music - and some random facts after every song courtesy of Facts API from [API Ninjas](https://api-ninjas.com/api/facts).

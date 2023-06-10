@@ -48,6 +48,7 @@ class SongHandler {
             quiz.resetCombo()
             // make round points negative
 
+            quiz.SFX.playSFX( "loss" )
             quiz.OTHERFUNC.updateRoundPoints( -1 )
         }
         

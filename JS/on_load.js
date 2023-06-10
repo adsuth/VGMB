@@ -24,6 +24,8 @@ const GAMEMODES = {
 }
 
 document.getElementById( "relax_sfx" ).volume = 0.5
+document.getElementById( "loss_sfx" ).volume = 0.5
+document.getElementById( "correct_sfx" ).volume = 0.7
 
 function initialiseSeriesList() {
   for (let mode in GAMEMODES ) {

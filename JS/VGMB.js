@@ -191,13 +191,13 @@ class VGMB {
       this.state.timeMessage = this.OTHERFUNC.getTimeMessage()
       
       
-      if ( this.state.timeMessage ) { text += this.OTHERFUNC.getText("timeMessage") }
+      if ( this.state.timeMessage !== "correct" ) { text += this.OTHERFUNC.getText("timeMessage") }
       
       text += this.OTHERFUNC.getText("timeTaken")
       text += this.OTHERFUNC.getText("songInfo")
 
       this.OTHERFUNC.generateText( text )
-      
+
       // increment point counter 
       this.OTHERFUNC.updateRoundPoints( 1 )
 
@@ -233,7 +233,10 @@ class VGMB {
     }
     comboText.innerText = "x" + this.state.currentCombo
 
-    if ( this.state.currentCombo >= 10 ) { this.state.isRiskUnlocked = true }
+    if ( this.state.currentCombo >= 10 ) {
+      
+      this.state.isRiskUnlocked = true
+    }
   }
 
   resetForNextRound() {
@@ -329,9 +332,12 @@ class VGMB {
     quiz.abilityState[ability].button.style.backgroundColor = `var(--color${quiz.abilityState[ability].activeColor})`
     quiz.OTHERFUNC.generateText( quiz.OTHERFUNC.getText( quiz.abilityState[ability].useMessage ) )
     
+    quiz.SFX.playAbilitySound( ability )
+    
     quiz.abilityState[ability].function()
 
     if ( ability === "risk" && quiz.abilityState[ability].isActive ) { return }
+
     quiz.abilityState[ability].onCooldown = true
     quiz.abilityState[ability].cooldown += quiz.abilityState[ability].cooldownLength
 

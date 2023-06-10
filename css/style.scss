@@ -283,7 +283,6 @@ iframe {
     margin-left: 2.5vw;
 
     text-align: center;
-    overflow-y: scroll;
     // background: linear-gradient( 270deg, #222, #333 );
 
 
@@ -321,7 +320,7 @@ iframe {
     grid-template-columns: 1fr 1fr;
     gap: 0.5vw;
     text-align: center;
-    background-color: var(--colorMid);
+    background-color: var(--colorDark);
     width: 90%;
     margin: 0 auto;
     padding: 1vw;

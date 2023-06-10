@@ -35,7 +35,7 @@ textInput.addEventListener('keypress', (ev) => {
 
   else { quiz.checkAnswer( textInput.value ) }
 
-  textInput.value = ""
+    textInput.value = ""
   }
 
   quiz.OTHERFUNC.scrollToBottom()
